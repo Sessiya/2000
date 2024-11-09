@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurslar</title>
-    <script src="courses.js" defer></script>
 </head>
 <body>
-    <h2>Bizning Kurslarimiz</h2>
-    <div id="userInfo">
-        <!-- Foydalanuvchi nomi va avatarini ko'rsatish uchun -->
-    </div>
-    <div id="coursesList">
-        <div class="course-card">
-            <h3>Kurs 1</h3>
-            <p>Bu kurs orqali ... ni o'rganing.</p>
-            <a href="#">Kursni boshlash</a>
-        </div>
-        <div class="course-card">
-            <h3>Kurs 2</h3>
-            <p>Bu kurs orqali ... ni o'rganing.</p>
-            <a href="#">Kursni boshlash</a>
-        </div>
-    </div>
+    <h2>Kurslar</h2>
+
+    <!-- Kurslar ro'yxati -->
+    <div id="coursesList"></div>
+
+    <!-- JavaScript kiritish -->
+    <script>
+        fetch('https://your-backend-url/courses', {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}` // Tokenni yuborish
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const coursesList = document.getElementById('coursesList');
+                data.courses.forEach(course => {
+                    const courseElement = document.createElement('div');
+                    courseElement.textContent = `${course.name} - ${course.description}`;
+                    coursesList.appendChild(courseElement);
+                });
+            } else {
+                alert('Kurslar yuklanishda xatolik yuz berdi.');
+            }
+        })
+        .catch(error => {
+            console.error('Xato:', error);
+            alert('Serverga so\'rov yuborishda xato yuz berdi.');
+        });
+    </script>
 </body>
 </html>
