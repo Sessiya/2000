@@ -1,84 +1,98 @@
 const express = require('express');
-const multer = require('multer');
+const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const mongoose = require('mongoose');
-const User = require('./models/User'); // Mongoose model
+const cors = require('cors');
+const multer = require('multer');
 const app = express();
+const port = process.env.PORT || 3000;
 
-// Mongoose bilan ulanish
-mongoose.connect('mongodb://localhost:27017/yourDatabase', { useNewUrlParser: true, useUnifiedTopology: true });
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, 'uploads/');
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + '-' + file.originalname);
-    }
-});
-const upload = multer({ storage: storage });
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Ro'yxatdan o'tish
-app.post('/register', upload.single('avatar'), async (req, res) => {
-    const { username, password } = req.body;
-    const avatar = req.file ? req.file.filename : null;
-
-    // Parolni hash qilish
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    // Foydalanuvchi yaratish
-    const newUser = new User({
-        username,
-        password: hashedPassword,
-        avatar,
-        courses: [] // Kurslar haqida ma'lumotlar keyinchalik qo'shiladi
-    });
-
-    await newUser.save();
-
-    res.json({ success: true, message: 'Foydalanuvchi ro\'yxatdan o\'tdi!' });
+// MongoDBga ulanish (MongoDB Atlas URL)
+mongoose.connect('mongodb://localhost:27017/yourDB', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 });
 
-// Tizimga kirish
+// Foydalanuvchi uchun Schema
+const userSchema = new mongoose.Schema({
+    username: String,
+    password: String,
+    avatar: String,
+    activities: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Activity' }]
+});
+
+const User = mongoose.model('User', userSchema);
+
+// Kurslar uchun Schema
+const courseSchema = new mongoose.Schema({
+    name: String,
+    description: String
+});
+
+const Course = mongoose.model('Course', courseSchema);
+
+// Faoliyatlar Schema
+const activitySchema = new mongoose.Schema({
+    course: { type: mongoose.Schema.Types.ObjectId, ref: 'Course' },
+    topic: String,
+    progress: Number // 0-100% progress
+});
+
+const Activity = mongoose.model('Activity', activitySchema);
+
+// Ro'yxatdan o'tish endpoint
+app.post('/register', async (req, res) => {
+    const { username, password, avatar } = req.body;
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const newUser = new User({ username, password: hashedPassword, avatar });
+    await newUser.save();
+
+    res.json({ success: true, message: 'Ro\'yxatdan o\'tish muvaffaqiyatli yakunlandi!' });
+});
+
+// Kirish endpoint
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
-
     const user = await User.findOne({ username });
+
     if (!user) {
-        return res.json({ success: false, message: 'Foydalanuvchi topilmadi.' });
+        return res.status(400).json({ success: false, message: 'Foydalanuvchi topilmadi!' });
     }
 
-    const isPasswordValid = await bcrypt.compare(password, user.password);
-    if (!isPasswordValid) {
-        return res.json({ success: false, message: 'Parol noto\'g\'ri.' });
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+        return res.status(400).json({ success: false, message: 'Parol noto\'g\'ri!' });
     }
 
-    // JWT token yaratish
-    const token = jwt.sign({ id: user._id }, 'secret_key');
+    const token = jwt.sign({ userId: user._id }, 'secretkey', { expiresIn: '1h' });
     res.json({ success: true, token });
 });
 
-// Shaxsiy kabinetga kirish
-app.get('/profile', async (req, res) => {
-    const token = req.headers['authorization'];
+// Faoliyatni saqlash endpoint
+app.post('/activity', async (req, res) => {
+    const { userId, courseId, topic, progress } = req.body;
 
-    if (!token) {
-        return res.status(403).json({ success: false, message: 'Token kerak.' });
-    }
+    const newActivity = new Activity({ course: courseId, topic, progress });
+    await newActivity.save();
 
-    try {
-        const decoded = jwt.verify(token, 'secret_key');
-        const user = await User.findById(decoded.id);
-        res.json({ success: true, user });
-    } catch (error) {
-        res.status(403).json({ success: false, message: 'Token noto\'g\'ri.' });
-    }
+    const user = await User.findById(userId);
+    user.activities.push(newActivity);
+    await user.save();
+
+    res.json({ success: true, message: 'Faoliyat saqlandi!' });
 });
 
-app.listen(3000, () => {
-    console.log('Server ishga tushdi, http://localhost:3000');
+// Kurslarni olish endpoint
+app.get('/courses', async (req, res) => {
+    const courses = await Course.find();
+    res.json(courses);
+});
+
+app.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
 });
