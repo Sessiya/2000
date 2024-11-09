@@ -27,6 +27,9 @@
             background-color: #333;
             color: white;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         header .logo a {
@@ -38,10 +41,10 @@
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
         }
 
         nav ul li {
-            display: inline;
             margin-right: 20px;
         }
 
@@ -49,6 +52,19 @@
             color: white;
             text-decoration: none;
             font-size: 18px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            cursor: pointer;
+        }
+
+        .auth-links {
+            display: flex;
+            gap: 10px;
         }
 
         /* Hero section styles */
@@ -79,7 +95,7 @@
         /* Parallax Section */
         .parallax-section {
             position: relative;
-            height: 300px;
+            height: 60px;
             overflow: hidden;
         }
 
@@ -88,7 +104,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 200px; /* Kichikroq qilish */
+            height: 40px; /* Kichikroq qilish */
             object-fit: cover;
             will-change: transform;
         }
@@ -129,39 +145,51 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Asosiy</a></li> <!-- Bosh sahifa linki -->
-                <li><a href="courses.html">Kurslar</a></li> <!-- Kurslar sahifasi -->
-                <li><a href="about.html">Biz haqimizda</a></li> <!-- Biz haqimizda sahifasi -->
-                <li><a href="contact.html">Aloqa</a></li> <!-- Aloqa sahifasi -->
+                <li><a href="index.html">Asosiy</a></li>
+                <li><a href="courses.html">Kurslar</a></li>
+                <li><a href="about.html">Biz haqimizda</a></li>
+                <li><a href="contact.html">Aloqa</a></li>
             </ul>
         </nav>
+
+        <!-- Authentication Links (Visible if not logged in) -->
+        <div class="auth-links">
+            <a href="register.html" id="register-link">Tizimdan ro'yxatdan o'tish</a>
+            <a href="login.html" id="login-link">Tizimga kirish</a>
+        </div>
+
+        <!-- User Avatar (Visible if logged in) -->
+        <div class="user-avatar" id="user-avatar" style="display: none;">
+            <img src="avatar.jpg" alt="Avatar" class="avatar" onclick="window.location.href='profile.html'">
+        </div>
     </header>
 
     <!-- Main Content -->
     <section id="home" class="hero">
         <h1>Biz bilan oʻzingizni rivojlantiring!</h1>
         <p>Ushbu sayti orqali eng yaxshi onlayn kurslarga qo‘shiling!</p>
-        <a href="courses.html" class="btn">Kurslarni ko‘rish</a> <!-- Kurslar sahifasiga o'tish -->
+        <a href="courses.html" class="btn">Kurslarni ko‘rish</a>
     </section>
 
-    <!-- Parallax Section with Image Scroll Effect -->
+    <!-- Parallax Section -->
     <section id="parallax" class="parallax-section">
         <div class="parallax-img">
-            <img src="image1.jpg" alt="Parallax Image 1"> <!-- Kichikroq rasm -->
+            <img src="image1.jpg" alt="Parallax Image 1">
         </div>
     </section>
 
+    <!-- Courses Section -->
     <section id="courses" class="courses">
         <h2>Bizning Kurslarimiz</h2>
         <div class="course-card">
             <h3>KURS 1</h3>
             <p>Bu kurs orqali ... ni oʻrganing.</p>
-            <a href="course1.html">Kursni boshlash</a> <!-- Kursni boshlash sahifasi -->
+            <a href="course1.html">Kursni boshlash</a>
         </div>
         <div class="course-card">
             <h3>KURS 2</h3>
             <p>Bu kurs orqali ... ni oʻrganing.</p>
-            <a href="course2.html">Kursni boshlash</a> <!-- Kursni boshlash sahifasi -->
+            <a href="course2.html">Kursni boshlash</a>
         </div>
     </section>
 
@@ -169,5 +197,14 @@
     <footer>
         <p>&copy; 2024 2000App Barcha huquqlar himoyalangan.</p>
     </footer>
+
+    <script>
+        // Check if user is logged in and display relevant links
+        if (localStorage.getItem('userLoggedIn')) {
+            document.getElementById('register-link').style.display = 'none';
+            document.getElementById('login-link').style.display = 'none';
+            document.getElementById('user-avatar').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
