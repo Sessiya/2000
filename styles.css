@@ -1,22 +1,29 @@
 /* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
-    background-color: #1d1d1d;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-header a {
+header .logo a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -27,81 +34,157 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
+    text-decoration: none;
     font-size: 18px;
-    text-decoration: none;
-}
-
-.hero {
-    text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 40px;
-}
-
-.hero p {
-    font-size: 20px;
-}
-
-.btn {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #1d1d1d;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-#userActivity {
-    padding: 20px;
-    background-color: #e0e0e0;
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-#userActivity span {
-    color: red;
-}
-
-.course-card {
-    background-color: #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.course-card a {
-    color: #333;
-    text-decoration: none;
     font-weight: bold;
 }
 
-#userInfo {
-    margin-top: 20px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-#userInfo img {
-    border-radius: 50%;
+/* Hero Section */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #ffcc00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Form Section */
+.form-section {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #555;
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"],
+.form-section input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #45a049;
+}
+
+/* Course Section */
+.courses {
+    background-color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 270px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.course-card a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.course-card a:hover {
+    color: #ffcc00;
+}
+
+/* Miscellaneous */
+input:focus, button:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
 }
