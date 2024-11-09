@@ -8,6 +8,7 @@
     <script src="login.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
             <a href="index.html">2000App</a>
@@ -23,11 +24,13 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <div class="hero">
         <h1>Tizimga kirish</h1>
         <p>Hisobingizga kiring.</p>
     </div>
 
+    <!-- Login Form -->
     <div class="form-section">
         <h2>Kirish</h2>
         <form id="loginForm">
@@ -39,8 +42,29 @@
         </form>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>© 2024 2000App Barcha huquqlar himoyalangan.</p>
     </footer>
+
+    <script>
+        document.querySelector('#loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Login va parolni tekshirish
+            const enteredUsername = document.querySelector('#login').value;
+            const enteredPassword = document.querySelector('#password').value;
+
+            const storedUsername = localStorage.getItem('username');
+            const storedPassword = localStorage.getItem('password');
+
+            if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+                alert('Tizimga muvaffaqiyatli kirildi!');
+                window.location.href = 'courses.html'; // Kurslar sahifasiga yo'naltirish
+            } else {
+                alert('Login yoki parol noto\'g\'ri.');
+            }
+        });
+    </script>
 </body>
 </html>
