@@ -17,6 +17,7 @@
                 <li id="loginLink"><a href="login.html">Kirish</a></li>
                 <li id="registerLink"><a href="register.html">Ro'yxatdan o'tish</a></li>
                 <li id="userAvatar" style="display: none;"><a href="kebinet.html">Foydalanuvchi Paneli</a></li>
+                <li id="logoutLink" style="display: none;"><a href="logout.html">Chiqish</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +33,19 @@
 
     <script>
         // Agar foydalanuvchi tizimga kirgan bo'lsa
-        const username = localStorage.getItem('username');
+        const loggedIn = localStorage.getItem('loggedIn');
 
-        if (username) {
+        if (loggedIn) {
             // "Kirish" va "Ro'yxatdan o'tish" bo'limlarini yashirish
             document.getElementById('loginLink').style.display = 'none';
             document.getElementById('registerLink').style.display = 'none';
-            
-            // Foydalanuvchi avatarini ko'rsatish
+
+            // Foydalanuvchi avatarini va "Chiqish" bo'limini ko'rsatish
             document.getElementById('userAvatar').style.display = 'inline';
+            document.getElementById('logoutLink').style.display = 'inline';
+        } else {
+            // Foydalanuvchi tizimga kirgan bo'lmasa, "Chiqish" bo'limini yashirish
+            document.getElementById('logoutLink').style.display = 'none';
         }
     </script>
 </body>
