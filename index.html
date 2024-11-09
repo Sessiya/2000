@@ -6,6 +6,120 @@
     <title>2000App - Biz bilan rivojlaning</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script>
+        // Parallax effect implementation
+window.addEventListener('scroll', function() {
+    const parallaxImage = document.querySelector('.parallax-img img');
+    const scrolled = window.scrollY;
+    parallaxImage.style.transform = 'translateY(' + scrolled * 0.5 + 'px)';
+}); 
+    </script>
+    <style>
+        /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Parallax Section */
+.parallax-section {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.parallax-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    will-change: transform;
+}
+
+/* Courses Section */
+.courses {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.course-card {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.course-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -19,7 +133,6 @@
                 <li><a href="#courses">Kurslar</a></li>
                 <li><a href="#about">Biz haqimizda</a></li>
                 <li><a href="#contact">Aloqa</a></li>
-                <li><a href="login.html">Kirish</a></li> <!-- Kirish sahifasiga yo'naltirish -->
             </ul>
         </nav>
     </header>
@@ -31,17 +144,24 @@
         <a href="#courses" class="btn">Kurslarni ko‘rish</a>
     </section>
 
+    <!-- Parallax Section with Image Scroll Effect -->
+    <section id="parallax" class="parallax-section">
+        <div class="parallax-img">
+            <img src="image1.jpg" alt="Parallax Image 1">
+        </div>
+    </section>
+
     <section id="courses" class="courses">
         <h2>Bizning Kurslarimiz</h2>
         <div class="course-card">
             <h3>KURS 1</h3>
             <p>Bu kurs orqali ... ni oʻrganing.</p>
-            <a href="register.html">Kursni boshlash</a> <!-- Kursni boshlash uchun ro'yxatdan o'tish -->
+            <a href="#">Kursni boshlash</a>
         </div>
         <div class="course-card">
             <h3>KURS 2</h3>
             <p>Bu kurs orqali ... ni oʻrganing.</p>
-            <a href="register.html">Kursni boshlash</a> <!-- Kursni boshlash uchun ro'yxatdan o'tish -->
+            <a href="#">Kursni boshlash</a>
         </div>
     </section>
 
