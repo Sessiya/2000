@@ -1,29 +1,19 @@
-document.querySelector('#registerForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+// Register formni yuborishdan oldin tekshirish
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formani avtomatik yuborilishidan to'xtatish
 
-    // Foydalanuvchi ma'lumotlarini olish
-    const username = document.querySelector('#username').value;
-    const password = document.querySelector('#password').value;
-    const avatarFile = document.querySelector('#avatar').files[0];
+    // Ro'yxatdan o'tish malumotlarini olish
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const avatar = document.getElementById('avatar').files[0];
 
-    if (username && password && avatarFile) {
-        // Avatarni base64 formatiga o'zgartirish
-        const reader = new FileReader();
-        reader.onloadend = function() {
-            const avatar = reader.result;
+    // Bu yerda malumotlarni serverga yuborish yoki localStorage'da saqlash jarayoni bo'lishi mumkin
+    // Misol uchun, foydalanuvchi malumotlarini saqlash
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+    localStorage.setItem('avatar', avatar.name); // Avatar nomini saqlash
 
-            // Ma'lumotlarni localStorage-ga saqlash
-            localStorage.setItem('username', username);
-            localStorage.setItem('password', password);
-            localStorage.setItem('avatar', avatar);
-
-            alert('Ro\'yxatdan o\'tdingiz! Endi kurslarni ko\'rishingiz mumkin.');
-
-            // Kurslar sahifasiga yo'naltirish
-            window.location.href = 'courses.html';
-        };
-        reader.readAsDataURL(avatarFile);
-    } else {
-        alert('Iltimos, barcha maydonlarni to\'ldiring.');
-    }
+    // Ro'yxatdan o'tishdan so'ng, foydalanuvchini kirish sahifasiga yo'naltirish
+    alert('Ro\'yxatdan o\'tish muvaffaqiyatli yakunlandi!');
+    window.location.href = 'login.html'; // Kirish sahifasiga yo'naltirish
 });
