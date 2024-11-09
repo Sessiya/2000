@@ -29,4 +29,11 @@
             const courses = await response.json();
             const coursesList = document.getElementById('coursesList');
             courses.forEach(course => {
-                const li
+                const li = document.createElement('li');
+                li.textContent = `${course.name} - ${course.description}`;
+                coursesList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
