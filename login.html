@@ -19,26 +19,6 @@
 
     <p>Ro'yxatdan o'tmaganmisiz? <a href="register.html">Ro'yxatdan o'ting</a></p>
 
-    <script>
-        // Kirish formasi
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Formani avtomatik yuborilishidan to'xtatish
-
-            // Ro'yxatdan o'tgan foydalanuvchi ma'lumotlarini tekshirish
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            const storedUsername = localStorage.getItem('username');
-            const storedPassword = localStorage.getItem('password');
-
-            if (username === storedUsername && password === storedPassword) {
-                alert('Kirish muvaffaqiyatli!');
-                // Kirish muvaffaqiyatli bo'lsa, boshqa sahifaga yo'naltirish mumkin
-                window.location.href = 'home.html'; // Home sahifasiga yo'naltirish
-            } else {
-                alert('Ism yoki parol xato');
-            }
-        });
-    </script>
+        <script src="login.js"></script>
 </body>
 </html>
