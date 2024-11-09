@@ -1,49 +1,36 @@
-<!-- register.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ro'yxatdan o'tish</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Ro'yxatdan o'tish</h2>
-    <form id="registerForm">
-        <label for="username">Foydalanuvchi ismi:</label>
-        <input type="text" id="username" required><br><br>
-        <label for="password">Parol:</label>
-        <input type="password" id="password" required><br><br>
-        <label for="avatar">Avatar:</label>
-        <input type="file" id="avatar"><br><br>
-        <button type="submit">Ro'yxatdan o'tish</button>
-    </form>
+    <header>
+        <div class="logo">
+            <a href="index.html">2000App</a>
+        </div>
+    </header>
 
-    <script>
-        document.getElementById('registerForm').addEventListener('submit', async function(event) {
-            event.preventDefault();
-            
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const avatar = document.getElementById('avatar').files[0];
+    <section class="form-section">
+        <h2>Ro'yxatdan o'tish</h2>
+        <form id="registerForm">
+            <label for="username">Foydalanuvchi ismi:</label>
+            <input type="text" id="username" required><br><br>
 
-            const formData = new FormData();
-            formData.append('username', username);
-            formData.append('password', password);
-            formData.append('avatar', avatar);
+            <label for="password">Parol:</label>
+            <input type="password" id="password" required><br><br>
 
-            const response = await fetch('https://two000-1.onrender.com/register', {
-                method: 'POST',
-                body: formData
-            });
+            <label for="avatar">Avatar:</label>
+            <input type="file" id="avatar"><br><br>
 
-            const data = await response.json();
-            if (data.success) {
-                alert(data.message);
-                window.location.href = 'login.html'; // Ro'yxatdan o'tgandan keyin login sahifasiga o'tish
-            } else {
-                alert(data.message);
-            }
-        });
-    </script>
+            <button type="submit">Ro'yxatdan o'tish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 2000App Barcha huquqlar himoyalangan.</p>
+    </footer>
 </body>
 </html>
