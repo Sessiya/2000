@@ -10,7 +10,9 @@ document.querySelector('#loginForm').addEventListener('submit', function(e) {
 
     if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
         alert('Tizimga muvaffaqiyatli kirildi!');
-        window.location.href = 'courses.html'; // Kurslar sahifasiga yo'naltirish
+        
+        // Foydalanuvchini kebinet sahifasiga yo'naltirish
+        window.location.href = 'kebinet.html'; // Yangi sahifa
     } else {
         alert('Login yoki parol noto\'g\'ri.');
     }
