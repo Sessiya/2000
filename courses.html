@@ -1,27 +1,39 @@
+<!-- courses.html -->
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurslar</title>
-    <script src="courses.js" defer></script>
 </head>
 <body>
-    <h2>Bizning Kurslarimiz</h2>
-    <div id="userInfo">
-        <!-- Foydalanuvchi nomi va avatarini ko'rsatish uchun -->
-    </div>
-    <div id="coursesList">
-        <div class="course-card">
-            <h3>Kurs 1</h3>
-            <p>Bu kurs orqali ... ni o'rganing.</p>
-            <a href="#">Kursni boshlash</a>
-        </div>
-        <div class="course-card">
-            <h3>Kurs 2</h3>
-            <p>Bu kurs orqali ... ni o'rganing.</p>
-            <a href="#">Kursni boshlash</a>
-        </div>
-    </div>
+    <h2>Kurslar</h2>
+    <ul id="coursesList"></ul>
+
+    <script>
+        window.onload = async function() {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                alert('Siz tizimga kirishingiz kerak!');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            const response = await fetch('https://two000-1.onrender.com/courses', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            const courses = await response.json();
+            const coursesList = document.getElementById('coursesList');
+            courses.forEach(course => {
+                const li = document.createElement('li');
+                li.textContent = `${course.name} - ${course.description}`;
+                coursesList.appendChild(li);
+            });
+        }
+    </script>
 </body>
 </html>
