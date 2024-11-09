@@ -1,66 +1,48 @@
+<!-- register.html -->
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ro'yxatdan O'tish</title>
+    <title>Ro'yxatdan o'tish</title>
 </head>
 <body>
-    <h2>Ro'yxatdan O'tish</h2>
-
-    <!-- Ro'yxatdan o'tish formasi -->
+    <h2>Ro'yxatdan o'tish</h2>
     <form id="registerForm">
-        <label for="username">Foydalanuvchi nomi:</label>
-        <input type="text" id="username" name="username" required><br><br>
-
+        <label for="username">Foydalanuvchi ismi:</label>
+        <input type="text" id="username" required><br><br>
         <label for="password">Parol:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="avatar">Avatar (rasm yuklash):</label>
-        <input type="file" id="avatar" name="avatar"><br><br>
-
-        <button type="submit">Ro'yxatdan O'tish</button>
+        <input type="password" id="password" required><br><br>
+        <label for="avatar">Avatar:</label>
+        <input type="file" id="avatar"><br><br>
+        <button type="submit">Ro'yxatdan o'tish</button>
     </form>
 
-    <!-- Allaqachon ro'yxatdan o'tgan bo'lsangiz, login qilish -->
-    <p>Allaqachon ro'yxatdan o'tganmisiz? <a href="login.html">Kirishni bosing.</a></p>
-
-    <!-- JavaScript kiritish -->
     <script>
-        // Ro'yxatdan o'tish formasi yuborishdan oldin tekshirish
-        document.getElementById('registerForm').addEventListener('submit', function(event) {
+        document.getElementById('registerForm').addEventListener('submit', async function(event) {
             event.preventDefault();
-
-            // Formada kiritilgan ma'lumotlar
+            
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             const avatar = document.getElementById('avatar').files[0];
 
-            // Foydalanuvchi ma'lumotlarini serverga yuborish (backendga)
-            fetch('https://your-backend-url/register', {
+            const formData = new FormData();
+            formData.append('username', username);
+            formData.append('password', password);
+            formData.append('avatar', avatar);
+
+            const response = await fetch('https://two000-1.onrender.com/register', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    username,
-                    password,
-                    avatar: avatar ? avatar.name : null // Avatar nomini faqat bo'lsa yuborish
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Ro\'yxatdan o\'tish muvaffaqiyatli!');
-                    window.location.href = 'login.html'; // Kirish sahifasiga yo'naltirish
-                } else {
-                    alert('Ro\'yxatdan o\'tishda xatolik yuz berdi.');
-                }
-            })
-            .catch(error => {
-                console.error('Xato:', error);
-                alert('Serverga so\'rov yuborishda xato yuz berdi.');
+                body: formData
             });
+
+            const data = await response.json();
+            if (data.success) {
+                alert(data.message);
+                window.location.href = 'login.html'; // Ro'yxatdan o'tgandan keyin login sahifasiga o'tish
+            } else {
+                alert(data.message);
+            }
         });
     </script>
 </body>
