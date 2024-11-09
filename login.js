@@ -9,10 +9,10 @@ document.querySelector('#loginForm').addEventListener('submit', function(e) {
     const storedPassword = localStorage.getItem('password');
 
     if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+        // Foydalanuvchini tizimga kirgan sifatida belgilash
+        localStorage.setItem('loggedIn', true);
         alert('Tizimga muvaffaqiyatli kirildi!');
-        
-        // Foydalanuvchini kebinet sahifasiga yo'naltirish
-        window.location.href = 'kebinet.html'; // Yangi sahifa
+        window.location.href = 'index.html'; // Bosh sahifaga yo'naltirish
     } else {
         alert('Login yoki parol noto\'g\'ri.');
     }
