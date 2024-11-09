@@ -1,5 +1,6 @@
+<!-- courses.html -->
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,25 @@
 </head>
 <body>
     <h2>Kurslar</h2>
+    <ul id="coursesList"></ul>
 
-    <!-- Kurslar ro'yxati -->
-    <div id="coursesList"></div>
-
-    <!-- JavaScript kiritish -->
     <script>
-        fetch('https://your-backend-url/courses', {
-            method: 'GET',
-            headers: {
-                'Authorization': `Bearer ${localStorage.getItem('token')}` // Tokenni yuborish
+        window.onload = async function() {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                alert('Siz tizimga kirishingiz kerak!');
+                window.location.href = 'login.html';
+                return;
             }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                const coursesList = document.getElementById('coursesList');
-                data.courses.forEach(course => {
-                    const courseElement = document.createElement('div');
-                    courseElement.textContent = `${course.name} - ${course.description}`;
-                    coursesList.appendChild(courseElement);
-                });
-            } else {
-                alert('Kurslar yuklanishda xatolik yuz berdi.');
-            }
-        })
-        .catch(error => {
-            console.error('Xato:', error);
-            alert('Serverga so\'rov yuborishda xato yuz berdi.');
-        });
-    </script>
-</body>
-</html>
+
+            const response = await fetch('https://two000-1.onrender.com/courses', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            const courses = await response.json();
+            const coursesList = document.getElementById('coursesList');
+            courses.forEach(course => {
+                const li
