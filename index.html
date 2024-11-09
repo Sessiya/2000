@@ -3,196 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2000App - Biz bilan rivojlaning</title>
+    <title>Asosiy Sahifa</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <script>
-        // Parallax effect implementation
-        window.addEventListener('scroll', function() {
-            const parallaxImage = document.querySelector('.parallax-img img');
-            const scrolled = window.scrollY;
-            parallaxImage.style.transform = 'translateY(' + scrolled * 0.5 + 'px)';
-        });
-    </script>
-    <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo a {
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #4CAF50;
-            cursor: pointer;
-        }
-
-        .auth-links {
-            display: flex;
-            gap: 10px;
-        }
-
-        /* Hero section styles */
-        .hero {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 100px 20px;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-        }
-
-        .hero p {
-            font-size: 20px;
-        }
-
-        .btn {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        /* Parallax Section */
-        .parallax-section {
-            position: relative;
-            height: 60px;
-            overflow: hidden;
-        }
-
-        .parallax-img img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 40px; /* Kichikroq qilish */
-            object-fit: cover;
-            will-change: transform;
-        }
-
-        /* Courses Section */
-        .courses {
-            padding: 40px 20px;
-            background-color: #fff;
-        }
-
-        .course-card {
-            background-color: #e0e0e0;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-
-        .course-card a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Footer styles */
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="logo">
-            <a href="#">2000App</a>
+            <a href="index.html">2000App</a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Asosiy</a></li>
-                <li><a href="courses.html">Kurslar</a></li>
-                <li><a href="about.html">Biz haqimizda</a></li>
-                <li><a href="contact.html">Aloqa</a></li>
-                <li><a href="register.html" id="register-link">Tizimdan ro'yxatdan o'tish</a></li>
-                <li><a href="login.html" id="login-link">Tizimga kirish</a></li>
+                <!-- Agar foydalanuvchi tizimga kirgan bo'lsa, "Kirish" va "Ro'yxatdan o'tish" bo'limlarini yashirish -->
+                <li id="loginLink"><a href="login.html">Kirish</a></li>
+                <li id="registerLink"><a href="register.html">Ro'yxatdan o'tish</a></li>
+                <li id="userAvatar" style="display: none;"><a href="kebinet.html">Foydalanuvchi Paneli</a></li>
             </ul>
         </nav>
-
-        <!-- User Avatar (Visible if logged in) -->
-        <div class="user-avatar" id="user-avatar" style="display: none;">
-            <img src="avatar.jpg" alt="Avatar" class="avatar" onclick="window.location.href='profile.html'">
-        </div>
     </header>
 
-    <!-- Main Content -->
-    <section id="home" class="hero">
-        <h1>Biz bilan oʻzingizni rivojlantiring!</h1>
-        <p>Ushbu sayti orqali eng yaxshi onlayn kurslarga qo‘shiling!</p>
-        <a href="courses.html" class="btn">Kurslarni ko‘rish</a>
-    </section>
+    <div class="hero">
+        <h1>2000App ga xush kelibsiz!</h1>
+        <p>Hisobingizga kiring yoki yangi hisob yarating.</p>
+    </div>
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-        <h2>Bizning Kurslarimiz</h2>
-        <div class="course-card">
-            <h3>KURS 1</h3>
-            <p>Bu kurs orqali ... ni oʻrganing.</p>
-            <a href="course1.html">Kursni boshlash</a>
-        </div>
-        <div class="course-card">
-            <h3>KURS 2</h3>
-            <p>Bu kurs orqali ... ni oʻrganing.</p>
-            <a href="course2.html">Kursni boshlash</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 2000App Barcha huquqlar himoyalangan.</p>
+        <p>© 2024 2000App Barcha huquqlar himoyalangan.</p>
     </footer>
 
     <script>
-        // Check if user is logged in and display relevant links
-        if (localStorage.getItem('userLoggedIn')) {
-            document.getElementById('register-link').style.display = 'none';
-            document.getElementById('login-link').style.display = 'none';
-            document.getElementById('user-avatar').style.display = 'block';
+        // Agar foydalanuvchi tizimga kirgan bo'lsa
+        const username = localStorage.getItem('username');
+
+        if (username) {
+            // "Kirish" va "Ro'yxatdan o'tish" bo'limlarini yashirish
+            document.getElementById('loginLink').style.display = 'none';
+            document.getElementById('registerLink').style.display = 'none';
+            
+            // Foydalanuvchi avatarini ko'rsatish
+            document.getElementById('userAvatar').style.display = 'inline';
         }
     </script>
 </body>
