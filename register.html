@@ -4,23 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ro'yxatdan O'tish</title>
-    <script src="register.js" defer></script>
 </head>
 <body>
     <h2>Ro'yxatdan O'tish</h2>
+
+    <!-- Ro'yxatdan o'tish formasi -->
     <form id="registerForm">
-        <label for="username">Ism:</label>
-        <input type="text" id="username" required><br>
+        <label for="username">Foydalanuvchi nomi:</label>
+        <input type="text" id="username" name="username" required><br><br>
 
         <label for="password">Parol:</label>
-        <input type="password" id="password" required><br>
+        <input type="password" id="password" name="password" required><br><br>
 
-        <label for="avatar">Avatar rasmi:</label>
-        <input type="file" id="avatar" accept="image/*" required><br>
+        <label for="avatar">Avatar (rasm yuklash):</label>
+        <input type="file" id="avatar" name="avatar"><br><br>
 
         <button type="submit">Ro'yxatdan O'tish</button>
     </form>
-    
-    <p>Allaqachon ro'yxatdan o'tganmisiz? <a href="login.html" id="loginLink">Kirishni bosing</a></p> <!-- Kirish sahifasiga yo'naltirish -->
+
+    <!-- Allaqachon ro'yxatdan o'tgan bo'lsangiz, login qilish -->
+    <p>Allaqachon ro'yxatdan o'tganmisiz? <a href="login.html">Kirishni bosing.</a></p>
+
+    <!-- JavaScript kiritish -->
+    <script>
+        // Ro'yxatdan o'tish formasi yuborishdan oldin tekshirish
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Formada kiritilgan ma'lumotlar
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const avatar = document.getElementById('avatar').files[0];
+
+            // Foydalanuvchi ma'lumotlarini serverga yuborish (backendga)
+            fetch('https://your-backend-url/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username,
+                    password,
+                    avatar: avatar ? avatar.name : null // Avatar nomini faqat bo'lsa yuborish
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Ro\'yxatdan o\'tish muvaffaqiyatli!');
+                    window.location.href = 'login.html'; // Kirish sahifasiga yo'naltirish
+                } else {
+                    alert('Ro\'yxatdan o\'tishda xatolik yuz berdi.');
+                }
+            })
+            .catch(error => {
+                console.error('Xato:', error);
+                alert('Serverga so\'rov yuborishda xato yuz berdi.');
+            });
+        });
+    </script>
 </body>
 </html>
