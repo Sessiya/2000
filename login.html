@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirish</title>
-    <script src="login.js" defer></script>
 </head>
 <body>
     <h2>Kirish</h2>
     <form id="loginForm">
-        <label for="login">Login:</label>
-        <input type="text" id="login" required><br>
+        <label for="username">Ism:</label>
+        <input type="text" id="username" required><br>
 
         <label for="password">Parol:</label>
         <input type="password" id="password" required><br>
 
         <button type="submit">Kirish</button>
     </form>
+
+    <p>Ro'yxatdan o'tmaganmisiz? <a href="register.html">Ro'yxatdan o'ting</a></p>
+
+    <script>
+        // Kirish formasi
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Formani avtomatik yuborilishidan to'xtatish
+
+            // Ro'yxatdan o'tgan foydalanuvchi ma'lumotlarini tekshirish
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const storedUsername = localStorage.getItem('username');
+            const storedPassword = localStorage.getItem('password');
+
+            if (username === storedUsername && password === storedPassword) {
+                alert('Kirish muvaffaqiyatli!');
+                // Kirish muvaffaqiyatli bo'lsa, boshqa sahifaga yo'naltirish mumkin
+                window.location.href = 'home.html'; // Home sahifasiga yo'naltirish
+            } else {
+                alert('Ism yoki parol xato');
+            }
+        });
+    </script>
 </body>
 </html>
