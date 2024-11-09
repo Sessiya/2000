@@ -1,217 +1,142 @@
-/* Global styles */
+/* Umumiy uslub */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
+a {
+    color: #4CAF50; /* Yashil rang */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header uslubi */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #4CAF50; /* Yashil border */
 }
 
 header .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 32px;
+    color: #4CAF50; /* Yashil rang */
+    font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-nav {
-    background-color: #444;
-    padding: 10px 0;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
+    float: right;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
-    text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Avatar va foydalanuvchi nomi */
+#userAvatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+#userAvatar span {
+    margin-right: 10px;
+    color: white;
     font-weight: bold;
+    font-size: 16px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+#userAvatar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
-/* Hero Section */
+/* Hero bo'limi */
 .hero {
-    background-color: #4CAF50;
-    color: white;
+    padding-top: 80px; /* Header ustidan bo'sh joy */
     text-align: center;
-    padding: 100px 20px;
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    margin-top: 50px;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 20px;
+    color: #4CAF50; /* Yashil rang */
 }
 
 .hero p {
-    font-size: 22px;
-    margin-bottom: 30px;
-}
-
-.hero .btn {
-    background-color: #ffcc00;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-/* Form Section */
-.form-section {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-section h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.form-section label {
-    display: block;
-    margin-bottom: 8px;
     font-size: 18px;
     color: #555;
 }
 
-.form-section input[type="text"],
-.form-section input[type="password"],
-.form-section input[type="file"] {
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Boshqa form elementlari */
+input[type="text"], input[type="password"], input[type="file"], button {
     width: 100%;
     padding: 12px;
-    margin: 12px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.form-section button {
-    width: 100%;
-    padding: 14px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.form-section button:hover {
-    background-color: #45a049;
-}
-
-/* Course Section */
-.courses {
-    background-color: #fff;
-    padding: 40px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.course-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 270px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.course-card h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.course-card p {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.course-card a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.course-card a:hover {
-    color: #ffcc00;
-}
-
-/* Miscellaneous */
-input:focus, button:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #4CAF50;
-}
-/* Global matnlar uchun yashil rang */
-h1, label, p, .course-card h3, .hero p, .form-section h2 {
-    color: #4CAF50; /* Yashil rang */
-}
-
-/* Barcha HTML fayllarga yashil border qo'shish */
-body, header, footer, .form-section, .course-card {
+    margin: 8px 0;
     border: 2px solid #4CAF50; /* Yashil border */
-}
-/* Avatarning yuqori o'ng burchakda ko'rinishini sozlash */
-#userAvatar {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-#userAvatar a {
-    display: flex;
-    align-items: center;
+button {
+    background-color: #4CAF50; /* Yashil fon */
+    color: white;
+    cursor: pointer;
 }
 
-#userAvatar img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 5px;
+button:hover {
+    background-color: #45a049; /* Yashil rangni biroz o'zgartirish hoverda */
+}
+
+/* Formni joylashtirish */
+.form-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Yashil border */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 80px;
+}
+
+/* Footer */
+footer p {
+    font-size: 14px;
 }
