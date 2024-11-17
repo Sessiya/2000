@@ -8,8 +8,8 @@ const tickets = [
     answer: "Furatsilin - antibakterial va antiseptik dori. FD: bakteriyalarning DNK sintezini buzadi. FK: shilliq qavatlar va yaralar yuzasida to‘g‘ridan-to‘g‘ri qo‘llaniladi. Ko'rsatmalar: yaralar, infeksiyalar. Qarshi ko'rsatmalar: yuqori sezuvchanlik. Nojo'ya ta'sirlar: qichishish, allergik reaktsiyalar. O‘zaro ta’sir kam uchraydi, chunki asosan mahalliy qo‘llaniladi. Dozalash: 1:5000 nisbatta eritma. 1gr furatsilinga 5 litr suv. 1 tabletka (20mg) maydalab + 1 litr iliq suv." 
   },
   { 
-    question: "Delagilning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Delagil (xlorokin) - malariyaga qarshi va yallig'lanishga qarshi dori. FD: hujayra ichidagi parazitlarni yo'q qiladi. FK: jigarda metabolizmga uchraydi, siydik orqali chiqariladi. Ko'rsatmalar: malariya, reumatoid artrit. Qarshi ko'rsatmalar: jigar, buyrak kasalliklari, epilepsiya. Nojo'ya ta'sirlar: oshqozon-ichak muammolari, bosh og‘rig‘i, allergik reaktsiyalar. Dozalash: kuniga 1-2 tabletka." 
+    question: "Delagil (xlorokin) KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
+    answer: "Delagil (xlorokin) - malariyaga qarshi va yallig'lanishga qarshi dori. FD: hujayra ichidagi parazitlarni yo'q qiladi. FK: jigarda metabolizmga uchraydi, siydik orqali chiqariladi. Yarim chiqarilish davri: 30-60 soat. Ko'rsatmalar: malariya, reumatoid artrit. Qarshi ko'rsatmalar: jigar, buyrak kasalliklari, epilepsiya. Nojo'ya ta'sirlar: oshqozon-ichak muammolari, bosh og‘rig‘i, allergik reaktsiyalar. Dozalash: kuniga 1-2 tabletka."
   },
   { 
     question: "Askorbin kislotaning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
