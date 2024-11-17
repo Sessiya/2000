@@ -66,7 +66,7 @@ function displayTicket(ticket) {
   document.getElementById("show-answer").textContent = "Javobni Ko'rish";
 
   const saveButton = document.createElement("button");
-  saveButton.textContent = "♻️ Saqlash";
+  saveButton.textContent = "♻️";
   saveButton.classList.add("save-question-btn");
   saveButton.onclick = () => saveQuestion(ticket);
   document.getElementById("ticket-container").appendChild(saveButton);
