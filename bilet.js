@@ -21,12 +21,12 @@ const tickets = [
   },
   { 
     question: "Doksatsiklin uchun retsept yozing", 
-    answer: "Doksatsiklin - tetratsiklinlar guruhiga mansub antibiotik bo'lib, asosan bakterial infeksiyalarni davolashda ishlatiladi. U o'simliklarning, hayvonlarning va insonlarning mikroorganizmlariga qarshi samarali. Doksatsiklinning ko'rsatmalari: infeksiyalar, masalan, pnevmoniya, malarial, tüberkuloz, gonoreya, chlamidiyalar va boshqa bakterial kasalliklar. Qarshi ko'rsatmalar: yuqori sezuvchanlik, jigar kasalliklari, homiladorlik va emizish. Nojo'ya ta'siri: oshqozon-ichak tizimi buzilishlari, bosh og'rig'i, teri reaktsiyalari. Dozalash rejimi: odatda 100 mg boshlang'ich dozada, keyin kundalik 50-100 mg bo'lib, davolash davomida bemorning holatiga qarab sozlanadi. Rp.: Tab. Doksatsiklini (Doxycycline) 100 mg N. 10 D.S. 1 tabletka kuniga 1 marta ovqatdan keyin"
+    answer: "Doksatsiklin - tetratsiklinlar guruhiga mansub antibiotik bo'lib, asosan bakterial infeksiyalarni davolashda ishlatiladi. U o'simliklarning, hayvonlarning va insonlarning mikroorganizmlariga qarshi samarali. Doksatsiklinning ko'rsatmalari: infeksiyalar, masalan, pnevmoniya, malarial, tüberkuloz, gonoreya, chlamidiyalar va boshqa bakterial kasalliklar. Qarshi ko'rsatmalar: yuqori sezuvchanlik, jigar kasalliklari, homiladorlik va emizish. Nojo'ya ta'siri: oshqozon-ichak tizimi buzilishlari, bosh og'rig'i, teri reaktsiyalari. Dozalash rejimi: odatda 100 mg boshlang'ich dozada, keyin kundalik 50-100 mg bo'lib, davolash davomida bemorning holatiga qarab sozlanadi. Rp.: Tab. Doxycyclini (Doxycyclinum) 0.1 N. 30 D.S. 1 tabletka kuniga 1 marta ovqatdan keyin"
   },
 
   { 
     question: "Siprofloksatsin uchun retsept yozing", 
-    answer: "Siprofloksatsin - florokinolonlar guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda ishlatiladi. U asosan ko'krak, siydik yo'llari va oshqozon-ichak traktining infeksiyalarida samarali. Ko'rsatmalar: siydik yo'llari infektsiyalari, respirator tizim infektsiyalari, teri va yumshoq to'qimalar infektsiyalari. Qarshi ko'rsatmalar: allergik reaksiyalar, epilepsiya, jigar va buyrak yetishmovchiligi. Nojo'ya ta'siri: oshqozon buzilishlari, bosh og'rig'i, teri reaksiyalari, allergiya. Dozasi: odatda 250-500 mg har 12 soatda, infeksiyaning turi va jiddiyligiga qarab. Rp.: Tab. Siprofloksatsini (Ciprofloxacin) 500 mg N. 10 D.S. 1 tabletka har 12 soatda"
+    answer: "Siprofloksatsin - floroxinolonlar guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda ishlatiladi. U asosan ko'krak, siydik yo'llari va oshqozon-ichak traktining infeksiyalarida samarali. Ko'rsatmalar: siydik yo'llari infektsiyalari, respirator tizim infektsiyalari, teri va yumshoq to'qimalar infektsiyalari. Qarshi ko'rsatmalar: allergik reaksiyalar, epilepsiya, jigar va buyrak yetishmovchiligi. Nojo'ya ta'siri: oshqozon buzilishlari, bosh og'rig'i, teri reaksiyalari, allergiya. Dozasi: odatda 250-500 mg har 12 soatda, infeksiyaning turi va jiddiyligiga qarab. Rp.: Tab. Siprofloksatsini (Ciprofloxacin) 500 mg N. 10 D.S. 1 tabletka har 12 soatda"
   },
 
   { 
@@ -36,7 +36,7 @@ const tickets = [
 
   { 
     question: "Polimiksin uchun retsept yozing", 
-    answer: "Polimiksin - antibakterial dorilar guruhiga kiradi, asosan gram-misol bakteriyalarni o'ldirishda qo'llaniladi. U ko'pincha og'ir infeksiyalarni davolashda, ayniqsa shifoxona sharoitida qo'llanadi. Ko'rsatmalar: respirator tizim infektsiyalari, siydik yo'llari infektsiyalari, bakterial meningit, boshqa og'ir infektsiyalar. Qarshi ko'rsatmalar: polimiksin guruhiga sezuvchanlik, buyrak va jigar yetishmovchiligi. Nojo'ya ta'siri: asosan buyrak faoliyati buzilishlari va nevrologik reaktsiyalar, ko'pincha ko'rish qobiliyati yoki eshitishdagi o'zgarishlar. Dozasi infeksiyaning jiddiyligiga qarab belgilangan bo'lib, odatda infuzion yoki intramuskulyar yo'l bilan beriladi. Rp.: Sol. Polimiksini (Polymyxin B) 50000 ME N. 5 D.S. 1 ml miqdorini muskul orasiga"
+    answer: "Polimiksin - antibakterial dorilar guruhiga kiradi, asosan gram-manfiy bakteriyalarni o'ldirishda qo'llaniladi. U ko'pincha og'ir infeksiyalarni davolashda, ayniqsa shifoxona sharoitida qo'llanadi. Ko'rsatmalar: respirator tizim infektsiyalari, siydik yo'llari infektsiyalari, bakterial meningit, boshqa og'ir infektsiyalar. Qarshi ko'rsatmalar: polimiksin guruhiga sezuvchanlik, buyrak va jigar yetishmovchiligi. Nojo'ya ta'siri: asosan buyrak faoliyati buzilishlari va nevrologik reaktsiyalar, ko'pincha ko'rish qobiliyati yoki eshitishdagi o'zgarishlar. Dozasi infeksiyaning jiddiyligiga qarab belgilangan bo'lib, odatda infuzion yoki intramuskulyar yo'l bilan beriladi. Rp.: Sol. Polimiksini (Polymyxin B) 50000 ME N. 5 D.S. 1 ml miqdorini muskul orasiga"
   },
 
   { 
