@@ -66,11 +66,11 @@ function toggleDarkMode() {
   if (body.classList.contains("dark-mode")) {
     body.style.backgroundColor = "#333333";
     body.style.color = "#ffffff";
-    toggleButton.textContent = "Kunduzgi rejim";
+    toggleButton.textContent = "☀️";
   } else {
     body.style.backgroundColor = "#ffffff";
     body.style.color = "#333333";
-    toggleButton.textContent = "Tungi rejim";
+    toggleButton.textContent = "🌙";
   }
 }
 
