@@ -113,21 +113,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-#dark-mode-toggle {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  background-color: transparent;
-  color: #333333;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
 
-#dark-mode-toggle:hover {
-  transform: scale(1.2);
-}
 
 body.dark-mode #dark-mode-toggle {
   color: #ffffff;
@@ -151,7 +137,31 @@ li {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px)
+    /* Tugma uslubi */
+    #dark-mode-toggle {
+      position: fixed; /* Sahifada doimiy pozitsiyada qoladi */
+      bottom: 20px; /* Pastki chetga 20px masofada joylashadi */
+      left: 20px; /* Chap chetga 20px masofada joylashadi */
+      font-size: 18px; /* Belgining o'lchami */
+      cursor: pointer; /* Kursor qo'l shaklida bo'ladi */
+      background: none; /* Tugma fonini olib tashlaydi */
+      color: #333; /* Belgining rangi */
+      border: none; /* Chegara yo'q */
+      padding: 0; /* Tugma ichidagi bo'sh joyni olib tashlaydi */
+      box-shadow: none; /* Tugmani soya effekti yo‘q */
+    }
+
+    /* Tugma ustiga kursor kelganda */
+    #dark-mode-toggle:hover {
+      color: #555; /* Belgining rangi o'zgaradi */
+    }
+
+    /* Fokuslanganda (klaviatura orqali) */
+    #dark-mode-toggle:focus {
+      outline: none; /* Tugma fokus chizig‘ini olib tashlaydi */
+    }
+{
   main {
     width: 60%;
   }
