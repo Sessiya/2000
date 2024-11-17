@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qo'shimcha Savollar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Qo'shimcha Savollar</h1>
+    <button id="dark-mode-toggle">☀️</button> <!-- Tungi/Kunduzgi rejim tugmasi -->
+  </header>
+  <main>
+    <button onclick="loadQuestions(10)">10 Savol</button>
+    <button onclick="loadQuestions(20)">20 Savol</button>
+    <button onclick="loadQuestions(30)">30 Savol</button>
+    <div id="questions-container"></div>
+  </main>
+
+  <script src="script.js"></script> <!-- asosiy script -->
+  <script>
+    // Tungi/Kunduzgi rejimni qo‘shish
+    document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+      const body = document.body;
+      const toggleButton = document.getElementById("dark-mode-toggle");
+
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        toggleButton.textContent = "🌙";  // Tungi rejim belgilari
+      } else {
+        toggleButton.textContent = "☀️";  // Kunduzgi rejim belgilari
+      }
+    });
+
+    // Qo'shimcha sahifada savollarni yuklash funksiyasi
+    function loadQuestions(num) {
+      // Savollarni DOMga joylash
+      const container = document.getElementById("questions-container");
+      container.innerHTML = ''; // Eski savollarni tozalash
+
+      // Masalan, 10 savolni ko'rsatish
+      const questions = tickets.slice(0, num);  // tickets - bilet.json'dan olingan array
+      questions.forEach(ticket => {
+        const div = document.createElement('div');
+        div.classList.add('question-item');
+        div.innerHTML = `
+          <p><strong>${ticket.question}</strong></p>
+          <button onclick="showAnswer('${ticket.question}')">Javobni Ko'rish</button>
+          <p id="answer-${ticket.question}" hidden>${ticket.answer}</p>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Javobni ko'rsatish
+    function showAnswer(question) {
+      const answerElement = document.getElementById(`answer-${question}`);
+      if (answerElement) {
+        answerElement.hidden = !answerElement.hidden;
+      }
+    }
+  </script>
+</body>
+</html>
