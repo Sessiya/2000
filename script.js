@@ -9,7 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  showRandomTicket(); // Boshlang'ich biletni ko'rsatish
+  // Hammasini ko'rsatish
+  if (window.location.pathname.includes("all-tickets.html")) {
+    showAllTickets(); // Barcha biletlarni ko'rsatish
+    showSavedQuestions(); // Saqlangan savollarni ko'rsatish
+  } else {
+    showRandomTicket(); // Boshlang'ich biletni ko'rsatish
+  }
 
   // Tugmalar uchun event listenerlar
   document.getElementById("random-mode").addEventListener("click", () => {
@@ -105,6 +111,7 @@ function showAllTickets() {
       <strong>${ticket.question}</strong>
       <button id="toggle-answer-${index}" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
       <p id="answer-${index}" hidden>${ticket.answer}</p>
+      <button class="save-question-btn" onclick="saveQuestion(ticket)">♻️ Saqlash</button>
     `;
     allTicketsContainer.appendChild(li);
   });
