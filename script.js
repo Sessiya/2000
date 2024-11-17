@@ -77,9 +77,9 @@ function toggleDarkMode() {
   body.classList.toggle("dark-mode");
 
   if (body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "🌙";  // Tungi rejim belgilari
+    toggleButton.textContent = "🌙"; // Tungi rejim belgisi
   } else {
-    toggleButton.textContent = "☀️";  // Kunduzgi rejim belgilari
+    toggleButton.textContent = "☀️"; // Kunduzgi rejim belgisi
   }
 }
 
