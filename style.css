@@ -1,22 +1,3 @@
-/* Tungi rejim uchun qo‘shimcha o'zgartirishlar */
-body.dark-mode {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-body.dark-mode header {
-  background-color: #444444;
-}
-
-body.dark-mode button, body.dark-mode nav button {
-  background-color: #555555;
-  color: #ffffff;
-}
-
-body.dark-mode button:hover, body.dark-mode nav button:hover {
-  background-color: #444444;
-}
-
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
@@ -30,6 +11,11 @@ body {
   background-color: #ffffff;
   color: #333333;
   transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
 }
 
 header {
