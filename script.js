@@ -2,6 +2,12 @@ let currentIndex = 0;
 let randomMode = true;
 let savedTickets = [];
 
+const tickets = [
+  { question: "Savol 1?", answer: "Javob 1" },
+  { question: "Savol 2?", answer: "Javob 2" },
+  { question: "Savol 3?", answer: "Javob 3" },
+];
+
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
@@ -43,8 +49,6 @@ function showPrevTicket() {
 
 function displayTicket(ticket) {
   const ticketContainer = document.getElementById("ticket-container");
-  const allTicketsContainer = document.getElementById("all-tickets");
-  allTicketsContainer.hidden = true; // Hide the all tickets list
 
   document.getElementById("question").textContent = ticket.question;
   document.getElementById("answer").textContent = ticket.answer;
