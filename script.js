@@ -61,16 +61,18 @@ function toggleMainAnswer() {
 
 function toggleDarkMode() {
   const body = document.body;
-  body.classList.toggle("dark-mode");
   const toggleButton = document.getElementById("dark-mode-toggle");
+
+  body.classList.toggle("dark-mode");
+
   if (body.classList.contains("dark-mode")) {
     body.style.backgroundColor = "#333333";
     body.style.color = "#ffffff";
-    toggleButton.textContent = "Kunduzgi rejim";
+    toggleButton.textContent = "🌙";  // Tungi rejim belgilari
   } else {
     body.style.backgroundColor = "#ffffff";
     body.style.color = "#333333";
-    toggleButton.textContent = "Tungi rejim";
+    toggleButton.textContent = "☀️";  // Kunduzgi rejim belgilari
   }
 }
 
