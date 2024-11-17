@@ -62,9 +62,9 @@ const tickets = [
     question: "Seftriaksonning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
     answer: "Seftriakson - sefalosporinlar guruhiga mansub, gram-manfiy bakteriyalarni davolashda ishlatiladi. FD: bakterial hujayra devorini buzadi, mikroorganizmlarni o'ldiradi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: infeksiyalar (pnevmoniya, meninjit, yaralar). Qarshi ko'rsatmalar: allergiya, homiladorlik, yangi tug'ilgan chaqaloqlar. O'zaro ta'sirlar: aminoglikozidlar bilan nephrotoksiklik riskini oshirishi mumkin. Nojo'ya ta'sirlar: diareya, qorin og'rig'i, allergik reaktsiyalar. Dozasi: 1-2 g, kuniga bir marta yoki har 12 soatda."
   },
-  { 
+  {
     question: "Siprofloksatsinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Siprofloksatsin - florokinolon antibiotigi. FD: DNK gyrase enzimlarini inhibe qilib, bakterial DNK sintezini to'xtatadi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: respirator, siydik yo'llari infeksiyalari, gonoreya. Qarshi ko'rsatmalar: buyrak yetishmovchiligi, allergiya. Nojo'ya ta'sirlar: oshqozon-ichak tizimi buzilishi, bosh og'rig'i, allergiya. Dozasi: 250-500 mg, har 12 soatda." 
+    answer: "Siprofloksatsin - floroxinolon antibiotigi. FD: DNK gyrase enzimlarini inhibe qilib, bakterial DNK sintezini to'xtatadi. FK: buyrak orqali chiqariladi. Yarim chiqarilish davri: 4-5 soat. Ko'rsatmalar: respirator, siydik yo'llari infeksiyalari, gonoreya. Qarshi ko'rsatmalar: buyrak yetishmovchiligi, allergiya. Nojo'ya ta'sirlar: oshqozon-ichak tizimi buzilishi, bosh og'rig'i, allergiya. Dozasi: 250-500 mg, har 12 soatda."
   },
   { 
     question: "Ambroksolning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
