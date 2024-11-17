@@ -58,9 +58,9 @@ const tickets = [
     question: "Retinol asetat uchun retsept yozing", 
     answer: "Retinol asetat - vitamin A ning sintetik shakli bo'lib, asosan teri va ko'rish tizimiga ijobiy ta'sir ko'rsatadi. Ko'rsatmalar: teri kasalliklari, akne, psoriasis, teri yallig'lanishlari va ko'rishdagi o'zgarishlar. Qarshi ko'rsatmalar: teri yuqori sezuvchanligi, homiladorlik va emizish davri, yuqori vitamin A miqdori. Nojo'ya ta'siri: asosan teri reaksiyalari (qichishish, qizarish), bosh og'rig'i va boshqalar. Dozasi: odatda 1-2 mg kuniga, lekin individual ehtiyojlarga qarab oshirilishi mumkin. Rp.: Tab. Retinoli acetatis (Retinoli acetas) 5000 TB N. 20 D.S. 1 tabletka kuniga 1 marta"
   },
-  { 
+  {
     question: "Seftriaksonning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Seftriakson - beta-laktam antibiotigi, gram-misol bakteriyalarni davolashda ishlatiladi. FD: bakterial hujayra devorini buzadi, mikroorganizmlarni o'ldiradi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: infeksiyalar (pnevmoniya, meninjit, yaralar). Qarshi ko'rsatmalar: allergiya, homiladorlik, yangi tug'ilgan chaqaloqlar. O'zaro ta'sirlar: aminoglikozidlar bilan nephrotoksiklik riskini oshirishi mumkin. Nojo'ya ta'sirlar: diareya, qorin og'rig'i, allergik reaktsiyalar. Dozasi: 1-2 g, kuniga bir marta yoki har 12 soatda." 
+    answer: "Seftriakson - beta-laktam antibiotigi, gram-manfiy bakteriyalarni davolashda ishlatiladi. FD: bakterial hujayra devorini buzadi, mikroorganizmlarni o'ldiradi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: infeksiyalar (pnevmoniya, meninjit, yaralar). Qarshi ko'rsatmalar: allergiya, homiladorlik, yangi tug'ilgan chaqaloqlar. O'zaro ta'sirlar: aminoglikozidlar bilan nephrotoksiklik riskini oshirishi mumkin. Nojo'ya ta'sirlar: diareya, qorin og'rig'i, allergik reaktsiyalar. Dozasi: 1-2 g, kuniga bir marta yoki har 12 soatda."
   },
   { 
     question: "Siprofloksatsinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
