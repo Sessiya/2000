@@ -220,7 +220,7 @@ const tickets = [
   },
   { 
     question: "Meloksikam uchun retsept yozing", 
-    answer: "Meloksikam - nonsteroid yallig'lanishga qarshi dori (NSAID), og'riqni kamaytiradi va yallig'lanishni bartaraf etadi. Ko'rsatmalar: artrit, osteoartrit, revmatoid artrit. Qarshi ko'rsatmalar: oshqozon yarasi, jigar va buyrak kasalliklari. Nojo'ya ta'siri: bosh og'rig'i, oshqozon-ichak buzilishlari, allergik reaktsiyalar. Dozasi: odatda 7.5-15 mg, kuniga bir marta. Rp.: Meloksikam (Mobic) 7.5 mg N. 10 D.S. 1 tabletka kuniga bir marta"
+    answer: "Meloksikam - nonsteroid yallig'lanishga qarshi dori (NSAID), og'riqni kamaytiradi va yallig'lanishni bartaraf etadi. Ko'rsatmalar: artrit, osteoartrit, revmatoid artrit. Qarshi ko'rsatmalar: oshqozon yarasi, jigar va buyrak kasalliklari. Nojo'ya ta'siri: bosh og'rig'i, oshqozon-ichak buzilishlari, allergik reaktsiyalar. Dozasi: odatda 7.5-15 mg, kuniga bir marta. Rp.: Meloxicami (meloxicam) 7.5 mg N. 10 D.S. 1 tabletka kuniga bir marta"
   },
   {
     question: "Indometatsinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)",
