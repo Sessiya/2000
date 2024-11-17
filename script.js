@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("next-ticket").addEventListener("click", showNextTicket);
   document.getElementById("prev-ticket").addEventListener("click", showPrevTicket);
   document.getElementById("show-answer").addEventListener("click", toggleMainAnswer);
+  document.getElementById("all-mode").addEventListener("click", showAllTickets);
 
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 });
@@ -70,5 +71,34 @@ function toggleDarkMode() {
     body.style.backgroundColor = "#ffffff";
     body.style.color = "#333333";
     toggleButton.textContent = "Tungi rejim";
+  }
+}
+
+function showAllTickets() {
+  const allTicketsContainer = document.getElementById("all-tickets");
+  allTicketsContainer.innerHTML = "";
+  tickets.forEach((ticket, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <strong>${ticket.question}</strong>
+      <button id="toggle-answer-${index}" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
+      <p id="answer-${index}" hidden>${ticket.answer}</p>
+    `;
+    allTicketsContainer.appendChild(li);
+  });
+  allTicketsContainer.hidden = false;
+  document.getElementById("ticket-container").hidden = true;
+}
+
+function toggleAnswer(index) {
+  const answerElement = document.getElementById(`answer-${index}`);
+  const button = document.getElementById(`toggle-answer-${index}`);
+
+  if (answerElement.hidden) {
+    answerElement.hidden = false;
+    button.textContent = "Javobni Yashirish";
+  } else {
+    answerElement.hidden = true;
+    button.textContent = "Javobni Ko'rish";
   }
 }
