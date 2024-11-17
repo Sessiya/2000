@@ -20,10 +20,10 @@ button {
 }
 
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
 
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans MS fonti */
+  font-family: 'Times New Roman', serif; /* Times New Roman fonti */
   margin: 0;
   padding: 0;
   display: flex;
