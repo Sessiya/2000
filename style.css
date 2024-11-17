@@ -1,39 +1,123 @@
-/* Tungi rejim uchun CSS */
+/* Global sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tungi rejim uchun */
 body.dark-mode {
-  background-color: #121212; /* Tungi fon rangi */
-  color: #e0e0e0; /* Tungi yozuv uchun yorqin rang */
+  background-color: #121212;
+  color: #fff;
 }
 
-header.dark-mode {
-  background-color: #333; /* Tungi header fon rangi */
+header {
+  background-color: #3498db;
+  padding: 20px 0;
+  color: white;
 }
 
-footer.dark-mode {
-  background-color: #333; /* Tungi footer fon rangi */
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Kontent uchun kartalar */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.card.dark-mode {
+  background-color: #333;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2980b9;
 }
 
 button.dark-mode {
-  background-color: #555; /* Tungi tugma fon rangi */
-  color: #fff; /* Tungi tugma matn rangi */
+  background-color: #444;
 }
 
-/* Tungi rejimga o‘tishda boshqa ranglar uchun sozlamalar */
 button.dark-mode:hover {
-  background-color: #777; /* Hover effektida tugma fon rangi */
+  background-color: #555;
 }
 
-a.dark-mode {
-  color: #f0a500; /* Tungi havoladagi rang */
+.answer {
+  display: none;
+  margin-top: 15px;
 }
 
-a.dark-mode:hover {
-  color: #f0c000; /* Hover effektida havola rangi */
+button#show-answer:active + #answer {
+  display: block;
 }
 
-#ticket-container.dark-mode {
-  background-color: #222; /* Tungi savol qutisi fon rangi */
+/* Tungi rejimni almashtirish tugmasi */
+.dark-mode-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #3498db;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-#show-answer.dark-mode {
-  background-color: #444; /* Tungi "Javobni ko'rish" tugmasi fon rangi */
+.dark-mode-btn:hover {
+  color: #f39c12;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination .btn {
+  margin: 0 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
