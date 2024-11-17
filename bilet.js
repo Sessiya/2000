@@ -1,13 +1,10 @@
 const tickets = [
   { 
     question: "Ampitsillinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Ampitsillin - penitsillin guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda qo'llaniladi. 
-      FD: Ampitsillin bakteriyalarning hujayra devorini shakllantiruvchi peptidoglikan sintezini bloklaydi, natijada bakteriyalar yo‘q qilinadi (bakterisid ta’sir).
-
-FK: Minimal darajada jigar tomonidan metabolizmga uchraydi, asosan buyrak orqali o‘zgarmagan holda chiqariladi. Yarim chiqarilish davri ~1-1,5 soat. Koʻrsatmalar: respirator tizim, siydik yoʻllari, teri va boshqa bakterial infeksiyalar. Qarshi koʻrsatmalar: penitsillinga allergiya, jigar va buyrak yetishmovchiligi. Oʻzaro taʻsir:  Probenetsid(podagrada uric kislotani siydik orqali chiqarilishini taʼminlovchi dori): Penitsillinning chiqarilishini sekinlashtiradi, qonda darajasini oshiradi. Metotreksat(onkologiya dorisi): Zaharlanish xavfini oshiradi, chunki uning chiqarilishi susayadi. Nojoʻya taʻsirlar: allergik reaktsiyalar, oshqozon-ichak buzilishlari. Dozalash: 500 mg - 1 g, holatga qarab." 
+    answer: "Ampitsillin - penitsillin guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda qo'llaniladi. FD: Ampitsillin bakteriyalarning hujayra devorini shakllantiruvchi peptidoglikan sintezini bloklaydi, natijada bakteriyalar yo‘q qilinadi (bakterisid ta’sir). FK: Minimal darajada jigar tomonidan metabolizmga uchraydi, asosan buyrak orqali o‘zgarmagan holda chiqariladi. Yarim chiqarilish davri ~1-1,5 soat. Koʻrsatmalar: respirator tizim, siydik yoʻllari, teri va boshqa bakterial infeksiyalar. Qarshi koʻrsatmalar: penitsillinga allergiya, jigar va buyrak yetishmovchiligi. Oʻzaro taʻsir:  Probenetsid(podagrada uric kislotani siydik orqali chiqarilishini taʼminlovchi dori): Penitsillinning chiqarilishini sekinlashtiradi, qonda darajasini oshiradi. Metotreksat(onkologiya dorisi): Zaharlanish xavfini oshiradi, chunki uning chiqarilishi susayadi. Nojoʻya taʻsirlar: allergik reaktsiyalar, oshqozon-ichak buzilishlari. Dozalash: 500 mg - 1 g, holatga qarab." 
   },
   { 
-    question: "Furatsilinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
+    question: "Furatsilinning KF (koʻrsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
     answer: "Furatsilin - antibakterial va antiseptik dori. FD: bakteriyalarning DNK sintezini buzadi. FK: shilliq qavatlar va yaralar yuzasida to‘g‘ridan-to‘g‘ri qo‘llaniladi. Ko'rsatmalar: yaralar, infeksiyalar. Qarshi ko'rsatmalar: yuqori sezuvchanlik. Nojo'ya ta'sirlar: qichishish, allergik reaktsiyalar. O‘zaro ta’sir kam uchraydi, chunki asosan mahalliy qo‘llaniladi. Dozalash: 1:5000 nisbatta eritma. 1gr furatsilinga 5 litr suv. 1 tabletka (20mg) maydalab + 1 litr iliq suv." 
   },
   { 
