@@ -5,6 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biletlar</title>
   <link rel="stylesheet" href="style.css">
+  <style>/* Saqlash tugmasi uchun stil */
+#save-ticket {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#save-ticket:hover {
+  background-color: #45a049;
+}
+
+/* Saved tickets list */
+#saved-ticket-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#saved-ticket-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#saved-ticket-list button:hover {
+  background-color: #c0392b;
+}
+  </style>
 </head>
 <body>
   <header>
