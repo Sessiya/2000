@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biletlar - Qo'shimcha Sahifa</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Biletlar - Qo'shimcha Sahifa</h1>
+    <nav>
+      <button id="random-mode">Tasodifiy</button>
+      <button id="prev-ticket">Oldingi</button>
+      <button id="next-ticket">Keyingi</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="ticket-container">
+      <p id="question"></p>
+      <button id="show-answer">Javobni Ko'rish</button>
+      <p id="answer" hidden></p>
+    </div>
+
+    <div>
+      <button id="load-10">10 ta Savol</button>
+      <button id="load-20">20 ta Savol</button>
+      <button id="load-30">30 ta Savol</button>
+    </div>
+
+    <ul id="ticket-list"></ul>
+    <div id="page-buttons-container"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
