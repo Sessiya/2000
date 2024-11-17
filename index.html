@@ -1,62 +1,28 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asosiy Sahifa</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biletlarni Ko'rish</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">2000App</a>
-        </div>
-        <nav>
-            <ul>
-                <!-- Foydalanuvchi tizimga kirgan bo'lsa, "Kirish" va "Ro'yxatdan o'tish" bo'limlarini yashirish -->
-                <li id="loginLink"><a href="login.html">Kirish</a></li>
-                <li id="registerLink"><a href="register.html">Ro'yxatdan o'tish</a></li>
-                <li id="userAvatar" style="display: none;">
-                    <!-- Avatarni va foydalanuvchi nomini yuqori o'ng burchakda ko'rsatish -->
-                    <span id="userName"></span>
-                    <img id="avatarImage" src="" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%;">
-                </li>
-                <li id="logoutLink" style="display: none;"><a href="logout.html">Chiqish</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="hero">
-        <h1>2000App ga xush kelibsiz!</h1>
-        <p>Hisobingizga kiring yoki yangi hisob yarating.</p>
+  <header>
+    <h1>Biletlar</h1>
+    <nav>
+      <button id="random-mode">Random</button>
+      <button id="sequential-mode">Ketma-ket</button>
+      <button id="all-mode">Hammasi</button>
+    </nav>
+  </header>
+  <main>
+    <div id="ticket-container">
+      <p id="question"></p>
+      <button id="show-answer">Javobni Ko'rish</button>
+      <p id="answer" hidden></p>
     </div>
-
-    <footer>
-        <p>© 2024 2000App Barcha huquqlar himoyalangan.</p>
-    </footer>
-
-    <script>
-        // Agar foydalanuvchi tizimga kirgan bo'lsa
-        const loggedIn = localStorage.getItem('loggedIn');
-
-        if (loggedIn) {
-            // "Kirish" va "Ro'yxatdan o'tish" bo'limlarini yashirish
-            document.getElementById('loginLink').style.display = 'none';
-            document.getElementById('registerLink').style.display = 'none';
-
-            // Foydalanuvchi avatarini va "Chiqish" bo'limini ko'rsatish
-            document.getElementById('userAvatar').style.display = 'inline';
-            document.getElementById('logoutLink').style.display = 'inline';
-
-            // Foydalanuvchi nomi va avatarini ko'rsatish
-            const storedUsername = localStorage.getItem('username');
-            const storedAvatar = localStorage.getItem('avatar');
-            document.getElementById('userName').textContent = storedUsername;
-            document.getElementById('avatarImage').src = storedAvatar ? storedAvatar : 'default-avatar.png';
-        } else {
-            // Foydalanuvchi tizimga kirgan bo'lmasa, "Chiqish" bo'limini yashirish
-            document.getElementById('logoutLink').style.display = 'none';
-        }
-    </script>
+    <ul id="all-tickets" hidden></ul>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
