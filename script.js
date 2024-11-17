@@ -1,5 +1,6 @@
 let currentIndex = 0;
 let randomMode = true;
+let savedTickets = JSON.parse(localStorage.getItem("savedTickets")) || [];
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
@@ -21,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("all-mode").addEventListener("click", showAllTickets);
 
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
+
+  document.getElementById("saved-tickets").addEventListener("click", showSavedTickets);
+  document.getElementById("clear-saved-tickets").addEventListener("click", clearSavedTickets);
 });
 
 function showRandomTicket() {
@@ -44,6 +48,53 @@ function displayTicket(ticket) {
   document.getElementById("answer").textContent = ticket.answer;
   document.getElementById("answer").hidden = true;
   document.getElementById("show-answer").textContent = "Javobni Ko'rish";
+
+  // ♻️ belgisiga tugma qo'shish
+  const recycleButton = document.createElement("button");
+  recycleButton.innerHTML = "♻️";
+  recycleButton.classList.add("recycle-btn");
+  recycleButton.onclick = () => toggleSaveTicket(ticket);
+  document.getElementById("ticket-container").appendChild(recycleButton);
+}
+
+function toggleSaveTicket(ticket) {
+  // Saqlash va o'chirish funksiyasi
+  if (savedTickets.find(t => t.question === ticket.question)) {
+    savedTickets = savedTickets.filter(t => t.question !== ticket.question); // O'chirish
+    localStorage.setItem("savedTickets", JSON.stringify(savedTickets));
+    alert("Savol saqlanmasdan o'chirildi!");
+  } else {
+    savedTickets.push(ticket);
+    localStorage.setItem("savedTickets", JSON.stringify(savedTickets));
+    alert("Savol saqlandi!");
+  }
+}
+
+function showSavedTickets() {
+  const savedTicketsContainer = document.getElementById("saved-tickets-container");
+  savedTicketsContainer.innerHTML = "";
+  savedTickets.forEach(ticket => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <strong>${ticket.question}</strong>
+      <button onclick="removeSavedTicket('${ticket.question}')">🗑️</button>
+      <button onclick="displayTicket(ticket)">Ko'rish</button>
+    `;
+    savedTicketsContainer.appendChild(li);
+  });
+  savedTicketsContainer.hidden = false;
+}
+
+function removeSavedTicket(question) {
+  savedTickets = savedTickets.filter(t => t.question !== question);
+  localStorage.setItem("savedTickets", JSON.stringify(savedTickets));
+  showSavedTickets();
+}
+
+function clearSavedTickets() {
+  savedTickets = [];
+  localStorage.setItem("savedTickets", JSON.stringify(savedTickets));
+  showSavedTickets();
 }
 
 function toggleMainAnswer() {
@@ -66,41 +117,8 @@ function toggleDarkMode() {
   body.classList.toggle("dark-mode");
 
   if (body.classList.contains("dark-mode")) {
-    body.style.backgroundColor = "#333333";
-    body.style.color = "#ffffff";
     toggleButton.textContent = "🌙";  // Tungi rejim belgilari
   } else {
-    body.style.backgroundColor = "#ffffff";
-    body.style.color = "#333333";
     toggleButton.textContent = "☀️";  // Kunduzgi rejim belgilari
-  }
-}
-
-function showAllTickets() {
-  const allTicketsContainer = document.getElementById("all-tickets");
-  allTicketsContainer.innerHTML = "";
-  tickets.forEach((ticket, index) => {
-    const li = document.createElement("li");
-    li.innerHTML = `
-      <strong>${ticket.question}</strong>
-      <button id="toggle-answer-${index}" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
-      <p id="answer-${index}" hidden>${ticket.answer}</p>
-    `;
-    allTicketsContainer.appendChild(li);
-  });
-  allTicketsContainer.hidden = false;
-  document.getElementById("ticket-container").hidden = true;
-}
-
-function toggleAnswer(index) {
-  const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.getElementById(`toggle-answer-${index}`);
-
-  if (answerElement.hidden) {
-    answerElement.hidden = false;
-    button.textContent = "Javobni Yashirish";
-  } else {
-    answerElement.hidden = true;
-    button.textContent = "Javobni Ko'rish";
   }
 }
