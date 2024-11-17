@@ -60,7 +60,7 @@ const tickets = [
   },
   {
     question: "Seftriaksonning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Seftriakson - beta-laktam antibiotigi, gram-manfiy bakteriyalarni davolashda ishlatiladi. FD: bakterial hujayra devorini buzadi, mikroorganizmlarni o'ldiradi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: infeksiyalar (pnevmoniya, meninjit, yaralar). Qarshi ko'rsatmalar: allergiya, homiladorlik, yangi tug'ilgan chaqaloqlar. O'zaro ta'sirlar: aminoglikozidlar bilan nephrotoksiklik riskini oshirishi mumkin. Nojo'ya ta'sirlar: diareya, qorin og'rig'i, allergik reaktsiyalar. Dozasi: 1-2 g, kuniga bir marta yoki har 12 soatda."
+    answer: "Seftriakson - sefalosporinlar guruhiga mansub, gram-manfiy bakteriyalarni davolashda ishlatiladi. FD: bakterial hujayra devorini buzadi, mikroorganizmlarni o'ldiradi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: infeksiyalar (pnevmoniya, meninjit, yaralar). Qarshi ko'rsatmalar: allergiya, homiladorlik, yangi tug'ilgan chaqaloqlar. O'zaro ta'sirlar: aminoglikozidlar bilan nephrotoksiklik riskini oshirishi mumkin. Nojo'ya ta'sirlar: diareya, qorin og'rig'i, allergik reaktsiyalar. Dozasi: 1-2 g, kuniga bir marta yoki har 12 soatda."
   },
   { 
     question: "Siprofloksatsinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
