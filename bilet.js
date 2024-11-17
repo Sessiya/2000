@@ -70,9 +70,9 @@ const tickets = [
     question: "Ambroksolning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
     answer: "Ambroksol - mukolitik dori. FD: bronxial sekresiyalarni kamaytirish va yallig'lanishga qarshi ta'sir qiladi. FK: jigar orqali metabolizmga uchraydi. Ko'rsatmalar: bronxial infeksiyalar, astma. Qarshi ko'rsatmalar: birinchi trimestrda homiladorlik, allergiya. Nojo'ya ta'sirlar: oshqozon-ichak tizimi buzilishlari, teri reaktsiyalari. Dozasi: 30 mg, kuniga ikki marta."
   },
-  { 
+  {
     question: "Veroshpironning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Veroshpiron - diuretik (potensialni saqlovchi). FD: aldosteron antagonisti sifatida suyuqlik va elektrolit balansini tartibga soladi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: giperkaliemiya, yurak etishmovchiligi. Qarshi ko'rsatmalar: buyrak yoki jigar yetishmovchiligi. Nojo'ya ta'sirlar: giperkaliemiya, bosh aylanishi, qorin og'rig'i. Dozasi: 25-100 mg, kuniga bir marta." 
+    answer: "Veroshpiron - diuretik (potensialni saqlovchi). FD: aldosteron antagonisti sifatida suyuqlik va elektrolit balansini tartibga soladi. FK: buyrak orqali chiqariladi. Ko'rsatmalar: gipokalemiya, yurak etishmovchiligi. Qarshi ko'rsatmalar: buyrak yoki jigar yetishmovchiligi. Nojo'ya ta'sirlar: giperkaliemiya, bosh aylanishi, qorin og'rig'i. Dozasi: 25-100 mg, kuniga bir marta."
   },
   { 
     question: "Polimiksinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
