@@ -10,7 +10,7 @@ FK: Minimal darajada jigar tomonidan metabolizmga uchraydi, asosan buyrak orqali
   },
   { 
     question: "Furatsilinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Furatsilin - antibakterial va antiseptik dori. FD: bakteriyalarning DNK sintezini buzadi. FK: shilliq qavatlar va yaralar yuzasida to‘g‘ridan-to‘g‘ri qo‘llaniladi. Ko'rsatmalar: yaralar, infeksiyalar. Qarshi ko'rsatmalar: yuqori sezuvchanlik. Nojo'ya ta'sirlar: qichishish, allergik reaktsiyalar. Dozalash: infeksiyaning turiga qarab." 
+    answer: "Furatsilin - antibakterial va antiseptik dori. FD: bakteriyalarning DNK sintezini buzadi. FK: shilliq qavatlar va yaralar yuzasida to‘g‘ridan-to‘g‘ri qo‘llaniladi. Ko'rsatmalar: yaralar, infeksiyalar. Qarshi ko'rsatmalar: yuqori sezuvchanlik. Nojo'ya ta'sirlar: qichishish, allergik reaktsiyalar. O‘zaro ta’sir kam uchraydi, chunki asosan mahalliy qo‘llaniladi. Dozalash: 1:5000 nisbatta eritma. 1gr furatsilinga 5 litr suv. 1 tabletka (20mg) maydalab + 1 litr iliq suv." 
   },
   { 
     question: "Delagilning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
