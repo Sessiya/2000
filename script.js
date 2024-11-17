@@ -40,6 +40,12 @@ function showPrevTicket() {
 }
 
 function displayTicket(ticket) {
+  // Yangi savolni ko'rsatishdan oldin eski savolni yashirish
+  const ticketContainer = document.getElementById("ticket-container");
+  const allTicketsContainer = document.getElementById("all-tickets");
+  allTicketsContainer.hidden = true; // Ro'yxatni yashirish
+
+  // Savolni yangilash
   document.getElementById("question").textContent = ticket.question;
   document.getElementById("answer").textContent = ticket.answer;
   document.getElementById("answer").hidden = true;
