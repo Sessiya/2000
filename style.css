@@ -1,123 +1,67 @@
-/* Global sozlamalar */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
-body {
   background-color: #fff;
-  color: #333;
-  font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #000;
 }
 
-/* Tungi rejim uchun */
 body.dark-mode {
-  background-color: #121212;
+  background-color: #333;
   color: #fff;
 }
 
 header {
-  background-color: #3498db;
-  padding: 20px 0;
+  background-color: #4CAF50;
+  padding: 10px;
   color: white;
-}
-
-header .container {
-  max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
 }
 
-.title {
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-/* Kontent uchun kartalar */
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 600px;
-  margin: 40px auto;
-  text-align: center;
-}
-
-.card.dark-mode {
-  background-color: #333;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-}
-
-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
+header button, header a {
+  color: white;
+  background-color: #4CAF50;
   border: none;
-  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
 }
 
-button:hover {
-  background-color: #2980b9;
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
 }
 
-button.dark-mode {
-  background-color: #444;
-}
-
-button.dark-mode:hover {
-  background-color: #555;
-}
-
-.answer {
-  display: none;
-  margin-top: 15px;
-}
-
-button#show-answer:active + #answer {
-  display: block;
-}
-
-/* Tungi rejimni almashtirish tugmasi */
-.dark-mode-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: transparent;
-  color: #3498db;
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.dark-mode-btn:hover {
-  color: #f39c12;
-}
-
-/* Pagination */
-.pagination {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.pagination .btn {
-  margin: 0 10px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
+main {
   padding: 20px;
-  background-color: #3498db;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+#ticket-container button {
+  margin-left: 10px;
+}
+
+.save-question-btn, .delete-question-btn {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #4CAF50;
   color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.dark-mode-toggle {
   position: fixed;
-  width: 100%;
-  bottom: 0;
+  top: 10px;
+  right: 10px;
 }
