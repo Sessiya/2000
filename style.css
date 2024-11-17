@@ -1,4 +1,7 @@
-  
+button {
+  margin-top: 20px; /* Tugmani yuqoridan 20px pastga suradi */
+}
+
   #dark-mode-toggle:focus {
     outline: 2px dotted #007BFF; /* Fokus effekti uchun chiziq */
 }
