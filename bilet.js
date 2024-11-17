@@ -4,9 +4,7 @@ const tickets = [
     answer: "Ampitsillin - penitsillin guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda qo'llaniladi. 
       FD: Ampitsillin bakteriyalarning hujayra devorini shakllantiruvchi peptidoglikan sintezini bloklaydi, natijada bakteriyalar yo‘q qilinadi (bakterisid ta’sir).
 
-FK: Minimal darajada jigar tomonidan metabolizmga uchraydi, asosan buyrak orqali o‘zgarmagan holda chiqariladi. Yarim chiqarilish davri ~1-1,5 soat. Ko'rsatmalar: respirator tizim, siydik yo'llari, teri va boshqa bakterial infeksiyalar. Qarshi ko'rsatmalar: penitsillinga allergiya, jigar va buyrak yetishmovchiligi. O'zaro ta'sir: 
-  Probenetsid(podagrada uric kislotani siydik orqali chiqarilishini taʼminlovchi dori): Penitsillinning chiqarilishini sekinlashtiradi, qonda darajasini oshiradi.
- Metotreksat(onkologiya dorisi): Zaharlanish xavfini oshiradi, chunki uning chiqarilishi susayadi. Nojo'ya ta'sirlar: allergik reaktsiyalar, oshqozon-ichak buzilishlari. Dozalash: 500 mg - 1 g, holatga qarab." 
+FK: Minimal darajada jigar tomonidan metabolizmga uchraydi, asosan buyrak orqali o‘zgarmagan holda chiqariladi. Yarim chiqarilish davri ~1-1,5 soat. Koʻrsatmalar: respirator tizim, siydik yoʻllari, teri va boshqa bakterial infeksiyalar. Qarshi koʻrsatmalar: penitsillinga allergiya, jigar va buyrak yetishmovchiligi. Oʻzaro taʻsir:  Probenetsid(podagrada uric kislotani siydik orqali chiqarilishini taʼminlovchi dori): Penitsillinning chiqarilishini sekinlashtiradi, qonda darajasini oshiradi. Metotreksat(onkologiya dorisi): Zaharlanish xavfini oshiradi, chunki uning chiqarilishi susayadi. Nojoʻya taʻsirlar: allergik reaktsiyalar, oshqozon-ichak buzilishlari. Dozalash: 500 mg - 1 g, holatga qarab." 
   },
   { 
     question: "Furatsilinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
