@@ -1,90 +1,25 @@
 /* Tungi rejim uchun umumiy fon va matn ranglarini aniqlash */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-#ticket-container {
-  background-color: #1e1e1e; /* Tungi rejim foni */
-  color: #ffffff; /* Matn rangi */
-  border: 1px solid #333; /* Chegara rangi */
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Bilet savollar va javoblar uchun */
-#question, #answer {
-  background-color: #2c2c2c; /* Qorong'i fon */
-  color: #ffffff; /* Oq matn */
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #444;
-}
-
-/* Tungi rejimdagi tugmalar */
-button {
-  background-color: #333333;
-  color: #ffffff;
-  border: 1px solid #555;
-  border-radius: 5px;
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #444444;
-  border-color: #666;
-}
-
-button.save-question-btn {
-  margin-top: 10px;
-  background-color: #28a745; /* Yashil tugma */
-  color: #ffffff;
-}
-
-button.save-question-btn:hover {
-  background-color: #218838; /* Qorong'ilashgan yashil */
-}
-
-/* Tungi rejimda saqlangan savollar */
-#saved-questions-container {
-  background-color: #1e1e1e;
-  color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  border: 1px solid #333;
-}
-/* Global font style */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-
 body {
   font-family: 'Caveat', cursive;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  color: #333333;
+  background-color: #ffffff; /* Kunduzgi rejim foni */
+  color: #333333; /* Kunduzgi rejim matni */
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Tungi rejim */
 body.dark-mode {
-  background-color: #121212; /* Qorong'u fon */
-  color: #ffffff; /* Oq matn */
+  background-color: #121212; /* Tungi rejim foni */
+  color: #ffffff; /* Tungi rejim matni */
 }
 
-/* Global elements for dark mode */
+/* Har bir element uchun default o'rnatish */
 body.dark-mode * {
-  background-color: inherit;
+  background-color: transparent;
   color: inherit;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header styling */
+/* Header */
 header {
   width: 100%;
   display: flex;
@@ -95,55 +30,69 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header.dark-mode {
+body.dark-mode header {
   background-color: #1e1e1e;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-/* Navigation buttons */
-nav button {
-  margin: 0 5px;
-  padding: 10px 15px;
-  font-size: 18px;
-  cursor: pointer;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: transform 0.2s, background-color 0.3s;
-}
-
-nav button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-/* Main container */
-main {
-  width: 90%;
-  max-width: 600px;
-  margin: 20px auto;
-  text-align: center;
-}
-
+/* Ticket konteyneri */
 #ticket-container {
   border: 2px solid #007BFF;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
   background-color: #f9f9f9;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#ticket-container.dark-mode {
-  background-color: #333333;
+body.dark-mode #ticket-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #444;
 }
 
-/* Footer styling */
+/* Savollar va javoblar */
+#question, #answer {
+  background-color: #ffffff; /* Kunduzgi rejim */
+  color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+body.dark-mode #question, body.dark-mode #answer {
+  background-color: #2c2c2c; /* Tungi rejim */
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+/* Tugmalar */
+button {
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body.dark-mode button:hover {
+  background-color: #555;
+}
+
+/* Footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -152,30 +101,9 @@ footer {
   background-color: #333;
   color: white;
   text-align: right;
-  font-size: 16px;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #f0a500;
-}
-
-#dark-mode-toggle {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  font-size: 18px;
-  cursor: pointer;
-  background: none;
-  color: #333;
-  border: none;
-  padding: 0;
-}
-
-#dark-mode-toggle:hover {
-  color: #555;
+body.dark-mode footer {
+  background-color: #000;
+  color: #ddd;
 }
