@@ -5,6 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biletlar</title>
   <link rel="stylesheet" href="style.css">
+<style>
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+header nav button {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header nav button:hover {
+  background-color: #ddd;
+}
+
+#dark-mode-toggle {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+#ticket-container {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+#ticket-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#ticket-container button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#ticket-container button:hover {
+  background-color: #0056b3;
+}
+
+#all-tickets {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#all-tickets li {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#all-tickets li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header nav button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #ticket-container p {
+    font-size: 16px;
+  }
+
+  #ticket-container button {
+    font-size: 14px;
+  }
+}
+
+</style>
 </head>
 <body>
   <header>
