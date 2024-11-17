@@ -3,14 +3,12 @@ let currentIndex = 0;
 let randomMode = true;
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("bilet.txt")
-    .then(response => response.text())
+  // JSON faylni o'qib olish
+  fetch("bilet.json")
+    .then(response => response.json())
     .then(data => {
-      tickets = data.trim().split("\n").map(line => {
-        const [question, answer] = line.split("|");
-        return { question: question.trim(), answer: answer.trim() };
-      });
-      showRandomTicket();
+      tickets = data;
+      showRandomTicket(); // Random biletni ko'rsatish
     });
 
   document.getElementById("random-mode").addEventListener("click", () => {
