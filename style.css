@@ -1,3 +1,4 @@
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
 body {
@@ -12,6 +13,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Header */
 header {
   width: 100%;
   display: flex;
@@ -44,6 +46,7 @@ nav button:hover {
   transform: scale(1.05);
 }
 
+/* Main Content */
 main {
   width: 90%;
   max-width: 600px;
@@ -51,6 +54,7 @@ main {
   text-align: center;
 }
 
+/* Ticket Container */
 #ticket-container {
   border: 2px solid #007BFF;
   border-radius: 10px;
@@ -70,6 +74,7 @@ main {
   color: #555555;
 }
 
+/* Button Styling */
 button {
   padding: 10px 20px;
   font-size: 18px;
@@ -87,6 +92,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Dark Mode Toggle */
 #dark-mode-toggle {
   position: absolute;
   top: 10px;
@@ -107,6 +113,27 @@ body.dark-mode #dark-mode-toggle {
   color: #ffffff;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode #ticket-container {
+  background-color: #444444;
+  border-color: #ffffff;
+}
+
+body.dark-mode button {
+  background-color: #5a6268;
+  color: #ffffff;
+}
+
+body.dark-mode button:hover {
+  background-color: #6c757d;
+}
+
+/* All Tickets List */
 ul {
   list-style-type: none;
   padding: 0;
@@ -116,6 +143,7 @@ li {
   margin: 10px 0;
 }
 
+/* Media Queries for Responsiveness */
 @media (min-width: 768px) {
   header h1 {
     font-size: 28px;
