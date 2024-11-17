@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <strong>${ticket.question}</strong>
         <button onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
         <p id="answer-${index}" hidden>${ticket.answer}</p>
-        <button onclick="saveQuestion(${index})">♻️ Saqlash</button>
+        <button onclick="saveQuestion(${index})">♻️</button>
       `;
       allTicketsContainer.appendChild(li);
     });
