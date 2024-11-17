@@ -23,14 +23,14 @@ button {
 @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
 
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans MS fonti */
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white; /* White */
-  color: darkgray; /* Dark gray */
+  color: black; /* Black text color for day mode */
   transition: background-color 0.3s, color 0.3s;
 }
 
