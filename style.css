@@ -1,3 +1,61 @@
+/* Tungi rejim uchun umumiy fon va matn ranglarini aniqlash */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#ticket-container {
+  background-color: #1e1e1e; /* Tungi rejim foni */
+  color: #ffffff; /* Matn rangi */
+  border: 1px solid #333; /* Chegara rangi */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Bilet savollar va javoblar uchun */
+#question, #answer {
+  background-color: #2c2c2c; /* Qorong'i fon */
+  color: #ffffff; /* Oq matn */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+/* Tungi rejimdagi tugmalar */
+button {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #444444;
+  border-color: #666;
+}
+
+button.save-question-btn {
+  margin-top: 10px;
+  background-color: #28a745; /* Yashil tugma */
+  color: #ffffff;
+}
+
+button.save-question-btn:hover {
+  background-color: #218838; /* Qorong'ilashgan yashil */
+}
+
+/* Tungi rejimda saqlangan savollar */
+#saved-questions-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #333;
+}
 /* Global font style */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
