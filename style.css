@@ -1,3 +1,24 @@
+/* Tungi rejim */
+body.dark-mode {
+  background-color: #121212; /* Qorong'u fon */
+  color: #ffffff; /* Matn rangi oq */
+}
+
+/* Tungi rejimdagi dinamik elementlar */
+body.dark-mode strong {
+  color: #f1f1f1; /* Qorong'u rejimdagi kuchli matn */
+}
+
+body.dark-mode button {
+  background-color: #333; /* Tugma orqa foni */
+  color: #ffffff; /* Tugma matn rangi */
+  border: 1px solid #555; /* Tugma chegarasi */
+}
+
+body.dark-mode li {
+  background-color: #1e1e1e; /* Qorong'u element foni */
+  color: #ffffff; /* Element matn rangi */
+}
 footer {
   position: fixed;
   bottom: 0;
