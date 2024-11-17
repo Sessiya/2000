@@ -1,3 +1,18 @@
+  
+  #dark-mode-toggle:focus {
+    outline: 2px dotted #007BFF; /* Fokus effekti uchun chiziq */
+}
+#dark-mode-toggle:hover {
+    color: #007BFF; /* Hoverda matn rangi o'zgaradi */
+    text-decoration: none; /* Chiziq yo'qoladi */
+}
+  #dark-mode-toggle {
+    all: unset; /* Barcha tugma default xususiyatlarini o'chirish */
+    font-size: 16px; /* Matn hajmini sozlash */
+    color: inherit; /* Matn rangi umumiy dizayn rangiga moslashadi */
+    cursor: pointer; /* Bosish imkoniyatini ko'rsatish uchun kursor qo‘shiladi */
+    text-decoration: underline; /* Matnga chizilgan chiziq */
+  }
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
