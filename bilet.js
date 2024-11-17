@@ -1,7 +1,10 @@
 const tickets = [
   { 
     question: "Ampitsillinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Ampitsillin - penitsillin guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda qo'llaniladi. FD: mikroblarni o'ldirish orqali ta'sir qiladi. FK: asosan buyrak orqali chiqariladi. Ko'rsatmalar: respirator tizim, siydik yo'llari, teri va boshqa bakterial infeksiyalar. Qarshi ko'rsatmalar: penitsillinga allergiya, jigar va buyrak yetishmovchiligi. O'zaro ta'sir: metotreksat, probenetsid. Nojo'ya ta'sirlar: allergik reaktsiyalar, oshqozon-ichak buzilishlari. Dozalash: 500 mg - 1 g, holatga qarab." 
+    answer: "Ampitsillin - penitsillin guruhiga mansub antibiotik bo'lib, bakterial infeksiyalarni davolashda qo'llaniladi. 
+      FD: Ampitsillin bakteriyalarning hujayra devorini shakllantiruvchi peptidoglikan sintezini bloklaydi, natijada bakteriyalar yo‘q qilinadi (bakterisid ta’sir).
+
+FK: Minimal darajada jigar tomonidan metabolizmga uchraydi, asosan buyrak orqali o‘zgarmagan holda chiqariladi. Yarim chiqarilish davri ~1-1,5 soat. Ko'rsatmalar: respirator tizim, siydik yo'llari, teri va boshqa bakterial infeksiyalar. Qarshi ko'rsatmalar: penitsillinga allergiya, jigar va buyrak yetishmovchiligi. O'zaro ta'sir: metotreksat, probenetsid. Nojo'ya ta'sirlar: allergik reaktsiyalar, oshqozon-ichak buzilishlari. Dozalash: 500 mg - 1 g, holatga qarab." 
   },
   { 
     question: "Furatsilinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
