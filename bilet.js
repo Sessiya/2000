@@ -15,9 +15,9 @@ const tickets = [
     question: "Askorbin kislotaning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
     answer: "Askorbin kislota (Vitamin C) - antioksidant sifatida ishlatiladi. FD: immunitetni qo'llab-quvvatlaydi, temirni singdirishda yordam beradi. FK: suvda eriydi, siydik orqali chiqariladi. Yarim chiqarilish davri: 30-50 daqiqa. Ko'rsatmalar: vitamin C yetishmovchiligi, immunitetni kuchaytirish. Qarshi ko'rsatmalar: yuqori sezuvchanlik. Nojo'ya ta'sirlar: oshqozon bezovtaligi, yuqori dozada buyrak muammolari. Dozalash: kuniga 60-90 mg. O'zaro ta'sirlar: Temir preparatlari bilan birga qabul qilinganda, askorbin kislotasi temirni yaxshiroq singdirishga yordam beradi. Biroq, yuqori dozadagi askorbin kislota buyrakda to'planib, uning funktsiyasini buzishi mumkin. Boshqa dorilar bilan o'zaro ta'siri kam uchraydi."
   },
-  { 
+  {
     question: "Pirinzepinning KF (ko'rsatmalar va qarshi ko'rsatmalari, FD, FK, boshqa dorilar bilan o'zaro ta'siri, nojo'ya ta'siri va dozalash rejimi)", 
-    answer: "Pirinzepin - gastrit va oshqozon yarasi uchun ishlatiladi. FD: parasimpatik nerv impulslarini bloklaydi. FK: og'iz orqali qabul qilinadi, jigarda metabolizmga uchraydi. Ko'rsatmalar: gastrit, oshqozon-ichak kasalliklari. Qarshi ko'rsatmalar: jigar, buyrak muammolari. Nojo'ya ta'sirlar: oshqozon buzilishlari, qon bosimining pasayishi. Dozalash: kuniga 1-2 tabletka." 
+    answer: "Pirinzepin - gastrit va oshqozon yarasi uchun ishlatiladi. FD: parasimpatik nerv impulslarini bloklaydi, natijada oshqozon kislotasining ishlab chiqarilishi kamayadi. FK: og'iz orqali qabul qilinadi, jigarda metabolizmga uchraydi, buyrak orqali chiqariladi. Ko'rsatmalar: gastrit, oshqozon-ichak kasalliklari, oshqozon yarasi. Qarshi ko'rsatmalar: jigar va buyrak kasalliklari, yuqori sezuvchanlik. Nojo'ya ta'sirlar: oshqozon buzilishlari, qon bosimining pasayishi, ko'krak qafasida noqulaylik. Dozalash: kuniga 1-2 tabletka, holatga qarab. O'zaro ta'sirlar: Antikolinerjik dorilar bilan birga qo'llanilganda, pirinzepinning ta'siri kuchayishi mumkin. Antihipertensiv dorilar bilan qo'llanilganda qon bosimining keskin pasayishi ehtimoli bor."
   },
   { 
     question: "Doksatsiklin uchun retsept yozing", 
