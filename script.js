@@ -1,15 +1,13 @@
-let tickets = [];
 let currentIndex = 0;
 let randomMode = true;
 
 document.addEventListener("DOMContentLoaded", () => {
-  // JSON faylni o'qib olish
-  fetch("bilet.json")
-    .then(response => response.json())
-    .then(data => {
-      tickets = data;
-      showRandomTicket(); // Random biletni ko'rsatish
-    });
+  if (!tickets || tickets.length === 0) {
+    alert("Biletlar mavjud emas!");
+    return;
+  }
+
+  showRandomTicket();
 
   document.getElementById("random-mode").addEventListener("click", () => {
     randomMode = true;
