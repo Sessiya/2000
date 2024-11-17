@@ -1,15 +1,15 @@
 // Saqlangan savollarni olish
-let savedQuestions = JSON.parse(localStorage.getItem('savedQuestions')) || []; // Local storage'dan saqlangan savollarni olish
+let savedQuestions = JSON.parse(localStorage.getItem('savedQuestions')) || [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  showSavedQuestions(); // Sahifa yuklanganda saqlangan savollarni ko'rsatish
+  showSavedQuestions(); // Saqlangan savollarni ko'rsatish
 
   // "Asosiy Sahifaga Qaytish" tugmasi
   document.getElementById("back-to-main").addEventListener("click", () => {
     window.location.href = "../index.html"; // Asosiy sahifaga qaytish
   });
 
-  // Tungi rejimni yoqish/o‘chirish funksiyasi
+  // Tungi rejimni yoqish/o‘chirish
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 });
 
@@ -17,17 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleDarkMode() {
   const body = document.body;
   const toggleButton = document.getElementById("dark-mode-toggle");
-
   body.classList.toggle("dark-mode");
-
-  // Tugma belgisini o'zgartirish
   toggleButton.textContent = body.classList.contains("dark-mode") ? "🌙" : "☀️";
 }
 
-// Saqlangan savollarni ko'rsatish funksiyasi
+// Saqlangan savollarni ko'rsatish
 function showSavedQuestions() {
   const savedContainer = document.getElementById("saved-questions-container");
-  savedContainer.innerHTML = ""; // Bo'sh qilish
+  savedContainer.innerHTML = ""; 
 
   if (savedQuestions.length > 0) {
     savedQuestions.forEach((ticket, index) => {
@@ -45,14 +42,14 @@ function showSavedQuestions() {
   }
 }
 
-// Saqlangan savolni o'chirish funksiyasi
+// Saqlangan savolni o'chirish
 function deleteSavedQuestion(index) {
   savedQuestions.splice(index, 1);
-  localStorage.setItem('savedQuestions', JSON.stringify(savedQuestions)); // Local storage'dan o'chirish
-  showSavedQuestions(); // Saqlangan savollarni yangilash
+  localStorage.setItem('savedQuestions', JSON.stringify(savedQuestions));
+  showSavedQuestions();
 }
 
-// Javobni toggllash funksiyasi (bir nechta savollar uchun)
+// Javobni toggllash (saqlangan savollar uchun)
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
   const button = document.getElementById(`toggle-answer-${index}`);
