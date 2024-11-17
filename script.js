@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("all-mode").addEventListener("click", showAllTickets);
 
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
-  document.getElementById("save-mode").addEventListener("click", saveTicket); // Save button listener
 });
 
 function showRandomTicket() {
@@ -51,6 +50,12 @@ function displayTicket(ticket) {
   document.getElementById("answer").textContent = ticket.answer;
   document.getElementById("answer").hidden = true;
   document.getElementById("show-answer").textContent = "Javobni Ko'rish";
+
+  // Show the save button
+  const saveButton = document.getElementById("save-ticket");
+  saveButton.hidden = false; // Make save button visible for current question
+
+  saveButton.onclick = () => saveTicket(ticket);
 }
 
 function toggleMainAnswer() {
@@ -79,10 +84,9 @@ function toggleDarkMode() {
   }
 }
 
-function saveTicket() {
-  const currentTicket = tickets[currentIndex];
-  if (!savedTickets.includes(currentTicket)) {
-    savedTickets.push(currentTicket);
+function saveTicket(ticket) {
+  if (!savedTickets.includes(ticket)) {
+    savedTickets.push(ticket);
     displaySavedTickets();
   }
 }
