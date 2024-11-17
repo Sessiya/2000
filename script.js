@@ -1,12 +1,5 @@
 let currentIndex = 0;
 let randomMode = true;
-let savedTickets = [];
-
-const tickets = [
-  { question: "Savol 1?", answer: "Javob 1" },
-  { question: "Savol 2?", answer: "Javob 2" },
-  { question: "Savol 3?", answer: "Javob 3" },
-];
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
@@ -16,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showRandomTicket();
 
-  // Event Listeners
   document.getElementById("random-mode").addEventListener("click", () => {
     randomMode = true;
     currentIndex = 0;
@@ -48,18 +40,10 @@ function showPrevTicket() {
 }
 
 function displayTicket(ticket) {
-  const ticketContainer = document.getElementById("ticket-container");
-
   document.getElementById("question").textContent = ticket.question;
   document.getElementById("answer").textContent = ticket.answer;
   document.getElementById("answer").hidden = true;
   document.getElementById("show-answer").textContent = "Javobni Ko'rish";
-
-  // Show the save button
-  const saveButton = document.getElementById("save-ticket");
-  saveButton.hidden = false; // Make save button visible for current question
-
-  saveButton.onclick = () => saveTicket(ticket);
 }
 
 function toggleMainAnswer() {
@@ -77,39 +61,44 @@ function toggleMainAnswer() {
 
 function toggleDarkMode() {
   const body = document.body;
-  const toggleButton = document.getElementById("dark-mode-toggle");
-
   body.classList.toggle("dark-mode");
-
+  const toggleButton = document.getElementById("dark-mode-toggle");
   if (body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "🌙";  // Dark mode icon
+    body.style.backgroundColor = "#333333";
+    body.style.color = "#ffffff";
+    toggleButton.textContent = "Kunduzgi rejim";
   } else {
-    toggleButton.textContent = "☀️";  // Light mode icon
+    body.style.backgroundColor = "#ffffff";
+    body.style.color = "#333333";
+    toggleButton.textContent = "Tungi rejim";
   }
 }
 
-function saveTicket(ticket) {
-  if (!savedTickets.includes(ticket)) {
-    savedTickets.push(ticket);
-    displaySavedTickets();
-  }
-}
-
-function displaySavedTickets() {
-  const savedTicketList = document.getElementById("saved-ticket-list");
-  savedTicketList.innerHTML = ""; // Clear the list before adding
-
-  savedTickets.forEach((ticket, index) => {
+function showAllTickets() {
+  const allTicketsContainer = document.getElementById("all-tickets");
+  allTicketsContainer.innerHTML = "";
+  tickets.forEach((ticket, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <span>${ticket.question}</span>
-      <button onclick="deleteSavedTicket(${index})">🗑️</button>
+      <strong>${ticket.question}</strong>
+      <button id="toggle-answer-${index}" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
+      <p id="answer-${index}" hidden>${ticket.answer}</p>
     `;
-    savedTicketList.appendChild(li);
+    allTicketsContainer.appendChild(li);
   });
+  allTicketsContainer.hidden = false;
+  document.getElementById("ticket-container").hidden = true;
 }
 
-function deleteSavedTicket(index) {
-  savedTickets.splice(index, 1); // Remove the ticket from saved tickets
-  displaySavedTickets(); // Re-render saved tickets list
+function toggleAnswer(index) {
+  const answerElement = document.getElementById(`answer-${index}`);
+  const button = document.getElementById(`toggle-answer-${index}`);
+
+  if (answerElement.hidden) {
+    answerElement.hidden = false;
+    button.textContent = "Javobni Yashirish";
+  } else {
+    answerElement.hidden = true;
+    button.textContent = "Javobni Ko'rish";
+  }
 }
