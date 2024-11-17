@@ -1,0 +1,5 @@
+Savol 1|Javob 1
+Savol 2|Javob 2
+Savol 3|Javob 3
+Savol 4|Javob 4
+Savol 5|Javob 5
