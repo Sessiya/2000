@@ -1,5 +1,6 @@
 let currentIndex = 0;
 let randomMode = true;
+let savedTickets = [];
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showRandomTicket();
 
+  // Event Listeners
   document.getElementById("random-mode").addEventListener("click", () => {
     randomMode = true;
     currentIndex = 0;
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("all-mode").addEventListener("click", showAllTickets);
 
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
+  document.getElementById("save-mode").addEventListener("click", saveTicket); // Save button listener
 });
 
 function showRandomTicket() {
@@ -40,12 +43,10 @@ function showPrevTicket() {
 }
 
 function displayTicket(ticket) {
-  // Yangi savolni ko'rsatishdan oldin eski savolni yashirish
   const ticketContainer = document.getElementById("ticket-container");
   const allTicketsContainer = document.getElementById("all-tickets");
-  allTicketsContainer.hidden = true; // Ro'yxatni yashirish
+  allTicketsContainer.hidden = true; // Hide the all tickets list
 
-  // Savolni yangilash
   document.getElementById("question").textContent = ticket.question;
   document.getElementById("answer").textContent = ticket.answer;
   document.getElementById("answer").hidden = true;
@@ -72,41 +73,35 @@ function toggleDarkMode() {
   body.classList.toggle("dark-mode");
 
   if (body.classList.contains("dark-mode")) {
-    body.style.backgroundColor = "#333333";
-    body.style.color = "#ffffff";
-    toggleButton.textContent = "🌙";  // Tungi rejim belgilari
+    toggleButton.textContent = "🌙";  // Dark mode icon
   } else {
-    body.style.backgroundColor = "#ffffff";
-    body.style.color = "#333333";
-    toggleButton.textContent = "☀️";  // Kunduzgi rejim belgilari
+    toggleButton.textContent = "☀️";  // Light mode icon
   }
 }
 
-function showAllTickets() {
-  const allTicketsContainer = document.getElementById("all-tickets");
-  allTicketsContainer.innerHTML = "";
-  tickets.forEach((ticket, index) => {
+function saveTicket() {
+  const currentTicket = tickets[currentIndex];
+  if (!savedTickets.includes(currentTicket)) {
+    savedTickets.push(currentTicket);
+    displaySavedTickets();
+  }
+}
+
+function displaySavedTickets() {
+  const savedTicketList = document.getElementById("saved-ticket-list");
+  savedTicketList.innerHTML = ""; // Clear the list before adding
+
+  savedTickets.forEach((ticket, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <strong>${ticket.question}</strong>
-      <button id="toggle-answer-${index}" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
-      <p id="answer-${index}" hidden>${ticket.answer}</p>
+      <span>${ticket.question}</span>
+      <button onclick="deleteSavedTicket(${index})">🗑️</button>
     `;
-    allTicketsContainer.appendChild(li);
+    savedTicketList.appendChild(li);
   });
-  allTicketsContainer.hidden = false;
-  document.getElementById("ticket-container").hidden = true;
 }
 
-function toggleAnswer(index) {
-  const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.getElementById(`toggle-answer-${index}`);
-
-  if (answerElement.hidden) {
-    answerElement.hidden = false;
-    button.textContent = "Javobni Yashirish";
-  } else {
-    answerElement.hidden = true;
-    button.textContent = "Javobni Ko'rish";
-  }
+function deleteSavedTicket(index) {
+  savedTickets.splice(index, 1); // Remove the ticket from saved tickets
+  displaySavedTickets(); // Re-render saved tickets list
 }
