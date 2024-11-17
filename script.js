@@ -12,47 +12,30 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("random-mode").addEventListener("click", () => {
     randomMode = true;
     currentIndex = 0;
-    document.getElementById("all-tickets").hidden = true;
-    document.getElementById("ticket-container").hidden = false;
     showRandomTicket();
   });
 
-  document.getElementById("sequential-mode").addEventListener("click", () => {
-    randomMode = false;
-    currentIndex = 0;
-    document.getElementById("all-tickets").hidden = true;
-    document.getElementById("ticket-container").hidden = false;
-    showTicket();
-  });
-
-  document.getElementById("all-mode").addEventListener("click", () => {
-    document.getElementById("all-tickets").innerHTML = "";
-    tickets.forEach((ticket, index) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <strong>${ticket.question}</strong>
-        <button id="toggle-answer-${index}" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
-        <p id="answer-${index}" hidden>${ticket.answer}</p>
-      `;
-      document.getElementById("all-tickets").appendChild(li);
-    });
-    document.getElementById("all-tickets").hidden = false;
-    document.getElementById("ticket-container").hidden = true;
-  });
-
+  document.getElementById("next-ticket").addEventListener("click", showNextTicket);
+  document.getElementById("prev-ticket").addEventListener("click", showPrevTicket);
   document.getElementById("show-answer").addEventListener("click", toggleMainAnswer);
+
+  document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 });
 
 function showRandomTicket() {
   const randomIndex = Math.floor(Math.random() * tickets.length);
-  const ticket = tickets[randomIndex];
-  displayTicket(ticket);
+  currentIndex = randomIndex;
+  displayTicket(tickets[currentIndex]);
 }
 
-function showTicket() {
-  if (currentIndex >= tickets.length) currentIndex = 0;
+function showNextTicket() {
+  currentIndex = (currentIndex + 1) % tickets.length;
   displayTicket(tickets[currentIndex]);
-  currentIndex++;
+}
+
+function showPrevTicket() {
+  currentIndex = (currentIndex - 1 + tickets.length) % tickets.length;
+  displayTicket(tickets[currentIndex]);
 }
 
 function displayTicket(ticket) {
@@ -75,15 +58,17 @@ function toggleMainAnswer() {
   }
 }
 
-function toggleAnswer(index) {
-  const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.getElementById(`toggle-answer-${index}`);
-
-  if (answerElement.hidden) {
-    answerElement.hidden = false;
-    button.textContent = "Javobni Yashirish";
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+  const toggleButton = document.getElementById("dark-mode-toggle");
+  if (body.classList.contains("dark-mode")) {
+    body.style.backgroundColor = "#333333";
+    body.style.color = "#ffffff";
+    toggleButton.textContent = "Kunduzgi rejim";
   } else {
-    answerElement.hidden = true;
-    button.textContent = "Javobni Ko'rish";
+    body.style.backgroundColor = "#ffffff";
+    body.style.color = "#333333";
+    toggleButton.textContent = "Tungi rejim";
   }
 }
