@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leksiya biletlari</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="random-mode">Tasodifiy</button>
+      <button id="prev-ticket">Oldingi</button>
+      <button id="next-ticket">Keyingi</button>
+      <button id="all-mode">Hammasi</button>
+          <button onclick="location.reload();">Qaytish</button>
+    </nav>
+    <button id="dark-mode-toggle">🌙</button>
+  </header>
+  <main>
+    <div id="ticket-container">
+      <p id="question"></p>
+      <button id="show-answer">Javobni Ko'rish</button>
+      <p id="answer" hidden></p>
+    </div>
+    <ul id="all-tickets" hidden></ul>
+  </main>
+  <script src="bilet.js"></script>
+  <script src="script.js"></script>
+  <footer>Leksiyadan biletlari va javoblari.</footer>
+</body>
+</html>
