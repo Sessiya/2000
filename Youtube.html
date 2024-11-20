@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Subtitles Extractor</title>
+</head>
+<body>
+    <h1>YouTube Subtitles Extractor</h1>
+    <button id="loginButton">Sign in with Google</button>
+    <div id="output"></div>
+
+    <script>
+        // OAuth 2.0 client credentials
+        const CLIENT_ID = '811420631784-b0cn8ravaqlpvra776qnbr78iurbqaan.apps.googleusercontent.com';
+        const CLIENT_SECRET = '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';
+        const REDIRECT_URI = 'http://127.0.0.1';  // Redirect URI should match the one in Google Developer Console
+
+        const SCOPES = 'https://www.googleapis.com/auth/youtube.force-ssl';
+        const API_URL = 'https://www.googleapis.com/youtube/v3/captions';
+
+        let accessToken = '';
+
+        // Step 1: OAuth2 - Login with Google
+        document.getElementById('loginButton').addEventListener('click', function() {
+            const authUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPES}&response_type=code&access_type=offline`;
+
+            window.location.href = authUrl;  // Redirect to Google OAuth2 authorization page
+        });
+
+        // Step 2: Handle the redirect and exchange the code for an access token
+        async function exchangeCodeForToken(code) {
+            const response = await fetch('https://oauth2.googleapis.com/token', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    client_id: CLIENT_ID,
+                    client_secret: CLIENT_SECRET,
+                    code: code,
+                    grant_type: 'authorization_code',
+                    redirect_uri: REDIRECT_URI
+                })
+            });
+            const data = await response.json();
+            accessToken = data.access_token;
+            console.log('Access Token:', accessToken);
+            fetchSubtitles();  // Fetch subtitles after obtaining access token
+        }
+
+        // Step 3: Fetch Subtitles using YouTube API
+        async function fetchSubtitles() {
+            const videoId = 'm9KjJVx5s-0';  // Example video ID (change if needed)
+            const captionId = 'AUieDaaUbZzvHppZALEt70rgoJmehALKCtfQH1_PKA3u';  // Example caption ID (change if needed)
+
+            const response = await fetch(`${API_URL}/${captionId}`, {
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`
+                }
+            });
+
+            if (response.ok) {
+                const subtitles = await response.json();
+                displaySubtitles(subtitles);
+            } else {
+                console.error('Failed to fetch subtitles:', response.statusText);
+                document.getElementById('output').innerHTML = 'Failed to fetch subtitles.';
+            }
+        }
+
+        // Step 4: Display subtitles
+        function displaySubtitles(subtitles) {
+            let outputHtml = '<h2>Subtitles:</h2>';
+            subtitles.items.forEach(item => {
+                outputHtml += `<p><strong>Start:</strong> ${item.snippet.start} | <strong>Text:</strong> ${item.snippet.text}</p>`;
+            });
+            document.getElementById('output').innerHTML = outputHtml;
+        }
+
+        // Handle the OAuth 2.0 redirect callback
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const code = params.get('code');
+            if (code) {
+                exchangeCodeForToken(code);  // If we have the code, exchange it for an access token
+            }
+        };
+    </script>
+</body>
+</html>
