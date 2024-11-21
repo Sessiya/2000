@@ -109,7 +109,17 @@ const tickets = [
   }
   ];
 
-function displayTicket(ticket) {
-  document.getElementById("question").innerHTML = ticket.question;
-  document.getElementById("answer").innerHTML = ticket.answer.replace(/\n/g, "<br>");
-}
+const container = document.getElementById("ticket-container");
+
+tickets.forEach(ticket => {
+  const ticketDiv = document.createElement("div");
+  const question = document.createElement("h2");
+  question.innerHTML = ticket.question; // HTML-ni to'g'ri chiqarish
+  ticketDiv.appendChild(question);
+
+  const answer = document.createElement("p");
+  answer.innerHTML = ticket.answer; // HTML-ni to'g'ri chiqarish
+  ticketDiv.appendChild(answer);
+
+  container.appendChild(ticketDiv);
+});
