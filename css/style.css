@@ -1,3 +1,68 @@
+      .calendar {
+            width: 400px; /* Kengaytirilgan kalendar */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .calendar-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .calendar-body {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 kolonkalar uchun */
+            gap: 5px;
+            padding: 10px;
+            color: #333;
+        }
+
+        .day {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .day:hover {
+            background-color: #e0f7e8;
+        }
+
+        .day-header {
+            font-weight: bold;
+            color: #4caf50;
+        }
+
+        .today {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .red-day {
+            color: red;
+        }
+
+        .nav-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+	}
 html {
   scroll-behavior: smooth;
 }
