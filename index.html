@@ -41,18 +41,17 @@
     <h2>Saytga baho bering:</h2>
     <div id="star-rating">
       <span class="star" onclick="rate(1)">★</span>
-      <span class="star" onclick="rate(2)">★</span>
-      <span class="star" onclick="rate(3)">★</span>
-      <span class="star" onclick="rate(4)">★</span>
-      <span class="star" onclick="rate(5)">★</span>
-    </div>
-    <div id="ratingText"></div>
+    <span class="star" onclick="rate(2)">★</span>
+    <span class="star" onclick="rate(3)">★</span>
+    <span class="star" onclick="rate(4)">★</span>
+    <span class="star" onclick="rate(5)">★</span>
+</div>
+<div id="ratingText"></div>
     <button id="submitRatingButton" onclick="submitRating(selectedRating)" disabled>Jo'natish</button>
     <button id="editRatingButton" onclick="editRating()" style="display:none;">Qayta baho berish</button>
     <div id="ratingStats"></div>
-  </div>
-
-  <script>
+</div>
+<script>
     let selectedRating = 0;
     let userRating = null;  // User's rating, initially null
 
