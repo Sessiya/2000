@@ -40,55 +40,83 @@
 <div class="menu">
     <h2>Saytga baho bering:</h2>
     <div id="star-rating">
-    <span class="star" onclick="rate(1)">★</span>
-    <span class="star" onclick="rate(2)">★</span>
-    <span class="star" onclick="rate(3)">★</span>
-    <span class="star" onclick="rate(4)">★</span>
-    <span class="star" onclick="rate(5)">★</span>
-</div>
-<div id="ratingText"></div>
-<button id="submitRatingButton" onclick="submitRating(selectedRating)" disabled>Jo'natish</button>
-<div id="ratingStats"></div>
-</div>
-<script>
-let selectedRating = 0;
+      <span class="star" onclick="rate(1)">★</span>
+      <span class="star" onclick="rate(2)">★</span>
+      <span class="star" onclick="rate(3)">★</span>
+      <span class="star" onclick="rate(4)">★</span>
+      <span class="star" onclick="rate(5)">★</span>
+    </div>
+    <div id="ratingText"></div>
+    <button id="submitRatingButton" onclick="submitRating(selectedRating)" disabled>Jo'natish</button>
+    <button id="editRatingButton" onclick="editRating()" style="display:none;">Qayta baho berish</button>
+    <div id="ratingStats"></div>
+  </div>
 
-function rate(star) {
-    selectedRating = star;
-    const stars = document.querySelectorAll('.star');
-    stars.forEach((starElement, index) => {
+  <script>
+    let selectedRating = 0;
+    let userRating = null;  // User's rating, initially null
+
+    // Reytingni tanlash
+    function rate(star) {
+      selectedRating = star;
+      const stars = document.querySelectorAll('.star');
+      stars.forEach((starElement, index) => {
         if (index < selectedRating) {
-            starElement.classList.add('selected');
+          starElement.classList.add('selected');
         } else {
-            starElement.classList.remove('selected');
+          starElement.classList.remove('selected');
         }
-    });
-    document.getElementById('ratingText').textContent = `Reyting: ${selectedRating}`;
-    document.getElementById('submitRatingButton').disabled = false;
-}
+      });
+      document.getElementById('ratingText').textContent = `Reyting: ${selectedRating}`;
+      document.getElementById('submitRatingButton').disabled = false;
+    }
 
-function submitRating(rating) {
-    fetch('https://two000-7.onrender.com/api/rating', {
+    // Reytingni serverga yuborish (AJAX so'rovi)
+    function submitRating(rating) {
+      fetch('https://two000-7.onrender.com/api/rating', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ rating: rating })
-    })
-    .then(response => response.json())
-    .then(data => {
+      })
+      .then(response => response.json())
+      .then(data => {
         console.log('Reyting muvaffaqiyatli yuborildi:', data);
         loadRatingStats();
-    })
-    .catch((error) => {
+        userRating = rating;  // Saqlash foydalanuvchining reytingini
+        document.getElementById('submitRatingButton').disabled = true;
+        document.getElementById('editRatingButton').style.display = 'inline-block';  // Qayta baho berish tugmasi
+      })
+      .catch((error) => {
         console.error('Reyting yuborishda xatolik:', error);
-    });
+      });
+    }
 
-    // Tugmani bloklash
-    document.getElementById('submitRatingButton').disabled = true;
-}
-</script>
-    </script>
+    // Qayta baho berish
+    function editRating() {
+      selectedRating = userRating;  // Foydalanuvchi tomonidan berilgan reytingni qayta tanlash
+      rate(selectedRating);  // Reytingni yangilash
+      document.getElementById('submitRatingButton').disabled = false;
+    }
+
+    // Reyting statistikasi
+    function loadRatingStats() {
+      fetch('https://two000-7.onrender.com/api/ratings')
+      .then(response => response.json())
+      .then(data => {
+        const ratingStats = data.ratingCount;
+        const totalRatings = data.totalRatings;
+        document.getElementById('ratingStats').textContent = `Reytinglar: 1: ${ratingStats[0]}, 2: ${ratingStats[1]}, 3: ${ratingStats[2]}, 4: ${ratingStats[3]}, 5: ${ratingStats[4]}, Jami: ${totalRatings}`;
+      })
+      .catch((error) => {
+        console.error('Reytinglarni olishda xatolik:', error);
+      });
+    }
+
+    // Sahifa yuklanganda reytinglar statistikasi
+    window.onload = loadRatingStats;
+  </script>
   <div class="footer">2024</div>
 </body>
 </html>
