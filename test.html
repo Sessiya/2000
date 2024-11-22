@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="yandex-verification" content="71d59e2ffac7cf26">
+  <meta name="MobileOptimized" content="width">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="robots" content="all">
+  <meta name="revisit-after" content="1 days">
+  <meta name="keywords" content="futbol yangiliklari,uzfifa.net,футбол янгиликлари,futbol yangiliklari bugun,uzreport tv dasturlar,fudbol yangiliklari,фифа.уз,fifa.uz,sport yangiliklari,fut.uz,uzfifa,futbol xabarlari,спорт янгиликлари футбол,fudbol.uz,futbol xabarlari,futbol uz,футбол хабарлари, uz.spon.ive, uz.spon, uz,spon, uz.spon.live, uz spon live">
+  <meta name="description" content="Futbol xabarlari / футбол хабарлари, Transferlar / Трансферлар, Tahminlar loyixasi,Match sentr, Turnir Jadvali,Topurarlar Jadvali,Chempionatlar,Futbol Natijalari,OnLine translatsiya">
+  
+  <link rel="stylesheet" href="styles.css">
+  <title>Assalamu alaykum!</title>
+</head>
+<body>
+  <header>
+    Assalomu alaykum! Ma`lumotlar tibbiyot talabalari uchun.
+    <button id="dark-mode-toggle">🌙</button>
+  </header>
+  <main>
+    <h1>Xush Kelibsiz</h1>
+    <p>Iltimos, kerakli bo'limni tanlang:</p>
+    <div class="card-container">
+      <div class="card">
+        <h2>Oraliq</h2>
+        <p>Oraliq imtihoni uchun biletlar.</p>
+        <a href="oraliq/index.html">Kirish</a>
+      </div>
+      <div class="card">
+        <h2>Yakuniy</h2>
+        <p>Yakuniy imtihoni uchun biletlar.</p>
+        <a href="yakuniy.html">Kirish</a>
+      </div>
+      <div class="card">
+        <p style="font-family: 'Caveat', cursive; font-size: 20px; line-height: 1.8;">
+          Nimadir qilishga arzisa... <br><br>
+          Yurishni o'rganish arziydimi? Unda 100 marta yiqilish arziydi. <br>
+          O'qishni o'rganish arziydimi? Unda harflab sekin o'qish arziydi. <br>
+          IELTS olishga arziydimi? Unda birinchisida 5.5 olishga arziydi. <br>
+          Universitetni bitirish arziydimi? Unda qayta topshirishga arziydi. <br>
+          Ishga kirish arziydimi? Unda 100 marta rad javobini olish arziydi. <br>
+          Dastur qurishga arziydimi? 1-versiyasi oddiy bo'lsa ham arziydi. <br>
+          Maqola yozish arziydimi? Unda 1ta so'z bilan boshlash ham arziydi. <br><br>
+          Nimadir qilishga arzisa, birinchisida yomon qilishga ham arziydi.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <a href="https://uzfifa.net/">
+        <img src="https://uzfifa.net/images/menu_home.png" alt="Home" class="icon">Bosh sahifaga
+      </a>
+    </div>
+    <div>
+      <a href="https://uzfifa.net/users/index.php?act=online">
+        <img src="https://uzfifa.net/images/menu_online.png" alt="Back" class="icon">Orqaga
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode funksiyasi
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Dark mode uchun CSS
+    const darkModeStyle = document.createElement('style');
+    darkModeStyle.textContent = `
+      body.dark-mode {
+        background-color: #333;
+        color: white;
+      }
+      body.dark-mode footer {
+        background-color: #444;
+        color: white;
+      }
+      body.dark-mode .card {
+        background-color: #555;
+        color: white;
+      }
+      body.dark-mode .card a {
+        background-color: #666;
+      }
+      body.dark-mode .card a:hover {
+        background-color: #777;
+      }
+    `;
+    document.head.appendChild(darkModeStyle);
+  </script>
+</body>
+</html>
