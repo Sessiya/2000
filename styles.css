@@ -1,79 +1,299 @@
+html {
+  scroll-behavior: smooth;
+}
+    /* Umumiy uslub */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Tungi rejim */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Tugma uslubi */
+    #dark-mode-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: inherit;
+    }
+
+    /* Menyu uslubi */
+    .menu {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+
+    body.dark-mode .menu {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    /* Karta uslubi */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 250px;
+    }
+
+    body.dark-mode .card {
+      background-color: #1e1e1e;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    body.dark-mode .card a {
+      color: #66ccff;
+    }
+
+    /* Xabar maydoni */
+    .phdr2, .phdr {
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: black;
+      color: #000;
+    }
+
+    body.dark-mode .footer {
+      background-color: #202020;
+      color: #e0e0e0;
+    }
+/* .phdr2 uchun dizayn */
 .phdr2 {
-background : #83b91e url(phdr.gif) repeat-x;
-margin : 1px;
-border-left : 1px solid #EFEFEF;
-border-right : 1px solid #EFEFEF;
-color : #fff;
-margin-left : 2px;
-margin-right : 2px;
-padding : 6px;
-}
-.phdr {
-margin : 1px 5px;
-background : #55b74f url(cont.gif) repeat-x bottom;
-border-left : 1px solid #EFEFEF;
-border-right : 1px solid #EFEFEF;
-color : #fff;
-margin-left : 2px;
-margin-right : 2px;
-padding : 7px;
-}
-.menu, .list1, .list2 {
-background-color : #FFFFFF;
-border-bottom : 1px solid #bcf8b8;
-border-left : 1px solid #bcf8b8;
-border-right : 1px solid #bcf8b8;
-margin : 1px;
-margin-left : 2px;
-margin-right : 2px;
-color : #527317;
-padding : 4px;
-}
-.menu a:hover {
-text-decoration : none;
-font-weight : bold;
-}
-.footer a:link, .footer a:visited {
-color : #fff;
-text-decoration : none;
-}
-.footer {
-background : #83b91e url(footer.gif) repeat-x;
-margin : 1px;
-border-left : 1px solid #EFEFEF;
-border-right : 1px solid #EFEFEF;
-color : #fff;
-margin-left : 2px;
-margin-right : 2px;
-padding : 6px;
-}
-.phdr a:link {
-color : #fff;
-font-weight : bold;
-text-decoration : none;
-}
-.phdr a {
-color : #6a8f2a;
-font-weight : bold;
-text-decoration : none;
-}
-.phdr a:link {
-color : #6a8f2a;
-font-weight : bold;
-text-decoration : none;
+  background: #83b91e url(phdr.gif) repeat-x;
+  margin: 1px 2px;
+  border: 1px solid #efefef;
+  color: #fff;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@font-face {
-	font-family: 'Stroke-Gap-Icons';
-	src: url('Stroke-Gap-Icons.eot');
+/* Tungi rejim: .phdr2 */
+body.dark-mode .phdr2 {
+  background: #1e4421;
+  color: #e0e0e0;
 }
-@font-face {
-	font-family: 'Stroke-Gap-Icons';
-	src: url(Stroke-Gap-Icons.woff) format('woff');
-	font-weight: normal;
-	font-style: normal;
+
+/* .phdr uchun dizayn */
+.phdr {
+  margin: 1px 5px;
+  background: #55b74f url(cont.gif) repeat-x bottom;
+  border: 1px solid #efefef;
+  color: #fff;
+  padding: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Tungi rejim: .phdr */
+body.dark-mode .phdr {
+  background: #2b5a3b;
+  color: #e0e0e0;
+}
+
+/* .menu va umumiy bloklar */
+.menu, .list1, .list2 {
+  background-color: #ffffff;
+  border: 1px solid #bcf8b8;
+  margin: 1px 2px;
+  color: #527317;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tungi rejim: .menu, .list1, .list2 */
+body.dark-mode .menu, 
+body.dark-mode .list1, 
+body.dark-mode .list2 {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-color: #3f3f3f;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* .menu hover holati */
 .menu a:hover {
-text-decoration : none;
-font-weight : bold;
+  text-decoration: none;
+  font-weight: bold;
+  color: #005500;
 }
+
+/* Tungi rejim: hover */
+body.dark-mode .menu a:hover {
+  color: #88ff88;
+}
+
+/* Footer uchun dizayn */
+.footer {
+  background: black url(footer.gif) repeat-x;
+  margin: 1px 2px;
+  border: 1px solid #efefef;
+  color: #fff;
+  padding: 6px;
+  font-size: 14px;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Umumiy uslublar */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ekranni butunlay qoplash */
+  margin: 0;
+}
+
+/* Footerni doimiy pastda saqlash */
+.footer {
+  margin-top: auto; /* Bo'sh joyni yuqoriga suradi */
+  text-align: left;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  font-size: 14px;
+  border-top: 1px solid #efefef;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .footer {
+  background-color: #202020;
+  color: #e0e0e0;
+}
+/* Tungi rejim: Footer */
+body.dark-mode .footer {
+  background: #1e4421;
+  color: #d4d4d4;
+}
+
+/* Havolalar dizayni */
+.footer a:link, 
+.footer a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.phdr a:link, 
+.phdr a {
+  color: #6a8f2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.dark-mode .phdr a:link, 
+body.dark-mode .phdr a {
+  color: #88ff88;
+}
+
+/* Font qo'llash */
+@font-face {
+  font-family: 'Stroke-Gap-Icons';
+  src: url('Stroke-Gap-Icons.eot');
+}
+@font-face {
+  font-family: 'Stroke-Gap-Icons';
+  src: url(Stroke-Gap-Icons.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Umumiy uslub */
+.my-box {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tungi rejim */
+body.dark-mode .my-box {
+  background-color: #333;
+  color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+    /* Motivatsiya qismi */
+    .motivation {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #333;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    body.dark-mode .motivation {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+        .star {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+        }
+        .star.selected {
+            color: gold;
+	}
