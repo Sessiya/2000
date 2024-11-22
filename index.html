@@ -39,121 +39,57 @@
 </div>
 <div class="menu">
   <div class="phdr">Saytga baho bering:</div>
-  <div id="star-rating">
+  <div id="rating-container">
+  <div id="rating">
     <span class="star" onclick="rate(1)">★</span>
     <span class="star" onclick="rate(2)">★</span>
     <span class="star" onclick="rate(3)">★</span>
     <span class="star" onclick="rate(4)">★</span>
     <span class="star" onclick="rate(5)">★</span>
   </div>
-  <div id="ratingText"></div>
-  <button id="submitRatingButton" onclick="submitRating(selectedRating)" disabled>Jo'natish</button>
-
-  <div class="phdr">Izoh qoldirish:</div>
-  <textarea id="commentText" placeholder="Izoh qoldiring..."></textarea>
-  <button id="submitCommentButton" onclick="submitComment()">Izohni jo'natish</button>
-
-  <div id="ratingStats"></div>
-  <div id="commentsSection">
-    <h3>Izohlar:</h3>
-    <ul id="commentsList"></ul>
+  <textarea id="comment" placeholder="Leave a comment..." rows="4" cols="50"></textarea>
+  <button id="submitRatingButton" onclick="submitRating()" disabled>Submit Rating</button>
   </div>
-
   <script>
     let selectedRating = 0;
+let userComment = '';
 
-    // Reytingni tanlash
-    function rate(star) {
-      selectedRating = star;
-      const stars = document.querySelectorAll('.star');
-      stars.forEach((starElement, index) => {
-        if (index < selectedRating) {
-          starElement.classList.add('selected');
-        } else {
-          starElement.classList.remove('selected');
-        }
-      });
-      document.getElementById('ratingText').textContent = `Reyting: ${selectedRating}`;
-      document.getElementById('submitRatingButton').disabled = false;
+function rate(star) {
+  selectedRating = star;
+  const stars = document.querySelectorAll('.star');
+  stars.forEach((starElement, index) => {
+    if (index < selectedRating) {
+      starElement.classList.add('selected');
+    } else {
+      starElement.classList.remove('selected');
     }
+  });
+  document.getElementById('submitRatingButton').disabled = false;
+}
 
-    // Reytingni serverga yuborish
-    function submitRating(rating) {
-      fetch('https://https://two000-7.onrender.com/api/rating', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ rating: rating })
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Reyting muvaffaqiyatli yuborildi:', data);
-        loadRatingStats();
-      })
-      .catch((error) => {
-        console.error('Reyting yuborishda xatolik:', error);
-      });
-    }
+document.getElementById('comment').addEventListener('input', function () {
+  userComment = this.value;  // Capture comment input
+});
 
-    // Kommentni serverga yuborish
-    function submitComment() {
-      const comment = document.getElementById('commentText').value;
-      fetch('https://two000-7.onrender.com/api/comment', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ comment: comment })
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Komment muvaffaqiyatli yuborildi:', data);
-        loadComments();  // Izohlarni qayta yuklash
-        document.getElementById('commentText').value = '';  // Kommentni tozalash
-      })
-      .catch((error) => {
-        console.error('Komment yuborishda xatolik:', error);
-      });
-    }
-
-    // Reytinglar statistikasi
-    function loadRatingStats() {
-      fetch('https://two000-7.onrender.com/api/ratings')
-      .then(response => response.json())
-      .then(data => {
-        const ratingStats = data.ratingCount;
-        const totalRatings = data.totalRatings;
-        document.getElementById('ratingStats').textContent = `Reytinglar: 1: ${ratingStats[0]}, 2: ${ratingStats[1]}, 3: ${ratingStats[2]}, 4: ${ratingStats[3]}, 5: ${ratingStats[4]}, Jami: ${totalRatings}`;
-      })
-      .catch((error) => {
-        console.error('Reytinglarni olishda xatolik:', error);
-      });
-    }
-
-    // Izohlar ro'yxatini yuklash
-    function loadComments() {
-      fetch('https://two000-7.onrender.com/api/comments')
-      .then(response => response.json())
-      .then(data => {
-        const commentsList = document.getElementById('commentsList');
-        commentsList.innerHTML = '';
-        data.forEach(comment => {
-          const li = document.createElement('li');
-          li.textContent = comment.comment;
-          commentsList.appendChild(li);
-        });
-      })
-      .catch((error) => {
-        console.error('Izohlarni olishda xatolik:', error);
-      });
-    }
-
-    // Sahifa yuklanganda reytinglar statistikasi va izohlarni yuklash
-    window.onload = () => {
-      loadRatingStats();
-      loadComments();
-    };
+function submitRating() {
+  fetch('/api/rating', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      rating: selectedRating,
+      comment: userComment,  // Send comment along with the rating
+    }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Rating and comment submitted:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
   </script>
   <div class="footer">2024</div>
 </body>
