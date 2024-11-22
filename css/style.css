@@ -120,7 +120,7 @@ html {
       padding: 0;
       background-color: #fff;
       color: #000;
-	    transition: background-color 0.03s ease, color 0.03s ease;
+	    transition: background-color 0.6s ease, color 0.6s ease;
     }
 
     /* Tungi rejim */
