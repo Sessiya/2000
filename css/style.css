@@ -12,6 +12,35 @@
   margin: 10px;
   display: flex;
   flex-direction: column;
+  opacity: 0.8; /* Boshlang'ich opasitiya (yengil ko'rinish) */
+  transform: translateY(10px); /* Boshlang'ich holat: Karta biroz pastga joylashgan */
+  animation: cardAnimation 0.5s ease-out; /* Karta kelib chiqish animatsiyasi */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* Karta hover holati */
+.card:hover {
+  transform: scale(1.05); /* Karta kattalashadi */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soyali effekt */
+  opacity: 1; /* Hover holatida to'liq ko'rinishga o'tish */
+  background-color: #f0f0f0; /* Hoverda fon rangi o'zgaradi */
+  animation: cardHoverAnimation 0.5s ease-in-out; /* Animatsiya qo'shish */
+}
+
+/* Hover holatidagi animatsiya */
+@keyframes cardHoverAnimation {
+  0% {
+    transform: scale(1); /* Boshlang'ich holat */
+    opacity: 0.8; /* Boshlang'ich opasitiya */
+  }
+  50% {
+    transform: scale(1.05); /* O'rtacha kattalashish */
+    opacity: 1; /* To'liq ko'rinishga o'tish */
+  }
+  100% {
+    transform: scale(1); /* Tugatganda original holat */
+    opacity: 0.8; /* Opasitiya qaytishi */
+  }
 }
 
 /* Karta konteynerining moslashuvchanligi */
@@ -24,6 +53,11 @@
 }
 
 /* Tungi rejimdagi menu */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
 body.dark-mode .card .menu {
   background-color: #1e1e1e;
   color: #e0e0e0;
