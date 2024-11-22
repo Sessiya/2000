@@ -111,7 +111,7 @@ html {
     }
 /* .phdr2 uchun dizayn */
 .phdr2 {
-  background: #83b91e url(phdr.gif) repeat-x;
+  background: #83b91e url(https://Sessiya.github.io/2000/phdr.gif) repeat-x;
   margin: 1px 2px;
   border: 1px solid #efefef;
   color: #fff;
@@ -124,14 +124,14 @@ html {
 
 /* Tungi rejim: .phdr2 */
 body.dark-mode .phdr2 {
-  background: #1e4421;
+  background: #1e4421 url(https://Sessiya.github.io/2000/phdr.gif) repeat-x;
   color: #e0e0e0;
 }
 
 /* .phdr uchun dizayn */
 .phdr {
   margin: 1px 5px;
-  background: #55b74f url(cont.gif) repeat-x bottom;
+  background: #55b74f url(https://Sessiya.github.io/2000/cont.gif) repeat-x bottom;
   border: 1px solid #efefef;
   color: #fff;
   padding: 7px;
@@ -143,7 +143,7 @@ body.dark-mode .phdr2 {
 
 /* Tungi rejim: .phdr */
 body.dark-mode .phdr {
-  background: #2b5a3b;
+  background: #2b5a3b url(https://Sessiya.github.io/2000/cont.gif) repeat-x bottom;
   color: #e0e0e0;
 }
 
@@ -183,7 +183,7 @@ body.dark-mode .menu a:hover {
 
 /* Footer uchun dizayn */
 .footer {
-  background: black url(footer.gif) repeat-x;
+  background: black url(https://Sessiya.github.io/2000/footer.gif) repeat-x;
   margin: 1px 2px;
   border: 1px solid #efefef;
   color: #fff;
@@ -213,7 +213,7 @@ body {
 }
 
 body.dark-mode .footer {
-  background-color: #202020;
+  background-color: #202020 url(https://Sessiya.github.io/2000/footer.gif) repeat-x;
   color: #e0e0e0;
 }
 /* Tungi rejim: Footer */
@@ -240,18 +240,6 @@ body.dark-mode .footer {
 body.dark-mode .phdr a:link, 
 body.dark-mode .phdr a {
   color: #88ff88;
-}
-
-/* Font qo'llash */
-@font-face {
-  font-family: 'Stroke-Gap-Icons';
-  src: url('Stroke-Gap-Icons.eot');
-}
-@font-face {
-  font-family: 'Stroke-Gap-Icons';
-  src: url(Stroke-Gap-Icons.woff) format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 /* Umumiy uslub */
 .my-box {
