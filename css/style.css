@@ -43,53 +43,6 @@ html {
       color: #e0e0e0;
     }
 
-    /* Karta uslubi */
-    .card-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 20px;
-    }
-
-    .card {
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      width: 250px;
-    }
-
-    body.dark-mode .card {
-      background-color: #1e1e1e;
-      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .card h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: bold;
-    }
-
-    body.dark-mode .card a {
-      color: #66ccff;
-    }
 
     /* Xabar maydoni */
     .phdr2, .phdr {
@@ -106,7 +59,58 @@ html {
     }
 
     body.dark-mode .footer {
-      background-color: #202020;
+      background-colo/* Karta konteynerini responsiv qilish */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap; /* Kartalar bir-biriga yaqinlashganda yangi qatorda joylashadi */
+  padding: 0 10px; /* Agar ekranning kichik qismlarida bo'lsa, bo'sh joy berish */
+}
+
+/* Karta elementini moslashtirish */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px; /* Standart karta kengligi */
+  margin: 10px; /* Karta elementlari o'rtasida bo'sh joy */
+  box-sizing: border-box; /* Padding va borderni elementning umumiy o'lchamiga kiritish */
+}
+
+/* Karta kengligi ekran o'lchamiga qarab moslashadi */
+@media (max-width: 1200px) {
+  .card {
+    width: 220px; /* Kenglikni kichik ekranlar uchun moslashtirish */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 180px; /* Yanada kichik ekranlar uchun */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 150px; /* Mobil ekranlar uchun yana kichikroq karta */
+  }
+}
+
+/* Tungi rejimdagi kartalar */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}r: #202020;
       color: #e0e0e0;
     }
 /* .phdr2 uchun dizayn */
