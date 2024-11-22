@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 let ratings = [];
+let comments = [];  // Kommentlarni saqlash uchun
 let userRatings = {}; // User tomonidan berilgan reytinglarni saqlash
 
 // POST so'rovi - reytingni qabul qilish
@@ -29,6 +30,19 @@ app.post('/api/rating', (req, res) => {
   }
 });
 
+// POST so'rovi - kommentni qabul qilish
+app.post('/api/comment', (req, res) => {
+  const { comment } = req.body;
+  const userId = req.ip; // Foydalanuvchi identifikatori sifatida IP manzilini olish
+
+  if (comment && comment.length > 0) {
+    comments.push({ userId, comment });
+    res.status(200).json({ message: 'Komment muvaffaqiyatli qo\'shildi' });
+  } else {
+    res.status(400).json({ message: 'Komment bo\'sh bo\'lishi mumkin emas' });
+  }
+});
+
 // GET so'rovi - reytinglar statistikasi
 app.get('/api/ratings', (req, res) => {
   const ratingCount = [0, 0, 0, 0, 0];  // Reytinglar 1 dan 5 gacha
@@ -43,7 +57,11 @@ app.get('/api/ratings', (req, res) => {
   });
 });
 
-// Render URL manzilini ishlatish
+// GET so'rovi - kommentlar ro'yxati
+app.get('/api/comments', (req, res) => {
+  res.json(comments);
+});
+
 app.listen(port, () => {
-  console.log(`Server running at https://two000-7.onrender.com`);
+  console.log(`Server running at http://localhost:${port}`);
 });
