@@ -1,29 +1,193 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="yandex-verification" content="71d59e2ffac7cf26">
-  <meta name="MobileOptimized" content="width">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta name="robots" content="all">
-  <meta name="revisit-after" content="1 days">
-  <meta name="keywords" content="futbol yangiliklari,uzfifa.net,футбол янгиликлари,futbol yangiliklari bugun,uzreport tv dasturlar,fudbol yangiliklari,фифа.уз,fifa.uz,sport yangiliklari,fut.uz,uzfifa,futbol xabarlari,спорт янгиликлари футбол,fudbol.uz,futbol xabarlari,futbol uz,футбол хабарлари, uz.spon.ive, uz.spon, uz,spon, uz.spon.live, uz spon live">
-  <meta name="description" content="Futbol xabarlari / футбол хабарлари, Transferlar / Трансферлар, Tahminlar loyixasi,Match sentr, Turnir Jadvali,Topurarlar Jadvali,Chempionatlar,Futbol Natijalari,OnLine translatsiya">
-  
-  <link rel="stylesheet" href="styles.css">
   <title>Assalamu alaykum!</title>
+  <style>
+.phdr2 {
+background : #83b91e url(phdr.gif) repeat-x;
+margin : 1px;
+border-left : 1px solid #EFEFEF;
+border-right : 1px solid #EFEFEF;
+color : #fff;
+margin-left : 2px;
+margin-right : 2px;
+padding : 6px;
+}
+.phdr {
+margin : 1px 5px;
+background : #55b74f url(cont.gif) repeat-x bottom;
+border-left : 1px solid #EFEFEF;
+border-right : 1px solid #EFEFEF;
+color : #fff;
+margin-left : 2px;
+margin-right : 2px;
+padding : 7px;
+}
+.menu, .list1, .list2 {
+background-color : #FFFFFF;
+border-bottom : 1px solid #bcf8b8;
+border-left : 1px solid #bcf8b8;
+border-right : 1px solid #bcf8b8;
+margin : 1px;
+margin-left : 2px;
+margin-right : 2px;
+color : #527317;
+padding : 4px;
+}
+.menu a:hover {
+text-decoration : none;
+font-weight : bold;
+}
+.footer a:link, .footer a:visited {
+color : #fff;
+text-decoration : none;
+}
+.footer {
+background : #83b91e url(footer.gif) repeat-x;
+margin : 1px;
+border-left : 1px solid #EFEFEF;
+border-right : 1px solid #EFEFEF;
+color : #fff;
+margin-left : 2px;
+margin-right : 2px;
+padding : 6px;
+}
+.phdr a:link {
+color : #fff;
+font-weight : bold;
+text-decoration : none;
+}
+.phdr a {
+color : #6a8f2a;
+font-weight : bold;
+text-decoration : none;
+}
+.phdr a:link {
+color : #6a8f2a;
+font-weight : bold;
+text-decoration : none;
+}
+
+@font-face {
+	font-family: 'Stroke-Gap-Icons';
+	src: url('Stroke-Gap-Icons.eot');
+}
+@font-face {
+	font-family: 'Stroke-Gap-Icons';
+	src: url(Stroke-Gap-Icons.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+.menu a:hover {
+text-decoration : none;
+font-weight : bold;
+}
+    /* Umumiy Uslublar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header button {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
   <header>
-    Assalomu alaykum! Ma`lumotlar tibbiyot talabalari uchun.
-    <button id="dark-mode-toggle">🌙</button>
+    <div class="phdr2">Assalomu alaykum! Ma`lumotlar tibbiyot talabalari uchun.
+    <button id="dark-mode-toggle">🌙</button></div>
   </header>
   <main>
-<div class="phdr">Kun Mavzulari</div><div class="menu">
-    <h1>Xush Kelibsiz</h1>
-    <p>Iltimos, kerakli bo'limni tanlang:</p>
+    <div class="menu">Xush Kelibsiz</div>
+    <div class="phdr">>Iltimos, kerakli bo'limni tanlang:</div>
     <div class="card-container">
       <div class="card">
         <h2>Oraliq</h2>
@@ -35,34 +199,19 @@
         <p>Yakuniy imtihoni uchun biletlar.</p>
         <a href="yakuniy.html">Kirish</a>
       </div>
-      <div class="card">
-        <p style="font-family: 'Caveat', cursive; font-size: 20px; line-height: 1.8;">
-          Nimadir qilishga arzisa... <br><br>
-          Yurishni o'rganish arziydimi? Unda 100 marta yiqilish arziydi. <br>
-          O'qishni o'rganish arziydimi? Unda harflab sekin o'qish arziydi. <br>
-          IELTS olishga arziydimi? Unda birinchisida 5.5 olishga arziydi. <br>
-          Universitetni bitirish arziydimi? Unda qayta topshirishga arziydi. <br>
-          Ishga kirish arziydimi? Unda 100 marta rad javobini olish arziydi. <br>
-          Dastur qurishga arziydimi? 1-versiyasi oddiy bo'lsa ham arziydi. <br>
-          Maqola yozish arziydimi? Unda 1ta so'z bilan boshlash ham arziydi. <br><br>
-          Nimadir qilishga arzisa, birinchisida yomon qilishga ham arziydi.
-        </p>
+      <div style="font-family: 'Caveat', cursive; font-size: 20px; line-height: 1.8; color: #333; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    Nimadir qilishga arzisa... <br><br>
+    Yurishni o'rganish arziydimi? Unda 100 marta yiqilish arziydi. <br>
+    O'qishni o'rganish arziydimi? Unda harflab sekin o'qish arziydi. <br>
+    IELTS olishga arziydimi? Unda birinchisida 5.5 olishga arziydi. <br>
+    Universitetni bitirish arziydimi? Unda qayta topshirishga arziydi. <br>
+    Ishga kirish arziydimi? Unda 100 marta rad javobini olish arziydi. <br>
+    Dastur qurishga arziydimi? 1-versiyasi oddiy bo'lsa ham arziydi. <br>
+    Maqola yozish arziydimi? Unda 1ta so'z bilan boshlash ham arziydi. <br><br>
+    Nimadir qilishga arzisa, birinchisida yomon qilishga ham arziydi.
       </div>
     </div>
   </main>
-  <footer>
-    <div>
-      <a href="https://uzfifa.net/">
-        <img src="https://uzfifa.net/images/menu_home.png" alt="Home" class="icon">Bosh sahifaga
-      </a>
-    </div>
-    <div>
-      <a href="https://uzfifa.net/users/index.php?act=online">
-        <img src="https://uzfifa.net/images/menu_online.png" alt="Back" class="icon">Orqaga
-      </a>
-    </div>
-  </footer>
-
   <script>
     // Dark mode funksiyasi
     const darkModeToggle = document.getElementById('dark-mode-toggle');
@@ -94,5 +243,6 @@
     `;
     document.head.appendChild(darkModeStyle);
   </script>
+<div class="footer">2024</div>
 </body>
 </html>
