@@ -17,3 +17,7 @@ function updateGreeting() {
 
     document.getElementById('greeting').textContent = greeting;
 }
+
+// Har soniyada yangilash uchun
+setInterval(updateGreeting, 1000);
+updateGreeting();
