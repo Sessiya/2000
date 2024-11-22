@@ -1,132 +1,16 @@
-/* Karta elementini moslashtirish */
 .card {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
-  width: 100%; /* Karta kengligini 100% qilib qo'yish, o'zining konteyneriga moslashadi */
-  max-width: 300px; /* Maksimal kenglikni o'rnatish */
-  margin: 10px; /* Karta elementlari o'rtasida bo'sh joy */
-  box-sizing: border-box; /* Padding va borderni elementning umumiy o'lchamiga kiritish */
-  opacity: 0.8; /* Boshlang'ich opasitiya (yengil ko'rinish) */
-  transform: translateY(10px); /* Boshlang'ich holat: Karta biroz pastga joylashgan */
-  animation: cardAnimation 0.5s ease-out; /* Karta kelib chiqish animatsiyasi */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Kichik ekranlar uchun (masalan, mobil qurilmalar) */
-@media (max-width: 768px) {
-  .card {
-    width: 90%; /* Karta kengligini kichik ekranlarda yanada kengroq qilish */
-    max-width: 350px; /* Maksimal kenglikni biroz kattaroq qilish */
-  }
-}
-
-/* Super kichik ekranlar (mobil telefonlar) uchun */
-@media (max-width: 480px) {
-  .card {
-    width: 95%; /* Mobil ekranda kartaning kengligini yanada kengaytirish */
-    max-width: 400px; /* Mobil qurilmalar uchun maksimal kenglikni yanada kengroq qilish */
-  }
-}
-
-/* Karta animatsiyasi */
-@keyframes cardAnimation {
-  0% {
-    transform: translateY(20px); /* Karta biroz pastda boshlanadi */
-    opacity: 0; /* Boshlang'ich holatda ko'rinmas */
-  }
-  100% {
-    transform: translateY(0); /* Karta asl joyiga keladi */
-    opacity: 0.8; /* Karta ko'rinadi */
-  }
-}
-
-/* Hover holati uchun animatsiya */
-@keyframes cardAnimation {
-  0% {
-    opacity: 0; /* Boshlang'ich holatda ko'rinmas */
-    transform: translateY(30px); /* Karta pastdan keladi */
-  }
-  100% {
-    opacity: 0.8;
-    transform: translateY(0); /* Karta o'z joyiga qaytadi */
-  }
-}
-
-/* Karta ichidagi matnlarni chegaralash */
-.card h2, .card p {
-  margin: 0; /* Matnlarning yonidagi bo'sh joyni olib tashlash */
-  padding: 0 10px; /* Matn atrofida bo'sh joy */
-  word-wrap: break-word; /* Matn uzunligi ekranga sig'masa, yangi qatorga o'tadi */
-  text-align: left; /* Matnni chapga qarab joylash */
-}
-
-/* Karta kengligi ekran o'lchamiga qarab moslashadi */
-@media (max-width: 1200px) {
-  .card {
-    width: 220px; /* Kenglikni kichik ekranlar uchun moslashtirish */
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 180px; /* Yanada kichik ekranlar uchun */
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    width: 150px; /* Mobil ekranlar uchun yana kichikroq karta */
-  }
-}
-
-/* Tungi rejimdagi kartalar */
-body.dark-mode .card {
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* Karta hover holati */
-.card:hover {
-  transform: scale(1.05); /* Karta kattalashadi */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soyali effekt */
-  opacity: 1; /* Hover holatida to'liq ko'rinishga o'tish */
-  background-color: #f0f0f0; /* Hoverda fon rangi o'zgaradi */
-  animation: cardHoverAnimation 0.5s ease-in-out; /* Animatsiya qo'shish */
-}
-
-/* Hover holatidagi animatsiya */
-@keyframes cardHoverAnimation {
-  0% {
-    transform: scale(1); /* Boshlang'ich holat */
-    opacity: 0.8; /* Boshlang'ich opasitiya */
-  }
-  50% {
-    transform: scale(1.05); /* O'rtacha kattalashish */
-    opacity: 1; /* To'liq ko'rinishga o'tish */
-  }
-  100% {
-    transform: scale(1); /* Tugatganda original holat */
-    opacity: 0.8; /* Opasitiya qaytishi */
-  }
-}
-
-/* Karta ichidagi menu */
-.card .menu {
-  background-color: #f1f1f1;
-  padding: 15px;
-  border-radius: 5px;
-  margin-top: 15px;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
   color: #333;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Tungi rejimdagi menu */
@@ -147,6 +31,43 @@ body.dark-mode .card .menu a {
 
 .card .menu a:hover {
   color: #005500;
+}
+
+/* Karta va menyu kengligini moslashuvchan qilish */
+@media (max-width: 1024px) {
+  .card {
+    font-size: 14px; /* Kichik ekranlarda shriftni kichraytirish */
+  }
+  .card .menu {
+    font-size: 14px; /* Menyu shriftini kichraytirish */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    font-size: 12px; /* O'rta ekranlarda yanada kichik shrift */
+  }
+  .card .menu {
+    font-size: 12px; /* Menyu shriftini yanada kichik qilish */
+  }
+
+  /* Menu ichidagi linklarni kichik ekranlarga moslashtirish */
+  .card .menu a {
+    font-size: 14px; /* Kichik ekranlarda havola shriftini kichraytirish */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    font-size: 10px; /* Mobil ekranlarda shriftni yanada kichik qilish */
+  }
+  .card .menu {
+    font-size: 10px; /* Menyu shriftini yanada kichik qilish */
+  }
+
+  .card .menu a {
+    font-size: 12px; /* Mobil ekranlarda havola shriftini kichraytirish */
+  }
 }
 html {
   scroll-behavior: smooth;
