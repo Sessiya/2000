@@ -1,100 +1,3 @@
-/* Karta asosiy uslubi */
-.card {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: left;
-  width: 100%; /* Karta kengligini 100% qilish */
-  box-sizing: border-box;
-  font-size: 16px;
-  color: #333;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  opacity: 0.8; /* Boshlang'ich opasitiya (yengil ko'rinish) */
-  transform: translateY(10px); /* Boshlang'ich holat: Karta biroz pastga joylashgan */
-  animation: cardAnimation 0.5s ease-out; /* Karta kelib chiqish animatsiyasi */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
-}
-
-/* Karta hover holati */
-.card:hover {
-  transform: scale(1.05); /* Karta kattalashadi */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soyali effekt */
-  opacity: 1; /* Hover holatida to'liq ko'rinishga o'tish */
-  background-color: #f0f0f0; /* Hoverda fon rangi o'zgaradi */
-  animation: cardHoverAnimation 0.5s ease-in-out; /* Animatsiya qo'shish */
-}
-
-/* Hover holatidagi animatsiya */
-@keyframes cardHoverAnimation {
-  0% {
-    transform: scale(1); /* Boshlang'ich holat */
-    opacity: 0.8; /* Boshlang'ich opasitiya */
-  }
-  50% {
-    transform: scale(1.05); /* O'rtacha kattalashish */
-    opacity: 1; /* To'liq ko'rinishga o'tish */
-  }
-  100% {
-    transform: scale(1); /* Tugatganda original holat */
-    opacity: 0.8; /* Opasitiya qaytishi */
-  }
-}
-
-/* Karta konteynerining moslashuvchanligi */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-}
-
-/* Tungi rejimdagi menu */
-body.dark-mode .card {
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode .card .menu {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-}
-
-body.dark-mode .card .menu a {
-  color: #66ccff;
-}
-
-.card .menu a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-.card .menu a:hover {
-  color: #005500;
-}
-
-/* Media queries */
-@media (max-width: 1024px) {
-  .card {
-    width: calc(50% - 20px); /* Kichik ekranlar uchun kartalar 50% kenglikka ega bo'ladi */
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: calc(33.33% - 20px); /* Yanada kichik ekranlarda kartalar 33% kenglikka ega bo'ladi */
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    width: 100%; /* Mobil ekranlarda karta kengligi to'liq ekranni egallaydi */
-  }
-}
 html {
   scroll-behavior: smooth;
 }
@@ -140,6 +43,57 @@ html {
       color: #e0e0e0;
     }
 
+    /* Karta uslubi */
+    .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap; /* Kartalar bir-biriga yaqinlashganda yangi qatorda joylashadi */
+  padding: 0 10px; /* Agar ekranning kichik qismlarida bo'lsa, bo'sh joy berish */
+    }
+
+    .card {
+  width: 100%; /* Standart karta kengligi */
+  margin: 10px; /* Karta elementlari o'rtasida bo'sh joy */
+  box-sizing: border-box; /* Padding va borderni elementning umumiy o'lchamiga kiritish */
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    body.dark-mode .card {
+      background-color: #1e1e1e;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    body.dark-mode .card a {
+      color: #66ccff;
+    }
 
     /* Xabar maydoni */
     .phdr2, .phdr {
@@ -263,7 +217,7 @@ body {
 }
 
 body.dark-mode .footer {
-  background-color: black url(https://Sessiya.github.io/2000/css/footer.gif) repeat-x;
+  background-color: #202020 url(https://Sessiya.github.io/2000/css/footer.gif) repeat-x;
   color: #e0e0e0;
 }
 /* Tungi rejim: Footer */
