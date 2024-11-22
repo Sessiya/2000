@@ -26,6 +26,9 @@ function toggleDarkMode() {
     toggleButton.textContent = "🌙"; // Tungi rejim tugmasi
     localStorage.setItem("theme", "light");
   }
+
+  // Sahifani avtomatik yangilash
+  location.reload(); // Sahifa qayta yuklanadi
 }
 
 document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
