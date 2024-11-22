@@ -2,9 +2,6 @@ let currentIndex = 0;
 let randomMode = true;
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Rejimni tiklash
-  initializeDarkMode();
-
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
@@ -22,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("prev-ticket").addEventListener("click", showPrevTicket);
   document.getElementById("show-answer").addEventListener("click", toggleMainAnswer);
   document.getElementById("all-mode").addEventListener("click", showAllTickets);
-
-  document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 });
 
 function showRandomTicket() {
@@ -59,36 +54,6 @@ function toggleMainAnswer() {
   } else {
     answerElement.hidden = true;
     button.textContent = "Javobni Ko'rish";
-  }
-}
-
-function toggleDarkMode() {
-  const body = document.body;
-  const toggleButton = document.getElementById("dark-mode-toggle");
-
-  body.classList.toggle("dark-mode");
-
-  // Saqlangan rejimni yangilash
-  if (body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "☀️";
-    localStorage.setItem("theme", "dark");
-  } else {
-    toggleButton.textContent = "🌙";
-    localStorage.setItem("theme", "light");
-  }
-}
-
-function initializeDarkMode() {
-  const savedMode = localStorage.getItem("theme");
-  const body = document.body;
-  const toggleButton = document.getElementById("dark-mode-toggle");
-
-  if (savedMode === "dark") {
-    body.classList.add("dark-mode");
-    toggleButton.textContent = "☀️";
-  } else {
-    body.classList.remove("dark-mode");
-    toggleButton.textContent = "🌙";
   }
 }
 
