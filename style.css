@@ -1,15 +1,31 @@
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  color: #333;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #333; /* Orqa fon rangi */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Linklar orasidagi masofa */
+  color: white;
+  font-size: 16px;
+  border-top: 2px solid #444; /* Yuqoridagi chiziq */
 }
+
+footer a {
+  color: #ffffff;
+  text-decoration: none; /* Chiziqni olib tashlash */
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+footer a:hover {
+  color: #00bcd4; /* Hover effektida rangni o'zgartirish */
+  transform: scale(1.05); /* Linkni kattalashtirish */
+}
+
+footer a:active {
+  transform: scale(1); /* Bosilganda animatsiya yo'q */
+}
+
 button {
   margin-top: 20px; /* Tugmani yuqoridan 20px pastga suradi */
 }
