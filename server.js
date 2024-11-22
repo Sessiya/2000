@@ -1,37 +1,36 @@
-// server.js
 const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-
 const app = express();
+const port = 3000;
+app.use(express.json());
 
-// MongoDB ulanishi
-mongoose.connect('mongodb://localhost/ratings', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+// Reytinglarni saqlash uchun
+let ratings = [];
 
-// Ma'lumotlar bazasidagi reytingni saqlash uchun model
-const Rating = mongoose.model('Rating', new mongoose.Schema({
-    rating: Number,
-}));
-
-// BodyParser yordamida JSONni olish
-app.use(bodyParser.json());
-
-// Reyting yuborish uchun API endpoint
+// POST so'rovi - reytingni qabul qilish
 app.post('/api/rating', (req, res) => {
     const { rating } = req.body;
-
-    // Reytingni ma'lumotlar bazasiga saqlash
-    const newRating = new Rating({ rating });
-    newRating.save()
-        .then(() => res.json({ message: 'Reyting muvaffaqiyatli saqlandi!' }))
-        .catch((err) => res.status(500).json({ message: 'Xatolik yuz berdi', error: err }));
+    if (rating >= 1 && rating <= 5) {
+        ratings.push(rating);
+        res.status(200).json({ message: 'Reyting muvaffaqiyatli qo\'shildi' });
+    } else {
+        res.status(400).json({ message: 'Noto\'g\'ri reyting' });
+    }
 });
 
-// Serverni ishga tushirish
-const port = 3000;
+// GET so'rovi - reytinglar statistikasi
+app.get('/api/ratings', (req, res) => {
+    const ratingCount = [0, 0, 0, 0, 0];  // Reytinglar 1 dan 5 gacha
+
+    ratings.forEach(rating => {
+        ratingCount[rating - 1] += 1;  // Har bir reytingning sonini sanash
+    });
+
+    res.json({
+        ratingCount: ratingCount,
+        totalRatings: ratings.length
+    });
+});
+
 app.listen(port, () => {
-    console.log(`Server ishga tushdi port ${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
