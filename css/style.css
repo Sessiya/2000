@@ -6,7 +6,7 @@
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
-  width: 250px; /* Standart karta kengligi */
+  width: 300px; /* Standart karta kengligi */
   margin: 10px; /* Karta elementlari o'rtasida bo'sh joy */
   box-sizing: border-box; /* Padding va borderni elementning umumiy o'lchamiga kiritish */
   opacity: 0.8; /* Boshlang'ich opasitiya (yengil ko'rinish) */
@@ -287,7 +287,7 @@ body {
 }
 
 body.dark-mode .footer {
-  background-color: #202020 url(https://Sessiya.github.io/2000/css/footer.gif) repeat-x;
+  background-color: black url(https://Sessiya.github.io/2000/css/footer.gif) repeat-x;
   color: #e0e0e0;
 }
 /* Tungi rejim: Footer */
