@@ -2,6 +2,9 @@ let currentIndex = 0;
 let randomMode = true;
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Rejimni tiklash
+  initializeDarkMode();
+
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
@@ -61,15 +64,30 @@ function toggleMainAnswer() {
 
 function toggleDarkMode() {
   const body = document.body;
-  body.classList.toggle("dark-mode");
   const toggleButton = document.getElementById("dark-mode-toggle");
+
+  body.classList.toggle("dark-mode");
+
+  // Saqlangan rejimni yangilash
   if (body.classList.contains("dark-mode")) {
-    body.style.backgroundColor = "#333333";
-    body.style.color = "#ffffff";
+    toggleButton.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+  } else {
+    toggleButton.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  }
+}
+
+function initializeDarkMode() {
+  const savedMode = localStorage.getItem("theme");
+  const body = document.body;
+  const toggleButton = document.getElementById("dark-mode-toggle");
+
+  if (savedMode === "dark") {
+    body.classList.add("dark-mode");
     toggleButton.textContent = "☀️";
   } else {
-    body.style.backgroundColor = "#ffffff";
-    body.style.color = "#333333";
+    body.classList.remove("dark-mode");
     toggleButton.textContent = "🌙";
   }
 }
