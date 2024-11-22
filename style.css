@@ -1,3 +1,13 @@
+/* Umumiy body sozlamalari */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ekran balandligidan kam bo'lmasligi uchun */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer uchun sozlamalar */
 footer {
   background-color: #333; /* Orqa fon rangi */
   padding: 10px 20px;
@@ -8,8 +18,10 @@ footer {
   color: white;
   font-size: 16px;
   border-top: 2px solid #444; /* Yuqoridagi chiziq */
+  margin-top: auto; /* Footerni sahifaning pastki qismiga joylashtiradi */
 }
 
+/* Linklar uchun dizayn */
 footer a {
   color: #ffffff;
   text-decoration: none; /* Chiziqni olib tashlash */
@@ -17,11 +29,13 @@ footer a {
   transition: color 0.3s ease, transform 0.2s;
 }
 
+/* Hover effekti */
 footer a:hover {
   color: #00bcd4; /* Hover effektida rangni o'zgartirish */
   transform: scale(1.05); /* Linkni kattalashtirish */
 }
 
+/* Bosilganda animatsiya */
 footer a:active {
   transform: scale(1); /* Bosilganda animatsiya yo'q */
 }
