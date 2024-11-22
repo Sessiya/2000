@@ -4,177 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assalamu alaykum!</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/clock.js"></script>
-<script src="js/greeting.js"></script>
-<script src="js/motivatsiya.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/clock.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/motivatsiya.js"></script>
+  <style>
+    /* Kalendar uchun CSS qo'shildi */
+    .calendar {
+      width: 400px;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      overflow: hidden;
+    }
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+    }
+    .calendar-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .calendar-body {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      padding: 10px;
+      color: #333;
+    }
+    .day {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .day:hover {
+      background-color: #e0f7e8;
+    }
+    .day-header {
+      font-weight: bold;
+      color: #4caf50;
+    }
+    .today {
+      background-color: #4caf50;
+      color: #fff;
+    }
+    .red-day {
+      color: red;
+    }
+    .nav-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <div class="calendar">
+    <div class="calendar-header">
+      <button class="nav-btn" onclick="changeMonth(-1)">←</button>
+      <h2 id="month-year">Noyabr 2024</h2>
+      <button class="nav-btn" onclick="changeMonth(1)">→</button>
+    </div>
+    <div class="calendar-body" id="calendar-days">
+      <div class="day day-header">Dush</div>
+      <div class="day day-header">Sesh</div>
+      <div class="day day-header">Chor</div>
+      <div class="day day-header">Pay</div>
+      <div class="day day-header">Jum</div>
+      <div class="day day-header">Shan</div>
+      <div class="day day-header red-day">Yak</div>
+    </div>
+  </div>
+
   <div class="phdr2">
     Assalomu alaykum, 
     <span id="greeting">...</span> <br>
     Soat: <span id="clock">00:00:00</span>
-    <button id="dark-mode-toggle">🌙</button><script src="js/dark-mode.js"></script>
+    <button id="dark-mode-toggle">🌙</button>
+    <script src="js/dark-mode.js"></script>
   </div>
-  <div class="menu">
-    <script src="js/calendar.js"></script>
-      <style>
-        moon {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-            margin: 0;
-        }
 
-        .calendar {
-            width: 400px; /* Kengaytirilgan kalendar */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            overflow: hidden;
-        }
-
-        .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-        }
-
-        .calendar-header h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .calendar-body {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr); /* 7 kolonkalar uchun */
-            gap: 5px;
-            padding: 10px;
-            color: #333;
-        }
-
-        .day {
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            border-radius: 4px;
-            cursor: pointer;
-            box-sizing: border-box;
-        }
-
-        .day:hover {
-            background-color: #e0f7e8;
-        }
-
-        .day-header {
-            font-weight: bold;
-            color: #4caf50;
-        }
-
-        .today {
-            background-color: #4caf50;
-            color: #fff;
-        }
-
-        .red-day {
-            color: red;
-        }
-
-        .nav-btn {
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 18px;
-            cursor: pointer;
-        }
-      </style>
-<moon>
-
-<div class="calendar">
-    <div class="calendar-header">
-        <button class="nav-btn" onclick="changeMonth(-1)">←</button>
-        <h2 id="month-year">Noyabr 2024</h2>
-        <button class="nav-btn" onclick="changeMonth(1)">→</button>
-    </div>
-    <div class="calendar-body" id="calendar-days">
-        <div class="day day-header">Dush</div>
-        <div class="day day-header">Sesh</div>
-        <div class="day day-header">Chor</div>
-        <div class="day day-header">Pay</div>
-        <div class="day day-header">Jum</div>
-        <div class="day day-header">Shan</div>
-        <div class="day day-header red-day">Yak</div> <!-- Yakshanba sarlavhasi -->
-    </div>
-</div>
-
-<script>
-    const calendarDays = document.getElementById('calendar-days');
-    const monthYear = document.getElementById('month-year');
-    let currentDate = new Date();
-
-    function renderCalendar(date) {
-        const year = date.getFullYear();
-        const month = date.getMonth();
-        const today = new Date();
-
-        monthYear.textContent = date.toLocaleString('uz-UZ', { month: 'long', year: 'numeric' });
-
-        // Kalendarning hozirgi kunlarini tozalash
-        while (calendarDays.children.length > 7) {
-            calendarDays.removeChild(calendarDays.lastChild);
-        }
-
-        const firstDayIndex = new Date(year, month, 1).getDay(); // Haftaning birinchi kuni
-        const lastDay = new Date(year, month + 1, 0).getDate();
-
-        // Haftaning birinchi kunini belgilash
-        const firstDayOfWeek = (firstDayIndex === 0) ? 6 : firstDayIndex - 1;
-
-        // Boshlanishdan oldingi bo'sh joylar
-        for (let i = 0; i < firstDayOfWeek; i++) {
-            const emptyCell = document.createElement('div');
-            emptyCell.classList.add('day');
-            calendarDays.appendChild(emptyCell);
-        }
-
-        // Kunlarni yaratish
-        for (let day = 1; day <= lastDay; day++) {
-            const dayCell = document.createElement('div');
-            dayCell.classList.add('day');
-            dayCell.textContent = day;
-
-            if (
-                day === today.getDate() &&
-                year === today.getFullYear() &&
-                month === today.getMonth()
-            ) {
-                dayCell.classList.add('today');
-            }
-
-            // Yakshanba sanalarini qizil rangda qilish
-            if (new Date(year, month, day).getDay() === 0) {
-                dayCell.classList.add('red-day');
-            }
-
-            calendarDays.appendChild(dayCell);
-        }
-    }
-
-    function changeMonth(step) {
-        currentDate.setMonth(currentDate.getMonth() + step);
-        renderCalendar(currentDate);
-    }
-
-    renderCalendar(currentDate);
-</script>
-  </div>
   <div class="phdr">Iltimos, kerakli bo'limni tanlang:</div>
   <div class="menu">
     <div class="card-container">
@@ -189,11 +108,69 @@
         <p>Yakuniy imtihonda tushadigan biletlar va javoblari.</p>
         <a href="Neurology/index.html">Kirish</a>
       </div>
-      </div></div>
-<div class="phdr">Motivatsiya:</div>
+    </div>
+  </div>
+
+  <div class="phdr">Motivatsiya:</div>
   <div class="motivation my-box" id="motivation">
     <!-- Motivatsiya matni shu yerda o'zgaradi -->
   </div>
+
   <div class="footer">2024</div>
+
+  <script>
+    const calendarDays = document.getElementById('calendar-days');
+    const monthYear = document.getElementById('month-year');
+    let currentDate = new Date();
+
+    function renderCalendar(date) {
+      const year = date.getFullYear();
+      const month = date.getMonth();
+      const today = new Date();
+
+      monthYear.textContent = date.toLocaleString('uz-UZ', { month: 'long', year: 'numeric' });
+
+      while (calendarDays.children.length > 7) {
+        calendarDays.removeChild(calendarDays.lastChild);
+      }
+
+      const firstDayIndex = new Date(year, month, 1).getDay();
+      const lastDay = new Date(year, month + 1, 0).getDate();
+      const firstDayOfWeek = (firstDayIndex === 0) ? 6 : firstDayIndex - 1;
+
+      for (let i = 0; i < firstDayOfWeek; i++) {
+        const emptyCell = document.createElement('div');
+        emptyCell.classList.add('day');
+        calendarDays.appendChild(emptyCell);
+      }
+
+      for (let day = 1; day <= lastDay; day++) {
+        const dayCell = document.createElement('div');
+        dayCell.classList.add('day');
+        dayCell.textContent = day;
+
+        if (
+          day === today.getDate() &&
+          year === today.getFullYear() &&
+          month === today.getMonth()
+        ) {
+          dayCell.classList.add('today');
+        }
+
+        if (new Date(year, month, day).getDay() === 0) {
+          dayCell.classList.add('red-day');
+        }
+
+        calendarDays.appendChild(dayCell);
+      }
+    }
+
+    function changeMonth(step) {
+      currentDate.setMonth(currentDate.getMonth() + step);
+      renderCalendar(currentDate);
+    }
+
+    renderCalendar(currentDate);
+  </script>
 </body>
 </html>
