@@ -39,21 +39,29 @@
 </div>
 <div class="menu">
   <div class="phdr">Saytga baho bering:</div>
-  <div id="rating-container">
-  <div id="rating">
-    <span class="star" onclick="rate(1)">★</span>
-    <span class="star" onclick="rate(2)">★</span>
-    <span class="star" onclick="rate(3)">★</span>
-    <span class="star" onclick="rate(4)">★</span>
-    <span class="star" onclick="rate(5)">★</span>
+  <!-- Reyting qo'yish -->
+  <div id="rating-section">
+    <h2>Reyting:</h2>
+    <div id="star-rating">
+      <span class="star" onclick="rate(1)">★</span>
+      <span class="star" onclick="rate(2)">★</span>
+      <span class="star" onclick="rate(3)">★</span>
+      <span class="star" onclick="rate(4)">★</span>
+      <span class="star" onclick="rate(5)">★</span>
+    </div>
+    <textarea id="comment" placeholder="Kommentariya yozing..."></textarea>
+    <button onclick="submitRating()">Jo'natish</button>
   </div>
-  <textarea id="comment" placeholder="Leave a comment..." rows="4" cols="50"></textarea>
-  <button id="submitRatingButton" onclick="submitRating()" disabled>Submit Rating</button>
+
+  <h2>Reytinglar va Kommentlar:</h2>
+  <div id="comments-section">
+    <!-- Yuborilgan reytinglar va kommentlar ko'rinadi -->
   </div>
   <script>
-    let selectedRating = 0;
-let userComment = '';
+    let selectedRating = 0;  // Tanlangan reyting
+let userRating = null;  // Foydalanuvchining reytingi, dastlab null
 
+// Reytingni tanlash
 function rate(star) {
   selectedRating = star;
   const stars = document.querySelectorAll('.star');
@@ -64,32 +72,47 @@ function rate(star) {
       starElement.classList.remove('selected');
     }
   });
-  document.getElementById('submitRatingButton').disabled = false;
 }
 
-document.getElementById('comment').addEventListener('input', function () {
-  userComment = this.value;  // Capture comment input
-});
-
+// Reyting va kommentni serverga yuborish
 function submitRating() {
-  fetch('/api/rating', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      rating: selectedRating,
-      comment: userComment,  // Send comment along with the rating
-    }),
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Rating and comment submitted:', data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+  const comment = document.getElementById('comment').value;
+
+  if (selectedRating >= 1 && selectedRating <= 5) {
+    fetch('https://two000-7.onrender.com/api/rating', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ rating: selectedRating, comment: comment }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Reyting va komment muvaffaqiyatli yuborildi!');
+      loadRatingComments();
+    })
+    .catch(error => console.error('Xatolik:', error));
+  } else {
+    alert('Iltimos, reytingni tanlang!');
+  }
 }
+
+// Reytinglar va kommentlarni olish
+function loadRatingComments() {
+  fetch('https://two000-7.onrender.com/api/ratings')
+    .then(response => response.json())
+    .then(data => {
+      let content = '';
+      data.forEach(item => {
+        content += `<p>Reyting: ${item.rating} - Komment: ${item.comment}</p>`;
+      });
+      document.getElementById('comments-section').innerHTML = content;
+    })
+    .catch(error => console.error('Xatolik:', error));
+}
+
+// Sahifa yuklanishda reytinglar va kommentlarni yuklash
+window.onload = loadRatingComments;
   </script>
   <div id="comments-section"></div>
   <div class="footer">2024</div>
