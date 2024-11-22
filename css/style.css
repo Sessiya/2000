@@ -1,16 +1,26 @@
+/* Karta asosiy uslubi */
 .card {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: left;
-  width: 100%;
+  width: 100%; /* Karta kengligini 100% qilish */
   box-sizing: border-box;
   font-size: 16px;
   color: #333;
   margin: 10px;
   display: flex;
   flex-direction: column;
+}
+
+/* Karta konteynerining moslashuvchanligi */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 
 /* Tungi rejimdagi menu */
@@ -33,40 +43,22 @@ body.dark-mode .card .menu a {
   color: #005500;
 }
 
-/* Karta va menyu kengligini moslashuvchan qilish */
+/* Media queries */
 @media (max-width: 1024px) {
   .card {
-    font-size: 14px; /* Kichik ekranlarda shriftni kichraytirish */
-  }
-  .card .menu {
-    font-size: 14px; /* Menyu shriftini kichraytirish */
+    width: calc(50% - 20px); /* Kichik ekranlar uchun kartalar 50% kenglikka ega bo'ladi */
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    font-size: 12px; /* O'rta ekranlarda yanada kichik shrift */
-  }
-  .card .menu {
-    font-size: 12px; /* Menyu shriftini yanada kichik qilish */
-  }
-
-  /* Menu ichidagi linklarni kichik ekranlarga moslashtirish */
-  .card .menu a {
-    font-size: 14px; /* Kichik ekranlarda havola shriftini kichraytirish */
+    width: calc(33.33% - 20px); /* Yanada kichik ekranlarda kartalar 33% kenglikka ega bo'ladi */
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    font-size: 10px; /* Mobil ekranlarda shriftni yanada kichik qilish */
-  }
-  .card .menu {
-    font-size: 10px; /* Menyu shriftini yanada kichik qilish */
-  }
-
-  .card .menu a {
-    font-size: 12px; /* Mobil ekranlarda havola shriftini kichraytirish */
+    width: 100%; /* Mobil ekranlarda karta kengligi to'liq ekranni egallaydi */
   }
 }
 html {
