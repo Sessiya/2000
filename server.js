@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;  // Portni to'g'ri olish
+const port = process.env.PORT || 10000;  // Render platformasida portni avtomatik aniqlash
+
+app.use(express.static('public'));  // Statik fayllar
 
 app.use(express.json());
 
-// Reytinglarni saqlash uchun
+// Reytinglarni saqlash
 let ratings = [];
 
-// POST so'rovi - reytingni qabul qilish
 app.post('/api/rating', (req, res) => {
     const { rating } = req.body;
     if (rating >= 1 && rating <= 5) {
@@ -18,12 +19,11 @@ app.post('/api/rating', (req, res) => {
     }
 });
 
-// GET so'rovi - reytinglar statistikasi
 app.get('/api/ratings', (req, res) => {
-    const ratingCount = [0, 0, 0, 0, 0];  // Reytinglar 1 dan 5 gacha
+    const ratingCount = [0, 0, 0, 0, 0];
 
     ratings.forEach(rating => {
-        ratingCount[rating - 1] += 1;  // Har bir reytingning sonini sanash
+        ratingCount[rating - 1] += 1;
     });
 
     res.json({
@@ -33,5 +33,5 @@ app.get('/api/ratings', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at https://two000-7.onrender.com`);  // To'g'ri URL
 });
