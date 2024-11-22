@@ -38,22 +38,29 @@
   </div>
 </div>
 <div class="menu">
-    <h2>Saytga baho bering:</h2>
-    <div id="star-rating">
-      <span class="star" onclick="rate(1)">★</span>
+  <div class="phdr">Saytga baho bering:</div>
+  <div id="star-rating">
+    <span class="star" onclick="rate(1)">★</span>
     <span class="star" onclick="rate(2)">★</span>
     <span class="star" onclick="rate(3)">★</span>
     <span class="star" onclick="rate(4)">★</span>
     <span class="star" onclick="rate(5)">★</span>
-</div>
-<div id="ratingText"></div>
-    <button id="submitRatingButton" onclick="submitRating(selectedRating)" disabled>Jo'natish</button>
-    <button id="editRatingButton" onclick="editRating()" style="display:none;">Qayta baho berish</button>
-    <div id="ratingStats"></div>
-</div>
-<script>
+  </div>
+  <div id="ratingText"></div>
+  <button id="submitRatingButton" onclick="submitRating(selectedRating)" disabled>Jo'natish</button>
+
+  <div class="phdr">Izoh qoldirish:</div>
+  <textarea id="commentText" placeholder="Izoh qoldiring..."></textarea>
+  <button id="submitCommentButton" onclick="submitComment()">Izohni jo'natish</button>
+
+  <div id="ratingStats"></div>
+  <div id="commentsSection">
+    <h3>Izohlar:</h3>
+    <ul id="commentsList"></ul>
+  </div>
+
+  <script>
     let selectedRating = 0;
-    let userRating = null;  // User's rating, initially null
 
     // Reytingni tanlash
     function rate(star) {
@@ -70,9 +77,9 @@
       document.getElementById('submitRatingButton').disabled = false;
     }
 
-    // Reytingni serverga yuborish (AJAX so'rovi)
+    // Reytingni serverga yuborish
     function submitRating(rating) {
-      fetch('https://two000-7.onrender.com/api/rating', {
+      fetch('https://https://two000-7.onrender.com/api/rating', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -83,23 +90,34 @@
       .then(data => {
         console.log('Reyting muvaffaqiyatli yuborildi:', data);
         loadRatingStats();
-        userRating = rating;  // Saqlash foydalanuvchining reytingini
-        document.getElementById('submitRatingButton').disabled = true;
-        document.getElementById('editRatingButton').style.display = 'inline-block';  // Qayta baho berish tugmasi
       })
       .catch((error) => {
         console.error('Reyting yuborishda xatolik:', error);
       });
     }
 
-    // Qayta baho berish
-    function editRating() {
-      selectedRating = userRating;  // Foydalanuvchi tomonidan berilgan reytingni qayta tanlash
-      rate(selectedRating);  // Reytingni yangilash
-      document.getElementById('submitRatingButton').disabled = false;
+    // Kommentni serverga yuborish
+    function submitComment() {
+      const comment = document.getElementById('commentText').value;
+      fetch('https://two000-7.onrender.com/api/comment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ comment: comment })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Komment muvaffaqiyatli yuborildi:', data);
+        loadComments();  // Izohlarni qayta yuklash
+        document.getElementById('commentText').value = '';  // Kommentni tozalash
+      })
+      .catch((error) => {
+        console.error('Komment yuborishda xatolik:', error);
+      });
     }
 
-    // Reyting statistikasi
+    // Reytinglar statistikasi
     function loadRatingStats() {
       fetch('https://two000-7.onrender.com/api/ratings')
       .then(response => response.json())
@@ -113,8 +131,29 @@
       });
     }
 
-    // Sahifa yuklanganda reytinglar statistikasi
-    window.onload = loadRatingStats;
+    // Izohlar ro'yxatini yuklash
+    function loadComments() {
+      fetch('https://two000-7.onrender.com/api/comments')
+      .then(response => response.json())
+      .then(data => {
+        const commentsList = document.getElementById('commentsList');
+        commentsList.innerHTML = '';
+        data.forEach(comment => {
+          const li = document.createElement('li');
+          li.textContent = comment.comment;
+          commentsList.appendChild(li);
+        });
+      })
+      .catch((error) => {
+        console.error('Izohlarni olishda xatolik:', error);
+      });
+    }
+
+    // Sahifa yuklanganda reytinglar statistikasi va izohlarni yuklash
+    window.onload = () => {
+      loadRatingStats();
+      loadComments();
+    };
   </script>
   <div class="footer">2024</div>
 </body>
