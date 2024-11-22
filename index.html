@@ -51,13 +51,10 @@
 <div id="ratingStats"></div>
 </div>
 <script>
-    let selectedRating = 0;
+let selectedRating = 0;
 
-// Reytingni tanlash
 function rate(star) {
     selectedRating = star;
-
-    // Yulduzlarni yangilash
     const stars = document.querySelectorAll('.star');
     stars.forEach((starElement, index) => {
         if (index < selectedRating) {
@@ -66,15 +63,10 @@ function rate(star) {
             starElement.classList.remove('selected');
         }
     });
-
-    // Reytingni ko'rsatish
     document.getElementById('ratingText').textContent = `Reyting: ${selectedRating}`;
-
-    // Jo'natish tugmasini faollashtirish
     document.getElementById('submitRatingButton').disabled = false;
 }
 
-// Reytingni serverga yuborish (AJAX so'rovi)
 function submitRating(rating) {
     fetch('https://two000-7.onrender.com/api/rating', {
         method: 'POST',
@@ -86,7 +78,6 @@ function submitRating(rating) {
     .then(response => response.json())
     .then(data => {
         console.log('Reyting muvaffaqiyatli yuborildi:', data);
-        // Reyting statistikasi yangilanishi
         loadRatingStats();
     })
     .catch((error) => {
