@@ -17,14 +17,15 @@ function toggleDarkMode() {
   const body = document.body;
   const toggleButton = document.getElementById("dark-mode-toggle");
 
+  // Tungi va kunduzgi rejimni almashtirish
   body.classList.toggle("dark-mode");
 
   if (body.classList.contains("dark-mode")) {
     toggleButton.textContent = "☀️"; // Kunduzgi rejim tugmasi
-    localStorage.setItem("theme", "dark");
+    localStorage.setItem("theme", "dark"); // Tungi rejimni saqlash
   } else {
     toggleButton.textContent = "🌙"; // Tungi rejim tugmasi
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", "light"); // Kunduzgi rejimni saqlash
   }
 
   // Sahifani avtomatik yangilash
