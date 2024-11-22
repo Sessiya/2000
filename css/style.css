@@ -1,68 +1,115 @@
-      .calendar {
-            width: 400px; /* Kengaytirilgan kalendar */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            overflow: hidden;
-        }
+    /* Kalendar uchun CSS qo'shildi */
+    body.dark-mode {
+      background-color: #121212;
+      color: #fff;
+    }
+    
+    .calendar {
+      width: 400px;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      overflow: hidden;
+    }
 
-        .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-        }
+    body.dark-mode .calendar {
+      background-color: #333;
+    }
 
-        .calendar-header h2 {
-            margin: 0;
-            font-size: 18px;
-        }
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+    }
 
-        .calendar-body {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr); /* 7 kolonkalar uchun */
-            gap: 5px;
-            padding: 10px;
-            color: #333;
-        }
+    body.dark-mode .calendar-header {
+      background-color: #444;
+    }
 
-        .day {
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            border-radius: 4px;
-            cursor: pointer;
-            box-sizing: border-box;
-        }
+    .calendar-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
 
-        .day:hover {
-            background-color: #e0f7e8;
-        }
+    .calendar-body {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      padding: 10px;
+      color: #333;
+    }
 
-        .day-header {
-            font-weight: bold;
-            color: #4caf50;
-        }
+    body.dark-mode .calendar-body {
+      color: #ddd;
+    }
 
-        .today {
-            background-color: #4caf50;
-            color: #fff;
-        }
+    .day {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-        .red-day {
-            color: red;
-        }
+    body.dark-mode .day:hover {
+      background-color: #555;
+    }
 
-        .nav-btn {
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 18px;
-            cursor: pointer;
-	}
+    .day-header {
+      font-weight: bold;
+      color: #4caf50;
+    }
+
+    body.dark-mode .day-header {
+      color: #8bc34a;
+    }
+
+    .today {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    body.dark-mode .today {
+      background-color: #8bc34a;
+    }
+
+    .red-day {
+      color: red;
+    }
+
+    body.dark-mode .red-day {
+      color: #f44336;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    body.dark-mode .nav-btn {
+      color: #bbb;
+    }
+
+    /* Dark Mode Button Style */
+    #dark-mode-toggle {
+      margin-left: 10px;
+      background-color: transparent;
+      border: none;
+      color: #4caf50;
+      cursor: pointer;
+    }
+
+    body.dark-mode #dark-mode-toggle {
+      color: #bbb;
+    }
 html {
   scroll-behavior: smooth;
 }
