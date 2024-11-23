@@ -1,4 +1,4 @@
-let currentTicketIndex = 0;  // To keep track of the current ticket index
+let currentTicketIndex = localStorage.getItem("currentTicketIndex") || 0;  // Load saved ticket index or default to 0
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
@@ -28,6 +28,10 @@ function showTicket(index) {
     <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
   `;
   
+  // Display current ticket info
+  const ticketInfo = document.getElementById("ticket-info");
+  ticketInfo.innerHTML = `Bilet ${index + 1} / ${tickets.length}`;
+  
   // Update the state of the previous/next buttons
   document.getElementById("prev-ticket").disabled = index === 0;  // Disable previous button on first ticket
   document.getElementById("next-ticket").disabled = index === tickets.length - 1;  // Disable next button on last ticket
@@ -49,6 +53,7 @@ function toggleAnswer(index) {
 function nextTicket() {
   if (currentTicketIndex < tickets.length - 1) {
     currentTicketIndex++;
+    localStorage.setItem("currentTicketIndex", currentTicketIndex);  // Save the current ticket index
     showTicket(currentTicketIndex);
   }
 }
@@ -56,6 +61,7 @@ function nextTicket() {
 function prevTicket() {
   if (currentTicketIndex > 0) {
     currentTicketIndex--;
+    localStorage.setItem("currentTicketIndex", currentTicketIndex);  // Save the current ticket index
     showTicket(currentTicketIndex);
   }
 }
