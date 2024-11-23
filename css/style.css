@@ -1,25 +1,17 @@
-
-.icon { padding: 3px 6px 3px 1px; vertical-align: middle; }
-
-.icon-inline { padding-right: 6px; vertical-align: middle; }
-
-/* Umumiy kalendar uslubi */
 .calendar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 kun uchun ustun */
+  grid-template-columns: repeat(7, 1fr);
   gap: 5px;
   text-align: center;
-  width: 100%; /* Ekran kengligiga moslashadi */
-  max-width: 400px; /* Kalendar maksimal kengligi */
-  margin: 0 auto; /* Kalendarni markazlash */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.day, .day-header {
+.day {
   padding: 10px;
   border: 1px solid #ccc;
-  white-space: nowrap; /* Matnni bo'lishdan saqlaydi */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Uzun matnlarni ... bilan kesadi */
+  box-sizing: border-box;
 }
 
 .day-header {
@@ -34,7 +26,6 @@ body.dark-mode .red-day {
   color: #f44336;
 }
 
-/* Bugungi kun uchun uslub */
 .today {
   background-color: #4caf50;
   color: #fff;
@@ -44,7 +35,6 @@ body.dark-mode .today {
   background-color: #8bc34a;
 }
 
-/* Navigatsiya tugmalari */
 .nav-btn {
   background: none;
   border: none;
@@ -57,17 +47,23 @@ body.dark-mode .nav-btn {
   color: #bbb;
 }
 
-/* Telefon ekranlariga moslashtirish (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .calendar {
-    grid-template-columns: repeat(7, minmax(30px, 1fr)); /* Har bir kun uchun minimal kenglik */
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
   }
 
-  .day, .day-header {
-    font-size: 12px; /* Matnni kichikroq qilish */
-    padding: 5px; /* Ichki bo'shliqni kamaytirish */
+  .day {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .nav-btn {
+    font-size: 16px;
   }
 }
+.icon { padding: 3px 6px 3px 1px; vertical-align: middle; }
+
+.icon-inline { padding-right: 6px; vertical-align: middle; }
 
     /* Dark Mode Button Style */
     #dark-mode-toggle {
