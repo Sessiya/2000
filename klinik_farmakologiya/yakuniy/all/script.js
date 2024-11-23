@@ -25,7 +25,7 @@ function showAllTickets() {
     ticketDiv.classList.add("ticket");
     ticketDiv.innerHTML = `
       <strong>${ticket.question}</strong>
-      <button class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
+      <button id="toggle-answer-${index}" class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
       <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
     `;
     allTicketsContainer.appendChild(ticketDiv);
@@ -36,7 +36,7 @@ function showAllTickets() {
 
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.querySelector(`#toggle-answer-${index}`);
+  const button = document.getElementById(`toggle-answer-${index}`);  // Use id to get button
 
   if (answerElement.hidden) {
     answerElement.hidden = false;
