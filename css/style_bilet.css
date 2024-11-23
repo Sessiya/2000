@@ -44,7 +44,7 @@ button:hover, .toggle-answer-btn:hover {
 #all-tickets-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 #all-tickets-container li {
