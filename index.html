@@ -8,6 +8,25 @@
   <script src="js/clock.js"></script>
   <script src="js/greeting.js"></script>
   <script src="js/motivatsiya.js"></script>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .news {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .news h3 {
+      margin: 0 0 10px;
+    }
+    .news p {
+      margin: 0;
+    }
+</style>
 </head>
     <div class="phdr2">
     Assalomu alaykum, 
@@ -58,8 +77,41 @@
   </div>
 
   <div class="footer">
+  <h1>O‘zbekiston yangiliklari:</h1>
+  <div id="news-container">
+    <p>Yuklanmoqda...</p>
+  </div>
 
-  
+  <script>
+    const rssUrl = 'https://rss2json.com/api.json?rss_url=https://daryo.uz/feed/';
+
+    fetch(rssUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`API xatolik berdi: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        const newsContainer = document.getElementById('news-container');
+        newsContainer.innerHTML = ''; // Tozalash
+
+        data.items.slice(0, 10).forEach(item => { // Faqat 10 ta yangilikni chiqaramiz
+          const newsDiv = document.createElement('div');
+          newsDiv.className = 'news';
+
+          newsDiv.innerHTML = `
+            <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+            <p>${item.pubDate}</p>
+            <p>${item.description}</p>
+          `;
+          newsContainer.appendChild(newsDiv);
+        });
+      })
+      .catch(error => {
+        document.getElementById('news-container').innerHTML = `<p>Xatolik yuz berdi: ${error.message}</p>`;
+      });
+  </script>
   </div>
 
   <script src="js/calendar.js"></script>
