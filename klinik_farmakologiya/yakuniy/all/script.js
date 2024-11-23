@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Check if tickets array is valid and has items
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
@@ -33,14 +34,18 @@ function showAllTickets() {
 
   allTicketsContainer.hidden = false;
 
-  // Display the total number of tickets
+  // Check if the #ticket-info element is available before updating
   const ticketInfo = document.getElementById("ticket-info");
-  ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
+  if (ticketInfo) {
+    ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
+  } else {
+    console.error('ticket-info element not found');
+  }
 }
 
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.getElementById(`toggle-answer-${index}`);  // Use id to get button
+  const button = document.getElementById(`toggle-answer-${index}`);
 
   if (answerElement.hidden) {
     answerElement.hidden = false;
