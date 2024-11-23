@@ -1,24 +1,11 @@
 /* Kunduzgi va tungi rejim uchun ranglar */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #4CAF50; /* Yashil rangli yozuv */
-}
-
-body.dark-mode {
-  background-color: #121212; /* Tungi rejimda qora fon */
-  color: #81c784; /* Yashil rangli yozuv tungi rejimda */
 }
 
 .phdr2 {
   color: inherit;
   text-align: center;
-}
-
-footer {
-  text-align: center;
-  color: inherit;
-  padding-top: 10px;
 }
 
 /* Animatsiya va tugma ranglari */
@@ -97,5 +84,5 @@ body.dark-mode button.toggle-answer-btn {
 /* Tungi rejimda o'zgarishlar */
 body.dark-mode .ticket {
   background-color: #333;
-  color: #81c784;
+  color: black;
 }
