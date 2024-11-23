@@ -1,4 +1,4 @@
-let currentTicketIndex = -1;  // Start with -1 to force a random ticket at first load
+let currentTicketIndex = -1;  // Initialize with -1 to ensure a random ticket is shown on page load
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  showRandomTicket();  // Show a random ticket initially
+  // Show a random ticket initially
+  showRandomTicket();
 
   // Event listeners for navigation buttons
   document.getElementById("next-ticket").addEventListener("click", nextTicket);
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark-mode");  // Tungi rejimni o'zgartirish
 }
 
 function showTicket(index) {
@@ -32,17 +33,12 @@ function showTicket(index) {
   // Display current ticket info
   const ticketInfo = document.getElementById("ticket-info");
   ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}, Hozirgi bilet: ${index + 1}`;
-
-  // Update navigation button states
-  document.getElementById("prev-ticket").disabled = index === 0;
-  document.getElementById("next-ticket").disabled = index === tickets.length - 1;
 }
 
 function showRandomTicket() {
-  // Generate a random index and update the current ticket
-  currentTicketIndex = Math.floor(Math.random() * tickets.length);
+  currentTicketIndex = Math.floor(Math.random() * tickets.length);  // Random index for the ticket
   console.log(`Random Ticket Index: ${currentTicketIndex}`);  // Debugging log
-  showTicket(currentTicketIndex);
+  showTicket(currentTicketIndex);  // Show the random ticket
 }
 
 function nextTicket() {
@@ -60,9 +56,9 @@ function prevTicket() {
 }
 
 function restartTicket() {
-  // Log for debugging
+  // Restart functionality to show a random ticket again
   console.log("Restarting with a random ticket...");
-  showRandomTicket();  // Show a random ticket when the restart button is clicked
+  showRandomTicket();
 }
 
 function toggleAnswer(index) {
