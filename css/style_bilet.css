@@ -66,12 +66,12 @@ button:hover, .toggle-answer-btn:hover {
 
 button.toggle-answer-btn {
   background-color: transparent;
-  color: #4CAF50;
+  color: green;
   border: 1px solid #4CAF50;
 }
 
 body.dark-mode button.toggle-answer-btn {
-  color: #81c784;
+  color: dark-green;
   border: 1px solid #81c784;
 }
 
@@ -80,3 +80,17 @@ body.dark-mode .ticket {
   background-color: #333;
   color: white;
 }
+
+/* black_menu uslubi */
+    .black_menu {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    body.dark-mode .black_menu {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
