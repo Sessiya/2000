@@ -1,64 +1,53 @@
+/* Kalendarni to'liq ekran uchun moslashtirish */
 .calendar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr); /* 7 kun uchun ustun */
   gap: 5px;
   text-align: center;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 100%; /* Kalendar kengligi ekranga moslashadi */
+  max-width: 400px; /* Maksimal kenglikni cheklash */
+  margin: 0 auto; /* Markazlash */
 }
 
 .day {
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  padding: 10px; /* Har bir kun uchun ichki bo'shliq */
+  border: 1px solid #ccc; /* Kunlarni ajratish uchun chegara */
 }
 
 .day-header {
-  font-weight: bold;
+  font-weight: bold; /* Haftaning bosh harflari qalin */
 }
 
 .red-day {
-  color: red;
+  color: red; /* Yakshanba kuni qizil rangda */
 }
 
 body.dark-mode .red-day {
-  color: #f44336;
+  color: #f44336; /* Qorong'i rejimda yakshanba kuni rangi */
 }
 
 .today {
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #4caf50; /* Hozirgi kun uchun fon rangi */
+  color: #fff; /* Matn rangi oq */
 }
 
 body.dark-mode .today {
-  background-color: #8bc34a;
+  background-color: #8bc34a; /* Qorong'i rejimda hozirgi kun rangi */
 }
 
-.nav-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-body.dark-mode .nav-btn {
-  color: #bbb;
-}
-
+/* Telefon ekranlarida (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .calendar {
-    grid-template-columns: repeat(7, minmax(30px, 1fr));
+    max-width: 100%; /* Ekran o'lchamiga moslashadi */
   }
 
   .day {
-    font-size: 12px;
-    padding: 5px;
+    font-size: 14px; /* Kichik ekranlarda matnni kichraytirish */
+    padding: 5px; /* Ichki bo'shliqni kamaytirish */
   }
 
   .nav-btn {
-    font-size: 16px;
+    font-size: 16px; /* Navigatsiya tugmasi hajmini kichraytirish */
   }
 }
 .icon { padding: 3px 6px 3px 1px; vertical-align: middle; }
