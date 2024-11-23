@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  showTicket(currentTicketIndex);  // Initially show the first ticket
+  showTicket(currentTicketIndex);  // Initially show the saved ticket
 
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 
@@ -30,7 +30,7 @@ function showTicket(index) {
   
   // Display current ticket info
   const ticketInfo = document.getElementById("ticket-info");
-  ticketInfo.innerHTML = `Bilet ${index + 1} / ${tickets.length}`;
+  ticketInfo.innerHTML = `Bilet ${index + 1} / ${tickets.length}`; // Adjust for 1-based ticket number
   
   // Update the state of the previous/next buttons
   document.getElementById("prev-ticket").disabled = index === 0;  // Disable previous button on first ticket
