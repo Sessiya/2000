@@ -1,4 +1,4 @@
-let currentTicketIndex = localStorage.getItem("currentTicketIndex") || 0;  // Load saved ticket index or default to 0
+let currentTicketIndex = Number(localStorage.getItem("currentTicketIndex")) || 0;  // Ensure it's a number
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");  // Tungi rejimni o'zgartirish
+  document.body.classList.toggle("dark-mode");  // Toggle dark mode
 }
 
 function showTicket(index) {
