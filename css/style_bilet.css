@@ -1,0 +1,101 @@
+/* Kunduzgi va tungi rejim uchun ranglar */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #4CAF50; /* Yashil rangli yozuv */
+}
+
+body.dark-mode {
+  background-color: #121212; /* Tungi rejimda qora fon */
+  color: #81c784; /* Yashil rangli yozuv tungi rejimda */
+}
+
+.phdr2 {
+  color: inherit;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: inherit;
+  padding-top: 10px;
+}
+
+/* Animatsiya va tugma ranglari */
+button, .toggle-answer-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .toggle-answer-btn:hover {
+  background-color: #388e3c; /* Yashil rangni qoraytirish */
+}
+
+/* Kalendar va biletlar */
+.menu {
+  margin-top: 20px;
+}
+
+.ticket {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ticket:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.ticket.hidden {
+  display: none;
+}
+
+#all-tickets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#all-tickets-container li {
+  list-style: none;
+  background-color: #e8f5e9;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+#all-tickets-container li:hover {
+  transform: scale(1.05);
+}
+
+#answer {
+  display: none;
+}
+
+button.toggle-answer-btn {
+  background-color: transparent;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+body.dark-mode button.toggle-answer-btn {
+  color: #81c784;
+  border: 1px solid #81c784;
+}
+
+/* Tungi rejimda o'zgarishlar */
+body.dark-mode .ticket {
+  background-color: #333;
+  color: #81c784;
+}
