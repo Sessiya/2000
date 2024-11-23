@@ -39,8 +39,9 @@ function showTicket(index) {
 }
 
 function showRandomTicket() {
-  // Generate a random index
+  // Generate a random index and update the current ticket
   currentTicketIndex = Math.floor(Math.random() * tickets.length);
+  console.log(`Random Ticket Index: ${currentTicketIndex}`);  // Debugging log
   showTicket(currentTicketIndex);
 }
 
@@ -59,6 +60,8 @@ function prevTicket() {
 }
 
 function restartTicket() {
+  // Log for debugging
+  console.log("Restarting with a random ticket...");
   showRandomTicket();  // Show a random ticket when the restart button is clicked
 }
 
