@@ -1,102 +1,73 @@
-    /* Kalendar uchun CSS qo'shildi */
-    body.dark-mode {
-      background-color: #121212;
-      color: #fff;
-    }
-    
-    .calendar {
-      width: 100%;
-      margin: 20px auto;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-      overflow: hidden;
-    }
 
-    body.dark-mode .calendar {
-      background-color: #333;
-    }
+.icon { padding: 3px 6px 3px 1px; vertical-align: middle; }
 
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #4caf50;
-      color: #fff;
-      padding: 10px;
-    }
+.icon-inline { padding-right: 6px; vertical-align: middle; }
 
-    body.dark-mode .calendar-header {
-      background-color: #444;
-    }
+/* Umumiy kalendar uslubi */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 kun uchun ustun */
+  gap: 5px;
+  text-align: center;
+  width: 100%; /* Ekran kengligiga moslashadi */
+  max-width: 400px; /* Kalendar maksimal kengligi */
+  margin: 0 auto; /* Kalendarni markazlash */
+}
 
-    .calendar-header h2 {
-      margin: 0;
-      font-size: 18px;
-    }
+.day, .day-header {
+  padding: 10px;
+  border: 1px solid #ccc;
+  white-space: nowrap; /* Matnni bo'lishdan saqlaydi */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Uzun matnlarni ... bilan kesadi */
+}
 
-    .calendar-body {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 5px;
-      padding: 10px;
-      color: #333;
-    }
+.day-header {
+  font-weight: bold;
+}
 
-    body.dark-mode .calendar-body {
-      color: #ddd;
-    }
+.red-day {
+  color: red;
+}
 
-    .day {
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+body.dark-mode .red-day {
+  color: #f44336;
+}
 
-    body.dark-mode .day:hover {
-      background-color: #555;
-    }
+/* Bugungi kun uchun uslub */
+.today {
+  background-color: #4caf50;
+  color: #fff;
+}
 
-    .day-header {
-      font-weight: bold;
-      color: #4caf50;
-    }
+body.dark-mode .today {
+  background-color: #8bc34a;
+}
 
-    body.dark-mode .day-header {
-      color: #8bc34a;
-    }
+/* Navigatsiya tugmalari */
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-    .today {
-      background-color: #4caf50;
-      color: #fff;
-    }
+body.dark-mode .nav-btn {
+  color: #bbb;
+}
 
-    body.dark-mode .today {
-      background-color: #8bc34a;
-    }
+/* Telefon ekranlariga moslashtirish (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .calendar {
+    grid-template-columns: repeat(7, minmax(30px, 1fr)); /* Har bir kun uchun minimal kenglik */
+  }
 
-    .red-day {
-      color: red;
-    }
-
-    body.dark-mode .red-day {
-      color: #f44336;
-    }
-
-    .nav-btn {
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 18px;
-      cursor: pointer;
-    }
-
-    body.dark-mode .nav-btn {
-      color: #bbb;
-    }
+  .day, .day-header {
+    font-size: 12px; /* Matnni kichikroq qilish */
+    padding: 5px; /* Ichki bo'shliqni kamaytirish */
+  }
+}
 
     /* Dark Mode Button Style */
     #dark-mode-toggle {
