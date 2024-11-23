@@ -66,12 +66,12 @@ button:hover, .toggle-answer-btn:hover {
 
 button.toggle-answer-btn {
   background-color: transparent;
-  color: green;
+  color: black;
   border: 1px solid #4CAF50;
 }
 
 body.dark-mode button.toggle-answer-btn {
-  color: dark-green;
+  color: white;
   border: 1px solid #81c784;
 }
 
