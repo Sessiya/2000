@@ -1,4 +1,4 @@
-let currentTicketIndex = localStorage.getItem("currentTicketIndex") || -1;  // Default to -1 to trigger a random ticket on load
+let currentTicketIndex = -1;  // Start with -1 to force a random ticket at first load
 
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
