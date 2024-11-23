@@ -28,9 +28,9 @@ function showTicket(index) {
     <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
   `;
   
-  // Display current ticket info
+  // Display current ticket info: "Bilet X / Y"
   const ticketInfo = document.getElementById("ticket-info");
-  ticketInfo.innerHTML = `Bilet ${index + 1} / ${tickets.length}`; // Adjust for 1-based ticket number
+  ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}. Hozirgi bilet: ${index + 1}.`;
   
   // Update the state of the previous/next buttons
   document.getElementById("prev-ticket").disabled = index === 0;  // Disable previous button on first ticket
