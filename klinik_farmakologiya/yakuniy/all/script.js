@@ -32,6 +32,10 @@ function showAllTickets() {
   });
 
   allTicketsContainer.hidden = false;
+
+  // Display the total number of tickets
+  const ticketInfo = document.getElementById("ticket-info");
+  ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
 }
 
 function toggleAnswer(index) {
