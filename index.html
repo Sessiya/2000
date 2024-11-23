@@ -57,7 +57,25 @@
     <!-- Motivatsiya matni shu yerda o'zgaradi -->
   </div>
 
-  <div class="footer">2024</div>
+  <div class="footer">
+<script>
+  fetch('https://www.metaweather.com/api/location/search/?query=Tashkent')
+    .then(response => response.json())
+    .then(location => {
+      const woeid = location[0].woeid; // Toshkent uchun ID
+      return fetch(https://www.metaweather.com/api/location/${woeid}/);
+    })
+    .then(response => response.json())
+    .then(data => {
+      const weather = data.consolidated_weather[0];
+      document.body.innerHTML = 
+        <h1>Hozirgi ob-havo Toshkent</h1>
+        <p>Harorat: ${weather.the_temp}°C</p>
+        <p>Ob-havo: ${weather.weather_state_name}</p>
+      ;
+    });
+</script>
+  </div>
 
   <script src="js/calendar.js"></script>
 </body>
