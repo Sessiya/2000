@@ -1,13 +1,11 @@
-let currentIndex = 0;
-let randomMode = true;
-
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
   }
 
-  showRandomTicket();
+  // Barcha savollarni avtomatik ko'rsatish
+  showAllTickets();
 
   document.getElementById("random-mode").addEventListener("click", () => {
     randomMode = true;
@@ -21,45 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("all-mode").addEventListener("click", showAllTickets);
 });
 
-function showRandomTicket() {
-  const randomIndex = Math.floor(Math.random() * tickets.length);
-  currentIndex = randomIndex;
-  displayTicket(tickets[currentIndex]);
-}
-
-function showNextTicket() {
-  currentIndex = (currentIndex + 1) % tickets.length;
-  displayTicket(tickets[currentIndex]);
-}
-
-function showPrevTicket() {
-  currentIndex = (currentIndex - 1 + tickets.length) % tickets.length;
-  displayTicket(tickets[currentIndex]);
-}
-
-function displayTicket(ticket) {
-  document.getElementById("question").textContent = ticket.question;
-  document.getElementById("answer").textContent = ticket.answer;
-  document.getElementById("answer").hidden = true;
-  document.getElementById("show-answer").textContent = "Javobni Ko'rish";
-}
-
-function toggleMainAnswer() {
-  const answerElement = document.getElementById("answer");
-  const button = document.getElementById("show-answer");
-
-  if (answerElement.hidden) {
-    answerElement.hidden = false;
-    button.textContent = "Javobni Yashirish";
-  } else {
-    answerElement.hidden = true;
-    button.textContent = "Javobni Ko'rish";
-  }
-}
-
 function showAllTickets() {
   const allTicketsContainer = document.getElementById("all-tickets");
-  allTicketsContainer.innerHTML = "";
+  allTicketsContainer.innerHTML = "";  // Ekranda mavjud bo'lgan savollarni tozalash
+
+  if (!tickets || tickets.length === 0) {
+    alert("Biletlar mavjud emas!");
+    return;
+  }
+
   tickets.forEach((ticket, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
@@ -69,6 +37,7 @@ function showAllTickets() {
     `;
     allTicketsContainer.appendChild(li);
   });
+
   allTicketsContainer.hidden = false;
   document.getElementById("ticket-container").hidden = true;
 }
