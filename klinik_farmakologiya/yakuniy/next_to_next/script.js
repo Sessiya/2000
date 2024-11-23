@@ -1,45 +1,41 @@
+let currentTicketIndex = 0;  // To keep track of the current ticket index
+
 document.addEventListener("DOMContentLoaded", () => {
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
   }
 
-  currentTicketIndex = 0;  // Start from the first ticket
-  showTicket(currentTicketIndex);  // Show the first ticket
+  showTicket(currentTicketIndex);  // Initially show the first ticket
 
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
-  
-  document.getElementById("next-ticket").addEventListener("click", () => navigateTickets(1));  // Next button
-  document.getElementById("prev-ticket").addEventListener("click", () => navigateTickets(-1));  // Prev button
-});
 
-let currentTicketIndex = 0;
+  // Attach event listeners for navigation buttons
+  document.getElementById("next-ticket").addEventListener("click", nextTicket);
+  document.getElementById("prev-ticket").addEventListener("click", prevTicket);
+});
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");  // Tungi rejimni o'zgartirish
 }
 
 function showTicket(index) {
-  const allTicketsContainer = document.getElementById("all-tickets-container");
-  allTicketsContainer.innerHTML = "";  // Ekranda mavjud bo'lgan savollarni tozalash
-
   const ticket = tickets[index];
-  const ticketDiv = document.createElement("div");
-  ticketDiv.classList.add("ticket");
-  ticketDiv.innerHTML = `
+  const allTicketsContainer = document.getElementById("all-tickets-container");
+  allTicketsContainer.innerHTML = `
     <strong>${ticket.question}</strong>
-    <button id="toggle-answer-${index}" class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
+    <button class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
     <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
   `;
-  allTicketsContainer.appendChild(ticketDiv);
-
-  // Update the state of the navigation buttons
-  updateNavigationButtons();
+  
+  // Update the state of the previous/next buttons
+  document.getElementById("prev-ticket").disabled = index === 0;  // Disable previous button on first ticket
+  document.getElementById("next-ticket").disabled = index === tickets.length - 1;  // Disable next button on last ticket
 }
 
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.getElementById(`toggle-answer-${index}`);  // Use id to get button
+  const button = document.querySelector(`#toggle-answer-${index}`);  // Use id to get button
 
   if (answerElement.hidden) {
     answerElement.hidden = false;
@@ -50,20 +46,16 @@ function toggleAnswer(index) {
   }
 }
 
-function navigateTickets(direction) {
-  currentTicketIndex += direction;
-
-  // Ensure the index stays within bounds
-  if (currentTicketIndex < 0) currentTicketIndex = 0;  // Prevent going before the first ticket
-  if (currentTicketIndex >= tickets.length) currentTicketIndex = tickets.length - 1;  // Prevent going past the last ticket
-
-  showTicket(currentTicketIndex);  // Show the updated ticket
+function nextTicket() {
+  if (currentTicketIndex < tickets.length - 1) {
+    currentTicketIndex++;
+    showTicket(currentTicketIndex);
+  }
 }
 
-function updateNavigationButtons() {
-  // Disable the 'Previous' button if on the first ticket
-  document.getElementById("prev-ticket").disabled = currentTicketIndex === 0;
-
-  // Disable the 'Next' button if on the last ticket
-  document.getElementById("next-ticket").disabled = currentTicketIndex === tickets.length - 1;
+function prevTicket() {
+  if (currentTicketIndex > 0) {
+    currentTicketIndex--;
+    showTicket(currentTicketIndex);
+  }
 }
