@@ -58,23 +58,40 @@
   </div>
 
   <div class="footer">
-<script>
-  fetch('https://www.metaweather.com/api/location/search/?query=Tashkent')
-    .then(response => response.json())
-    .then(location => {
-      const woeid = location[0].woeid; // Toshkent uchun ID
-      return fetch(https://www.metaweather.com/api/location/${woeid}/);
-    })
-    .then(response => response.json())
-    .then(data => {
-      const weather = data.consolidated_weather[0];
-      document.body.innerHTML = 
-        <h1>Hozirgi ob-havo Toshkent</h1>
-        <p>Harorat: ${weather.the_temp}°C</p>
-        <p>Ob-havo: ${weather.weather_state_name}</p>
-      ;
-    });
-</script>
+<h1>Hozirgi joylashuvingizdagi ob-havo ma'lumotlari</h1>
+  <div id="weather">
+    <p>Yuklanmoqda...</p>
+  </div>
+
+  <script>
+    // Joylashuvni aniqlash
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        // Open-Meteo API orqali ob-havo ma'lumotlarini olish
+        fetch(https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true)
+          .then(response => response.json())
+          .then(data => {
+            const weather = data.current_weather;
+            document.getElementById('weather').innerHTML = 
+              <h2>Hozirgi joylashuvda ob-havo</h2>
+              <p>Harorat: ${weather.temperature}°C</p>
+              <p>Shamol tezligi: ${weather.windspeed} km/soat</p>
+              <p>Vaqt: ${weather.time}</p>
+            ;
+          })
+          .catch(error => {
+            document.getElementById('weather').innerHTML = <p>Xatolik yuz berdi: ${error.message}</p>;
+          });
+      }, error => {
+        document.getElementById('weather').innerHTML = <p>Joylashuvni aniqlash muvaffaqiyatsiz bo'ldi: ${error.message}</p>;
+      });
+    } else {
+      document.getElementById('weather').innerHTML = <p>Brauzeringiz joylashuvni qo'llab-quvvatlamaydi.</p>;
+    }
+  </script>
   </div>
 
   <script src="js/calendar.js"></script>
