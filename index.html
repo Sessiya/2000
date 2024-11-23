@@ -59,56 +59,7 @@
 
   <div class="footer">
 
-  <h1>Hozirgi joylashuvdagi ob-havo ma'lumotlari</h1>
-  <div id="weather">
-    <p>Yuklanmoqda...</p>
-  </div>
-
-  <script>
-    // Joylashuvni aniqlash
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        position => {
-          console.log('Joylashuv maʼlumotlari olindi:', position.coords);
-          const latitude = position.coords.latitude;
-          const longitude = position.coords.longitude;
-
-          // Open-Meteo API orqali ob-havo ma'lumotlarini olish
-          const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
-          console.log('API so‘rovi yuborilmoqda:', apiUrl);
-
-          fetch(apiUrl)
-            .then(response => {
-              if (!response.ok) {
-                throw new Error(`API javobi xatolik bilan qaytdi: ${response.status}`);
-              }
-              return response.json();
-            })
-            .then(data => {
-              console.log('API javobi:', data);
-              const weather = data.current_weather;
-              document.getElementById('weather').innerHTML = `
-                <h2>Hozirgi joylashuvda ob-havo</h2>
-                <p>Harorat: ${weather.temperature}°C</p>
-                <p>Shamol tezligi: ${weather.windspeed} km/soat</p>
-                <p>Vaqt: ${weather.time}</p>
-              `;
-            })
-            .catch(error => {
-              console.error('API so‘rovi xatolik berdi:', error.message);
-              document.getElementById('weather').innerHTML = `<p>Xatolik yuz berdi: ${error.message}</p>`;
-            });
-        },
-        error => {
-          console.error('Joylashuvni aniqlashda xatolik:', error.message);
-          document.getElementById('weather').innerHTML = `<p>Joylashuvni aniqlash muvaffaqiyatsiz bo'ldi: ${error.message}</p>`;
-        }
-      );
-    } else {
-      console.warn('Brauzer joylashuvni qo‘llab-quvvatlamaydi.');
-      document.getElementById('weather').innerHTML = `<p>Brauzeringiz joylashuvni qo'llab-quvvatlamaydi.</p>`;
-    }
-  </script>
+  
   </div>
 
   <script src="js/calendar.js"></script>
