@@ -1,28 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Tickets massivining mavjudligini va bo'sh emasligini tekshirish
-  if (typeof tickets === 'undefined' || tickets.length === 0) {
+  // Biletlar massivining mavjudligini tekshiramiz
+  if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
   }
 
-  // Barcha biletlarni ko'rsatish
-  showAllTickets();
+  showAllTickets();  // Sahifa yuklanishi bilan barcha savollarni ko'rsatish
 
-  // Tungi rejimni o'zgartirish tugmasini ulash
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 });
 
-// Tungi rejimni yoqish va o'chirish funksiyasi
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark-mode");  // Tungi rejimni o'zgartirish
 }
 
-// Barcha biletlarni ekranda ko'rsatish funksiyasi
 function showAllTickets() {
   const allTicketsContainer = document.getElementById("all-tickets-container");
   allTicketsContainer.innerHTML = "";  // Ekranda mavjud bo'lgan savollarni tozalash
 
-  // Har bir biletni yaratish va uni ekranga qo'shish
   tickets.forEach((ticket, index) => {
     const ticketDiv = document.createElement("div");
     ticketDiv.classList.add("ticket");
@@ -34,19 +29,17 @@ function showAllTickets() {
     allTicketsContainer.appendChild(ticketDiv);
   });
 
-  // Biletlar kontainerini ko'rsatish
   allTicketsContainer.hidden = false;
 
-  // Ticket info elementini yangilash (agar mavjud bo'lsa)
+  // Check if the #ticket-info element is available before updating
   const ticketInfo = document.getElementById("ticket-info");
   if (ticketInfo) {
     ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
   } else {
-    console.error('ticket-info element topilmadi');
+    console.error('ticket-info element not found');
   }
 }
 
-// Javobni ko'rsatish yoki yashirish funksiyasi
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
   const button = document.getElementById(`toggle-answer-${index}`);
