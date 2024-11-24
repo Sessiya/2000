@@ -1,26 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Check if tickets array is valid and has items
-  if (!tickets || tickets.length === 0) {
+  // Tickets massivining mavjudligini va bo'sh emasligini tekshirish
+  if (typeof tickets === 'undefined' || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
   }
 
-  showAllTickets();  // Sahifa yuklanishi bilan barcha savollarni ko'rsatish
+  // Barcha biletlarni ko'rsatish
+  showAllTickets();
 
+  // Tungi rejimni o'zgartirish tugmasini ulash
   document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
-
-  // Boshqa funksiyalar:
-  // next-ticket, prev-ticket, random-mode va boshqalar.
 });
 
+// Tungi rejimni yoqish va o'chirish funksiyasi
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");  // Tungi rejimni o'zgartirish
+  document.body.classList.toggle("dark-mode");
 }
 
+// Barcha biletlarni ekranda ko'rsatish funksiyasi
 function showAllTickets() {
   const allTicketsContainer = document.getElementById("all-tickets-container");
   allTicketsContainer.innerHTML = "";  // Ekranda mavjud bo'lgan savollarni tozalash
 
+  // Har bir biletni yaratish va uni ekranga qo'shish
   tickets.forEach((ticket, index) => {
     const ticketDiv = document.createElement("div");
     ticketDiv.classList.add("ticket");
@@ -32,17 +34,19 @@ function showAllTickets() {
     allTicketsContainer.appendChild(ticketDiv);
   });
 
+  // Biletlar kontainerini ko'rsatish
   allTicketsContainer.hidden = false;
 
-  // Check if the #ticket-info element is available before updating
+  // Ticket info elementini yangilash (agar mavjud bo'lsa)
   const ticketInfo = document.getElementById("ticket-info");
   if (ticketInfo) {
     ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
   } else {
-    console.error('ticket-info element not found');
+    console.error('ticket-info element topilmadi');
   }
 }
 
+// Javobni ko'rsatish yoki yashirish funksiyasi
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
   const button = document.getElementById(`toggle-answer-${index}`);
