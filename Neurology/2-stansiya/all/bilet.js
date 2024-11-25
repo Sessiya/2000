@@ -21,7 +21,7 @@ const tickets = [
   },
   {
     "question": "Bilet 6. Teri reflekslarini qanday tekshirish kerak?",
-    "answer": "Qorin reflekslari: Qorin terisi pastki qovurg'a yoyi bo'ylab ichkariga chiziladi Shu sohada qorin devori muskullari qisqaradi Refleks yoyi tutashgan soha: Th7-Th8 spinal segmentlar"
+    "answer": "Qorin reflekslari yuqori, oʻrta, pastki ga boʻlinadi: Yuqori: Qorin terisi pastki qovurg'a yoyi bo'ylab ichkariga chiziladi Shu sohada qorin devori muskullari qisqaradi. Refleks yoyi tutashgan soha: Th7-Th8 spinal segmentlar. Oʻrta: Qorin terisi kindik tomonga qarab chiziladi Shu sohada qorin devori muskullari qisqaradi. Refleks yoyi tutashgan soha:Th9-Th10 spinal segmentlar. Pastki: Qorin terisi chov burmasining yuqori qismi bo'ylab ichkariga chiziladi. Shu sohada qorin devori muskullari qisqaradi. Refleks yoyi tutashgan soha: Th11-Th12 spinal segmentlar. Eslatm a: Bolada qorin reflekslari 5-6 oyga to'lgandan keyin chaqirilib boshlaydi. Oyoq kafti refleksi: Oyoq kafti pastdan yuqoriga qarab chiziladi. Barmoqlar bukiladi. Refleks yoyi tutashgan soha: L5-S1 spinal segmentlar"
   },
   {
     "question": "Bilet 7. Harakat sferasini qanday tekshirish mumkin?",
