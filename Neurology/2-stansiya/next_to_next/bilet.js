@@ -21,7 +21,7 @@ const tickets = [
   },
   {
     "question": "Bilet 6. Teri reflekslarini qanday tekshirish kerak?",
-    "answer": "Teri reflekslarini tekshirishda bemorning tanasiga yengil qichish yoki siqish orqali sezgi javobini tekshiriladi. Misol uchun, bulbo-kavernoz refleksi tekshiriladi, bunda uylanish a‘zolariga siqish ta‘siri o‘tkaziladi."
+    "answer": "Qorin reflekslari: Qorin terisi pastki qovurg'a yoyi bo'ylab ichkariga chiziladi Shu sohada qorin devori muskullari qisqaradi Refleks yoyi tutashgan soha: Th7-Th8 spinal segmentlar"
   },
   {
     "question": "Bilet 7. Harakat sferasini qanday tekshirish mumkin?",
