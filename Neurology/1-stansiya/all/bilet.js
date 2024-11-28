@@ -1,7 +1,7 @@
 const tickets = [
   {
     "question": "Bilet 1. Miyachada joylashgan yadrolarni aytib bering.",
-    "answer": "Miyacha ichida quyidagi asosiy yadrolar joylashgan: \n1. **Dentat yadro** (Nucleus dentatus) – murakkab shakldagi burmalar bilan qoplangan yadro. U murakkab harakatlarni muvofiqlashtirishda ishtirok etadi.\n2. **Globoz yadro** (Nucleus globosus) – muvozanatni saqlash va pozitsion boshqaruvga yordam beradi.\n3. **Fastigi yadro** (Nucleus fastigii) – tananing holatini barqaror saqlashda muhim rol o'ynaydi.\n4. **Embrional yadro** (Nucleus emboliformis) – harakatning silliq va muvofiqlashtirilgan bo'lishini ta'minlaydi."
+    "answer": "Miyacha yadrolari. M iyachaning ichki qism ida 4 juft yadro bor. Bular - yop ilg'ich yad ro (nucl. fastigii), sharsim on yadro [nucl. globosus), probkasim on yadro (nucl. emboliformis), tishsim on yadro (nucl. dentatusj. Yopilg'ich yadro vermis yonida, qolgan yad rolar esa undan chekkaroqda joylashgan. Tana m uvozanati va koordinatsiyasi uchun vermis va nucl. fastigii m as’ul bo'lsa, oyoq -qo 'lla r m uvozanati va koordinatsiyasi uchun nucl. dentatus va m iyacha yarim sharlari mas’ul.      <br>      <img src="../../../images/miyacha.png" alt="Miyacha Yadrolari" style="max-width:100%;height:auto;">"
   },
   {
     "question": "Bilet 2. Bosh miya yarimsharlari poʻstlogʻining anatomiyasi (egat va pushtalar).",
