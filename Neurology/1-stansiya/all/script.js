@@ -25,6 +25,31 @@ function toggleAnswer(index) {
   if (answerElement.hidden) {
     answerElement.hidden = false;
     button.textContent = "Javobni Yashirish";
+
+    // Rasmni ko'rsatish uchun display: block qilish
+    if (imageElement) {
+      imageElement.style.display = 'block';
+    }
+  } else {
+    answerElement.hidden = true;
+    button.textContent = "Javobni Ko'rish";
+
+    // Rasmni yashirish uchun display: none qilish
+    if (imageElement) {
+      imageElement.style.display = 'none';
+    }
+  }
+}
+
+// Javobni ko'rsatish yoki yashirish funksiyasi
+function toggleAnswer(index) {
+  const answerElement = document.getElementById(`answer-${index}`);
+  const button = document.getElementById(`toggle-answer-${index}`);
+  const imageElement = document.getElementById(`image-${index}`); // Rasm elementini olish
+
+  if (answerElement.hidden) {
+    answerElement.hidden = false;
+    button.textContent = "Javobni Yashirish";
     
     // Rasmni ko'rsatish
     if (imageElement) {
