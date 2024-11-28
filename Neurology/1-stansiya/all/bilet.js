@@ -1,7 +1,8 @@
 const tickets = [
   {
     "question": "Bilet 1. Miyachada joylashgan yadrolarni aytib bering.",
-    "answer": "Miyacha yadrolari. M iyachaning ichki qism ida 4 juft yadro bor. Bular - yop ilg'ich yad ro (nucl. fastigii), sharsim on yadro [nucl. globosus), probkasim on yadro (nucl. emboliformis), tishsim on yadro (nucl. dentatusj. Yopilg'ich yadro vermis yonida, qolgan yad rolar esa undan chekkaroqda joylashgan. Tana m uvozanati va koordinatsiyasi uchun vermis va nucl. fastigii m as’ul bo'lsa, oyoq -qo 'lla r m uvozanati va koordinatsiyasi uchun nucl. dentatus va m iyacha yarim sharlari mas’ul.      <br>      <img src="../../../images/miyacha.png" alt="Miyacha Yadrolari" style="max-width:100%;height:auto;">"
+    "answer": "Miyacha yadrolari. Miyachaning ichki qismida 4 juft yadro bor. Bular - yopilg‘ich yadro (nucl. fastigii), sharsimon yadro [nucl. globosus), probkasimon yadro (nucl. emboliformis), tishsimon yadro (nucl. dentatusj. Yopilg‘ich yadro vermis yonida, qolgan yadrolar esa undan chekkaroqda joylashgan. Tana muvozanati va koordinatsiyasi uchun vermis va nucl. fastigii mas’ul bo‘lsa, oyoq -qo‘llar muvozanati va koordinatsiyasi uchun nucl. dentatus va miyacha yarim sharlari mas’ul.",
+     "image": "../../../images/miyacha.png",
   },
   {
     "question": "Bilet 2. Bosh miya yarimsharlari poʻstlogʻining anatomiyasi (egat va pushtalar).",
