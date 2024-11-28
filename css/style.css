@@ -1,4 +1,11 @@
-    .calendar {
+.ticket-image {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 10px 0;
+  object-fit: contain;
+}
+.calendar {
       width: 100%;
       margin: 20px auto;
       border: 1px solid #ddd;
