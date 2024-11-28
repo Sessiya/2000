@@ -1,25 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Check if tickets array is valid and has items
+  // Tekshirish: biletlar mavjudmi
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
   }
 
-  showAllTickets();  // Sahifa yuklanishi bilan barcha savollarni ko'rsatish
-
-  document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
-
-  // Boshqa funksiyalar:
-  // next-ticket, prev-ticket, random-mode va boshqalar.
+  // Sahifa yuklanishi bilan barcha biletlarni ko'rsatish
+  showAllTickets();
 });
 
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");  // Tungi rejimni o'zgartirish
-}
-
+// Barcha biletlarni chiqarish funksiyasi
 function showAllTickets() {
   const allTicketsContainer = document.getElementById("all-tickets-container");
-  allTicketsContainer.innerHTML = "";  // Ekranda mavjud bo'lgan savollarni tozalash
+  allTicketsContainer.innerHTML = ""; // Avvalgi ma'lumotlarni tozalash
 
   tickets.forEach((ticket, index) => {
     const ticketDiv = document.createElement("div");
@@ -32,17 +25,16 @@ function showAllTickets() {
     allTicketsContainer.appendChild(ticketDiv);
   });
 
-  allTicketsContainer.hidden = false;
-
-  // Check if the #ticket-info element is available before updating
+  // Statistik ma'lumotlarni chiqarish
   const ticketInfo = document.getElementById("ticket-info");
   if (ticketInfo) {
     ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
   } else {
-    console.error('ticket-info element not found');
+    console.error('ticket-info elementi topilmadi.');
   }
 }
 
+// Javobni ko'rsatish/yashirish funksiyasi
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
   const button = document.getElementById(`toggle-answer-${index}`);
