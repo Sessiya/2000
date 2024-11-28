@@ -1,40 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Tekshirish: biletlar mavjudmi
+  // Biletlar mavjudligini tekshirish
   if (!tickets || tickets.length === 0) {
     alert("Biletlar mavjud emas!");
     return;
   }
 
-  // Sahifa yuklanishi bilan barcha biletlarni ko'rsatish
-  showAllTickets();
+  showAllTickets(); // Barcha biletlarni ko'rsatish
+
+  // Tungi rejimni almashtirish tugmasi
+  document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
 });
 
-// Barcha biletlarni chiqarish funksiyasi
-function showAllTickets() {
-  const allTicketsContainer = document.getElementById("all-tickets-container");
-  allTicketsContainer.innerHTML = ""; // Avvalgi ma'lumotlarni tozalash
-
-  tickets.forEach((ticket, index) => {
-    const ticketDiv = document.createElement("div");
-    ticketDiv.classList.add("ticket");
-    ticketDiv.innerHTML = `
-      <strong>${ticket.question}</strong>
-      <button id="toggle-answer-${index}" class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
-      <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
-    `;
-    allTicketsContainer.appendChild(ticketDiv);
-  });
-
-  // Statistik ma'lumotlarni chiqarish
-  const ticketInfo = document.getElementById("ticket-info");
-  if (ticketInfo) {
-    ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
-  } else {
-    console.error('ticket-info elementi topilmadi.');
-  }
+// Tungi rejimni o'zgartirish funksiyasi
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
 }
 
-// Javobni ko'rsatish/yashirish funksiyasi
+// Javobni ko'rsatish yoki yashirish funksiyasi
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
   const button = document.getElementById(`toggle-answer-${index}`);
@@ -45,5 +27,40 @@ function toggleAnswer(index) {
   } else {
     answerElement.hidden = true;
     button.textContent = "Javobni Ko'rish";
+  }
+}
+
+// Barcha biletlarni ko'rsatish funksiyasi
+function showAllTickets() {
+  const allTicketsContainer = document.getElementById("all-tickets-container");
+  allTicketsContainer.innerHTML = ""; // Ekranda mavjud bo'lgan savollarni tozalash
+
+  tickets.forEach((ticket, index) => {
+    const ticketDiv = document.createElement("div");
+    ticketDiv.classList.add("ticket");
+
+    // Agar biletda rasm mavjud bo'lsa, uni qo'shamiz
+    const imageHTML = ticket.image
+      ? `<img src="${ticket.image}" alt="Rasm yuklanmadi" class="ticket-image" />`
+      : ""; // Rasm mavjud bo'lmasa, bo'sh string
+
+    ticketDiv.innerHTML = `
+      <strong>${ticket.question}</strong>
+      <button id="toggle-answer-${index}" class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
+      <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
+      ${imageHTML} <!-- Rasmni qo'shish -->
+    `;
+    
+    allTicketsContainer.appendChild(ticketDiv);
+  });
+
+  allTicketsContainer.hidden = false;
+
+  // Biletlar sonini ko'rsatish
+  const ticketInfo = document.getElementById("ticket-info");
+  if (ticketInfo) {
+    ticketInfo.innerHTML = `Jami biletlar soni: ${tickets.length}`;
+  } else {
+    console.error("ticket-info element not found");
   }
 }
