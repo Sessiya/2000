@@ -28,7 +28,7 @@ function toggleAnswer(index) {
 
     // Rasmni ko'rsatish uchun display: block qilish
     if (imageElement) {
-      imageElement.style.display = 'block';
+      imageElement.style.display = 'block';  // Rasmni ko'rsatish
     }
   } else {
     answerElement.hidden = true;
@@ -36,32 +36,7 @@ function toggleAnswer(index) {
 
     // Rasmni yashirish uchun display: none qilish
     if (imageElement) {
-      imageElement.style.display = 'none';
-    }
-  }
-}
-
-// Javobni ko'rsatish yoki yashirish funksiyasi
-function toggleAnswer(index) {
-  const answerElement = document.getElementById(`answer-${index}`);
-  const button = document.getElementById(`toggle-answer-${index}`);
-  const imageElement = document.getElementById(`image-${index}`); // Rasm elementini olish
-
-  if (answerElement.hidden) {
-    answerElement.hidden = false;
-    button.textContent = "Javobni Yashirish";
-    
-    // Rasmni ko'rsatish
-    if (imageElement) {
-      imageElement.hidden = false;
-    }
-  } else {
-    answerElement.hidden = true;
-    button.textContent = "Javobni Ko'rish";
-    
-    // Rasmni yashirish
-    if (imageElement) {
-      imageElement.hidden = true;
+      imageElement.style.display = 'none';  // Rasmni yashirish
     }
   }
 }
@@ -77,7 +52,7 @@ function showAllTickets() {
 
     // Agar biletda rasm mavjud bo'lsa, uni ko'rsatish
     const imageHTML = ticket.image
-      ? `<img id="image-${index}" src="${ticket.image}" alt="Rasm yuklanmadi" class="ticket-image" hidden />`
+      ? `<img id="image-${index}" src="${ticket.image}" alt="Rasm yuklanmadi" class="ticket-image" style="display: none;" />`
       : ""; // Rasm mavjud bo'lmasa, bo'sh string
 
     ticketDiv.innerHTML = `
