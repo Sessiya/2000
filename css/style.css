@@ -1,3 +1,13 @@
+.question {
+  text-align: left;
+}
+
+.answer {
+  text-align: left;
+}
+.answer {
+  white-space: pre-line;
+}
 .ticket-image {
   max-width: 100%;
   max-height: 400px;
