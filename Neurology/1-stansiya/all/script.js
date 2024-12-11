@@ -20,24 +20,20 @@ function toggleDarkMode() {
 function toggleAnswer(index) {
   const answerElement = document.getElementById(`answer-${index}`);
   const button = document.getElementById(`toggle-answer-${index}`);
-  const imageElement = document.getElementById(`image-${index}`); // Rasm elementini olish
+  const imageElements = document.querySelectorAll(`#ticket-${index} .ticket-image`); // Barcha rasmlarni olish
 
   if (answerElement.hidden) {
     answerElement.hidden = false;
     button.textContent = "Javobni Yashirish";
 
-    // Rasmni ko'rsatish uchun display: block qilish
-    if (imageElement) {
-      imageElement.style.display = 'block';  // Rasmni ko'rsatish
-    }
+    // Barcha rasmlarni ko'rsatish
+    imageElements.forEach(image => image.style.display = 'block');
   } else {
     answerElement.hidden = true;
     button.textContent = "Javobni Ko'rish";
 
-    // Rasmni yashirish uchun display: none qilish
-    if (imageElement) {
-      imageElement.style.display = 'none';  // Rasmni yashirish
-    }
+    // Barcha rasmlarni yashirish
+    imageElements.forEach(image => image.style.display = 'none');
   }
 }
 
@@ -49,19 +45,23 @@ function showAllTickets() {
   tickets.forEach((ticket, index) => {
     const ticketDiv = document.createElement("div");
     ticketDiv.classList.add("ticket");
+    ticketDiv.id = `ticket-${index}`;
 
-    // Agar biletda rasm mavjud bo'lsa, uni ko'rsatish
-    const imageHTML = ticket.image
-      ? `<img id="image-${index}" src="${ticket.image}" alt="Rasm yuklanmadi" class="ticket-image" style="display: none;" />`
-      : ""; // Rasm mavjud bo'lmasa, bo'sh string
+    // Agar biletda rasm mavjud bo'lsa, ularni ko'rsatish
+    let imagesHTML = '';
+    for (let i = 1; i <= 5; i++) {
+      if (ticket[`image${i}`]) {
+        imagesHTML += `<img id="image-${index}-${i}" src="${ticket[`image${i}`]}" alt="Rasm yuklanmadi" class="ticket-image" style="display: none;"/>`;
+      }
+    }
 
     ticketDiv.innerHTML = `
       <strong>${ticket.question}</strong>
       <button id="toggle-answer-${index}" class="toggle-answer-btn" onclick="toggleAnswer(${index})">Javobni Ko'rish</button>
       <p id="answer-${index}" class="answer" hidden>${ticket.answer}</p>
-      ${imageHTML} <!-- Rasmni qo'shish -->
+      ${imagesHTML} <!-- Bir nechta rasmlar -->
     `;
-    
+
     allTicketsContainer.appendChild(ticketDiv);
   });
 
