@@ -72,7 +72,7 @@ Ensa sohasi (Lobus occipitalis):
   - Funktsiyasi: Ko'zlardan keluvchi vizual ma'lumotlarni qabul qilish, qayta ishlash va obrazlarni shakllantirish.
 - Rangni ajratish va harakatni ko'rish:
   - Rangni, harakatni va vizual ma'lumotlarni aniqlab, ularni talqin qiladi.`  },
-    {
+  {
     "question": "Bilet 4. Striar tizimning tarkibiy qismlari, anatomiya va fiziologiyasi.",
     "answer": `Striar tizim bosh miya po‘stloq osti yadrolaridan iborat:
 dumli yadro (Nucleus caudatus)
@@ -82,11 +82,40 @@ Ularning asosiy funksiyasi ixtiyoriy harakatlarni sinxronlashtirish: gipertonus,
   },
   {
     "question": "Bilet 5. Miyacha anatomiyasini aytib bering.",
-    "answer": "Miyacha (Cerebellum) ikki yarimshardan iborat bo‘lib, ular o‘rtasida **qurt** (Vermis) joylashgan. Miyacha tashqi qismida kulrang modda (po‘stloq) va ichki qismida oq modda (yadro va yo‘llar) mavjud. Miyacha asosiy funksiyalari – harakatlarni muvofiqlashtirish, muvozanatni saqlash va mushak tonusini boshqarish."
-  },
+    "answer": `Miyacha bosh miyaning orqa kranial chuqurchasida joylashgan.  
+
+- **Joylashuvi:**  
+  - Tepada — ensa bo‘lagi.  
+  - Oldida — ko‘prik va uzunchoq miya, 4-qorincha joylashgan
+  - Ensadan **miyacha chodiri (tentorium cerebelli)** ajratib turadi.  
+
+- **Tuzilishi:**  
+  - Miyacha ikki yarim shar (**hemisferium**) va ularni birlashtiruvchi **chuvalchang (vermis)**dan iborat.  
+  - Yuqoridan kulrang **miyacha po‘stlog‘i (cortex cerebelli)** qoplab turadi.  
+  - Ichida oq modda va chuqur joylashgan **miyacha yadrolari (nuclei cerebelli)** mavjud.
+
+- **Miyacha po‘stlog‘i qavatlari:**  
+  1. **Molekulyar qavat** (yuza qismi).  
+  2. **Ganglioz qavat** (Purkinye hujayralari).  
+  3. **Granulyar qavat** (eng ichki qavat).
+
+- **Moddalar:**  
+  - **Kulrang modda:** Po‘stlog‘ va yadrolardan iborat.  
+  - **Oq modda:** Asosiy nerv tolalarini o‘z ichiga oladi.  
+
+Miyacha nerv markazlari bilan oyoqchalari orqali bogʻlanadi.
+
+1) Yuqori miyacha oyoqchalari miyachani o‘rta miya bilan bog‘laydi.
+ Vazifasi: motor impulslarini yuqori markazlarga uzatish.
+2) O‘rta miyacha oyoqchalari miyachani ko‘prik bilan bog‘laydi.
+ Vazifasi: katta miya yarim sharlaridan miyachaga harakatni boshqarish uchun ma'lumot olib kelish.
+3) Pastki miyacha oyoqchalari uzunchoq miya va orqa miyani miyacha bilan bog‘laydi.
+ Vazifasi: sensor va muvozanatga oid ma'lumotlarni miyachaga uzatish.
+
+Miyacha harakatlarni muvofiqlashtirish va balansni saqlashda muhim rol o‘ynaydi.`  },
   {
     "question": "Bilet 6. Bosh miya pardalari anatomiyasini aytib bering.",
-    "answer": "Bosh miya pardalari uch qavatdan iborat:\n1. **Qattiq parda** (Dura mater): Tashqi qavat bo'lib, miya va suyaklarni o'rab turadi.\n2. **O'rgimchakto'r parda** (Arachnoidea mater): Dura mater va pia mater o'rtasida joylashgan, unda miya suyuqligi (likvor) oqadi.\n3. **Yumshoq parda** (Pia mater): Bosh miya yuzasiga yopishgan va qon tomirlar bilan boyitilgan."
+    "answer": "Bosh miya pardalari uch qavatdan iborat:\n1. **Qattiq parda** (Dura mater): Tashqi qavat bo'lib, miya va suyaklarni o'rab turadi.\n2. **toʻrsimon parda** (Arachnoidea mater): Dura mater va pia mater o'rtasida joylashgan.\n3. **Yumshoq parda** (Pia mater): Miya toʻqimasini toʻliq oʻrab turadi."
   },
   {
     "question": "Bilet 7. Reflektor yoy anatomiyasini aytib bering.",
@@ -98,15 +127,45 @@ Ularning asosiy funksiyasi ixtiyoriy harakatlarni sinxronlashtirish: gipertonus,
   },
   {
     "question": "Bilet 9. Orqa miya anatomiyasini aytib bering.",
-    "answer": "Orqa miya (Medulla spinalis) umurtqa kanalida joylashgan. U quyidagi asosiy tuzilmalardan iborat:\n1. **Kulrang modda**: Neyronlarning tanalari joylashgan. Oldingi shoxlarda harakat neyronlari, orqa shoxlarda esa sezuvchi neyronlar bor.\n2. **Oq modda**: Neyronlarning aksonlaridan tashkil topgan. Unda ko'taruvchi (sezuvchi) va tushuvchi (harakat) yo'llar joylashgan.\n3. **Markaziy kanal**: Orqa miya ichida joylashib, miya suyuqligi bilan to'lgan.\n\nOrqa miya yuqori qismida uzunchoq miyaga ulanadi, pastki qismida esa filum terminale bilan tugaydi."
+    "answer": `Orqa miya (Medulla spinalis)
+uzunligi 42-45sm
+yolgʻonligi 1-1.5sm
+ogʻirligi 34-38gr
+joylashuvi umurtqa pogʻonasi kanalida
+yuqori tomonda foramen occipitale magnum bor.
+1-boʻyin umurtqasinin yuqori sathidan boshlanib, 1-bel umurtqasi yoki 2-bel umurtqasi roʻparasida tugaydi.
+31-32 ta segmentlar bor.
+• 1 juft oldingi harakat ildizi hamda 1 juft orqangi sezgi ildizi segment deb ataladi.
+boʻyinda 8 ta 
+koʻkrakda 12 ta 
+belda 5 ta
+dumgʻazada 5 ta
+dumda 1-2 ta segment bor.
+`
   },
   {
     "question": "Bilet 10. Po'stloq osti yadrolarini aytib bering.",
-    "answer": "Bosh miyaning po'stloq osti yadrolari (bazal gangliyalar) quyidagilardan iborat:\n1. **Kuyka yadro** (Nucleus caudatus)\n2. **Sharchasimon yadro** (Putamen)\n3. **Pallidus** (Globos pallidus)\n4. **Amygdala** (Bodomcha tanacha): Emotsiyalar va xotiraga ta'sir ko'rsatadi.\n5. **Talamus**: Sensatsiyalarni qayta ishlash va uzatish bilan shug'ullanadi.\n\nUlarning asosiy funksiyalari harakatni boshqarish, hissiy reaksiyalar va xotiralarni tartibga solishdir."
-  },
+    "answer": `poʻstloq osti yadrolari yaʼni ichki kapsula. yoki bazal yadrolar deb ataladi.
+ularga: nucleus caudatus (dumli yadro)
+talamus opticus (talamus)
+lobus pallidum (oqish modda)
+putamen (qobiq) lar kiradi. `,
+"image1": "https://sessiya.github.io/2000/images/Screenshot_2024-12-11-18-46-06-290_com.miui.creation.jpg"  },
   {
     "question": "Bilet 11. Palidar tizim tarkibiy qismlari va funksiyasini aytib bering.",
-    "answer": "Palidar tizim globos pallidus (pallidum)dan iborat. U harakatni muvofiqlashtirish, mushak tonusini tartibga solish va harakatlarning avtomatlashtirilgan shakllarini ta'minlaydi. Pallidum striar tizim bilan chambarchas bog'liq va dopamin yordamida boshqariladi."
+    "answer": `Palidar tizim tarkibiga kiradigan tuzilmalar:
+1. Pallidus (ichki va tashqi)
+2. Substantia nigra (qora modda)
+3. Qizil yadro
+4. oqish yadro
+
+
+Neyrotransmitterlar:
+GAMK
+Glutamat
+Dopamin
+
+Bu tizim harakatlarni tormozlash, muvozanatni ta’minlash va mushak tonusini boshqarishda ishtirok etadi.`
   },
   {
     "question": "Bilet 12. Bosh miya yarim sharlaridagi po'stloqdagi xarakat markazlarining joylashuvi.",
@@ -114,23 +173,47 @@ Ularning asosiy funksiyasi ixtiyoriy harakatlarni sinxronlashtirish: gipertonus,
   },
   {
     "question": "Bilet 13. Uzunchoq miya anatomiyasini aytib bering.",
-    "answer": "Uzunchoq miya (Medulla oblongata) bosh miya va orqa miya o'rtasida joylashgan. Uning asosiy tuzilmalari:\n1. **Piramidalar**: Harakat yo'llari o'tadi.\n2. **Zaytun yadrolari** (Nuclei olivaris): Miyachaga signal uzatadi.\n3. Hayotiy markazlar (nafas olish va yurak-tomir markazlari) joylashgan.\n\nUzunchoq miya reflektor va o'tkazuvchi funksiyalarga ega."
+    "answer": `Uzunchoq miya (Medulla oblongata) yuqoridan pons (koʻprik) va pastdan orqa miya bilan bogʻlangan.
+Uzunchoq miyani yuqori qismida piyozchasimon kengayma hosil qiladi. yani Bulbusni.
+Pastki qismi esa orqa miya tuzilishiga oʻxshaydi.
+Uzunchoq miyada ikkita asosiy yoriq mavjud:
+1. Oʻrta yoriq (fissura mediana): Bu yoriq uzunchoq miyaning ikki tomonini ajratadi.
+2. Lateral yoriqlar (fissura lateralis): Bu yoriqlar uzunchoq miyaning yon tomonlarida joylashgan.
+
+Piramidalari bor. bu yerdan tolalar oʻtadi. kesishmagan tolalar 15-20% qolgani kesishgan tolalarga toʻgʻri keladi.
+Uzunchoq miyada 9-10-11-12-juft nervlar joylashgan.
+9-juft nerv - til-halqum nervi (n. glossopharyngeus
+10-juft nerv - sayyor nerv (adashgan nerv) (n. vagus)
+11-juft nerv - qoʻshuvchi nerv (n. acssoserius)
+12-juft nerv - tilo sti nerv (n. hypoglossus)`
+
   },
   {
     "question": "Bilet 14. Miya o'zagi tarkibiy tizimi anatomiyasini aytib bering.",
-    "answer": "Miya o'zagi (Truncus encephali) quyidagi qismlardan iborat:\n1. **Uzunchoq miya** (Medulla oblongata)\n2. **Ko'prik** (Pons)\n3. **O'rta miya** (Mesencephalon)\n\nBu hududlar hayotiy reflekslarni boshqaradi, sezuvchi va harakat yo'llarini o'tkazadi va bosh miya nervlarining yadrolarini o'z ichiga oladi."
+    "answer": "Miya o'zagi (Truncus encephalicus) quyidagi qismlardan iborat:\n1. **Uzunchoq miya** (Medulla oblongata)\n2. **Ko'prik** (Pons)\n3. pedunculi serebri (miyacha oyoqchalari)dan iborat. vazifasi: Miya o'zagi hayotiy funksiyalarni, masalan, nafas olish va yurak faoliyatini boshqarish, sensor va motor axborotlarini uzatish, hamda muvozanat va harakatni muvofiqlashtirishda ishtirok etadi. Miya o'zagi, shuningdek, refleks va o'zgarishlarni tezda amalga oshirishga yordam beradi."
   },
   {
     "question": "Bilet 15. XII - juft bosh miya nervi anatomiyasini aytib bering.",
-    "answer": "XII - juft bosh miya nervi **Gipoglossal nerv** (Nervus hypoglossus) deb ataladi. U til mushaklarini innervatsiya qiladi va til harakatlarini boshqaradi. Uning yadrosi uzunchoq miya ichida joylashgan."
+    "answer": "XII - juft bosh miya nervi **til nervi** (Nervus hypoglossus) deb ataladi. U til mushaklarini innervatsiya qiladi va til harakatlarini boshqaradi. Uning yadrosi uzunchoq miya ichida joylashgan."
   },
-  {
+    {
     "question": "Bilet 16. IX-X- juft bosh miya nervining xarakat tolasini anatomiyasini aytib bering.",
     "answer": "IX (Glossopharyngeal) va X (Vagus) bosh miya nervlarining harakat tolalari uzunchoq miyada joylashgan yadrolardan kelib chiqadi. Ular yutish, tovush chiqarish va yurak faoliyatini boshqarishda ishtirok etadi."
   },
   {
     "question": "Bilet 17. I - juft bosh miya nervi anatomiyasini aytib bering.",
-    "answer": "I - juft bosh miya nervi **Hid nervi** (Nervus olfactorius) bo‘lib, hidlarni sezish uchun javobgardir. Uning reseptorlari burun bo‘shlig‘ida joylashgan va axborotni bosh miyaning hid bulutlariga yetkazadi."
+    "answer": `I - juft bosh miya nervi Hidlov nervi (Nervus olfactorius) bo‘lib, hidlarni sezish uchun javobgardir. 
+Oʻtkazuv yoʻli 3 neyronli.
+1-neyron burun shilliq qavatida.
+2-neyron bulbus olfactoriusda.
+3-neyron chakkada.
+
+batafsil mana bunaqa:
+1-neyron tanasi burun boʻshligʻining shilliq qavatida joylashgan.
+1-neyronning dendritlari burun shilliq qavatiga tarqalib, aksonlari (hidlov ipchalari) ni hosil qiladi. Bu ipchalar kalla suyagidagi lamina cribrosa orqali oʻtadi.
+Hidlov ipchalari kalla suyagi ichidagi hidlov soʻgʻonida yaʼni bulbul olfactoriusda tugaydi.
+bulbus olfactoriusdagi neyron aksonlari (hidlov traktini) hosil qilib, hidlov markaziga ya’ni chakkaga boradi..
+chakkada 3-neyron joylashgan.`
   },
   {
     "question": "Bilet 18. VII- juft bosh miya nervi anatomiyasini aytib bering.",
@@ -142,19 +225,19 @@ Ularning asosiy funksiyasi ixtiyoriy harakatlarni sinxronlashtirish: gipertonus,
   },
   {
     "question": "Bilet 20. III- juft bosh miya nervi anatomiyasini aytib bering.",
-    "answer": "III - juft bosh miya nervi **Ko'z harakat nervi** (Nervus oculomotorius) deb ataladi. U ko'z harakatini ta'minlaydigan mushaklarni innervatsiya qiladi, shu jumladan yuqori qovoqni ko'tarish va ko'zni medialga harakatlantirish mushaklari. Uning yadrosi o'rta miya ichida joylashgan."
+    "answer": "III - juft bosh miya nervi **Ko'zni ichkariga harakatlantiruvchi nervi** (Nervus oculomotorius) deb ataladi. U ko'z harakatini ta'minlaydigan mushaklarni innervatsiya qiladi, shu jumladan yuqori qovoqni ko'tarish va ko'zni medialga harakatlantirish mushaklari. Uning yadrosi o'rta miya ichida joylashgan."
   },
   {
-    "question": "Bilet 21. Ko'ruv nervi (I-juft nervi) anatomiyasini aytib bering.",
-    "answer": "Ko'ruv nervi (Nervus opticus) retinadan keladigan optik signallarni bosh miyaga uzatadi. Bu nerv vizual axborotning birlamchi o'tkazuvchisi bo'lib, chiasma opticumda o'zaro kesishadi va miyaning ko'rish yo'liga o'tadi."
+    "question": "Bilet 21. Ko'ruv nervi (II-juft nervi) anatomiyasini aytib bering.",
+    "answer": "Ko'ruv nervi (Nervus opticus) retinadan keladigan optik signallarni bosh miyaga uzatadi. Bu nerv vizual axborotning birlamchi o'tkazuvchisi bo'lib, chiasma opticumda o'zaro kesishadi va ensaga yoʻnaladi"
   },
   {
     "question": "Bilet 22. IV - juft bosh miya nervi anatomiyasini aytib bering.",
-    "answer": "IV - juft bosh miya nervi **Blok nervi** (Nervus trochlearis) deb ataladi. U bitta mushak - yuqori qiyshiq mushakni innervatsiya qiladi, ko'zni pastga va lateralga harakatlantirishga yordam beradi. Nervning yadrosi o'rta miyada joylashgan."
+    "answer": "IV - juft bosh miya nervi **gʻaltak nervi** (Nervus trochlearis) deb ataladi. U bitta mushak - u koʻzni m. obliquis superiorni innervatsiya qiladi, ko'zni pastga va lateralga harakatlantirishga yordam beradi. Nervning yadrosi miya oyoqchalarida joylashgan."
   },
   {
     "question": "Bilet 23. VI - juft bosh miya nervi anatomiyasini aytib bering.",
-    "answer": "VI - juft bosh miya nervi **Olib chiquvchi nerv** (Nervus abducens) deb ataladi. U ko'zning lateral to'g'ri mushagini innervatsiya qiladi, bu mushak ko'zni chetga harakatlantiradi. Uning yadrosi ko'prikda joylashgan."
+    "answer": "VI - juft bosh miya nervi **koʻzni tashqariga harakatlantiruvchi nervi** (Nervus abducens) deb ataladi. U ko'zning lateral to'g'ri mushagini innervatsiya qiladi, bu mushak ko'zni chetga harakatlantiradi. Uning yadrosi ko'prikda joylashgan."
   },
   {
     "question": "Bilet 24. IX-X- juft bosh miya nervining sezuvchi tolasini anatomiyasini aytib bering.",
