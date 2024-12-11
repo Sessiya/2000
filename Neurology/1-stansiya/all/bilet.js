@@ -72,13 +72,13 @@ Ensa sohasi (Lobus occipitalis):
   - Funktsiyasi: Ko'zlardan keluvchi vizual ma'lumotlarni qabul qilish, qayta ishlash va obrazlarni shakllantirish.
 - Rangni ajratish va harakatni ko'rish:
   - Rangni, harakatni va vizual ma'lumotlarni aniqlab, ularni talqin qiladi.`  },
-  {
+    {
     "question": "Bilet 4. Striar tizimning tarkibiy qismlari, anatomiya va fiziologiyasi.",
     "answer": `Striar tizim bosh miya po‘stloq osti yadrolaridan iborat:
 dumli yadro (Nucleus caudatus)
 qobiq (Putamen)
 
-Ularning asosiy funksiyasi harakatlarni rejalashtirish, muvofiqlashtirish va avtomatlashtirishdan iborat. Shuningdek, ularning ish faoliyati dopamin modulatorlari bilan boshqariladi.`
+Ularning asosiy funksiyasi ixtiyoriy harakatlarni sinxronlashtirish: gipertonus, gipokinetik iborat. Shuningdek, ularning ish faoliyati asetil xolin modulatorlari bilan boshqariladi.`
   },
   {
     "question": "Bilet 5. Miyacha anatomiyasini aytib bering.",
