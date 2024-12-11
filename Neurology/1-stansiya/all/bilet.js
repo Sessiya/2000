@@ -1,20 +1,84 @@
 const tickets = [
   {
     "question": "Bilet 1. Miyachada joylashgan yadrolarni aytib bering.",
-    "answer": "Miyacha yadrolari. Miyachaning ichki qismida 4 juft yadro bor. Bular - yopilg‘ich yadro (nucl. fastigii), sharsimon yadro [nucl. globosus), probkasimon yadro (nucl. emboliformis), tishsimon yadro (nucl. dentatusj. Yopilg‘ich yadro vermis yonida, qolgan yadrolar esa undan chekkaroqda joylashgan. Tana muvozanati va koordinatsiyasi uchun vermis va nucl. fastigii mas’ul bo‘lsa, oyoq -qo‘llar muvozanati va koordinatsiyasi uchun nucl. dentatus va miyacha yarim sharlari mas’ul.",
-     "image": "../../../images/miyacha.png",
+    "answer": `Miyacha yadrolari.
+Miyachaning ichki qismida 4 juft yadro bor.
+Bular:
+1) chodirsimon yadro (nucl. fastigii)
+2) sharsimon yadro [nucl. globosus)
+3) ponasimon yadro (nucl. emboliformis)
+4) tishsimon yadro (nucl. dentatus)
+Miyacha tarkibiga chuvalchangsimon tana va ikkita yarimsharlar kiradi.
+•Chodirsimon yadro chuvalchangsimon tanada, qolgan yadrolar esa yarimsharlarida joylashgan.
+Yadrolarni vazifalari:
+1. Chodirsimon yadro (Nucleus fastigii): Muvozanatni va tana holatini boshqaradi.
+2. Sharsimon yadro (Nucleus globosus): Motor harakatlarni sinxronlashtiradi.
+3. Ponasimon yadro (Nucleus emboliformis): Harakatlarning aniqligini va muvofiqligini ta'minlaydi.
+4. Tishsimon yadro (Nucleus dentatus): Murakkab harakatlar va koordinatsiyani boshqaradi.
+`,
+    "image1": "https://sessiya.github.io/2000/images/miyacha.png",
+    "image2": "https://sessiya.github.io/2000/images/Screenshot_2024-12-09-18-00-47-979_com.miui.creation-edit.jpg"
   },
   {
     "question": "Bilet 2. Bosh miya yarimsharlari poʻstlogʻining anatomiyasi (egat va pushtalar).",
-    "answer": "Bosh miya yarimsharlari poʻstlogʻi (cortex cerebri) bir qancha egat va pushtalardan iborat:\n- **Markaziy egat** (Sulcus centralis): Peshona va tepa sohalarini ajratib turadi.\n- **Yon egat** (Sulcus lateralis): Peshona va chakka sohalarini ajratadi.\n- **Tepa-ensa egati** (Sulcus parieto-occipitalis): Tepa va ensa sohalarini ajratadi.\n\nPushtalar:\n- **Oldingi markaziy pushta** (Gyrus precentralis): Harakat markazi joylashgan.\n- **Orqa markaziy pushta** (Gyrus postcentralis): Sezgi markazi joylashgan.\n- **Chakka pushtalari**: Eshitish va nutqni qayta ishlash markazlari joylashgan.\n- **Ensa pushtalari**: Ko'rish markazlari joylashgan."
+    "answer": `Bosh miya yarimsharlari po'stlog'i (cortex cerebri) bo'laklari:
+Lobus frontalis - peshona bo'lagi,
+Lobus parietalis - tepa bo'lagi,
+Lobus temporalis - chakka bo'lagi,
+Lobus occipitalis - ensa bo'lagi.
+
+Bosh miya yarimsharlari poʻstlogʻi egatlari:
+1. Sulcus centralis (Markaziy egat)
+2. Sulcus lateralis (Yon egat)
+3. Sulcus parieto-occipitalis (Tepa-ensa egati).
+
+Pushtalar (Gyri): 
+Peshona bo'lagida: 
+1. Gyrus frontalis superior 
+2. Gyrus frontalis media 
+3. Gyrus frontalis inferior 
+4. Gyrus praecentralis
+5. Pars opercularis
+6. Pars triangularis
+7. Pars orbitalis
+Tepa bo'lagida: 
+1. Lobus  parietalis superior 
+2. Lobus parietalis inferior 
+3. Gyrus postcentralis
+4. Supra marginalis 
+5. Gyrus angularis
+Chakka bo'lagida: 
+1. Gyrus temporalis superior 
+2. Gyrus temporalis media 
+3. Gyrus temporalis inferior`,
+     "image1": "https://sessiya.github.io/2000/images/Screenshot_2024-11-28-22-34-33-903_cn.wps.moffice_eng-edit.jpg",
+     "image2": "https://sessiya.github.io/2000/images/Screenshot_2024-11-28-22-34-52-848_cn.wps.moffice_eng-edit.jpg",
+     "image3": "https://sessiya.github.io/2000/images/Sulcus.jpg"
   },
   {
     "question": "Bilet 3. Bosh miyaning tepa va ensa soxalarida qanday markazlar joylashgan?",
-    "answer": "Bosh miyaning tepa va ensa sohalarida quyidagi markazlar joylashgan:\n- **Tepa sohasi** (Lobus parietalis): Sezgi (somatosensor) markazi joylashgan.\n- **Ensa sohasi** (Lobus occipitalis): Ko'rish markazlari joylashgan bo'lib, ko'rish signallarini qayta ishlash bilan shug'ullanadi."
-  },
+    "answer": `Tepa sohasi (Lobus parietalis):
+- Sezgi markazi (somatosensor markazi):
+  - Joylashuvi: Orqa markaziy pushta (gyrus postcentralis) da.
+  - Funktsiyasi: Tana qismlaridan keluvchi tegish, bosim, og'riq va harorat sezgilarini qabul qilish va qayta ishlash.
+- Proprioseptsiya markazi:
+  - Tana qismlarining fazoviy pozitsiyasini va harakatlarini boshqaradi.
+- Matematik va mantiqiy fikrlash markazlari:
+  - Hisob-kitob qilish, ob'ektlarning o'lchamlarini va fazoviy joylashuvini aniqlashda yordam beradi.
+
+Ensa sohasi (Lobus occipitalis):
+- Ko'rish markazi (visual markazi):
+  - Joylashuvi: Birlamchi ko'rish korteksi (area striata) va qo'shimcha ko'rish zonalari.
+  - Funktsiyasi: Ko'zlardan keluvchi vizual ma'lumotlarni qabul qilish, qayta ishlash va obrazlarni shakllantirish.
+- Rangni ajratish va harakatni ko'rish:
+  - Rangni, harakatni va vizual ma'lumotlarni aniqlab, ularni talqin qiladi.`  },
   {
     "question": "Bilet 4. Striar tizimning tarkibiy qismlari, anatomiya va fiziologiyasi.",
-    "answer": "Striar tizim bosh miya po‘stloq osti yadrolaridan iborat:\n1. **Kuyka yadro** (Nucleus caudatus)\n2. **Sharchasimon yadro** (Putamen)\n3. **Pallidus** (Globos pallidus)\n\nUlarning asosiy funksiyasi harakatlarni rejalashtirish, muvofiqlashtirish va avtomatlashtirishdan iborat. Shuningdek, ularning ish faoliyati dopamin modulatorlari bilan boshqariladi."
+    "answer": `Striar tizim bosh miya po‘stloq osti yadrolaridan iborat:
+dumli yadro (Nucleus caudatus)
+qobiq (Putamen)
+
+Ularning asosiy funksiyasi harakatlarni rejalashtirish, muvofiqlashtirish va avtomatlashtirishdan iborat. Shuningdek, ularning ish faoliyati dopamin modulatorlari bilan boshqariladi.`
   },
   {
     "question": "Bilet 5. Miyacha anatomiyasini aytib bering.",
@@ -105,3 +169,8 @@ const tickets = [
     "answer": "VIII - juft bosh miya nervining muvozanat qismi **Vestibulyar nerv** deb ataladi. U yarim doira kanallari va otolit organlaridan signal olib, boshning harakati va holatini boshqaruvchi markazlarga uzatadi."
   }
 ];
+
+document.querySelector('.answer').innerText = ticket.answer;
+const markdownAnswer = marked(ticket.answer);
+document.querySelector('.answer').innerHTML = markdownAnswer;
+document.querySelector('.answer').innerHTML = ticket.answer;
