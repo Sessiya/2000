@@ -20,8 +20,17 @@ function loadQuestion() {
     const questionObj = questions[currentQuestion];
     const questionNumberSection = document.getElementById("questionNumberSection");
 
-    // Javoblarni tasodifiy aralashtirish
+    // Javoblarni tasodifiy aralashtirishdan oldin to'g'ri javob indeksini saqlaymiz
+    const correctAnswer = questionObj.correct;
+    
+    // Javoblarni aralashtirish
     const shuffledAnswers = shuffleAnswers([...questionObj.answers]);
+
+    // Aralashtirilgan ro‘yxatdagi yangi to‘g‘ri javobning indeksini topish
+    const newCorrectIndex = shuffledAnswers.indexOf(questionObj.answers[correctAnswer]);
+
+    // To‘g‘ri javobning yangi indeksini yangilaymiz
+    questionObj.correct = newCorrectIndex;
 
     // Yangi testni boshlashda ranglarni o'rnatish
     questionNumberSection.innerHTML = questions
@@ -55,6 +64,7 @@ function loadQuestion() {
     `;
     updateButtons();
 }
+
 
 function checkAnswer(index) {
     const questionObj = questions[currentQuestion];
