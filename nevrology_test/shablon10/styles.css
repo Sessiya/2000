@@ -1,4 +1,32 @@
-        .navbar {
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+#questionNumberSection div {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.green {
+    border-color: green;
+}
+
+.red {
+    border-color: red;
+}
+
+.active {
+    border-color: blue;
+}
+.navbar {
             background-color: #f8f9fa;
             border-bottom: 2px solid #ddd;
             padding: 10px;
