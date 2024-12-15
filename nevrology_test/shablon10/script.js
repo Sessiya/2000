@@ -11,22 +11,21 @@ function shuffleAnswers(answers) {
     return answers;
 }
 
+
 let currentQuestion = 0;
-let correctAnswers = 0;
-let incorrectAnswers = 0;
 
 function loadQuestion() {
     const testSection = document.getElementById("testSection");
     const questionObj = questions[currentQuestion];
     const questionNumberSection = document.getElementById("questionNumberSection");
 
-    // Yangi testni boshlashda ranglarni o'rnatish
+    // Har bir testni ko'rsatish
     questionNumberSection.innerHTML = questions
         .map((_, index) => {
             let className = '';
             const storedResult = localStorage.getItem(`test${index + 1}`);
 
-            // Saqlangan ranglarga qarab sinf qo'shish
+            // Rangni saqlash
             if (storedResult === 'green') {
                 className = 'correct';
             } else if (storedResult === 'red') {
@@ -39,16 +38,13 @@ function loadQuestion() {
         })
         .join('');
 
-    // Shuffle the answers
-    const shuffledAnswers = shuffleAnswers([...questionObj.answers]);
-
     testSection.innerHTML = `
         <div class="question">${questionObj.question}</div>
         <div class="answers">
-            ${shuffledAnswers
+            ${questionObj.answers
                 .map(
                     (answer, index) =>
-                        `<div class="answer" onclick="checkAnswer(${index}, ${shuffledAnswers.indexOf(answer)})">${answer}</div>`
+                        `<div class="answer" onclick="checkAnswer(${index})">${answer}</div>`
                 )
                 .join("")}
         </div>
@@ -56,7 +52,7 @@ function loadQuestion() {
     updateButtons();
 }
 
-function checkAnswer(index, originalIndex) {
+function checkAnswer(index) {
     const questionObj = questions[currentQuestion];
     const answers = document.querySelectorAll(".answer");
 
@@ -71,16 +67,14 @@ function checkAnswer(index, originalIndex) {
     });
 
     // To'g'ri yoki noto'g'ri javobni hisoblash
-    if (originalIndex === questionObj.correct) {
-        correctAnswers++;
+    if (index === questionObj.correct) {
         localStorage.setItem(`test${currentQuestion + 1}`, 'green');
     } else {
-        incorrectAnswers++;
         localStorage.setItem(`test${currentQuestion + 1}`, 'red');
     }
 
     // Raqamni rangini saqlash
-    document.querySelectorAll("#questionNumberSection div")[currentQuestion].classList.add(originalIndex === questionObj.correct ? 'correct' : 'incorrect');
+    document.querySelectorAll("#questionNumberSection div")[currentQuestion].classList.add(index === questionObj.correct ? 'correct' : 'incorrect');
 }
 
 function updateButtons() {
@@ -96,3 +90,34 @@ function updateButtons() {
         document.getElementById("finishBtnSection").style.display = "none";
     }
 }
+
+function nextQuestion() {
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+    }
+}
+
+function prevQuestion() {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+    }
+}
+
+function goToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion();
+}
+
+function finishTest() {
+    const resultSection = document.getElementById("resultSection");
+    resultSection.style.display = "block";
+    const resultContent = document.getElementById("resultContent");
+    resultContent.innerHTML = `
+        <div class="correctCount">Test yakunlandi!</div>
+    `;
+    localStorage.clear(); // Test tugagach tozalash
+}
+
+document.addEventListener("DOMContentLoaded", loadQuestion);
