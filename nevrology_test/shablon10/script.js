@@ -1,6 +1,7 @@
 window.onbeforeunload = function() {
     localStorage.clear();  // Sahifa yopilganda yoki yangilanishi oldidan tozalash
 };
+
 // Javoblarni tasodifiy aralashtirish uchun yordamchi funksiya
 function shuffleAnswers(answers) {
     for (let i = answers.length - 1; i > 0; i--) {
@@ -9,7 +10,6 @@ function shuffleAnswers(answers) {
     }
     return answers;
 }
-
 
 let currentQuestion = 0;
 let correctAnswers = 0;
@@ -39,13 +39,16 @@ function loadQuestion() {
         })
         .join('');
 
+    // Shuffle the answers
+    const shuffledAnswers = shuffleAnswers([...questionObj.answers]);
+
     testSection.innerHTML = `
         <div class="question">${questionObj.question}</div>
         <div class="answers">
-            ${questionObj.answers
+            ${shuffledAnswers
                 .map(
                     (answer, index) =>
-                        `<div class="answer" onclick="checkAnswer(${index})">${answer}</div>`
+                        `<div class="answer" onclick="checkAnswer(${index}, ${shuffledAnswers.indexOf(answer)})">${answer}</div>`
                 )
                 .join("")}
         </div>
@@ -53,7 +56,7 @@ function loadQuestion() {
     updateButtons();
 }
 
-function checkAnswer(index) {
+function checkAnswer(index, originalIndex) {
     const questionObj = questions[currentQuestion];
     const answers = document.querySelectorAll(".answer");
 
@@ -68,7 +71,7 @@ function checkAnswer(index) {
     });
 
     // To'g'ri yoki noto'g'ri javobni hisoblash
-    if (index === questionObj.correct) {
+    if (originalIndex === questionObj.correct) {
         correctAnswers++;
         localStorage.setItem(`test${currentQuestion + 1}`, 'green');
     } else {
@@ -77,7 +80,7 @@ function checkAnswer(index) {
     }
 
     // Raqamni rangini saqlash
-    document.querySelectorAll("#questionNumberSection div")[currentQuestion].classList.add(index === questionObj.correct ? 'correct' : 'incorrect');
+    document.querySelectorAll("#questionNumberSection div")[currentQuestion].classList.add(originalIndex === questionObj.correct ? 'correct' : 'incorrect');
 }
 
 function updateButtons() {
@@ -93,43 +96,3 @@ function updateButtons() {
         document.getElementById("finishBtnSection").style.display = "none";
     }
 }
-
-function nextQuestion() {
-    if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-        loadQuestion();
-    }
-}
-
-function prevQuestion() {
-    if (currentQuestion > 0) {
-        currentQuestion--;
-        loadQuestion();
-    }
-}
-
-function goToQuestion(index) {
-    currentQuestion = index;
-    loadQuestion();
-}
-
-function finishTest() {
-    if (correctAnswers + incorrectAnswers === questions.length) {
-        const resultSection = document.getElementById("resultSection");
-        resultSection.style.display = "block";
-        const resultContent = document.getElementById("resultContent");
-        const totalQuestions = questions.length;
-        const correctPercentage = ((correctAnswers / totalQuestions) * 100).toFixed(2);
-        const incorrectPercentage = ((incorrectAnswers / totalQuestions) * 100).toFixed(2);
-
-        resultContent.innerHTML = `
-            <div class="correctCount">To'g'ri javoblar: ${correctAnswers} (${correctPercentage}%)</div>
-            <div class="incorrectCount">Xato javoblar: ${incorrectAnswers} (${incorrectPercentage}%)</div>
-        `;
-        localStorage.clear(); // Test tugagandan so'ng localStorage tozalash
-    } else {
-        alert("Barchasini belgilang!");
-    }
-}
-
-document.addEventListener("DOMContentLoaded", loadQuestion);
