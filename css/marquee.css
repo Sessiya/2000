@@ -1,0 +1,28 @@
+.marquee {
+  position: fixed; /* Har doim ekranda ko'rinadi */
+  top: 10px; /* Ekranning yuqori qismida joylashadi */
+  left: 0; /* Chap tomondan boshlanadi */
+  width: 100%; /* Ekran bo'ylab to'liq kenglik */
+  overflow: hidden; /* Matnning chiqib ketishini yashirish */
+  white-space: nowrap; /* Matnni bir qator qilib saqlaydi */
+  background-color: transparent; /* Orqa fon rangsiz */
+  color: red; /* Matn rangi qizil */
+  font-size: 1.2em; /* Matn kattaligi */
+  font-weight: bold; /* Matnni qalinroq qiladi */
+  text-align: center; /* Matnni markazga hizalaydi */
+}
+
+.marquee span {
+  display: inline-block; /* Inline qator */
+  animation: marquee 10s linear infinite; /* Harakatni sozlash */
+}
+
+/* Animatsiya */
+@keyframes marquee {
+  from {
+    transform: translateX(100%); /* O'ng tomondan boshlanadi */
+  }
+  to {
+    transform: translateX(-100%); /* Chap tomonga o‘tadi */
+  }
+}
