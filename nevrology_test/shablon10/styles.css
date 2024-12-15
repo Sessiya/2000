@@ -1,99 +1,38 @@
-window.onbeforeunload = function() {
-    localStorage.clear();  // Sahifa yopilganda yoki yangilanishi oldidan tozalash
-};
-
-// Javoblarni tasodifiy aralashtirish uchun yordamchi funksiya
-function shuffleAnswers(answers) {
-    for (let i = answers.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [answers[i], answers[j]] = [answers[j], answers[i]]; // Swap
-    }
-    return answers;
+.green {
+    background-color: green;
+    color: white;
 }
 
-let currentQuestion = 0;
-let correctAnswers = 0;
-let incorrectAnswers = 0;
-
-function loadQuestion() {
-    const testSection = document.getElementById("testSection");
-    const questionObj = questions[currentQuestion];
-    const questionNumberSection = document.getElementById("questionNumberSection");
-
-    // Yangi testni boshlashda ranglarni o'rnatish
-    questionNumberSection.innerHTML = questions
-        .map((_, index) => {
-            let className = '';
-            const storedResult = localStorage.getItem(`test${index + 1}`);
-
-            // Saqlangan ranglarga qarab sinf qo'shish
-            if (storedResult === 'green') {
-                className = 'correct';
-            } else if (storedResult === 'red') {
-                className = 'incorrect';
-            } else if (currentQuestion === index) {
-                className = 'active';
-            }
-
-            return `<div class="${className}" onclick="goToQuestion(${index})">${index + 1}</div>`;
-        })
-        .join('');
-
-    // Shuffle the answers
-    const shuffledAnswers = shuffleAnswers([...questionObj.answers]);
-
-    testSection.innerHTML = `
-        <div class="question">${questionObj.question}</div>
-        <div class="answers">
-            ${shuffledAnswers
-                .map(
-                    (answer, index) =>
-                        `<div class="answer" onclick="checkAnswer(${index}, ${shuffledAnswers.indexOf(answer)})">${answer}</div>`
-                )
-                .join("")}
-        </div>
-    `;
-    updateButtons();
+.red {
+    background-color: red;
+    color: white;
 }
 
-function checkAnswer(index, originalIndex) {
-    const questionObj = questions[currentQuestion];
-    const answers = document.querySelectorAll(".answer");
-
-    // Javoblarni to'g'ri va noto'g'ri rang bilan bo'yash
-    answers.forEach((answer, i) => {
-        if (i === questionObj.correct) {
-            answer.classList.add("correct");
-        } else if (i === index) {
-            answer.classList.add("incorrect");
-        }
-        answer.onclick = null; // Disable further clicking
-    });
-
-    // To'g'ri yoki noto'g'ri javobni hisoblash
-    if (originalIndex === questionObj.correct) {
-        correctAnswers++;
-        localStorage.setItem(`test${currentQuestion + 1}`, 'green');
-    } else {
-        incorrectAnswers++;
-        localStorage.setItem(`test${currentQuestion + 1}`, 'red');
-    }
-
-    // Raqamni rangini saqlash
-    document.querySelectorAll("#questionNumberSection div")[currentQuestion].classList.add(originalIndex === questionObj.correct ? 'correct' : 'incorrect');
+#questionNumberSection div {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
 }
 
-function updateButtons() {
-    document.getElementById("prevBtn").disabled = currentQuestion === 0;
-    document.getElementById("nextBtn").disabled = currentQuestion === questions.length - 1;
+.green {
+    border-color: green;
+}
 
-    // Oxirgi savolga yetganda "Keyingi" tugmasini "Testni yakunlash"ga almashtirish
-    if (currentQuestion === questions.length - 1) {
-        document.getElementById("nextBtn").style.display = "none";
-        document.getElementById("finishBtnSection").style.display = "block";
-    } else {
-        document.getElementById("nextBtn").style.display = "inline-block";
-        document.getElementById("finishBtnSection").style.display = "none";
-    }
-    }
-                                    
+.red {
+    border-color: red;
+}
+
+.active {
+    border-color: blue;
+}
+
+.answer.correct {
+    background-color: #c8e6c9;
+    border-color: #388e3c;
+}
+
+.answer.incorrect {
+    background-color: #ffcdd2;
+    border-color: #d32f2f;
+}
