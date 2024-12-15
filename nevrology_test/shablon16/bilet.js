@@ -1,0 +1,31 @@
+const questions  = [
+       {
+        "question": "Til-yutkun nervi qaysi mushakni innervatsiyalaydi:",
+        "answers": ["M.stylopharyngeus", "Chaynov mushaklari", "Qizilo‘ngach mushaklari", "Ikki korinchali"],
+        "correct": 0
+    },
+  {"question": "Bemorda manqalanish, tushunarsiz nutq.. Bu buzulish qanday ataladi:", "answers": ["Dizartriya", "Afoniya", "Disfagiya", "Afaziya"], "correct": 0},
+  {"question": "Bemorda tilning chapga og‘ishi, tilning chap yarmi mushaklari atrofiyasi, fibrillyar tortishishlari va o‘ng tomonlama markaziy gemiparez ko‘zatilmokda. Bu sindrom qanday ataladi:", "answers": ["Jekson", "Babinskogo-najota", "Shmidt", "Vallenberga-zaxarchenko"], "correct": 0},
+  {"question": "Bemorda yumshoq tanglay, ovoz boylamlari, trapetsiyasimon va to‘sh-o‘mrov-so‘rg‘ichsimon mushaklari parezi, tilning o‘ng yarmi mushaklari atrofiyasi ko‘zatiladi. Bu sindrom qanday ataladi:", "answers": ["Shmidt", "Babinskiy-najot", "Djekson", "Dejeri"], "correct": 0},
+  {"question": "Qo‘shimcha nerv qaysi tyoshik orqali miya kutisidan chiqadi:", "answers": ["Buyinturiq tyoshigi", "Yirtik tyoshik", "Dumalok tyoshik", "Oval tyoshik"], "correct": 0},
+  {"question": "Til-xalqum nervining harakatlantiruvchi qismi qaysi mushakni nervlaydi:", "answers": ["Bigiz-xalkum", "Ikki korinchali", "Chakka", "Bigiz-til osti"], "correct": 0},
+  {"question": "Til-xalqum nervining qaysi yadrosida umumiy sezgi tolalari tugallanadi:", "answers": ["Kulrang qanot (nucl.ala cinerea)", "Dorsal yadro", "Yakka tutam", "Nucl.salivatorius"], "correct": 0},
+  {"question": "Til-xalqum nervi zararlanganda qaysi refleks buziladi:", "answers": ["Yutqum", "Kornea", "Qosh usti", "Qorachi"], "correct": 0},
+  {"question": "Bemorda ta‘m bilish gallyutsinatsiyasi bilan boshlanuvchi toniko-klonik tortishishlar xuruji ko‘zatilmoqda. Ta‘sirlanish o‘chog‘ini aniqlang:", "answers": ["Chakka bo‘lagi", "Pyoshona bo‘lagi", "Tepa bo‘lagi", "Ensa bo‘lagi"], "correct": 0},
+  {"question": "Bemorning o‘ng tarafida yumshoq tanglay va ovoz boylamining falaji, qarama - qarshi tarafda gemiparez va gemigipesteziya. Zararlanish o‘chog‘ini aniqlang:", "answers": ["Uzunchoq miya", "Dientsefal soxa", "Miya oyoqchalari", "Varoliy ko‘prigi"], "correct": 0},
+  {"question": "Qaysi nerv yutish va fonatsiyani ta‘minlovchi asosiy nerv xisoblanadi:", "answers": ["Sayyor", "Qo‘shimch", "Til osti", "Yuz nervi"], "correct": 0},
+  {"question": "Bemorda o‘ng taraflama yumshoq tanglay va ovoz boylamlari, tush-o‘mrov-so‘rg‘ichsimon va trapetsiyasimon mushaklarining falaji xamda shu tarafda til atrofiyasi aniqlandi. Yutqum refleksi chaqirilmaydi, o‘ng tomonda til ildizi va yutqum sezgisi pasaygan, qarama-qarshi tomonda gemiparez. Sindromning nomi nima:", "answers": ["Shmidt", "Dejerin", "Avellis", "Jekson"], "correct": 0},
+  {"question": "Bemorda yumshok tanglay va ovoz boylamlarining o‘ng tomonlama falaji, qarama-qarshi tomonda gemiparez va gemigipesteziya. Sindromning nomi:", "answers": ["Avellis", "Babinskiy-na", "Shmidt", "Djekson"], "correct": 0},
+  {"question": "O‘ng tomonda tashki Zelder soxada yuz gipesteziyasi, yumshoq tanglay va ovoz boylamlarining falaji, Gorner sindromi, koordinator sinamalarda dismetriya, chap tomonda yuzaki sezgining gemigipesteziyasi. Sindromning nomi:", "answers": ["Vallenberg-zaxarchenko", "Babinskiy-Najot", "Shmidt", "Jekson"], "correct": 0},
+  {"question": "Vallenberg-Zaxarchenko sindromida patologik o‘choq qayerda joylashgan bo‘ladi:", "answers": ["Uzunchoq miya", "Ichki kapsula", "Dientsefal soxa", "Miya oyoqchalari"], "correct": 0},
+  {"question": "Bemorda yutish buzilgan va suyuqlikni yutganida burnidan oqib chiqadi. Bu buzilish qanday nomlanadi:", "answers": ["Disfagiya", "Afaziya", "Anartriya", "Afoniya"], "correct": 0},
+  {"question": "Bemor tushunarsiz gapirmokda. Bunday buzilish nima deb ataladi:", "answers": ["Dizartriya", "Afoniya", "Disfagiya", "Afagiya"], "correct": 0},
+  {"question": "Qo‘shimcha nerv miya qutisidan qaysi tyoshik orqali chiqadi:", "answers": ["Buyinturiq tyoshik", "Yirtiq tyoshik", "Yumaloq tyoshik", "Ovalsimon tyoshik"], "correct": 0},
+  {"question": "Qo‘shimcha nerv qaysi mushaklarni nervlaydi:", "answers": ["To‘sh-o‘mrov-so‘rg‘ichsimon va trapetsiyasimon", "Mimik va chaynov", "Stilofaringeus va stilogipoglosus", "Yutqum va xiqildoq mushaklari"], "correct": 0},
+  {"question": "Bemorda o‘ng yelkasining pastga tushishi, yelkasini ko‘tara olmaslik, to‘sh-o‘mrov-so‘rg‘ichsimon va trapetsiyasimon mushaklar atrofiyasi ko‘zatilgan. Boshni chap tomonga qaratish qiyinlashgan, o‘ng qo‘lni gorizontal satxdan yuqoriga ko‘tarish chegaralangan. Nima zararlangan:", "answers": ["Qo‘shimcha nerv", "Yelka chigali", "Bo‘yin chigali", "Bo‘yin kengligi"], "correct": 0},
+  {"question": "Bemor tilini chiqarganda o‘ng tomonga og‘adi, tilda o‘ng tarafda mushaklarning atrofiyasi va fibrillyar tortishishlari aniqlanadi. Nima zararlangan:", "answers": ["Tilosti nervining yadrosi", "Tilosti nervi ildizchasi", "Qo‘shimcha nerv", "Sayyor nerv"], "correct": 0},
+  {"question": "Tilning chap tomonga og‘ishi, tilda chap tomonlama mushaklar atrofiyasi va fibrillyar tortishishlari, o‘ng tomonlama markaziy gemiparez. Sindromning nomi:", "answers": ["Djekson", "Shmidt", "Vallenberg-zaxarchenko", "Avellis"], "correct": 0},
+  {"question": "Bemorda manqalangan nutq, yutganda qalkib ketish, yutal va fonatsiyada yumshoq tanglay harakatsiz, yutqum refleksi yo‘q, ikki tomonlama til mushaklarining atrofiyasi va fibrillyatsiyasi. Sindromning nomi:", "answers": ["Bulbar", "Ko‘zning yuqori tirqishi", "Buyinturuk tyoshigi", "Ko‘prik-miyacha burchagi"], "correct": 0},
+  {"question": "Bemorda nutq ravonligi, ovoz chiqishi va yutish buzilgan, til mushaklarining atrofiyasi va fibrillyatsiyasi yo‘q. Pastki jag‘ va yutqum reflekslari oshgan, oral avtomatizm simptomlari chaqiriladi, sababsiz kulgi va yig‘lash ko‘zatiladi. Bu qanday sindrom:", "answers": ["Psevdobulbar", "Ko‘prik-miyacha", "Ko‘zning yuqori tirkishi", "Bulba"], "correct": 0},
+  {"question": "Qaysi simptomlar bulbar falajlikda ko‘zatilmaydi:", "answers": ["Oral avtomatizm belgilar", "Dizartriya", "Disfagiya", "Disfoniya"], "correct": 0}
+];

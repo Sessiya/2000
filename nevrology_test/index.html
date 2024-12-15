@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevrologiyadan testlar</title>
+    <style>
+/* Footer uchun dizayn */
+.footer {
+  background: black url(https://Sessiya.github.io/2000/css/footer.gif) repeat-x;
+  margin: 1px 2px;
+  border: 1px solid #efefef;
+  color: #fff;
+  padding: 6px;
+  font-size: 14px;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Kunduzgi rejim uchun navbar1 */
+.navbar1 {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tungi rejim uchun navbar1 */
+body.dark-mode .navbar1 {
+  background-color: #1e1e1e; /* Quyuq fon rangi */
+  border-bottom: 2px solid #555; /* Quyuq chegaralar */
+  color: #eee; /* Oqish matn rangi */
+}
+/* Kunduzgi rejim uchun navbar */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tungi rejim uchun navbar */
+body.dark-mode .navbar {
+  background-color: #1e1e1e; /* Quyuq fon rangi */
+  border-bottom: 2px solid #555; /* Quyuq chegaralar */
+  color: #eee; /* Oqish matn rangi */
+}
+
+
+.button-pair {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Tugmalar orasidagi masofani yaqinlashtiradi */
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background: #f8f9fa;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background: #e6f7ff;
+    border-color: #0056b3;
+}
+
+button:disabled {
+    background: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Kunduzgi rejim asosiy uslubi */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #007bff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.button-pair {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background: #f8f9fa;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background: #e6f7ff;
+  border-color: #0056b3;
+}
+
+/* Tungi rejim uslubi */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode .dark-mode-button {
+  background-color: #333;
+  color: #eee;
+  border-color: #eee;
+}
+
+body.dark-mode .dark-mode-button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode button {
+  background: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode button:hover {
+  background: #444;
+  border-color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">Nevrologiyadan testlar.</div>
+
+    <div class="navbar1">Har bir shablonda 25 tadan test bor. Jami 500 ta.</div>
+
+<div class="button-pair">
+<div class="container">
+    <!-- Shablon va Test tugmalari -->
+    <div class="row">
+        <button onclick="loadPage('shablon1/shablon.html')">Shablon 1</button>
+        <button onclick="loadPage('shablon1/test.html')">Test 1</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon2/shablon.html')">Shablon 2</button>
+        <button onclick="loadPage('shablon2/test.html')">Test 2</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon3/shablon.html')">Shablon 3</button>
+        <button onclick="loadPage('shablon3/test.html')">Test 3</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon4/shablon.html')">Shablon 4</button>
+        <button onclick="loadPage('shablon4/test.html')">Test 4</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon5/shablon.html')">Shablon 5</button>
+        <button onclick="loadPage('shablon5/test.html')">Test 5</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon6/shablon.html')">Shablon 6</button>
+        <button onclick="loadPage('shablon6/test.html')">Test 6</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon7/shablon.html')">Shablon 7</button>
+        <button onclick="loadPage('shablon7/test.html')">Test 7</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon8/shablon.html')">Shablon 8</button>
+        <button onclick="loadPage('shablon8/test.html')">Test 8</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon9/shablon.html')">Shablon 9</button>
+        <button onclick="loadPage('shablon9/test.html')">Test 9</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon10/shablon.html')">Shablon 10</button>
+        <button onclick="loadPage('shablon10/test.html')">Test 10</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon11/shablon.html')">Shablon 11</button>
+        <button onclick="loadPage('shablon11/test.html')">Test 11</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon12/shablon.html')">Shablon 12</button>
+        <button onclick="loadPage('shablon12/test.html')">Test 12</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon13/shablon.html')">Shablon 13</button>
+        <button onclick="loadPage('shablon13/test.html')">Test 13</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon14/shablon.html')">Shablon 14</button>
+        <button onclick="loadPage('shablon14/test.html')">Test 14</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon15/shablon.html')">Shablon 15</button>
+        <button onclick="loadPage('shablon15/test.html')">Test 15</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon16/shablon.html')">Shablon 16</button>
+        <button onclick="loadPage('shablon16/test.html')">Test 16</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon17/shablon.html')">Shablon 17</button>
+        <button onclick="loadPage('shablon17/test.html')">Test 17</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon18/shablon.html')">Shablon 18</button>
+        <button onclick="loadPage('shablon18/test.html')">Test 18</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon19/shablon.html')">Shablon 19</button>
+        <button onclick="loadPage('shablon19/test.html')">Test 19</button>
+    </div>
+    <div class="row">
+        <button onclick="loadPage('shablon20/shablon.html')">Shablon 20</button>
+        <button onclick="loadPage('shablon20/test.html')">Test 20</button>
+    </div>
+
+</div>
+
+</div>
+
+    <script>
+  // Sahifani avtomatik yangilash
+  location.reload(); // Sahifa qayta yuklanadi
+}
+
+document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
+document.addEventListener("DOMContentLoaded", initializeDarkMode);
+
+        // Shablon va Test sahifalariga yo'naltirish funksiyasi
+        function loadPage(page) {
+            window.location.href = page;
+        }
+    </script>
+    <div class="footer">
+  <div>
+    <a href="../index.html">
+      <img src="../css/menu_home.png" alt="" class="icon"> Bosh sahifaga
+    </a>
+    
+    <span style="display: inline-block; width: 10px;"></span>
+    <p>
+      Barcha maʼlumotlar tibbiyot talabalari uchun❗<br>
+      © Esonov B.
+    </p>
+  </div>
+    </div>
+</body>
+</html>
