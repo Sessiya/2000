@@ -1,207 +1,99 @@
-.green {
-    background-color: green;
-    color: white;
+window.onbeforeunload = function() {
+    localStorage.clear();  // Sahifa yopilganda yoki yangilanishi oldidan tozalash
+};
+
+// Javoblarni tasodifiy aralashtirish uchun yordamchi funksiya
+function shuffleAnswers(answers) {
+    for (let i = answers.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [answers[i], answers[j]] = [answers[j], answers[i]]; // Swap
+    }
+    return answers;
 }
 
-.red {
-    background-color: red;
-    color: white;
+let currentQuestion = 0;
+let correctAnswers = 0;
+let incorrectAnswers = 0;
+
+function loadQuestion() {
+    const testSection = document.getElementById("testSection");
+    const questionObj = questions[currentQuestion];
+    const questionNumberSection = document.getElementById("questionNumberSection");
+
+    // Yangi testni boshlashda ranglarni o'rnatish
+    questionNumberSection.innerHTML = questions
+        .map((_, index) => {
+            let className = '';
+            const storedResult = localStorage.getItem(`test${index + 1}`);
+
+            // Saqlangan ranglarga qarab sinf qo'shish
+            if (storedResult === 'green') {
+                className = 'correct';
+            } else if (storedResult === 'red') {
+                className = 'incorrect';
+            } else if (currentQuestion === index) {
+                className = 'active';
+            }
+
+            return `<div class="${className}" onclick="goToQuestion(${index})">${index + 1}</div>`;
+        })
+        .join('');
+
+    // Shuffle the answers
+    const shuffledAnswers = shuffleAnswers([...questionObj.answers]);
+
+    testSection.innerHTML = `
+        <div class="question">${questionObj.question}</div>
+        <div class="answers">
+            ${shuffledAnswers
+                .map(
+                    (answer, index) =>
+                        `<div class="answer" onclick="checkAnswer(${index}, ${shuffledAnswers.indexOf(answer)})">${answer}</div>`
+                )
+                .join("")}
+        </div>
+    `;
+    updateButtons();
 }
 
-#questionNumberSection div {
-    padding: 10px;
-    margin: 5px;
-    border: 2px solid #ccc;
-    cursor: pointer;
+function checkAnswer(index, originalIndex) {
+    const questionObj = questions[currentQuestion];
+    const answers = document.querySelectorAll(".answer");
+
+    // Javoblarni to'g'ri va noto'g'ri rang bilan bo'yash
+    answers.forEach((answer, i) => {
+        if (i === questionObj.correct) {
+            answer.classList.add("correct");
+        } else if (i === index) {
+            answer.classList.add("incorrect");
+        }
+        answer.onclick = null; // Disable further clicking
+    });
+
+    // To'g'ri yoki noto'g'ri javobni hisoblash
+    if (originalIndex === questionObj.correct) {
+        correctAnswers++;
+        localStorage.setItem(`test${currentQuestion + 1}`, 'green');
+    } else {
+        incorrectAnswers++;
+        localStorage.setItem(`test${currentQuestion + 1}`, 'red');
+    }
+
+    // Raqamni rangini saqlash
+    document.querySelectorAll("#questionNumberSection div")[currentQuestion].classList.add(originalIndex === questionObj.correct ? 'correct' : 'incorrect');
 }
 
-.green {
-    border-color: green;
-}
+function updateButtons() {
+    document.getElementById("prevBtn").disabled = currentQuestion === 0;
+    document.getElementById("nextBtn").disabled = currentQuestion === questions.length - 1;
 
-.red {
-    border-color: red;
-}
-
-.active {
-    border-color: blue;
-}
-.navbar {
-            background-color: #f8f9fa;
-            border-bottom: 2px solid #ddd;
-            padding: 10px;
-        }
-        .navbar div {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-            border: 2px solid #007bff;
-            border-radius: 5px;
-        }
-
-        .container {
-            width: 100%;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        #questionNumberSection {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .question {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        .answers {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .answer {
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #f9f9f9;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .answer:hover {
-            background: #e6f7ff;
-        }
-
-        .answer.correct {
-            background-color: #c8e6c9;
-            border-color: #388e3c;
-        }
-
-        .answer.incorrect {
-            background-color: #ffcdd2;
-            border-color: #d32f2f;
-        }
-
-        .controls {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background: #007bff;
-            color: #fff;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background 0.3s ease;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        button:disabled {
-            background: #ddd;
-            cursor: not-allowed;
-        }
-
-        #questionNumberSection div {
-            padding: 5px 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        #questionNumberSection .active {
-            border-width: 2px;
-            border-color: #007bff;
-            font-weight: bold;
-        }
-
-        #questionNumberSection .correct {
-            background-color: #c8e6c9;
-            border-color: #388e3c;
-        }
-
-        #questionNumberSection .incorrect {
-            background-color: #ffcdd2;
-            border-color: #d32f2f;
-        }
-
-        #finishTestBtn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background: #28a745;
-            color: white;
-            cursor: pointer;
-            font-size: 1.2em;
-        }
-
-        #finishTestBtn:hover {
-            background-color: #218838;
-        }
-
-        #resultSection {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .correctCount, .incorrectCount {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-
-        .correctCount {
-            color: green;
-        }
-
-        .incorrectCount {
-            color: red;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .question {
-                font-size: 1em;
-            }
-
-            .controls {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .answer {
-                font-size: 0.9em;
-            }
-
-            button {
-                width: 100%;
-                padding: 12px 20px;
-            }
-
-            #questionNumberSection {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #questionNumberSection div {
-                margin: 5px 0;
-                width: auto;
-            }
-        }
+    // Oxirgi savolga yetganda "Keyingi" tugmasini "Testni yakunlash"ga almashtirish
+    if (currentQuestion === questions.length - 1) {
+        document.getElementById("nextBtn").style.display = "none";
+        document.getElementById("finishBtnSection").style.display = "block";
+    } else {
+        document.getElementById("nextBtn").style.display = "inline-block";
+        document.getElementById("finishBtnSection").style.display = "none";
+    }
+    }
+                                    
