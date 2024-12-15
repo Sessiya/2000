@@ -20,6 +20,9 @@ function loadQuestion() {
     const questionObj = questions[currentQuestion];
     const questionNumberSection = document.getElementById("questionNumberSection");
 
+    // Javoblarni tasodifiy aralashtirish
+    const shuffledAnswers = shuffleAnswers([...questionObj.answers]);
+
     // Yangi testni boshlashda ranglarni o'rnatish
     questionNumberSection.innerHTML = questions
         .map((_, index) => {
@@ -42,7 +45,7 @@ function loadQuestion() {
     testSection.innerHTML = `
         <div class="question">${questionObj.question}</div>
         <div class="answers">
-            ${questionObj.answers
+            ${shuffledAnswers
                 .map(
                     (answer, index) =>
                         `<div class="answer" onclick="checkAnswer(${index})">${answer}</div>`
