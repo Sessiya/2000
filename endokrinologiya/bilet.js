@@ -1,7 +1,7 @@
 const tickets = [
   {
     "question": "Gipofiz qayerda joylashgan va u qanday qismlardan iborat?",
-    "answer": "Gipofiz bezi miya ostida, turk egarchasi (sella turcica) deb ataladigan suyak kovagida joylashgan. U gipotolamus bilan tor kanalcik (gipofizar so‘rg‘ich) orqali bog‘langan. Gipofiz uch qismdan iborat: 1) Oldingi bo‘lim (adenogipofiz) – asosiy gormonlarni chiqaradi. 2) Orqa bo‘lim (neyrogipofiz) – gipotolamusdan kelgan gormonlarni chiqaradi. 3) Oraliq bo‘lim – ba'zi o‘sish va pigmentatsiyaga ta'sir qiladigan gormonlarni chiqaradi."
+    "answer": "Gipofiz bezi miya ostida, turk egarchasi (sella turcica) deb ataladigan suyak kovagida joylashgan. U gipotolamus bilan gipofizar so‘rg‘ich (lat. infundibulum) orqali bog‘langan. Gipofiz uch qismdan iborat: 1) Oldingi bo‘lim (adenogipofiz) – asosiy gormonlarni chiqaradi. 2) Orqa bo‘lim (neyrogipofiz) – gipotolamusdan kelgan gormonlarni chiqaradi. 3) Oraliq bo‘lim – ba'zi o‘sish va pigmentatsiyaga ta'sir qiladigan gormonlarni chiqaradi."
   },
   {
     "question": "Oldingi gipofiz bezi qanday gormonlarni chiqaradi?",
