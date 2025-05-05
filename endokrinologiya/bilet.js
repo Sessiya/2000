@@ -14,10 +14,10 @@ AKTG (Adrenokortikotrop gormon) – buyrak usti bezi po‘stlog‘ini rag‘batl
 FSH (Follikulostimullovchi gormon) – jinsiy hujayralarni rivojlantiradi.
 LH (Luteinlovchi gormon) – jinsiy gormonlar ishlab chiqarishni rag‘batlantiradi.
 PRL (Prolaktin) – sut ishlab chiqarishni oshiradi.
-2. O‘rta qism (Oraliq qism):
-MSH (Melanotsit-stimullovchi gormon) – teri pigmentatsiyasini boshqaradi (teri rangiga ta'sir qiladi).
+2. O‘rta qism (pars intermedia):
+Melanotsit-stimullovchi gormon – teri pigmentatsiyasini boshqaradi.
 3. Orqa qism (Neyrogipofiz):
-ADH (Antidiuretik gormon, ya'ni vazopressin) – buyrakda suvni ushlab turadi, siydikni kamaytiradi.
+Antidiuretik gormon, ya'ni vazopressin – buyrakda suvni ushlab turadi, siydikni kamaytiradi.
 Oksitosin – bachadon qisqarishini va tug‘ruq vaqtida yordam beradi, sut bezidan sut chiqishini rag‘batlantiradi.`
   },
   {
