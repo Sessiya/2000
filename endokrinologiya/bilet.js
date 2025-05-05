@@ -15,7 +15,7 @@ FSH (Follikulostimullovchi gormon) – jinsiy hujayralarni rivojlantiradi.
 LH (Luteinlovchi gormon) – jinsiy gormonlar ishlab chiqarishni rag‘batlantiradi.
 PRL (Prolaktin) – sut ishlab chiqarishni oshiradi.
 2. O‘rta qism (pars intermedia):
-Melanotsit-stimullovchi gormon – teri pigmentatsiyasini boshqaradi.
+Melanotsit-stimullovchi gormon – pigmentatsiyasini boshqaradi.
 3. Orqa qism (Neyrogipofiz):
 Antidiuretik gormon, ya'ni vazopressin – buyrakda suvni ushlab turadi, siydikni kamaytiradi.
 Oksitosin – bachadon qisqarishini va tug‘ruq vaqtida yordam beradi, sut bezidan sut chiqishini rag‘batlantiradi.`
