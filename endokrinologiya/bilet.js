@@ -204,17 +204,276 @@ Dori: oktreotid, kabergolin.
 Radioterapiya (kerak bo‘lsa).`
   },
     {
-    "question": "",
-   "answer": ``
+    "question": "Akromegaliyaga shubha qilinganda diagnostika usullari.",
+   "answer": `Akromegaliyaga shubha qilinganda quyidagi diagnostika usullari qo‘llaniladi:
+1. Qonda IGF-1 darajasini o‘lchash – har doim yuqori bo‘ladi. Bu o‘sish gormoni darajasini barqaror baholash uchun muhim.
+2. OGTT (glyukoza yuklama testi) – 75g glyukozadan so‘ng STG darajasi pasaymasligi akromegaliyani ko‘rsatadi (sog‘lomlarda pasayadi).
+3. Gipofiz MR tomografiyasi – o‘sma (adenoma) bor-yo‘qligini aniqlaydi.
+4. Qonda STG darajasi – odatda yuqori, lekin bir o‘lchovda ishonchsiz bo‘lishi mumkin (pulsatil ishlab chiqariladi).
+5. Ko‘z tubi tekshiruvi va ko‘rish maydoni – gipofiz o‘smalari ko‘rish nerviga bosim bersa, ko‘rish maydoni torayadi.`
   },
     {
-    "question": "",
-   "answer": ``
+    "question": "Akromegaliyani davolashning zamonaviy yondashuvlari.",
+   "answer": `Akromegaliyani davolashda zamonaviy yondashuvlar quyidagicha:
+1. Jarrohlik davolash (asosiy yo‘l)
+Gipofiz adenomasini burun orqali (transsfenoyidal) olib tashlash.
+STG darajasi tez pasayadi, IGF-1 normaga tushadi.
+
+2. Dori vositalari (agar o‘sma butunlay olib tashlanmasa yoki qaytasa):
+Somatostatin analoglari: Oktreotid, Lanreotid – STG ishlab chiqarilishini kamaytiradi.
+Dopamin agonistlari: Kabergolin – ayrim hollarda samarali.
+STG retseptori antagonisti: Pegvisomant – IGF-1 ishlab chiqarilishini to‘xtatadi.
+
+3. Radioterapiya (agar boshqa usullar samara bermasa):
+STG ishlab chiqarilishini sekin-asta kamaytiradi.
+Natijasi yillar davomida chiqadi.
+
+Yondashuv kombinatsiyalashgan: odatda birinchi navbatda operatsiya, keyin kerak bo‘lsa dori yoki nurlash qo‘shiladi.`
   },
     {
-    "question": "",
-   "answer": ``
+    "question": "Jismoniy rivojlanishni persentil jadvallari bo'yicha baholash qanday amalga oshiriladi?",
+   "answer": `Jismoniy rivojlanishni persentil jadvallari bo‘yicha baholash bu bolaning bo‘yi, vazni yoki BMI (tana massasi indeksi) kabi ko‘rsatkichlarini o‘z tengdoshlari bilan taqqoslashdir.
+Baholash tartibi:
+1. O‘lchovlar olinadi: bolaning bo‘yi, vazni, boshi aylanasining o‘lchami (yoshga qarab).
+2. Yosh va jinsga mos persentil jadvali tanlanadi (masalan, WHO yoki CDC jadvali).
+3. Ko‘rsatkich jadvalga joylashtiriladi va qaysi persentil oralig‘iga tushgani aniqlanadi.
+
+Persentil nima degani?
+50-persentil – o‘rtacha natija, ya’ni shu yoshdagi bolalarning yarmi undan baland, yarmi past.
+3–97 persentil oralig‘i** – normal rivojlanish chegarasi hisoblanadi.
+3% dan past – rivojlanish sekin (orqada qolish mumkin).
+97% dan yuqori – haddan tashqari tez o‘sish.
+
+Misol: 5 yoshli bola bo‘yining 10-persentilda bo‘lishi – u yoshdoshlarining 90% dan past bo‘yda degani.`
   },
+  {
+  "question": "Shixan sindromi, etiologiya, patogenez, klinika, diagnostika.",
+  "answer": `Shixan sindromi — tug‘ruq vaqtida qon ketish natijasida gipofiz ishemiyasi tufayli paydo bo‘lgan gipopituitarizm. Etiologiyasi: og‘ir tug‘ruq, ko‘p qon ketish. Patogenez: gipofizning nekrozi tufayli gormonlar ishlab chiqishi kamayadi. Klinikasi: emizmaslik, amenoreya, loqaydlik, soch to‘kilishi, sovuqsevarlik. Diagnostika: gormonlar (FSH, LH, TSH, ACTH) darajasi pasaygan, MRTda gipofiz kichraygan.`
+},
+{
+  "question": "Gigantizm etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Gigantizm — bolalikda ortiqcha o‘sish gormoni (STG) ajralishiga bog‘liq kasallik. Etiologiyasi: gipofiz o‘smalari. Patogenez: STG suyaklarning epifiz zonalarini rag‘batlantirib haddan tashqari o‘sishga olib keladi. Klinikasi: juda baland bo‘y, qo‘l-oyoqlar yirik, mushaklar zaif. Diagnostika: STG, IGF-1 oshgan, MRTda adenomani ko‘rsatadi. Davolash: o‘smaga qarshi jarrohlik, nurlantirish yoki STG ishlab chiqarilishini to‘suvchi dori (somatostatin analoglari).`
+},
+{
+  "question": "Qandsiz diabet etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
+  "answer": `Qandsiz diabet — ADH (antidiuretik gormon) yetishmovchiligi yoki buyrak to‘qimalarining unga javob bermasligi. Etiologiya: gipotalamus-gipofiz shikastlanishi, infeksiyalar, genetik buzilish. Patogenez: ADH yo‘qligi tufayli buyraklar suvni tutolmaydi. Klinikasi: ko‘p siydik (poliuriya), kuchli chanqoq (polidipsiya). Diagnostika: quruq ovqatlanish sinamasi, ADH darajasi, MRT. Davolash: desmopressin (sintetik ADH) bilan almashtirish, suyuqlik yo‘qotilishini boshqarish.`
+},
+{
+  "question": "Quruq ovqatlanish sinamasi qanday amalga oshiriladi va uning diagnostik ahamiyati?",
+  "answer": `Quruq ovqatlanish sinamasi — 6–8 soat suyuqlik bermasdan bemorning siydik konsentratsiyasini tekshirish usuli. Agar siydik zichligi oshmasa va bemor poliuriyada bo‘lsa — markaziy qandsiz diabet ehtimoli bor. Keyin desmopressin berilib, siydik zichligi oshsa — markaziy, oshmasa — nefrogen diabet aniqlanadi.`
+},
+{
+  "question": "Markaziy qandsiz diabet kasalligini davolashning zamonaviy yondashuvlari?",
+  "answer": `Asosiy dori — desmopressin (sintetik ADH). U burun spreyi, tabletkada yoki in'ektsiya shaklida qo‘llanadi. Suyuqlik balansini nazorat qilish va elektrolitlar muvozanatini saqlash ham muhim.`
+},
+{
+  "question": "Itenko-Kushing kasalligining etiologiyasi va klinikasi.",
+  "answer": `Etiologiya: gipofiz adenomasi ACTH ishlab chiqaradi, bu buyrak usti bezining kortizol ishlab chiqarishini kuchaytiradi. Klinikasi: yuvarlak yuz (oy yuz), qorinda yog‘ to‘planishi, mushak zaifligi, teri yupqalashuvi, chandiqlar, gipertoniya, osteoporoziya.`
+},
+{
+  "question": "Semizlik etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
+  "answer": `Etiologiyasi: noto‘g‘ri ovqatlanish, harakatsizlik, genetik, endokrin sabablar. Patogenez: kutilgan kaloriyalardan ortiq iste’mol yog‘ to‘planishiga olib keladi. Klinikasi: tana vaznining ortishi, yurak qon-tomir, endokrin muammolar. Diagnostika: BMI, qon lipidlari, glyukoza, gormonlar. Davolash: ovqatlanishni nazorat qilish, jismoniy faollik, kerak bo‘lsa dori va jarrohlik.`
+},
+{
+  "question": "Tana massasi indeksi (BMI) nima va uni qanday hisoblash mumkin?",
+  "answer": `BMI — tana massasi indeksidir. Formulasi: vazn (kg) / bo‘y (m)^2. Masalan: 70 kg / (1.70)^2 = 24.2. Normal BMI: 18.5–24.9.`
+},
+{
+  "question": "Metabolik sindrom etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiya: noto‘g‘ri ovqatlanish, harakatsizlik, genetik omillar. Patogenez: insulin rezistentlik orqali rivojlanadi. Klinikasi: bel atrofida yog‘ to‘planish, gipertoniya, dislipidemiya, QD. Diagnostika: AQSH NIH mezonlari asosida. Davolash: vazn yo‘qotish, diet, jismoniy faollik, dori vositalari.`
+},
+{
+  "question": "Semizlikni davolash usullari.",
+  "answer": `1) Dieta va kaloriya nazorati. 2) Jismoniy faollik. 3) Davolovchi dorilar (orlistat, liraglutid). 4) Psixoterapiya. 5) Bariatrik jarrohlik og‘ir hollarda.`
+},
+{
+  "question": "Qandli diabet kasalligiga ta'rifini bering, klassifikatsiyasi.",
+  "answer": `Qandli diabet — glyukozani qondan hujayraga yetkazishdagi buzilish bilan kechadigan kasallik. Klassifikatsiyasi: 1-tur (insulinga bog‘liq), 2-tur (insulinga bog‘liq emas), gestatsion diabet (homiladorlikda), boshqa sabablarga bog‘liq turlari.`
+},
+{
+  "question": "QD 1-tur etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiya: autoimmun pankreatit, viruslar. Patogenez: insulin ishlab chiqarilmasligi. Klinikasi: poliuriya, polidipsiya, vazn yo‘qotish, ketoz. Diagnostika: glyukoza, HbA1c, C-peptid, autoantitanalar. Davolash: insulin terapiyasi, dieta, jismoniy faollik.`
+},
+{
+  "question": "QD 2-tur etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
+  "answer": `Etiologiyasi: genetik, semizlik, harakatsizlik. Patogenez: insulin rezistentlik + sekretsiyasi kamayishi. Klinikasi: susaygan simptomlar (chanqoq, charchoq, infektsiyalar). Diagnostika: glyukoza, HbA1c. Davolash: dieta, jismoniy faollik, metformin, kerak bo‘lsa insulin.`
+},
+{
+  "question": "QD 1 va QD 2 tur klinik simptomlari.",
+  "answer": `1-tur: keskin boshlanadi, poliuriya, polidipsiya, vazn yo‘qotish, ketoatsetoz. 2-tur: asta-sekin boshlanadi, charchoq, ko‘rish buzilishi, yara bitmaslik, semizlik.`
+},
+{
+  "question": "QD 1 va QD 2 tur differentsial diagnostikasi.",
+  "answer": `1-tur: yoshlar, tez rivojlanadi, C-peptid past, autoantitanalar mavjud. 2-tur: kattalar, sekin rivojlanadi, C-peptid normal/yuqori, antitanalar yo‘q.`
+},
+{
+  "question": "Qandli diabet diagnostikasi mezonlari qanday.",
+  "answer": `1) HbA1c ≥ 6.5%. 2) Och qoringa glyukoza ≥ 7.0 mmol/l. 3) OGTT 2-soatda ≥ 11.1 mmol/l. 4) Har qanday paytda ≥ 11.1 mmol/l + simptomlar bo‘lsa.`
+},
+  {
+  "question": "Glikirlangan gemoglobin nima va uning diagnostikadagi ahamiyati?",
+  "answer": `Glikirlangan gemoglobin (HbA1c) — bu glyukoza eritrositlardagi gemoglobin bilan bog‘lanishi natijasida hosil bo‘lgan birikmadir. U so‘nggi 2–3 oy ichidagi o‘rtacha glikemiya darajasini aks ettiradi. HbA1c darajasining oshishi qandli diabet (QD) borligini yoki davolashning yetarli emasligini ko‘rsatadi. Diabet diagnostikasi uchun HbA1c ≥ 6,5% deb olinadi.`
+},
+{
+  "question": "Prediabet tushunchasi, diagnostikasi, davolash.",
+  "answer": `Prediabet — bu glyukozaga tolerantlikning buzilishi yoki och qoringa glyukozaning ko‘tarilishi holati bo‘lib, hali QD diagnostika mezonlariga to‘g‘ri kelmaydi. Diagnostika: och qondagi glyukoza 5.6–6.9 mmol/l; GTTda 2-soatlik glyukoza 7.8–11.0 mmol/l. Davolash: hayot tarzini o‘zgartirish (ovqatlanish, jismoniy faollik), ba’zan metformin qo‘llanadi.`
+},
+{
+  "question": "GTT (glyukoza tolerantlik testi) o‘tkazish uchun ko‘rsatmalar, o‘tkazish usuli.",
+  "answer": `Ko‘rsatmalar: prediabetdan gumon qilish, homiladorlik diabetini aniqlash, glyukoza metabolizmi buzilishlarini aniqlash. Usuli: bemor och holda (kamida 8 soat och qolgan) keladi, boshlang‘ich qondagi glyukoza olinadi, so‘ngra 75g glyukoza ichiriladi. 2 soatdan so‘ng yana glyukoza miqdori aniqlanadi.`
+},
+{
+  "question": "GTT (glyukoza tolerantlik testi) - norma, prediabet, QD natijalarini talqin qilish.",
+  "answer": `Norma: 2-soatlik glyukoza < 7.8 mmol/l. Prediabet: 2-soatlik glyukoza 7.8–11.0 mmol/l. Qandli diabet: 2-soatlik glyukoza ≥ 11.1 mmol/l.`
+},
+{
+  "question": "QD uchun dietoterapiya.",
+  "answer": `QDda dietoterapiya asosiy davolash usullaridan biridir. Maqsad: qon glyukozasini nazoratda ushlash. Oddiy shakar va tez so‘riladigan uglevodlar cheklanadi, murakkab uglevodlar, tolali mahsulotlar tavsiya etiladi. Fraksion (ko‘p va oz-ozdan) ovqatlanish, kaloriya hisobiga asoslangan dieta tuziladi.`
+},
+{
+  "question": "Qondagi qand miqdorini pasaytiruvchi gipoglikemik dorilarning tasnifi.",
+  "answer": `1. Insulin preparatlari (faqat parenteral). 
+2. Og‘zaki gipoglikemik vositalar: 
+   - Biguanidlar (metformin), 
+   - Sulfanilmochevina hosilalari, 
+   - DPP-4 ingibitorlari, 
+   - GPP-1 agonistlari, 
+   - SGLT-2 ingibitorlari, 
+   - Tiazolidindionlar.`
+},
+{
+  "question": "Biguanid guruh preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri.",
+  "answer": `Ko‘rsatmalar: QD 2-tur, ayniqsa semiz bemorlarda. 
+Qarshi ko‘rsatmalar: buyrak yetishmovchiligi, jigar kasalliklari, laktatsiyoz xavfi. 
+Ta'sir mexanizmi: jigarda glyukoneogenezni kamaytiradi, insulin sezuvchanligini oshiradi. 
+Nojo‘ya ta'siri: oshqozon-ichak bezovtaligi, laktatsidoz.`
+},
+{
+  "question": "Sulfanilmochevina preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri?",
+  "answer": `Ko‘rsatmalar: QD 2-turda insulin sekretsiyasi saqlangan holat. 
+Qarshi ko‘rsatmalar: QD 1-tur, homiladorlik, buyrak yoki jigar yetishmovchiligi. 
+Ta'sir mexanizmi: beta-hujayralardan insulin sekretsiyasini stimullaydi. 
+Nojo‘ya ta'siri: gipoglikemiya, tana vaznining oshishi.`
+},
+{
+  "question": "DPP-4 ingibitorlari guruhi preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir mexanizmi, nojo‘ya ta'siri.",
+  "answer": `Ko‘rsatmalar: QD 2-turda glyukozani nazorat qilish. 
+Qarshi ko‘rsatmalar: DPP-4ga allergiya, ba’zi yurak-qon tomir kasalliklari. 
+Ta'sir mexanizmi: inkretin gormonlar (GLP-1 va GIP) faoliyatini uzaytiradi, insulin sekretsiyasini oshiradi, glukagonni kamaytiradi. 
+Nojo‘ya ta'siri: bosh og‘rig‘i, yo‘tal, dispepsiya.`
+},
+{
+  "question": "GPP-1 analoglari guruhi preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri.",
+  "answer": `Ko‘rsatmalar: QD 2-turda, ayniqsa semizlik bilan kechsa. 
+Qarshi ko‘rsatmalar: pankreatit, GPP-1ga sezuvchanlik. 
+Ta'sir mexanizmi: inkretin ta'sirini taqlid qiladi — insulin sekretsiyasini oshiradi, glukagonni kamaytiradi, ovqat hazm bo‘lishini sekinlashtiradi. 
+Nojo‘ya ta'siri: ko‘ngil aynish, qusish, ishtahaning pasayishi.`
+},
+  {
+  "question": "SGLT-2 ingibitori guruhi preparatlari - ko'rsatmalar, qarshi ko`rsatmalar, ta'sir qilish mexanizmi, nojo`ya ta'siri",
+  "answer": `Ko‘rsatmalar: QD 2-tur, yurak yetishmovchiligi, buyrak kasalliklari bilan kechuvchi holatlarda. Qarshi ko‘rsatmalar: og‘ir buyrak yetishmovchiligi, ketoatsidoz. Ta'sir mexanizmi: buyraklarda glyukozaning reabsorbsiyasini to‘sib, siydik orqali chiqishini ta’minlaydi. Nojo‘ya ta’siri: siydik yo‘llari infeksiyalari, susuzlanish, ketoatsidoz.`
+},
+{
+  "question": "Insulin terapiyasini tayinlash uchun ko'rsatmalar.",
+  "answer": `1-tur QD (har doim), 2-tur QDda og‘zaki vositalar yetarli bo‘lmasa, homiladorlik diabeti, QDning og‘ir kechishlari (ketoatsidoz, koma), jarrohlikdan oldin, infeksiyalar yoki stress holatlari.`
+},
+{
+  "question": "Insulinlarning ta'sir qilish muddati bo'yicha tasnifi.",
+  "answer": `1. Juda qisqa ta’sirli (lispro, aspart, glulisin) — 10–30 min.  
+2. Qisqa ta’sirli (regulyar insulin) — 30–60 min.  
+3. O‘rta ta’sirli (NPH) — 1–2 soat.  
+4. Uzoq ta’sirli (glargin, detemir, degludek) — 1–2 soat, ammo 24–48 soat davom etadi.`
+},
+{
+  "question": "1-tur QD uchun insulin dozasini hisoblash va insulinterapiyaning asoslari.",
+  "answer": `Kunlik insulin doza = tana vazniga (kg) 0.5–1.0 birlik/kg dan hisoblanadi. 50% bazal insulin (uzoq ta’sirli), 50% bolus insulin (har ovqat oldidan) bo‘linadi. Dozalar glikemiya nazoratiga qarab sozlanadi.`
+},
+{
+  "question": "Bazis bolus insulin terapiyasi nima?",
+  "answer": `Bazis-bolus terapiyasi — bu insulinni fiziologik tarzda taqlid qiluvchi usul bo‘lib, bazal insulin (doimiy ta’sir) va har ovqatdan oldin qisqa ta’sirli bolus insulin birgalikda beriladi. Bu yondashuv qon glyukozasini optimal ushlab turadi.`
+},
+{
+  "question": "Insulin terapiyasining asosiy asoratlari (gipoglikemiya, lipodistrofiya va boshqalar).",
+  "answer": `Asoratlar: gipoglikemiya (eng ko‘p), lipodistrofiya (in'ektsiya joyida yog‘ to‘qimasining o‘zgarishi), insulin qarshiligi, allergik reaktsiyalar.`
+},
+{
+  "question": "Gipoglikemik koma-etiologiya, patogenez, klinika, diagnostika, birinchi yordam",
+  "answer": `Etiologiya: ortiqcha insulin dozasi, ovqatni o‘tkazib yuborish, jismoniy yuklama. Patogenez: glyukoza tanqisligi miya faoliyatini buzadi. Klinika: bosh aylanish, terlash, titrash, hushdan ketish. Diagnostika: qon glyukozasi <3.0 mmol/l. Yordam: 20–40 ml 40% glyukoza vena ichiga, hushida bo‘lsa — shirin ichimlik.`
+},
+{
+  "question": "Ketoatsidotik koma- etiologiya, patogenez, klinika, diagnostika, birinchi yordam",
+  "answer": `Etiologiya: insulin yetishmovchiligi, infeksiya, stress. Patogenez: glyukoza ishlanmaydi, keton jismlar ortadi, metabolik asidoz rivojlanadi. Klinika: qusish, quruq teri, “mevali nafas”, Kussmaul nafas, hushdan ketish. Diagnostika: glyukoza >13.9 mmol/l, ketonlar, asidoz. Yordam: insulin infuziyasi, suyuqlik berish, elektrolitlar, sababini davolash.`
+},
+{
+  "question": "Giperosmolyar koma-etiologiya, patogenez, klinika, diagnostika, birinchi yordam",
+  "answer": `Etiologiya: QD 2-tur, susuzlanish, infeksiya, diuretiklar. Patogenez: suyuqlik yo‘qolishi, osmotik diurez, qonning hiperosmolyarligi. Klinika: zaiflik, suvsizlanish, nevrologik simptomlar, hushdan ketish. Diagnostika: glyukoza >33 mmol/l, osmolyarlik >320 mOsm/kg, ketonoz yo‘q. Yordam: vena ichiga suyuqlik, insulinterapiya, elektrolit muvozanatini tiklash.`
+},
+{
+  "question": "Gipoglikemik koma uchun shoshilinch yordam",
+  "answer": `1. Agar bemor hushida: shakar eritmasi ichiriladi.  
+2. Hushsiz: 20–40 ml 40% glyukoza vena ichiga yuboriladi yoki glukagon (1 mg) mushak ichiga qilinadi.  
+3. Glyukozaning vena orqali infuziyasi davom ettiriladi, sababi aniqlanadi.`
+},
+  {
+  "question": "Giperglikemik koma uchun shoshilinch yordam",
+  "answer": `1. Suyuqlik infuziyasi: NaCl 0.9% yoki Ringer eritmasi.  
+2. Insulin infuziyasi: juda ehtiyotkorlik bilan, qonda glyukoza darajasi normallashguncha.  
+3. Elektrolitlar (kaliy, natriy) muvozanatini tiklash.`
+},
+{
+  "question": "Gipoglikemik va giperglikemik komaning differentsial diagnostikasi",
+  "answer": `Gipoglikemik koma: qon shakar miqdori 3.0 mmol/l dan past, tizimli terlash, bosh aylanishi, titrash.  
+Giperglikemik koma: qon shakar miqdori 13.9 mmol/l dan yuqori, mevali nafas, teri qurishi, Kussmaul nafas.`
+},
+{
+  "question": "Giperosmolyar koma va ketoatsidotik koma o'rtasidagi farq nima?",
+  "answer": `Giperosmolyar koma: yuqori qon osmolyarligi (320 mOsm/kg), ketonlar mavjud emas, ko‘proq 2-tur QD bilan bog‘liq.  
+Ketoatsidotik koma: qon keton darajasi yuqori, asidoz va metebolik disbalans.`
+},
+{
+  "question": "Laktatatsidotik koma nima va etiologiyasi?",
+  "answer": `Laktatatsidotik koma: laktat darajasining ortishi tufayli pH darajasining pasayishi. Etiologiya: og‘ir oksigen tanqisligi, yurak va buyrak yetishmovchiligi, metformin kabi dori-darmonlar.`
+},
+{
+  "question": "QD ning o'tkir asoratlari.",
+  "answer": `O'tkir asoratlar: gipoglikemiya, giperglikemik koma, ketoatsidotik koma, giperosmolyar koma, infeksiyalar, jarrohlik asoratlar.`
+},
+{
+  "question": "QD ning surunkali asoratlari.",
+  "answer": `Surunkali asoratlar: diabetik retinopatiya, diabetik nefropatiya, diabetik neyropatiya, yurak-qon tomir kasalliklari, diabetik oyoq.`
+},
+{
+  "question": "Diabetik retinopatiya-etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
+  "answer": `Etiologiya: qandli diabet, yuqori qon bosimi.  
+Patogenez: retina qon tomirlarining zararlanishi, mikrovaskulyar shikastlanish.  
+Tasniflash: bosqichlar (yengil, o‘rtacha, og‘ir).  
+Klinik ko‘rinish: ko‘rishning pasayishi, ko‘z oldida qora dog‘lar.  
+Davolash: lazer terapiyasi, vitrektomiya.`
+},
+{
+  "question": "Diabetik nefropatiya- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
+  "answer": `Etiologiya: qandli diabet, yuqori qon bosimi.  
+Patogenez: glomerulalarning shikastlanishi, proteinuriya.  
+Tasniflash: 5 bosqich.  
+Klinik ko‘rinish: proteinuriya, shish, buyrak yetishmovchiligi.  
+Davolash: antihipertenziv dori-darmonlar, ACE ingibitorlari.`
+},
+{
+  "question": "Diabetik neyropatiya- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
+  "answer": `Etiologiya: qandli diabet, yuqori qon shakar.  
+Patogenez: nerv tolalarining mikrovaskulyar shikastlanishi.  
+Tasniflash: periferik, avtonom, markaziy.  
+Klinik ko‘rinish: sezgi yo‘qolishi, og‘riq, muskullarning kuchsizlik.  
+Davolash: qand miqdorini nazorat qilish, og‘riqni kamaytiruvchi dori-darmonlar.`
+},
+{
+  "question": "Diyabetik to`piq- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
+  "answer": `Etiologiya: qandli diabet, nerv va qon tomirlarning zararlanishi.  
+Patogenez: qon tomirlarining ishemiyasi, infektsiyalar.  
+Tasniflash: bosqichlar.  
+Klinik ko‘rinish: to‘piq og‘rig‘i, yara, gangrena.  
+Davolash: antiseptiklar, antibiotiklar, amputatsiya.`
+},
     {
     "question": "",
    "answer": ``
