@@ -474,58 +474,166 @@ Tasniflash: bosqichlar.
 Klinik ko‘rinish: to‘piq og‘rig‘i, yara, gangrena.  
 Davolash: antiseptiklar, antibiotiklar, amputatsiya.`
 },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  },
-    {
-    "question": "",
-   "answer": ``
-  }
+  {
+  "question": "Qalqonsimon bezi anatomiya, fiziologiya, gormonlar biosintezi, ta`sir mexanizmi.",
+  "answer": `Qalqonsimon bez bo‘yin pastki qismlarida joylashgan, ikki lobdan iborat bo‘lib, tiroksin (T4) va triyodotironin (T3) gormonlarini ishlab chiqaradi. Ularning asosiy funksiyasi organizmning metabolizmi va energiya ishlab chiqarishni boshqarishdir. Tirotropin (TSH) gipofiz bezidan ishlab chiqiladi va qalqonsimon bezni stimulyatsiya qiladi.`
+},
+{
+  "question": "Tiroksin (T4) va triyodotironin (T3) ning biologik ta'siri.",
+  "answer": `Tiroksin (T4) va triyodotironin (T3) organizmning barcha hujayralarida metabolizmni tezlashtiradi, termogenezni boshqaradi, yurak tezligini oshiradi va protein sintezini rag'batlantiradi. Ular organizmning umumiy energiya sarfini nazorat qilishga yordam beradi.`
+},
+{
+  "question": "Endemik bo`qoq-etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Endemik bo‘qoq, qalqonsimon bezning kattalashishi, odatda yodning yetishmasligi bilan bog‘liq. Patogenezda qalqonsimon bezning gormon ishlab chiqarishi kamayadi, bu esa gipotiroidizmga olib keladi. Klinikada bo‘qoq (bezdaki kattalashish), charchoq, sovuq qamish, teri quruqligi kuzatiladi. Diagnostika yod darajasini va gormonlar profilini o‘rganish orqali amalga oshiriladi. Davolashda yodni qo‘llash va sintetik tiroksin preparatlari ishlatiladi.`
+},
+{
+  "question": "Endemik bo`qoq rivojlanishining profilaktik choralari",
+  "answer": `Profilaktika: yodli tuzdan foydalanish, yod etishmasligiga qarshi ta'lim va sog‘lom ovqatlanish, shuningdek, yodning yetishmovchiligi kuzatilgan hududlarda ijtimoiy chora-tadbirlar ko‘rish.`
+},
+{
+  "question": "JSST va Nikolaev bo`yicha qalqonsimon bezning kattalashishi darajasi.",
+  "answer": `JSST (Jahon Sog'liqni Saqlash Tashkiloti) va Nikolaev bo‘yicha qalqonsimon bezning kattalashishi 0-4 darajaga bo‘linadi. 0-darajada bez kattalashmagan, 4-darajada esa bezning kattalashishi sezilarli bo‘lib, bemor ko‘pincha jarrohlik muolajaga muhtoj.`
+},
+{
+  "question": "Gipoterioz- etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Gipoterioz – qalqonsimon bezning yetarli darajada gormon ishlab chiqarmasligi holati. Etiologiya: autoimmun kasalliklar, yod etishmasligi. Patogenezda T4 va T3 ishlab chiqarishning pasayishi kuzatiladi, bu esa metabolik jarayonlarni sekinlashtiradi. Klinikada charchoq, semizlik, sovuqlikka chidamsizlik, teri qurishi ko‘zga tashlanadi. Diagnostika: TSH, T4, T3 o‘lchovlari. Davolash: sintetik tiroksin bilan davolash.`
+},
+{
+  "question": "Tug'ma gipoterioz-etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Tug‘ma gipoterioz – yangi tug‘ilgan bolalarda qalqonsimon bezning yetarli darajada ishlamasligi. Etiologiya: genetik kasalliklar, autoimmun kasalliklar. Patogenez: T4 va T3 darajalarining pasayishi. Klinikada charchoq, sekinlashgan rivojlanish, sariqlik va boshqa alomatlar kuzatiladi. Diagnostika: qon tahlillari, TSH va T4 o‘lchovlari. Davolash: sintezlangan tiroksin bilan davolash.`
+},
+{
+  "question": "Diffuz toksik bo`qoq haqida (Bazedov kasalligi) - etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Diffuz toksik bo‘qoq (Bazedov kasalligi) qalqonsimon bezning o‘stirilgan faoliyatini ifodalaydi. Etiologiya: autoimmun jarayonlar, antikorlar ishlab chiqarilishi. Patogenezda T3 va T4 darajalari ortadi. Klinikada tez yurak urishi, asabiylashish, ortiqcha terlash va shishgan bo‘qoq kuzatiladi. Diagnostika: gormonlar profili, qalqonsimon bez ultratovush tekshiruvi. Davolash: antitiroide preparatlar, radioaktiv yod, jarrohlik.`
+},
+{
+  "question": "Gipotireozda gormonal profil qanday o'zgaradi?",
+  "answer": `Gipotireozda TSH darajasi oshadi, ammo T4 va T3 darajalari kamayadi. Bu holat gipotiroidizmni ko‘rsatadi va u asosan qalqonsimon bezning yetarli darajada faoliyat ko‘rsatmasligi bilan bog‘liq.`
+},
+{
+  "question": "Diffuz toksik bo`qoqda gormonal profil qanday o'zgaradi?",
+  "answer": `Diffuz toksik bo‘qoqda TSH darajasi pasayadi, ammo T4 va T3 darajalari oshadi. Bu gipertiroidizmning belgisidir va qalqonsimon bezning ortiqcha faoliyatini ifodalaydi.`
+},
+  {
+  "question": "Tirotoksikoz va gipotireozning differentsial diagnostikasi.",
+  "answer": `Tirotoksikozda yurak urishi tezlashadi, vazn kamayadi, issiqlikka sezuvchanlik ortadi, asabiylashish va qo‘l titrashi kuzatiladi. Gipotireozda esa yurak urishi sekinlashadi, vazn ortadi, sovuqlikka sezuvchanlik ortadi, uyquchanlik va sustlik kuzatiladi. Laborator tahlilda tirotoksikozda T3 va T4 yuqori, TSH past; gipotireozda esa T3 va T4 past, TSH yuqori bo‘ladi.`
+},
+{
+  "question": "Tirotoksik kriz nima va u qanday namoyon bo'ladi?",
+  "answer": `Tirotoksik kriz – bu tirotoksikozning og‘ir va hayot uchun xavfli shakli bo‘lib, yurak urishining keskin tezlashishi, isitma, ruhiy zo‘riqish, qusish, diareya, hatto koma bilan namoyon bo‘ladi.`
+},
+{
+  "question": "Tirotoksik kriz uchun shoshilinch yordam",
+  "answer": `Shoshilinch yordam: bemor yotqiziladi, infuzion terapiya (fiziologik eritma, glyukoza), beta-blokatorlar (propranolol), antitiroide dori vositalari (propiltiourasil), kortikosteroidlar va kislorod terapiyasi qo‘llaniladi. Haroratni tushirish va yurak faoliyatini nazorat qilish muhimdir.`
+},
+{
+  "question": "Tiroiditlarning tasnifi.",
+  "answer": `Tiroiditlar tasnifi: 1) O‘tkir tiroidit (bakterial yoki virusli), 2) Subakut (De Quervain) tiroidit, 3) Surunkali autoimmun tiroidit (Hashimoto), 4) Fibrozli (Riedel) tiroidit.`
+},
+{
+  "question": "Tiroiditlar-etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiyasi: infeksiyalar, autoimmun jarayonlar, radiatsiya yoki travmalar. Patogenez: bez to‘qimasining yallig‘lanishi va gormon ishlab chiqarishining o‘zgarishi. Klinikasi: og‘riq, bo‘yin shishishi, gormon disbalansi. Diagnostika: TSH, T3, T4, antitireoid antikorlar, UTT va biopsiya. Davolash: sababga qarab antibakterial, gormonal yoki yallig‘lanishga qarshi terapiya.`
+},
+{
+  "question": "Nim o`tkir tiroidit (De Quervain) nima va uning belgilari?",
+  "answer": `Nim o‘tkir tiroidit (De Quervain) – virusli infeksiyadan keyin rivojlanadigan yallig‘lanish bo‘lib, bo‘yin og‘rig‘i, bezning og‘rili kattalashishi, isitma, holsizlik va vaqtinchalik tirotoksikoz belgilarini keltirib chiqaradi.`
+},
+{
+  "question": "O`tkir tiroidit-etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiya: bakterial infeksiya (masalan, streptokokk, stafilokokk). Patogenez: bezga infeksiya tushib, yiringli yallig‘lanish chaqiradi. Klinikasi: bo‘yin shishishi, og‘riq, isitma, disfagiya. Diagnostika: klinik ko‘rinish, qon tahlillari (leykotsitoz, CRP), UTT. Davolash: antibiotiklar, analgetiklar, og‘riqni kamaytirish, og‘ir hollarda absessni ochish.`
+},
+{
+  "question": "Surunkali autoimmun tiroidit nima?",
+  "answer": `Surunkali autoimmun tiroidit (Hashimoto kasalligi) – bu immun tizimi tomonidan qalqonsimon bez to‘qimalarining doimiy yallig‘lanishiga olib keladigan kasallik bo‘lib, sekin rivojlanadigan gipoteriozga sabab bo‘ladi. Antitireoid antikorlar (anti-TPO) mavjud bo‘ladi.`
+},
+{
+  "question": "Qalqon oldi bezlarining vazifasi nima?",
+  "answer": `Qalqon oldi bezlari kaltsiy va fosfor almashinuvini tartibga soluvchi paratireoid gormon (PTH) ishlab chiqaradi.`
+},
+{
+  "question": "Qalqon oldi bezi gormonining kaltsiy va fosfor almashinuvidagi roli.",
+  "answer": `Paratireoid gormon (PTH) suyaklardan kaltsiyni ajratib chiqarish, buyrakda kaltsiyni qayta so‘rilishini kuchaytirish va fosfatlarning chiqarilishini oshirish orqali qon tarkibidagi kaltsiy darajasini oshiradi.`
+},
+{
+  "question": "Gipoparatireoz etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiya: jarrohlik aralashuvi, autoimmun kasalliklar. Patogenez: PTH yetishmovchiligi natijasida gipokalsemiya va gipofosfatemiya yuzaga keladi. Klinikasi: mushak spazmlari, xurujlar, paresteziyalar, Chvostek va Trousseau belgilarining ijobiyligi. Diagnostika: past PTH, past kaltsiy, yuqori fosfat darajasi. Davolash: kaltsiy preparatlari, D vitamini analoglari.`
+},
+  {
+  "question": "Giperparatireoz etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
+  "answer": `Etiologiya: paratireoid adenomasi, gipertrofiyasi yoki karcinomasi. Patogenez: paratireoid gormon (PTH) ortiqcha ishlab chiqariladi, bu esa suyakdan kaltsiyning ajralishiga, buyrakda qayta so‘rilishiga va ichakdan so‘rilishiga olib keladi. Klinikasi: suyak og‘rig‘i, buyrak toshlari, mushak zaifligi, poliuriya, depressiya. Diagnostika: yuqori PTH, giperkalsemiya, gipofofatemiya, UTT, sintigrafiya. Davolash: jarrohlik (adenomani olib tashlash), medikamentoz davo – bisfosfonatlar, suyak metabolizmini nazorat qiluvchi preparatlar.`
+},
+{
+  "question": "Giperparatireozning klinik ko'rinishlari.",
+  "answer": `Suyak og‘rig‘i va deformatsiyasi, buyrak toshlari, tez-tez siyish (poliuriya), muskullar zaifligi, charchoq, qonda kaltsiyning ortishi bilan bog‘liq psixik o‘zgarishlar (depressiya, noaniqlik, apatiya).`
+},
+{
+  "question": "Giperparatireoz va gipoparatireoz diagnostikasi",
+  "answer": `Giperparatireozda: yuqori PTH, giperkalsemiya, gipofofatemiya. Gipoparatireozda: past PTH, gipokalsemiya, gipofosfatemiya. Diagnostikada qon elektrolitlari, PTH darajasi va suyaklarning rentgen yoki denzitometriyasi yordamida farqlanadi.`
+},
+{
+  "question": "Buyrak usti bezlarining tuzilishi va ular ishlab chiqaradigan asosiy gormonlar.",
+  "answer": `Buyrak usti bezlari 2 qismdan iborat: po‘stloq (korteks) va mag‘iz (medulla). Korteks 3 qatlamdan iborat: zona glomeruloza (mineralokortikoidlar – aldosteron), zona fascikulata (glyukokortikoidlar – kortizol), zona retikularis (androgenlar). Medulla esa adrenalin va noradrenalin ishlab chiqaradi.`
+},
+{
+  "question": "Glyukokortikoidlarning biologik ta'siri.",
+  "answer": `Glyukokortikoidlar (masalan, kortizol) yallig‘lanishga qarshi, immunosupressiv, antiallergik ta’sir ko‘rsatadi; glyukoneogenezni kuchaytiradi, oqsil parchalanishini oshiradi va yog‘ to‘planishini o‘zgartiradi. Stressga qarshi javobda ishtirok etadi.`
+},
+{
+  "question": "Mineralokortikoidlarning vazifalari.",
+  "answer": `Mineralokortikoidlar (masalan, aldosteron) buyrakda natriyni ushlab qolish, kaliyni chiqarish va suyuqlikni tutib qolish orqali qon bosimini tartibga soladi.`
+},
+{
+  "question": "Kon sindromining etiologiyasi va patogenezi.",
+  "answer": `Etiologiya: buyrak usti bezi korteksining adenomasi (aldosteronoma) yoki giperplaziyasi. Patogenez: aldosteron ortiqcha ishlab chiqariladi, natriy organizmda ushlanib qoladi, kaliy chiqariladi — bu gipertenziya va gipokaliemiyaga olib keladi.`
+},
+{
+  "question": "Kon sindromining klinik ko'rinishi va davolash.",
+  "answer": `Klinik ko‘rinish: arterial gipertenziya, mushak zaifligi, tetaniya, yurak ritmining buzilishi (gipokaliemiya sababli), poliuriya. Davolash: aldosteronoma bo‘lsa – jarrohlik, giperplaziya bo‘lsa – spironolakton kabi aldosteron antagonistlari.`
+},
+{
+  "question": "Feoxromotsitoma va uning belgilari nima?",
+  "answer": `Feoxromotsitoma – bu buyrak usti bezi medullasining xromaffin hujayralaridan kelib chiqadigan gormon ishlab chiqaruvchi o‘smadir. Belgilari: paroksizmal yoki doimiy arterial gipertenziya, yurak urishi tezlashishi, terlash, bosh og‘rig‘i, qo‘rquv hissi, pallor, titroq.`
+},
+  {
+  "question": "Feoxromotsitoma diagnostikasi usullari.",
+  "answer": `Qonda va siydikda katexolaminlar (adrenalin, noradrenalin) hamda ularning metabolitlari (metanefrinlar, vanilinmandel kislotasi) miqdorini aniqlash. Vizualizatsiya: KT, MRT, MIBG (meta-iodobenzilguanidin) sintigrafiya yordamida o‘smalarni aniqlash.`
+},
+{
+  "question": "Feoxromotsitomani davolash tamoyillari.",
+  "answer": `Asosiy davolash — jarrohlik (o‘smalarni olib tashlash). Operatsiyadan oldin alfa-blokatorlar (fenoksibenzamin, prazosin) va beta-blokatorlar bilan qon bosimini nazorat qilish muhim. Stressdan himoyalash va suyuqlik balansini saqlash kerak.`
+},
+{
+  "question": "Buyrak usti bezlarining surunkali yetishmovchiligi - etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiya: autoimmun (Addison kasalligi), infektsiyalar (sil), jarrohlik, gemorragik infarkt. Patogenez: kortizol va aldosteron yetishmovchiligi. Klinikasi: holsizlik, gipotenziya, giperpigmentatsiya, giponatriemiya, giperkaliemiya. Diagnostika: past kortizol, yuqori ACTH (birlamchi holatda), ACTH stimulyatsiya testi. Davolash: kortikosteroidlar (prednizolon, fludrokortizon), suyuqlik va elektrolit balansini tiklash.`
+},
+{
+  "question": "Addison kasalligining klinik belgilari.",
+  "answer": `Belgilari: giperpigmentatsiya (xususan, kaftlar, lablar, chandiqlar), doimiy holsizlik, ishtaha yo‘qligi, vazn yo‘qotish, gipotenziya, qorinda og‘riq, ko‘ngil aynishi, giponatriemiya, giperkaliemiya.`
+},
+{
+  "question": "O'tkir buyrak usti bezi yetishmovchiligi nima?",
+  "answer": `Bu buyrak usti bezlari gormonlarini (kortizol va aldosteron) to‘satdan ishlab chiqmasligi bo‘lib, hayot uchun xavfli holat hisoblanadi. Sabablari: stress fonida Addison kasalligi, sepsis, gemorragik infarkt. Klinikasi: qusish, diareya, og‘ir gipotenziya, hushdan ketish.`
+},
+{
+  "question": "Gipokortitsizmga xos bo'lgan alomatlar qanday?",
+  "answer": `Holsizlik, vazn yo‘qotish, ishtaha kamayishi, qusish, diareya, gipotenziya, giperpigmentatsiya, giponatriemiya, giperkaliemiya, psixik o‘zgarishlar.`
+},
+{
+  "question": "Giperkortitsizm belgilarini sanab o'ting.",
+  "answer": `Yuzning dumaloqlashishi ("oy yuz"), qorinda yog‘ to‘planishi, buffalo hump, mushaklar atrofiyasi, osteoporoziya, arterial gipertenziya, qandli diabet, terining yupqalashuvi, striyalar (cho‘zilish chiziqlari), akne, immunosupressiya.`
+},
+{
+  "question": "Itenko-Kushing kasalligi va sindromining differentsial diagnostikasi.",
+  "answer": `Itenko-Kushing kasalligi – gipofiz adenomasidan ACTH ortiqcha ishlab chiqarilishi. Sindrom – har qanday boshqa sabab (masalan, buyrak usti o‘smalari yoki ektopik ACTH ishlab chiqaruvchi o‘sma). Diagnostika: ACTH darajasi, deksametazon sinovlari, KT/MRT.`
+},
+{
+  "question": "Birlamchi va ikkilamchi giperparatireoz o'rtasidagi farq.",
+  "answer": `Birlamchi: paratireoid adenomasi yoki giperplaziyasi sababli PTH ortadi. Ikkilamchi: surunkali buyrak yetishmovchiligi yoki D vitamini yetishmasligi sababli PTH kompensator ravishda ortadi.`
+},
+{
+  "question": "Itenko-Kushing sindromi etiologiya, patogenez, klinika, diagnostika, davolash.",
+  "answer": `Etiologiya: buyrak usti bezlarining o‘smalari, ACTH ishlab chiqaruvchi ektopik o‘smalar yoki uzoq muddatli glukokortikoidlar qabul qilish. Patogenez: ortiqcha kortizol ishlab chiqarilishi. Klinikasi: semirish, “oy yuz”, “buffalo hump”, mushak zaifligi, arterial gipertenziya, osteoporoziya. Diagnostika: kortizol va ACTH darajasi, deksametazon testi, KT/MRT. Davolash: sabablarga qarab – jarrohlik, medikamentoz terapiya yoki glukokortikoidlarni to‘xtatish.`
+}
 ];
 
 // 1-biletni ko‘rsatish uchun:
