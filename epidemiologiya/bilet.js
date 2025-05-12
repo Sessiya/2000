@@ -198,6 +198,86 @@ const tickets = [
 {
   "question": "Безгак юқиш йўлларига қаратилган чора – тадбирлар.",
   "answer": `Choralar: insektitsidlar bilan davolash, chivinlarni yo‘q qilish, toza suvni ta’minlash, malarialga qarshi vaksina.`
+},
+  {
+  "question": "Ўчоқдаги инфекцияга қарши дезинфекция қилувчи моддалар, усуллар.",
+  "answer": `Dezinfeksiya moddalariga xlorli birikmalar, formaldegid, vodorod peroksid kiradi. Usullar: kimyoviy, issiq va mexanik.`
+},
+{
+  "question": "Безгак ва лейшманиоз касалликларида эпидемиологик назорат.",
+  "answer": `Bezgaq va leishmanioz kasalliklarida nazorat: xavfli hududlarda kuzatuv, kasallikka qarshi kurashish uchun profilaktika va dori-darmonlar.`
+},
+{
+  "question": "Карантин ва обсервация хақида тушинтиринг",
+  "answer": `Karantin — kasallikning tarqalishini oldini olish maqsadida bemorlarni izolyatsiya qilish. Observalatsiya — kasallikka aloqada bo‘lganlarni tibbiy kuzatuvga olish.`
+},
+{
+  "question": "Иммунопрофилактика нима ва унинг эпидемиологик ахамияти",
+  "answer": `Immunoprofilaktika — kasalliklarning oldini olish uchun organizmning immunitetini kuchaytirish. Bu kasalliklarning tarqalishini kamaytiradi va epidemiyalarga qarshi samarali choradir.`
+},
+{
+  "question": "Табиий актив ва пассив иммунитетни тушунтиринг",
+  "answer": `Tabiiy aktiv immunitet — organizmning o‘zini o‘zi himoya qilish qobiliyati. Tabiiy passiv immunitet — onadan bolaning tabiiy tarzda o‘tkazilgan immuniteti.`
+},
+{
+  "question": "Жамоа иммунитети хақида тушунча",
+  "answer": `Jamoa immuniteti — aholi guruhining kasallikka qarshi tabiiy yoki sun’iy immuniteti yuqori bo‘lib, kasallikning tarqalishini to‘xtatadi.`
+},
+{
+  "question": "Вакцинация самарадорлигини эпидемиологик ахамияти",
+  "answer": `Vaksinatsiya samaradorligi — kasalliklarni kamaytirish va oldini olish uchun vaksinaning to‘g‘ri ta’sir qilish qobiliyati. Bu jamoa immunitetini oshiradi.`
+},
+{
+  "question": "Совуқ занжир схемаси ва унинг эмлаш самарадорлигига таъсири",
+  "answer": `Sovuq zanjir — vaksina saqlash va tashish jarayonida muhim bo‘lib, uning sifatini saqlashda samarali ta’sir qiladi. Emish samaradorligi sovuq zanjirga to‘liq rioya qilishga bog‘liq.`
+},
+{
+  "question": "Вакциналар турлари ва уларнинг ахамияти",
+  "answer": `Vaksinalar: inaktivatsiya qilingan, attenuatsiya qilingan va rekombinant vaktsinalar. Ular kasalliklardan himoya qilishda asosiy vosita bo‘lib xizmat qiladi.`
+},
+{
+  "question": "Дезинфекция турлари ва усуллари хақида тушунча",
+  "answer": `Dizinfeksiya turlari: kimyoviy, mexanik, issiq. Har bir usulni infektsiyalarni kamaytirish maqsadida muayyan sharoitga mos ravishda qo‘llash zarur.`
+},
+  {
+  "question": "Дератизация ва дезинсекциянинг аралаш усуллари ва қўллаш",
+  "answer": `Deraizatsiya (kemiruvchilarga qarshi kurash) va dezinseksiya (hasharotlarga qarshi kurash) birgalikda qo‘llaniladi. Bu usullar infektsiyalarning tarqalishini to‘xtatishda samarali bo‘ladi.`
+},
+{
+  "question": "Қандай холатларда вакцинация ўтказилмайди",
+  "answer": `Vaksinatsiya immunitetni kamaytiradigan kasalliklar (masalan, saraton), homiladorlik, o'tmishda allergik reaksiya bo'lganlar va jiddiy kasalliklar holatida o‘tkazilmaydi.`
+},
+{
+  "question": "Вакциналарнинг яроқлилигини бахолаш ва қўллаш усуллари",
+  "answer": `Vaksinalarning yaroqliligi testlar orqali aniqlanadi, vaksinalar shifokorlar tomonidan tasdiqlangan tartibda qo‘llaniladi.`
+},
+{
+  "question": "Табиий пассив ва табиий актив иммунитет хақида тушунча",
+  "answer": `Tabiiy passiv immunitet — ona bilan bolasiga o‘tadigan immunitet. Tabiiy aktiv immunitet — organizmning o‘z immun tizimi tomonidan hosil bo‘lgan immunitet.`
+},
+{
+  "question": "Сунъий пассив ва сунъий актив иммунитет хақида тушунча",
+  "answer": `Sun’iy passiv immunitet — tashqi manbadan (masalan, immunoglobulinlar) olingan immunitet. Sun’iy aktiv immunitet — vaksinatsiya orqali olingan immunitet.`
+},
+{
+  "question": "Ваксинация самарадорлигига таъсир қилувчи омиллар",
+  "answer": `Vaksinatsiya samaradorligi immunitet holati, vaktsinaning sifatiga, saqlash va tashish sharoitlariga bog‘liq.`
+},
+{
+  "question": "Эпидемик жараённи бошқаришда санитария-эпидемиологик xizmatининг ўрни",
+  "answer": `Sanitariya-epidemiologik xizmat epidemiyalarni oldini olish, monitoring qilish, infektsiyalarga qarshi kurashish va profilaktik choralar ko‘rishda muhim rol o‘ynaydi.`
+},
+{
+  "question": "Эпидемик жараённинг тўхталиш шакллари",
+  "answer": `Epidemiya to‘xtalishi kasalliklarning kamayishi, yaxshilanishi yoki to‘liq yo‘qolishi orqali sodir bo‘ladi.`
+},
+{
+  "question": "Эпидемик жараёнда муваффақиятли профилактика амалга ошириш учун қандай қадамлар керак?",
+  "answer": `Muvaffaqiyatli profilaktika uchun ma’lumot to‘plash, tezkor javob berish, profilaktik chora-tadbirlarni amalga oshirish va kasallik tarqalishini to‘xtatish kerak.`
+},
+{
+  "question": "Санитария-эпидемиологик хизматнинг профилактикадаги аҳамияти",
+  "answer": `Sanitariya-epidemiologik xizmat kasalliklarning oldini olish va tarqalishini cheklashda, profilaktik choralarni amalga oshirishda va jamoa immunitetini oshirishda katta ahamiyatga ega.`
 }
   ];
 
