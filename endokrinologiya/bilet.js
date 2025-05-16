@@ -32,17 +32,37 @@ PRL (Prolaktin) – sut ishlab chiqarishni oshiradi.`
   },
   {
     "question": "Adrenokortikotrop gormon (AKTG) funktsiyalari qanday?",
-    "answer": `Adrenokortikotrop gormon (AKTG) — gipofizning old qismida ishlab chiqariladi.
-U buyrak usti bezining po‘st qavatini faollashtiradi, natijada quyidagi gormonlar ko‘payadi:
+    "answer": `Adrenokortikotrop gormoni (ACTH) — bu gipofiz bezining oldingi bo‘limida ishlab chiqariladigan va organizmning stressga javobini boshqarishda muhim rol o‘ynaydigan gormon.  U asosan buyrak usti bezlarini kortizol gormonini ishlab chiqarishga rag‘batlantiradi.  
 
-Kortizol (glyukokortikoid),
-Aldosteron (mineralokortikoid),
-Androgenlar (jinsiy gormonlar).
+ACTH gormonining asosiy funksiyalari
 
-Bu gormonlar moddalar almashinuviga, stressga moslashishga va tana himoyasiga yordam beradi.
-AKTG dori sifatida ham ishlatiladi — masalan: revmatizm, astma, psoriaz, allergiya va boshqa holatlarda.
-Rp: Corticotropinum 20 TB №10
-D.S. 1 ampulani 2 ml fiziologik eritmada eritib, mushak ichiga (i/m) yuborilsin, kuniga 1 marta.`
+1. Kortizol ishlab chiqarilishini rag‘batlantirish
+ACTH buyrak usti bezlarining po‘stloq qismiga ta’sir qilib, kortizol ishlab chiqarilishini oshiradi. Kortizol esa quyidagi funksiyalarni bajaradi:
+Organizmning stressga javobini boshqaradi
+Yog‘lar, oqsillar va uglevodlar almashinuvini tartibga soladi
+Yallig‘lanish jarayonlarini bostiradi
+Qon bosimi va qand miqdorini nazorat qiladi
+Uyqu-uyg‘oqlik siklini boshqaradi 
+
+2. Androgenlar ishlab chiqarilishini rag‘batlantirish
+ACTH buyrak usti bezlarining po‘stloq qismida androgenlar (jinsiy gormonlar) ishlab chiqarilishini ham rag‘batlantiradi.
+
+3. Adrenalin va noradrenalin ishlab chiqarilishini oshirish
+ACTH boshqa kimyoviy moddalar ishlab chiqarilishini rag‘batlantirib, adrenalin va noradrenalin kabi gormonlar miqdorini oshiradi.
+
+ACTH darajasini boshqarish
+ACTH darajasi gipotalamus, gipofiz bezi va buyrak usti bezlari o‘rtasidagi "gipotalamus-gipofiz-buyrak usti bezlari o‘qi" (HPA o‘qi) orqali boshqariladi: 
+
+1. Qon tarkibida kortizol darajasi pasayganda, gipotalamus kortikotropin chiqaruvchi gormon (CRH) ishlab chiqaradi.
+2. CRH gipofiz bezini ACTH ishlab chiqarishga rag‘batlantiradi.
+3. ACTH buyrak usti bezlarini kortizol ishlab chiqarishga undaydi.
+4. Kortizol darajasi oshgach, u gipotalamus va gipofiz beziga teskari aloqa orqali CRH va ACTH ishlab chiqarilishini kamaytiradi.  
+
+ACTH darajasining o‘zgarishi bilan bog‘liq kasalliklar
+Addison kasalligi (birlamchi buyrak usti bezi yetishmovchiligi): Buyrak usti bezlari yetarli kortizol ishlab chiqarmaydi, natijada gipofiz bezi ACTH ishlab chiqarishni ko‘paytiradi.  
+Ikkinchi darajali buyrak usti bezi yetishmovchiligi: Gipofiz bezining ACTH ishlab chiqarishi kamayadi, bu esa kortizol darajasining pasayishiga olib keladi.  
+Kushing kasalligi: Gipofiz bezidagi o‘sma ACTH ni ortiqcha ishlab chiqaradi, bu esa kortizol darajasining haddan tashqari oshishiga olib keladi.  
+Ektopik ACTH sindromi: Gipofizdan tashqaridagi o‘smalar (masalan, o‘pka, oshqozon osti bezi) ACTH ishlab chiqaradi, bu esa kortizol darajasining oshishiga olib keladi.  `
   },
   {
     "question": "Qalqonsimon bez stimulyatsiya qiluvchi gormon (TTG) qanday funktsiyalarga ega?",
