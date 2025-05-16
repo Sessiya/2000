@@ -292,6 +292,14 @@ STG darajasi tez pasayadi, IGF-1 normaga tushadi.
 Somatostatin analoglari: Oktreotid, Lanreotid – STG ishlab chiqarilishini kamaytiradi.
 Dopamin agonistlari: Kabergolin – ayrim hollarda samarali.
 STG retseptori antagonisti: Pegvisomant – IGF-1 ishlab chiqarilishini to‘xtatadi.
+Dori sinfi: GH retseptorlari antagonist
+Tijorat nomi: Somavert
+Qo‘llanilishi: Akromegaliya (organizmda GH ortiqcha ishlab chiqarilishi)
+
+Ta’sir mexanizmi: Pegvisomant o‘sish gormoni retseptorlariga birikadi va uni bloklaydi, natijada IGF-1 ishlab chiqarilishi kamayadi. O‘zi GH darajasini pasaytirmaydi, faqat uning ta’sirini to‘sadi.
+Rp.: Pegvisomantum 10 mg
+D.t.d. №10 in amp.
+S. Terini ostiga 1 ampula (10 mg) kuniga 1 marta yuborilsin.
 
 3. Radioterapiya (agar boshqa usullar samara bermasa):
 STG ishlab chiqarilishini sekin-asta kamaytiradi.
