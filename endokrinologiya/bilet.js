@@ -83,7 +83,42 @@ Qonda T3 va T4 gormonlari ko‘paysa, TTG kamayadi (bu salbiy orqa aloqa).
 
 Soddaroq qilib aytganda, TTG — bu qalqonsimon bezning “buyruq beruvchi” gormoni. U qalqonsimon bezga:
 “T3 va T4 chiqar!” — deb aytadi.
-Agar T3 va T4 yetarli bo‘lsa, TTG kamayadi.`
+Agar T3 va T4 yetarli bo‘lsa, TTG kamayadi.
+
+T3 (triyodtironin) va T4 (tiroksin) gormonlari tironin molekulasi asosida, yod ishtirokida qalqonsimon bezda sintez qilinadi. Ular quyidagi moddadan hosil bo‘ladi:
+
+Asosiy modda:
+
+Tirozin (aminokislota)
+
+
+Hosil bo‘lish jarayoni:
+
+1. Tirozin — bu qalqonsimon bezda mavjud bo‘lgan tiroglobulin deb ataluvchi katta oqsil molekulasi tarkibidagi aminokislota.
+
+
+2. Qalqonsimon bez tomonidan qon aylanishidan yod yutiladi.
+
+
+3. Yod molekulalari tiroglobulindagi tirozin qoldiqlariga birikadi:
+
+1 ta yod biriksa – monoyodtirozin (MIT)
+
+2 ta yod biriksa – diyodtirozin (DIT)
+
+
+
+4. Keyin MIT va DIT molekulalari birikadi:
+
+MIT + DIT = T3 (triyodtironin)
+
+DIT + DIT = T4 (tiroksin)
+
+yy
+Yakuniy natija:
+
+Tirozin + yod → T3 va T4
+(bu jarayon qalqonsimon bezdagi tiroglobulin orqali amalga oshadi)`
   },
   {
     "question": "Somatotrop gormon (STG) ning biologik ta'sirlarini sanab bering.",
