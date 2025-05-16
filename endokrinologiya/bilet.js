@@ -255,8 +255,22 @@ MRT – gipofiz o‘smasini ko‘rsatadi.
 
 Davolash:
 Jarrohlik (asosiy).
-Dori: oktreotid, kabergolin.
-Radioterapiya (kerak bo‘lsa).`
+Dori: oktreotid qilinadi.
+Radioterapiya (kerak bo‘lsa).
+
+
+
+
+Qisqa ta’sir qiluvchi oktreotid:
+Shakli: 0.05–0.5 mg/ml inyeksiya.
+Ta’siri: 6–12 soat.
+Qo‘llanishi: Zudlik bilan simptomlarni boshqarish uchun.
+Doza: Kuniga 2–3 marta.
+---
+Uzoq ta’sir qiluvchi oktreotid:
+Shakli: 10, 20, 30 mg mushak ichiga yuboriladigan suspenziya.
+Ta’siri: 4 hafta.
+Doza: Har 4 haftada 1 marta muskul orasiga qilinadi.`
   },
     {
     "question": "Akromegaliyaga shubha qilinganda diagnostika usullari.",
