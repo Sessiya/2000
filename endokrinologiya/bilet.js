@@ -310,10 +310,6 @@ Yondashuv kombinatsiyalashgan: odatda birinchi navbatda operatsiya, keyin kerak 
     {
     "question": "Jismoniy rivojlanishni persentil jadvallari bo'yicha baholash qanday amalga oshiriladi?",
    "answer": `Jismoniy rivojlanishni persentil jadvallari bo‘yicha baholash bu bolaning bo‘yi, vazni yoki BMI (tana massasi indeksi) kabi ko‘rsatkichlarini o‘z tengdoshlari bilan taqqoslashdir.
-Baholash tartibi:
-1. O‘lchovlar olinadi: bolaning bo‘yi, vazni, boshi aylanasining o‘lchami (yoshga qarab).
-2. Yosh va jinsga mos persentil jadvali tanlanadi (masalan, WHO yoki CDC jadvali).
-3. Ko‘rsatkich jadvalga joylashtiriladi va qaysi persentil oralig‘iga tushgani aniqlanadi.
 
 Persentil nima degani?
 50-persentil – o‘rtacha natija, ya’ni shu yoshdagi bolalarning yarmi undan baland, yarmi past.
@@ -321,7 +317,8 @@ Persentil nima degani?
 3% dan past – rivojlanish sekin (orqada qolish mumkin).
 97% dan yuqori – haddan tashqari tez o‘sish.
 
-Misol: 5 yoshli bola bo‘yining 10-persentilda bo‘lishi – u yoshdoshlarining 90% dan past bo‘yda degani.`
+Misol: 5 yoshli bola bo‘yining 10-persentilda bo‘lishi – u yoshdoshlarining 90% dan past bo‘yda degani.
+<a href="https://www.instagram.com/p/Ccck6Ooo5R8/?utm_source=ig_web_copy_link">👉mana bu linkga kirib koʻring. faqat turkcha ekan. yaxshi tushuntirilgan.👈</a>`
   },
   {
   "question": "Shixan sindromi, etiologiya, patogenez, klinika, diagnostika.",
