@@ -316,16 +316,14 @@ Yondashuv kombinatsiyalashgan: odatda birinchi navbatda operatsiya, keyin kerak 
   },
     {
     "question": "Jismoniy rivojlanishni persentil jadvallari bo'yicha baholash qanday amalga oshiriladi?",
-   "answer": `Jismoniy rivojlanishni persentil jadvallari bo‘yicha baholash bu bolaning bo‘yi, vazni yoki BMI (tana massasi indeksi) kabi ko‘rsatkichlarini o‘z tengdoshlari bilan taqqoslashdir.
-
-Persentil nima degani?
-50-persentil – o‘rtacha natija, ya’ni shu yoshdagi bolalarning yarmi undan baland, yarmi past.
-3–97 persentil oralig‘i** – normal rivojlanish chegarasi hisoblanadi.
-3% dan past – rivojlanish sekin (orqada qolish mumkin).
-97% dan yuqori – haddan tashqari tez o‘sish.
-
-Misol: 5 yoshli bola bo‘yining 10-persentilda bo‘lishi – u yoshdoshlarining 90% dan past bo‘yda degani.
-<a href="https://www.instagram.com/p/Ccck6Ooo5R8/?utm_source=ig_web_copy_link">👉mana bu linkga kirib koʻring. faqat turkcha ekan. yaxshi tushuntirilgan.👈</a>`
+   "answer": `<img src="1.jpg" alt="Persentil jadvali rasmi"><br>Persentil jadvali bo'yicha bolalarda vazn va bo'y normalarini baholash (BP)
+Ko'pchilik bu jadval haqida eshitgan ammo qanday foydalanish kerakligini bilishmaydi, hatto endokrinolog shifokorlarda ham bu foizlar aslida nimani anglatadi degan savollar borligiga shubha qilmayman PERSENTIL-malum populyatsiyaning umumiy o'chovlar taqsimotidagi shaxsning o'rnini ko'rsatuvchi qiymat, masalan Abdurayimjon ning vazni bo'yicha persentil 75% bo'lsa, bu uning shu yosh va jinsdagi tengdoshlarining taxminan 75% qismidan og'irroq va 25% qismidan yengilroq ekanligini anglatadi
+Persentil jadval odatda 3, 10, 25, 50, 75, 90 va 97% li egri chiziqlar bilan taminlangan bo'lib, 50% "mediana" hisoblanadi, yani bolalarning yarmi undan yuqori ko'rsatkichka, yarmi esa past ko'rsatkichga ega
+Vazn bo'yicha baholash
+Sog'lom bolalar: BMI 5-85 persentil
+Ortiqcha vazn: BMI 85-95 persentil
+Semizlik: BMI >95 persentil
+Vazn yetishmovchiligi BMI <3 persentil`
   },
   {
   "question": "Shixan sindromi, etiologiya, patogenez, klinika, diagnostika.",
