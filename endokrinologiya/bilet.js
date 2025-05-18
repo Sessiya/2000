@@ -316,9 +316,9 @@ Yondashuv kombinatsiyalashgan: odatda birinchi navbatda operatsiya, keyin kerak 
   },
     {
     "question": "Jismoniy rivojlanishni persentil jadvallari bo'yicha baholash qanday amalga oshiriladi?",
-   "answer": `<img src="1.jpg" alt="Persentil jadvali rasmi"><br>Persentil jadvali bo'yicha bolalarda vazn va bo'y normalarini baholash (BP)
-Ko'pchilik bu jadval haqida eshitgan ammo qanday foydalanish kerakligini bilishmaydi, hatto endokrinolog shifokorlarda ham bu foizlar aslida nimani anglatadi degan savollar borligiga shubha qilmayman PERSENTIL-malum populyatsiyaning umumiy o'chovlar taqsimotidagi shaxsning o'rnini ko'rsatuvchi qiymat, masalan Abdurayimjon ning vazni bo'yicha persentil 75% bo'lsa, bu uning shu yosh va jinsdagi tengdoshlarining taxminan 75% qismidan og'irroq va 25% qismidan yengilroq ekanligini anglatadi
-Persentil jadval odatda 3, 10, 25, 50, 75, 90 va 97% li egri chiziqlar bilan taminlangan bo'lib, 50% "mediana" hisoblanadi, yani bolalarning yarmi undan yuqori ko'rsatkichka, yarmi esa past ko'rsatkichga ega
+   "answer": `<img src="1.jpg" alt="Persentil jadvali rasmi"><br>Persentil jadvali bo'yicha bolalarda vazn va bo'y normalarini baholash.
+PERSENTIL-malum populyatsiyaning umumiy o'chovlar taqsimotidagi shaxsning o'rnini ko'rsatuvchi qiymat, masalan Bahromjonning vazni bo'yicha persentil 75% bo'lsa, bu uning shu yosh va jinsdagi tengdoshlarining taxminan 75% qismidan og'irroq va 25% qismidan yengilroq ekanligini anglatadi.
+Persentil jadval odatda 3, 10, 25, 50, 75, 90 va 97% li egri chiziqlar bilan taminlangan bo'lib, 50% "mediana" hisoblanadi, yani bolalarning yarmi undan yuqori ko'rsatkichga, yarmi esa past ko'rsatkichga ega.
 Vazn bo'yicha baholash
 Sog'lom bolalar: BMI 5-85 persentil
 Ortiqcha vazn: BMI 85-95 persentil
