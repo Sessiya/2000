@@ -35,6 +35,13 @@ PRL (Prolaktin) – sut ishlab chiqarishni oshiradi.`
     "answer": `Adrenokortikotrop gormoni (ACTH) — bu gipofiz bezining oldingi bo‘limida ishlab chiqariladigan va organizmning stressga javobini boshqarishda muhim rol o‘ynaydigan gormon.  U asosan buyrak usti bezlarini kortizol gormonini ishlab chiqarishga rag‘batlantiradi.  
 
 ACTH gormonining asosiy funksiyalari
+1. Qobiq qismi (cortex) – 3 xil gormon chiqaradi:
+
+Aldosteron – suv-tuz muvozanatini boshqaradi (mineralokortikoid)
+
+Kortizol – stress va moddalar almashinuvida ishtirok etadi (glukokortikoid)
+
+Androgenlar – jinsiy gormonlar
 
 1. Kortizol ishlab chiqarilishini rag‘batlantirish
 ACTH buyrak usti bezlarining po‘stloq qismiga ta’sir qilib, kortizol ishlab chiqarilishini oshiradi. Kortizol esa quyidagi funksiyalarni bajaradi:
