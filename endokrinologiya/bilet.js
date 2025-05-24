@@ -369,7 +369,14 @@ Shixan sindromi to‘liq tuzaladigan kasallik emas, bemor umr bo‘yi gormonal t
 },
 {
   "question": "Qandsiz diabet etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
-  "answer": `Qandsiz diabet — ADH (antidiuretik gormon) yetishmovchiligi yoki buyrak to‘qimalarining unga javob bermasligi. Etiologiya: gipotalamus-gipofiz shikastlanishi, infeksiyalar, genetik buzilish. Patogenez: ADH yo‘qligi tufayli buyraklar suvni tutolmaydi. Klinikasi: ko‘p siydik (poliuriya), kuchli chanqoq (polidipsiya). Diagnostika: quruq ovqatlanish sinamasi, ADH darajasi, MRT. Davolash: desmopressin (sintetik ADH) bilan almashtirish, suyuqlik yo‘qotilishini boshqarish.`
+  "answer": `Qandsiz diabet — ADH (antidiuretik gormon) yetishmovchiligi yoki buyrak to‘qimalarining unga javob bermasligi. Etiologiya: gipotalamus-gipofiz shikastlanishi, infeksiyalar, genetik buzilish. Patogenez: ADH yo‘qligi tufayli buyraklar suvni tutolmaydi. Klinikasi: ko‘p siydik (poliuriya), kuchli chanqoq (polidipsiya).
+  Diagnostika: Siydik tahlili: siydik juda suyultirilgan (nisbiy zichlik <1.005)
+Qon tahlili: natriy ko‘tarilgan (gipernatremiya)
+Suyuqlikdan voz kechish testi – ADH ishlab chiqilishini va buyrakning javobini baholaydi
+Desmopressin testi: markaziy va nefrogen shaklni ajratish uchun
+MRT: gipotalamus va gipofiz holatini aniqlash,
+MRT.
+Davolash: desmopressin (sintetik ADH) bilan almashtirish, suyuqlik yo‘qotilishini boshqarish.`
 },
 {
   "question": "Quruq ovqatlanish sinamasi qanday amalga oshiriladi va uning diagnostik ahamiyati?",
