@@ -327,7 +327,41 @@ Vazn yetishmovchiligi BMI <3 persentil`
   },
   {
   "question": "Shixan sindromi, etiologiya, patogenez, klinika, diagnostika.",
-  "answer": `Shixan sindromi — tug‘ruq vaqtida qon ketish natijasida gipofiz ishemiyasi tufayli paydo bo‘lgan gipopituitarizm. Etiologiyasi: og‘ir tug‘ruq, ko‘p qon ketish. Patogenez: gipofizning nekrozi tufayli gormonlar ishlab chiqishi kamayadi. Klinikasi: emizmaslik, amenoreya, loqaydlik, soch to‘kilishi, sovuqsevarlik. Diagnostika: gormonlar (FSH, LH, TSH, ACTH) darajasi pasaygan, MRTda gipofiz kichraygan.`
+  "answer": `Shixan sindromi (Sheehan sindromi) – bu tug‘ruqdan keyin paydo bo‘ladigan gipofiz bezining yetishmovchiligi.
+
+Etiologiyasi:
+Ko‘p qon yo‘qotish yoki tug‘ruqdagi og‘ir shok sababli gipofiz beziga qon kelishi buziladi. Natijada bez hujayralari nobud bo‘ladi.
+
+Patogenezi:
+Gipofiz bezining old qismi (adenogipofiz) zararlanadi. Bu gormonlar – prolaktin, ACTH, TSH, LH, FSH va boshqalar ishlab chiqarilishini kamaytiradi.
+
+Klinikasi:
+Laktatsiya bo‘lmasligi (sut kelmasligi)
+Holsizlik, charchoq
+Soch to‘kilishi
+Hayz ko‘rmaslik
+Sovuqsevarlik, terining qurishi
+Past arterial bosim
+
+Diagnostika:
+Gormonlar darajasini aniqlash (prolaktin, TSH, ACTH va b.)
+MRT – gipofiz bezining kichrayganini ko‘rsatadi
+Klinik tarix va tug‘ruqdan keyingi holatni tahlil qilish
+
+Shixan sindromi – davosi:
+
+1. Gormonal o‘rinbosar terapiya:
+Zarur gormonlar yetishmayotgani sababli ularni tashqaridan berish kerak:
+Glyukokortikoidlar (masalan, prednizolon) – ACTH yetishmovchiligi uchun
+L-tiroksin – qalqonsimon bez gormonlari yetishmovchiligi uchun
+Estrogen va progesteron – hayz siklini tiklash uchun (agar kerak bo‘lsa)
+Somatotropin (baʼzida) – o‘sish gormoni yetishmovchiligi uchun
+Prolaktin o‘rnini bosuvchi davo mavjud emas, ammo laktatsiya muhim bo‘lmasa, bu simptom alohida davolanishni talab qilmaydi
+
+2. Doimiy nazorat:
+Gormon darajalari, umumiy ahvoli, qon bosimi muntazam tekshirib boriladi.
+3. Hayot bo‘yi davo:
+Shixan sindromi to‘liq tuzaladigan kasallik emas, bemor umr bo‘yi gormonal terapiyani davom ettiradi.`
 },
 {
   "question": "Gigantizm etiologiya, patogenez, klinika, diagnostika, davolash.",
