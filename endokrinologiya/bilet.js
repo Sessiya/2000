@@ -407,11 +407,42 @@ Psixogen polidipsiyada sinama vaqtida siydik zichligi asta-sekin ortadi. Bu hola
 },
 {
   "question": "Markaziy qandsiz diabet kasalligini davolashning zamonaviy yondashuvlari?",
-  "answer": `Asosiy dori — desmopressin (sintetik ADH). U burun spreyi, tabletkada yoki in'ektsiya shaklida qo‘llanadi. Suyuqlik balansini nazorat qilish va elektrolitlar muvozanatini saqlash ham muhim.`
+  "answer": `Markaziy qandsiz diabetni zamonaviy davolash yondashuvlari quyidagilarni o‘z ichiga oladi:
+
+1. Desmopressin (DDAVP) bilan o‘rinbosar gormonterapiya
+Bu – asosiy va eng samarali usul. Desmopressin – sintetik vazopressin bo‘lib, organizmda suvni ushlab turadi.
+Qo‘llanilish shakllari:
+• Burun spreyi
+• Og‘iz orqali (tabletka)
+• Inyeksiya (kam hollarda)
+- Dozasi individual belgilanadi, bemorning chanqash va siydik chiqishi darajasiga qarab sozlanadi.
+
+2. Suyuqlik muvozanatini nazorat qilish
+• Tana suvi yo‘qotilishini kuzatib borish
+• Yetarlicha suv ichish, lekin ortiqcha emas
+
+Og‘ir hollarda infuzion terapiya (tomchi orqali suyuqlik kiritish)`
 },
 {
   "question": "Itenko-Kushing kasalligining etiologiyasi va klinikasi.",
-  "answer": `Etiologiya: gipofiz adenomasi ACTH ishlab chiqaradi, bu buyrak usti bezining kortizol ishlab chiqarishini kuchaytiradi. Klinikasi: yuvarlak yuz (oy yuz), qorinda yog‘ to‘planishi, mushak zaifligi, teri yupqalashuvi, chandiqlar, gipertoniya, osteoporoziya.`
+  "answer": `Itenko–Kushing kasalligi – bu gipofiz bezida ACTH (adrenokortikotrop gormon) ishlab chiqaruvchi gipofiz adenomasi tufayli buyrak usti bezining giperfunksiyasi bilan kechadigan endokrin kasallikdir. Natijada buyrak usti bezi kortizolni haddan tashqari ko‘p ishlab chiqaradi (giperkortitsizm).
+
+Etiologiyasi (sabablari):
+• Gipofiz adenomasi (eng keng tarqalgan sabab) – ACTH gormoni ko‘p ishlab chiqariladi
+• Genetik moyillik (kam hollarda)
+• Ayollarda erkaklarga qaraganda 5 baravar ko‘proq uchraydi
+• Ko‘pincha 25–40 yosh oralig‘ida aniqlanadi.
+
+Klinikasi (asosiy belgilar):
+• Yuzning dumaloqlashuvi ("oy yuz")
+• qorinda yog‘ to‘planishi, oyoq va qo‘llar esa nozik qoladi
+• Terining yupqalashuvi, ko‘karishlar, chandiqlar (striyalar)
+• Qandli diabetga o‘xshash belgilari – qonda glyukoza oshadi
+• Arterial bosim yuqoriligi
+• Osteoporozi, suyaklar mo‘rtlashuvi
+• Hayz buzilishi, bepushtlik (ayollarda), jinsiy zaiflik (erkaklarda)
+• Psixik buzilishlar – asabiylik, depressiya, uyqusizlik
+• Immunitetning pasayishi, infeksiyalarga moyillik`
 },
 {
   "question": "Semizlik etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
