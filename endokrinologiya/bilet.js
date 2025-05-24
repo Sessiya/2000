@@ -380,7 +380,30 @@ Davolash: desmopressin (sintetik ADH) bilan almashtirish, suyuqlik yo‘qotilish
 },
 {
   "question": "Quruq ovqatlanish sinamasi qanday amalga oshiriladi va uning diagnostik ahamiyati?",
-  "answer": `Quruq ovqatlanish sinamasi — 6–8 soat suyuqlik bermasdan bemorning siydik konsentratsiyasini tekshirish usuli. Agar siydik zichligi oshmasa va bemor poliuriyada bo‘lsa — markaziy qandsiz diabet ehtimoli bor. Keyin desmopressin berilib, siydik zichligi oshsa — markaziy, oshmasa — nefrogen diabet aniqlanadi.`
+  "answer": `
+  Quruq ovqatlanish sinamasi (suyuqlikdan voz kechish testi, ingl. water deprivation test) – bu qandsiz diabet (diabetes insipidus) ni tashxislash uchun qo‘llaniladigan muhim diagnostik test.
+  
+Sinama qanday o‘tkaziladi?
+1. Bemorga suyuqlik ichish taqiqlanadi (odatda 6–8 soat davomida).
+2. Har soatda:
+• Tana massasi
+• Siydik miqdori va zichligi
+• Qon natriy darajasi va osmotik bosimi o‘lchanadi
+3. Qachon to‘xtatiladi?
+• Tana massasi 3–5% ga kamayganda
+• Kuchli chanqash, holsizlik yoki gipernatremiya belgilari paydo bo‘lsa
+4. So‘ngra desmopressin (sun’iy ADH) yuboriladi
+5. Yana siydik zichligi va miqdori kuzatiladi
+
+Diagnostik ahamiyati:
+
+Quruq ovqatlanish sinamasi natijalari yordamida qandsiz diabetning shakllarini quyidagicha farqlash mumkin:
+
+Markaziy qandsiz diabetda sinama davomida siydik zichligi o‘zgarmaydi, ya’ni suyultirilgan holatda qoladi. Ammo desmopressin yuborilgach, siydik zichligi oshadi va normallashadi. Bu gipofizdan vazopressin ajralmasligidan dalolat beradi.
+
+Nefrogen qandsiz diabetda sinama davomida ham, desmopressin yuborilgandan keyin ham siydik zichligi o‘zgarmaydi. Bu buyraklarning vazopressinga javob bermasligidan dalolat beradi.
+
+Psixogen polidipsiyada sinama vaqtida siydik zichligi asta-sekin ortadi. Bu holatda desmopressin yuborishga ehtiyoj bo‘lmaydi, chunki ADH tabiiy ravishda ishlab chiqiladi, muammo ortiqcha suv ichishda.`
 },
 {
   "question": "Markaziy qandsiz diabet kasalligini davolashning zamonaviy yondashuvlari?",
