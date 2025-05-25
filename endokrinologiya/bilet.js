@@ -1358,40 +1358,220 @@ Asoratlarning oldini olish uchun diabetni yaxshi boshqarish juda muhim.
 },
 {
   "question": "Diyabetik to`piq- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
-  "answer": `Etiologiya: qandli diabet, nerv va qon tomirlarning zararlanishi.  
-Patogenez: qon tomirlarining ishemiyasi, infektsiyalar.  
-Tasniflash: bosqichlar.  
-Klinik ko‘rinish: to‘piq og‘rig‘i, yara, gangrena.  
-Davolash: antiseptiklar, antibiotiklar, amputatsiya.`
+  "answer": `
+Diyabetik to‘piq
+1. Etiologiya
+Asosiy sabab — uzoq davom etgan qandli diabet natijasida oyoq to‘qimalarining shikastlanishi.
+Neyropatiya (asablar shikasti) va periferik arterial kasallik (qon aylanishining buzilishi) asosiy omillar.
+Yaralar, infeksiyalar va oyoq to‘qimalarining nekrozi rivojlanadi.
+
+2. Patogenez
+Neyropatiya sababli oyoqdagi og‘riq sezish pasayadi, shikastlanish yoki bosim joylari sezilmaydi.
+Periferik arteriyalarning torayishi va qon ta’minotining buzilishi to‘qimalarning o‘zini tiklash qobiliyatini pasaytiradi.
+Natijada, kichik yaralar tez yomonlashadi, infektsiya va nekroz (to‘qima o‘lishi) yuzaga keladi.
+
+3. Tasniflash
+Yumshoq to‘qima infeksiyasi — teri va osti to‘qimalarining yallig‘lanishi.
+Osteomielit — suyak infektsiyasi.
+Gangrena — oyoq to‘qimalarining o‘lishi (qora rangga kirishi).
+Neuropatik oyoq — asablar shikastlanishi asosida yaralar va deformatsiyalar.
+Ishemiya oyoq — qon aylanishining yetishmovchiligi natijasida yuzaga keladi.
+
+4. Klinik ko‘rinish
+Oyoqda yara yoki shikastlanish, og‘riqsiz bo‘lishi mumkin.
+Shish, qizarish, infeksiya belgilarining paydo bo‘lishi.
+To‘qimalarda nekroz va gangrena rivojlanishi.
+Oyoq shaklining o‘zgarishi, mushaklarning zaiflashishi.
+
+5. Davolash
+Yara va infektsiyani tez va samarali davolash.
+Qon shakarini qat’iy nazorat qilish.
+Antibakterial davolash (zarur bo‘lsa).
+Yaralarni tozalash va parvarish qilish.
+Periferik qon aylanishini yaxshilash uchun dori vositalari.
+Og‘ir holatlarda jarrohlik aralashuvlari (gangrena bo‘lsa amputatsiya).
+Oyoqni himoya qilish va bosimni kamaytirish uchun maxsus poyabzal kiyish.
+`
 },
   {
   "question": "Qalqonsimon bezi anatomiya, fiziologiya, gormonlar biosintezi, ta`sir mexanizmi.",
-  "answer": `Qalqonsimon bez bo‘yin pastki qismlarida joylashgan, ikki lobdan iborat bo‘lib, tiroksin (T4) va triyodotironin (T3) gormonlarini ishlab chiqaradi. Ularning asosiy funksiyasi organizmning metabolizmi va energiya ishlab chiqarishni boshqarishdir. Tirotropin (TSH) gipofiz bezidan ishlab chiqiladi va qalqonsimon bezni stimulyatsiya qiladi.`
+  "answer": `
+Qalqonsimon bezi (Glandula thyroidea)
+
+1. Anatomiya
+Qalqonsimon bezi bo‘yin old qismida, qalqon suyagi pastida joylashgan.
+U ikki qanotdan iborat bo‘lib, ular o‘rtada “isthmus” deb ataladigan mayda bog‘lovchi to‘qima bilan bog‘langan.
+Qalqonsimon bez katta qon tomirlari va nervlar bilan yaxshi ta’minlangan.
+
+2. Fiziologiya
+Asosiy vazifasi — tana moddalari almashinuvi (metabolizm)ni boshqaruvchi gormonlarni ishlab chiqarish.
+Qalqonsimon bezning faoliyati gipotalamus va gipofiz tomonidan nazorat qilinadi.
+
+3. Gormonlar biosintezi
+Asosiy gormonlari: Tiroksin (T4) va Triiodotironin (T3).
+Iod (yod) qalqonsimon bezga qon orqali kelib, gormon sintezida ishtirok etadi.
+Tiroglobulin oqsil bilan birlashib, yod bilan birga T3 va T4 hosil qiladi.
+T4 asosan “pro-gormon” hisoblanadi, organizmda kerak bo‘lganda T3 ga aylantiriladi (T3 — faol gormon).
+
+4. Ta’sir mexanizmi
+T3 va T4 hujayra ichiga kirib, DNK va RNK faoliyatini boshqaradi, shu bilan metabolizm darajasini oshiradi.
+Ular energiya ishlab chiqarishni kuchaytiradi, kislorod iste’molini oshiradi.
+Yurak, mushak, asab tizimi, termoregulyatsiya va o‘sish jarayonlariga ta’sir qiladi.
+T3 va T4 gormonlari gipofizdan TSH (qalqonsimon bez gormonini stimulyatsiya qiluvchi gormon) sekretsiyasini nazorat qilib turadi.
+`
 },
 {
   "question": "Tiroksin (T4) va triyodotironin (T3) ning biologik ta'siri.",
-  "answer": `Tiroksin (T4) va triyodotironin (T3) organizmning barcha hujayralarida metabolizmni tezlashtiradi, termogenezni boshqaradi, yurak tezligini oshiradi va protein sintezini rag'batlantiradi. Ular organizmning umumiy energiya sarfini nazorat qilishga yordam beradi.`
-},
+  "answer": `
+Tiroksin (T4) va Triyodotironin (T3) ning biologik ta’siri
+
+1. Metabolizmni tezlashtirish
+T3 va T4 hujayralarda kislorod iste’molini oshiradi, energiya ishlab chiqarishni kuchaytiradi.
+Ular oqsillar, yog‘lar va uglevodlarning parchalanishini tezlashtiradi.
+
+2. O‘sish va rivojlanishni ta’minlash
+Nerv tizimi, suyak va mushaklarning normal o‘sishi va rivojlanishini qo‘llab-quvvatlaydi.
+Bolalarda miya va asab tizimining to‘liq rivojlanishi uchun juda muhim.
+
+3. Yurak-qon tomir tizimiga ta’siri
+Yurak tezligini va kontraktsiya kuchini oshiradi.
+Qon aylanishini yaxshilaydi, arterial bosimni biroz ko‘taradi.
+
+4. Termoregulyatsiya
+Tana haroratini saqlash uchun metabolik jarayonlarni faollashtiradi.
+
+5. Nerv tizimiga ta’siri
+Asab impulslarini o‘tishini tezlashtiradi, reflekslarni kuchaytiradi.
+
+6. Ovqat hazm qilish tizimi
+Ovqat hazm qilish faoliyatini oshiradi, ichak motilitligini kuchaytiradi.
+
+Qisqasi, T3 — faol gormon bo‘lib, organizmda T4 dan hosil bo‘ladi va asosiy biologik ta’sirni ko‘rsatadi.
+`},
 {
   "question": "Endemik bo`qoq-etiologiya, patogenez, klinika, diagnostika, davolash.",
-  "answer": `Endemik bo‘qoq, qalqonsimon bezning kattalashishi, odatda yodning yetishmasligi bilan bog‘liq. Patogenezda qalqonsimon bezning gormon ishlab chiqarishi kamayadi, bu esa gipotiroidizmga olib keladi. Klinikada bo‘qoq (bezdaki kattalashish), charchoq, sovuq qamish, teri quruqligi kuzatiladi. Diagnostika yod darajasini va gormonlar profilini o‘rganish orqali amalga oshiriladi. Davolashda yodni qo‘llash va sintetik tiroksin preparatlari ishlatiladi.`
-},
+  "answer": `
+Endemik bo‘qoq
+1. Etiologiya
+Asosiy sabab — organizmga yetarli miqdorda yod yetishmasligi.
+Yod yetishmovchiligi ko‘pincha yod kam bo‘lgan hududlarda (tog‘li yoki suv yoddan kam bo‘lgan joylarda) uchraydi.
+
+2. Patogenez
+Yod yetishmasligi qalqonsimon bezda gormon sintezining kamayishiga olib keladi.
+Gipofiz bezidan qalqonsimon bezni stimulyatsiya qiluvchi TSH gormoni ko‘payadi.
+TSH ta’sirida qalqonsimon bez hujayralari ko‘payib, bez kattalashadi — bu bo‘qoq paydo bo‘lishiga sabab bo‘ladi.
+
+3. Klinika
+Bo‘g‘imlarda shish, qalqonsimon bez kattalashishi (bo‘qoq).
+Gormon yetishmovchiligi belgilariga ko‘ngil aynishi, charchoq, sovuqqa chidamsizlik, vazn ortishi.
+Bolalarda bo‘qoq bilan birga rivojlanish sustligi, kretinizm (juda og‘ir holatda) kuzatiladi.
+Yod yetishmovchiligiga bog‘liq gipotiroidizm alomatlari.
+
+4. Diagnostika
+Qon tahlilida TSH darajasi ko‘tarilgan, T3 va T4 past bo‘ladi.
+Qalqonsimon bez ultratovush tekshiruvi — bez kattaligi aniqlanadi.
+Yod yetishmovchiligi laborator tekshiruvlari (masalan, siydikda yod miqdori).
+
+5. Davolash
+Yod preparatlarini qabul qilish (masalan, kaltsiy yodid).
+Tiroksin (T4) gormoni preparatlari (agar gipotiroidizm rivojlangan bo‘lsa).
+Yod bilan boyitilgan tuz iste’molini targ‘ib qilish.
+Qalqonsimon bez kattaligi katta bo‘lsa va simptomlar bo‘lsa, jarrohlik muolajasi mumkin.
+`},
 {
   "question": "Endemik bo`qoq rivojlanishining profilaktik choralari",
-  "answer": `Profilaktika: yodli tuzdan foydalanish, yod etishmasligiga qarshi ta'lim va sog‘lom ovqatlanish, shuningdek, yodning yetishmovchiligi kuzatilgan hududlarda ijtimoiy chora-tadbirlar ko‘rish.`
-},
+  "answer": `Endemik bo‘qoq rivojlanishining profilaktik choralari quyidagilar:
+1. Yod bilan boyitilgan tuz iste’molini joriy etish — eng samarali va keng qo‘llaniladigan profilaktika usuli.
+2. Yod preparatlarini yetkazib berish — yod kam bo‘lgan hududlarda maxsus yod qo‘shimchalarini berish.
+3. Ommaviy targ‘ibot va ta’lim — aholiga yod yetishmovchiligining zararli ta’siri va profilaktika usullari haqida ma’lumot berish.
+4. Suv va oziq-ovqat mahsulotlarining yod miqdorini nazorat qilish — yod boyitilgan suv va mahsulotlarni targ‘ib qilish.
+5. Tibbiy ko‘rik va monitoring — endemik hududlarda aholining yod holatini muntazam tekshirib borish.
+6. Bolalar va homilador ayollar uchun maxsus profilaktika — ayniqsa bu guruhlar yod yetishmovchiligiga sezgir, shuning uchun ularni alohida e’tibor bilan ta’minlash.
+`},
 {
   "question": "JSST va Nikolaev bo`yicha qalqonsimon bezning kattalashishi darajasi.",
-  "answer": `JSST (Jahon Sog'liqni Saqlash Tashkiloti) va Nikolaev bo‘yicha qalqonsimon bezning kattalashishi 0-4 darajaga bo‘linadi. 0-darajada bez kattalashmagan, 4-darajada esa bezning kattalashishi sezilarli bo‘lib, bemor ko‘pincha jarrohlik muolajaga muhtoj.`
-},
+  "answer": `
+Qalqonsimon bez kattalashishi darajalari (JSST va Nikolaev bo‘yicha)
+
+0-daraja
+Qalqonsimon bez ko‘z bilan ko‘rinmaydi va palpatsiya (teginish)da ham aniqlanmaydi.
+Bezi normal holatda.
+
+1-daraja
+Qalqonsimon bez palpatsiyada aniqlanadi, lekin ko‘z bilan ko‘rinmaydi.
+Bezi kattalashishi sezilarli emas, faqat teginishda seziladi.
+
+2-daraja
+Qalqonsimon bez ko‘z bilan ko‘rinadi va palpatsiyada osonlik bilan aniqlanadi.
+Bezi sezilarli darajada kattalashgan.
+`},
 {
   "question": "Gipoterioz- etiologiya, patogenez, klinika, diagnostika, davolash.",
-  "answer": `Gipoterioz – qalqonsimon bezning yetarli darajada gormon ishlab chiqarmasligi holati. Etiologiya: autoimmun kasalliklar, yod etishmasligi. Patogenezda T4 va T3 ishlab chiqarishning pasayishi kuzatiladi, bu esa metabolik jarayonlarni sekinlashtiradi. Klinikada charchoq, semizlik, sovuqlikka chidamsizlik, teri qurishi ko‘zga tashlanadi. Diagnostika: TSH, T4, T3 o‘lchovlari. Davolash: sintetik tiroksin bilan davolash.`
-},
+  "answer": `
+Gipoterioz (Qalqonsimon bezning gipofunksiyasi)
+
+1. Etiologiya
+Qalqonsimon bezning gormon ishlab chiqarish qobiliyatining kamayishi yoki to‘xtashi.
+Sabablari: endemik yod yetishmovchiligi, autoimmun tiroidit (Hashimoto kasalligi), qalqonsimon bez jarrohlik yo‘li bilan olib tashlanishi, radiatsiya ta’siri, ba’zi dorilar (masalan, amiodaron).
+
+2. Patogenez
+Tiroksin (T4) va triyodotironin (T3) yetishmasligi organizm metabolizmini sekinlashtiradi.
+Gipofiz gormoni TSH ko‘payadi, bu esa qalqonsimon bezni stimulyatsiya qiladi, ammo gormon ishlab chiqarilmaydi yoki juda kam.
+Natijada metabolizm sustlashadi, energiya ishlab chiqarish pasayadi.
+
+3. Klinika
+Charchoq, sovuqqa chidamsizlik, vazn ortishi.
+Terining quruqlashishi, soch to‘kilishi.
+Sezgi va xotira susayishi, hushyorlikning pasayishi.
+Yurak urishining sekinlashishi, qorin bo‘shlig‘i faoliyatining buzilishi (kabızlık).
+Og‘ir hollarda myksodema (teri shishishi, yuzning shishishi).
+Ayollarda hayz siklining buzilishi.
+
+4. Diagnostika
+Qon tahlilida TSH darajasi ko‘tarilgan, T3 va T4 past bo‘ladi.
+Antitiroid antitanachalar (masalan, anti-TPO) aniqlanishi mumkin (autoimmun kasalliklarda).
+Qalqonsimon bez ultratovush tekshiruvi.
+
+5. Davolash
+Tiroksin (Levotiroksin) preparatlari bilan gormon almashtirish terapiyasi.
+Doza individual ravishda belgilanadi va muntazam nazorat qilinadi.
+Kasallik uzoq muddat davomida davolanadi.
+`},
 {
   "question": "Tug'ma gipoterioz-etiologiya, patogenez, klinika, diagnostika, davolash.",
-  "answer": `Tug‘ma gipoterioz – yangi tug‘ilgan bolalarda qalqonsimon bezning yetarli darajada ishlamasligi. Etiologiya: genetik kasalliklar, autoimmun kasalliklar. Patogenez: T4 va T3 darajalarining pasayishi. Klinikada charchoq, sekinlashgan rivojlanish, sariqlik va boshqa alomatlar kuzatiladi. Diagnostika: qon tahlillari, TSH va T4 o‘lchovlari. Davolash: sintezlangan tiroksin bilan davolash.`
-},
+  "answer": `
+Tug‘ma gipoterioz
+
+1. Etiologiya
+Qalqonsimon bezning tug‘ma rivojlanish nuqsonlari (aplastiia, hipoplaziya, ektopiya).
+Yod yetishmovchiligi homiladorlik davrida.
+Gormon sintezining genetik buzilishlari.
+Gipofiz yoki gipotalamus buzilishlari (kamroq uchraydi).
+
+2. Patogenez
+Tug‘ma gormon yetishmovchiligi natijasida organizmda metabolizm pasayadi.
+Nerv tizimi, ayniqsa, miyaning rivojlanishi sustlashadi.
+Agar davolanmasa, miya va butun organizm rivojlanishida jiddiy buzilishlar yuz beradi.
+
+3. Klinika
+Tug‘ilishdan keyin sekin rivojlanish, mushaklar bo‘shligi.
+Ovqatlanish sustligi, ich qotishi.
+Sog‘lom chaqaloqlarga nisbatan kam harakatlilik.
+Katta bosh, pufakcha yuz (myksedematoz yuz).
+Ovozi past, teri quruq va sovuq.
+Agar davolanmasa, aqliy zaiflik va jismoniy kam rivojlanish yuzaga keladi.
+
+4. Diagnostika
+Neonatal skrining — tug‘ruqdan keyingi 2-5 kunlarda qon TSH va T4 darajasini o‘lchash.
+Past T4 va yuqori TSH darajasi tug‘ma gipoteriozga ishora qiladi.
+Qalqonsimon bez ultratovush tekshiruvi.
+
+5. Davolash
+Erta boshlangan Levotiroksin terapiyasi (gormon almashtirish).
+Davolash imkon qadar tug‘ruqdan keyin dastlabki haftalarda boshlanishi zarur.
+Doimiy tibbiy nazorat va dozani moslashtirish.
+Erta va to‘g‘ri davolash aqliy va jismoniy rivojlanishning normal kechishiga yordam beradi.
+`},
 {
   "question": "Diffuz toksik bo`qoq haqida (Bazedov kasalligi) - etiologiya, patogenez, klinika, diagnostika, davolash.",
   "answer": `Diffuz toksik bo‘qoq (Bazedov kasalligi) qalqonsimon bezning o‘stirilgan faoliyatini ifodalaydi. Etiologiya: autoimmun jarayonlar, antikorlar ishlab chiqarilishi. Patogenezda T3 va T4 darajalari ortadi. Klinikada tez yurak urishi, asabiylashish, ortiqcha terlash va shishgan bo‘qoq kuzatiladi. Diagnostika: gormonlar profili, qalqonsimon bez ultratovush tekshiruvi. Davolash: antitiroide preparatlar, radioaktiv yod, jarrohlik.`
