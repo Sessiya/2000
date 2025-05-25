@@ -498,52 +498,237 @@ Bariatrik operatsiyalar: me’dani kichraytirish, bypass usullari
 },
 {
   "question": "Tana massasi indeksi (BMI) nima va uni qanday hisoblash mumkin?",
-  "answer": `BMI — tana massasi indeksidir. Formulasi: vazn (kg) / bo‘y (m)^2. Masalan: 70 kg / (1.70)^2 = 24.2. Normal BMI: 18.5–24.9.`
+  "answer": `Tana massasi indeksi (TMI) – bu insonning tana vazni va bo‘yiga qarab semizlik yoki ortiqcha vazn bor-yo‘qligini aniqlash uchun ishlatiladigan ko‘rsatkichdir.
+
+TMI ni hisoblash uchun quyidagi formula qo‘llaniladi:
+
+TMI = tana vazni (kg) / bo‘y uzunligi (metr)²
+
+Masalan, vazni 70 kg va bo‘yi 1.75 metr bo‘lgan odam uchun:
+TMI = 70 / (1.75 × 1.75) = 70 / 3.06 = taxminan 22.9
+
+TMI qiymatlari quyidagicha talqin qilinadi:
+
+Agar TMI 18.5 dan past bo‘lsa – bu ozg‘inlik hisoblanadi.
+Agar TMI 18.5 dan 24.9 gacha bo‘lsa – normal vazn.
+Agar TMI 25 dan 29.9 gacha bo‘lsa – ortiqcha vazn.
+Agar TMI 30 dan yuqori bo‘lsa – bu semizlik bo‘lib, darajalarga bo‘linadi:
+30–34.9 – I daraja, 35–39.9 – II daraja, 40 va undan yuqori – III darajali (og‘ir) semizlik.`
 },
 {
   "question": "Metabolik sindrom etiologiya, patogenez, klinika, diagnostika, davolash.",
-  "answer": `Etiologiya: noto‘g‘ri ovqatlanish, harakatsizlik, genetik omillar. Patogenez: insulin rezistentlik orqali rivojlanadi. Klinikasi: bel atrofida yog‘ to‘planish, gipertoniya, dislipidemiya, QD. Diagnostika: AQSH NIH mezonlari asosida. Davolash: vazn yo‘qotish, diet, jismoniy faollik, dori vositalari.`
+  "answer": `Metabolik sindrom — bu semizlik, yuqori qon bosimi, qandli diabetga moyillik va qon lipidlarining buzilishi birgalikda keladigan holat bo‘lib, yurak kasalliklari xavfini oshiradi.
+
+Sabablari: noto‘g‘ri ovqatlanish, harakatsizlik, genetik omillar, yosh o‘sishi, insulin rezistentlik, stress va uyqu buzilishi.
+
+Rivojlanishi: qorin semizligi insulin sezuvchanligini pasaytiradi, bu glyukoza va yog‘ almashinuvini buzadi, natijada qon shakarining, bosim va xolesterinning ko‘tarilishi yuzaga keladi.
+
+Belgilar: qorin yog‘lari, qon bosimi ko‘tarilishi, qonda glyukoza va triglitseridlar oshishi, HDL kamayishi, tez charchash, chanqash, uyqu buzilishi.
+
+Diagnostika: tana massasi indeksi va bel aylanasini o‘lchash, qon glyukoza va lipidlarini tekshirish, qon bosimini nazorat qilish.
+
+Davolash: sog‘lom ovqatlanish, muntazam jismoniy faollik, vazn kamaytirish, chekish va alkogoldan voz kechish; zarur bo‘lsa, metformin, qon bosimini tushiruvchi va lipidlarni normallashtiruvchi dorilar qo‘llanadi. Maqsad — asoratlarni oldini olish.`
 },
 {
   "question": "Semizlikni davolash usullari.",
-  "answer": `1) Dieta va kaloriya nazorati. 2) Jismoniy faollik. 3) Davolovchi dorilar (orlistat, liraglutid). 4) Psixoterapiya. 5) Bariatrik jarrohlik og‘ir hollarda.`
+  "answer": `Semizlikni davolashda quyidagi usullar qo‘llanadi:
+  
+1. Hayot tarzini o‘zgartirish:
+Kaloriyasi cheklangan, sog‘lom parhezga o‘tish
+Doimiy jismoniy faollik (haftasiga kamida 150 daqiqa o‘rta darajada mashq)
+Ovqatlanish odatlarini nazorat qilish va stressni kamaytirish
+
+2. Dori-darmonlar:
+Og‘ir hollarda shifokor tomonidan buyurilgan vazn kamaytiruvchi dori vositalari (masalan, orlistat, liraglutid)
+Dori-darmonlarni faqat mutaxassis nazorati ostida qabul qilish kerak
+
+3. Psixologik yordam:
+Stressni boshqarish, ovqatlanish psixologiyasini yaxshilash uchun terapiya
+
+4. Jarrohlik usullari:
+Bariatrik jarrohlik (me’dani kichraytirish yoki bypass operatsiyalari) faqat og‘ir va uzoq muddatli semizlikda qo‘llaniladi`
 },
 {
   "question": "Qandli diabet kasalligiga ta'rifini bering, klassifikatsiyasi.",
-  "answer": `Qandli diabet — glyukozani qondan hujayraga yetkazishdagi buzilish bilan kechadigan kasallik. Klassifikatsiyasi: 1-tur (insulinga bog‘liq), 2-tur (insulinga bog‘liq emas), gestatsion diabet (homiladorlikda), boshqa sabablarga bog‘liq turlari.`
+  "answer": `Qandli diabet — bu organizmda insulin gormoni yetishmasligi yoki uning ta’siriga sezuvchanlik kamayishi natijasida qon shakarining (glyukoza) doimiy ko‘tarilishi bilan kechadigan surunkali kasallikdir.
+
+Klassifikatsiyasi:
+1. 1-toifa qandli diabet
+Insulin ishlab chiqarilishining to‘liq yoki qisman to‘xtashi
+Odatda yosh yoshda boshlanadi
+Insulin bilan davolash talab qilinadi
+
+2. 2-toifa qandli diabet
+Insulinga qarshilik (rezistentlik) va insulin yetishmovchiligi
+Ko‘pincha kattalar va ortiqcha vaznga ega odamlarda uchraydi
+Parhez, jismoniy faollik va dori-darmon bilan davolanadi
+
+3. Homiladorlik qandli diabeti
+Homiladorlik davrida yuzaga keladi
+Tug‘ilgandan keyin ko‘pincha yo‘qoladi, lekin kelajakda 2-toifa diabet xavfi oshadi
+
+4. Boshqa turdagi diabetlar
+Masalan, genetik kasalliklar, moddalar ta’siri yoki boshqa kasalliklar sababli yuzaga keladigan diabetlar`
 },
 {
   "question": "QD 1-tur etiologiya, patogenez, klinika, diagnostika, davolash.",
-  "answer": `Etiologiya: autoimmun pankreatit, viruslar. Patogenez: insulin ishlab chiqarilmasligi. Klinikasi: poliuriya, polidipsiya, vazn yo‘qotish, ketoz. Diagnostika: glyukoza, HbA1c, C-peptid, autoantitanalar. Davolash: insulin terapiyasi, dieta, jismoniy faollik.`
-},
+  "answer": `Qandli diabet 1-tur — bu organizmda insulin ishlab chiqaruvchi beta hujayralar autoimmun jarayon tufayli yo‘qolishi natijasida yuzaga keladigan kasallik. Asosan bolalar va yoshlar orasida uchraydi.
+
+Etiologiyasi: autoimmun buzilish, genetik moyillik, ba’zi virus infeksiyalari va atrof-muhit omillari.
+
+Patogenezi: insulin yetishmasligi tufayli qonda glyukoza miqdori oshadi, chunki hujayralar uni o‘zlashtira olmaydi.
+
+Klinikasi: ko‘p chanqash, ko‘p siyish, vazn yo‘qotish, charchoq, ba’zida ketoatsidoz (jiddiy asorat).
+
+Diagnostikasi: qon va siydikda glyukoza ko‘tarilishi, insulin va C-peptid darajasining pasayishi, autoantitanalarning mavjudligi.
+
+Davolash: hayot davomida insulin in’ektsiyalari, parhez, jismoniy faollik va muntazam tibbiy nazorat.
+`},
 {
   "question": "QD 2-tur etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
-  "answer": `Etiologiyasi: genetik, semizlik, harakatsizlik. Patogenez: insulin rezistentlik + sekretsiyasi kamayishi. Klinikasi: susaygan simptomlar (chanqoq, charchoq, infektsiyalar). Diagnostika: glyukoza, HbA1c. Davolash: dieta, jismoniy faollik, metformin, kerak bo‘lsa insulin.`
-},
+  "answer": `Qandli diabet 2-tur — bu organizmda insulinga nisbatan sezuvchanlik pasayishi (insulin rezistentlik) va insulin ishlab chiqarishning kamayishi bilan kechadigan surunkali kasallik.
+
+Etiologiyasi: ortiqcha vazn va semizlik, harakatsizlik, noto‘g‘ri ovqatlanish, genetik moyillik, yoshning ortishi.
+
+Patogenezi: hujayralar insulin ta’siriga kamroq javob beradi, shuning uchun glyukoza hujayralarga kirmaydi va qonda to‘planadi; vaqt o‘tishi bilan insulin ishlab chiqarish kamayadi.
+
+Klinikasi: sekin rivojlanadi, boshda ko‘p belgi bo‘lmasligi mumkin; chanqash, siyish ko‘payishi, charchoq, ko‘zda noaniqlik.
+
+Diagnostikasi: qon glyukoza darajasi ko‘tarilishi (ochlikda ≥7 mmol/l), glyukoza yuklama testi, glykovanniy gemoglobin (HbA1c).
+
+Davolash: sog‘lom turmush tarzi — parhez va jismoniy faollik, vazn kamaytirish; dori vositalari (metformin, sulfonilurea va boshqalar); zarur bo‘lsa insulin.
+`},
 {
   "question": "QD 1 va QD 2 tur klinik simptomlari.",
-  "answer": `1-tur: keskin boshlanadi, poliuriya, polidipsiya, vazn yo‘qotish, ketoatsetoz. 2-tur: asta-sekin boshlanadi, charchoq, ko‘rish buzilishi, yara bitmaslik, semizlik.`
+  "answer": `Qandli diabet 1-tur klinik simptomlari:
+
+Tez chanqash (polidipsiya)
+
+Ko‘p siyish (poliuriya)
+
+Og‘ir vazn yo‘qotish
+
+Tez charchash, holsizlik
+
+Ketoatsidoz (og‘ir holatda)
+
+Ko‘z qorachig‘ida noaniqlik
+
+
+Qandli diabet 2-tur klinik simptomlari:
+
+Sekin rivojlanadi, dastlab simptomlar kam yoki yo‘q bo‘lishi mumkin
+
+Chanqash va siyish ko‘payishi
+
+Charchoq, uyqu buzilishi
+
+Ko‘zda noaniqlik
+
+Ortiqcha vazn yoki semizlik
+
+Tez-tez infektsiyalar (masalan, teri yoki siydik yo‘llari infektsiyalari)
+
+Yaralar sekin bitishi
+
+
+Umuman, 1-turda simptomlar tez va kuchli, 2-turda esa sekin va noaniq bo‘ladi.
+
+qisqasi: 1-tur: keskin boshlanadi, poliuriya, polidipsiya, vazn yo‘qotish, ketoatsetoz. 2-tur: asta-sekin boshlanadi, charchoq, ko‘rish buzilishi, yara bitmaslik, semizlik.`
 },
 {
   "question": "QD 1 va QD 2 tur differentsial diagnostikasi.",
-  "answer": `1-tur: yoshlar, tez rivojlanadi, C-peptid past, autoantitanalar mavjud. 2-tur: kattalar, sekin rivojlanadi, C-peptid normal/yuqori, antitanalar yo‘q.`
-},
+  "answer": `Qandli diabet 1-tur va 2-turning differentsial diagnostikasi:
+
+Yoshi:
+1-tur ko‘proq bolalar va yoshlar, 2-tur esa kattalarda ko‘p uchraydi.
+
+Vazn:
+1-turda bemorlar ko‘pincha ozgan, 2-turda esa ko‘pincha ortiqcha vazn yoki semizlik mavjud.
+
+Insulin darajasi va C-peptid:
+1-turda insulin va C-peptid darajasi past, 2-turda normal yoki yuqori bo‘ladi (boshlang‘ich bosqichda).
+
+Autoantitanalar:
+1-turda autoimmun jarayon tufayli insulin ishlab chiqaruvchi hujayralarga qarshi antitanalar aniqlanadi; 2-turda esa odatda yo‘q.
+
+Davolashga javob:
+1-tur bemorlarga doimiy insulin zarur; 2-turda esa ko‘pincha parhez va dori-darmonlar yordam beradi, insulin faqat keyingi bosqichlarda kerak bo‘ladi.
+
+Klinik simptomlar:
+1-turda simptomlar tez rivojlanadi, 2-turda sekin va noaniq kechadi.
+`},
 {
   "question": "Qandli diabet diagnostikasi mezonlari qanday.",
-  "answer": `1) HbA1c ≥ 6.5%. 2) Och qoringa glyukoza ≥ 7.0 mmol/l. 3) OGTT 2-soatda ≥ 11.1 mmol/l. 4) Har qanday paytda ≥ 11.1 mmol/l + simptomlar bo‘lsa.`
+  "answer": `Qandli diabetni aniqlash uchun qon shakarini o‘lchash kerak. Quyidagi ko‘rsatkichlardan biri bo‘lsa, diabet deb hisoblanadi:
+
+1. Ochlikdagi qon shakar (8 soat och qolgandan keyin):
+Normal: 3,9–5,5 mmol/l
+Diabet: 7,0 mmol/l va undan yuqori
+
+
+2. Tasodifiy (qaysi vaqtda bo‘lsa ham) qon shakar:
+Normal: 3,9–7,7 mmol/l
+Diabet: 11,1 mmol/l va yuqori, ayniqsa kasallik belgilari bo‘lsa
+
+
+3. Glyukoza yuklama testi (75 g shakar ichgandan keyin 2 soat o‘tib o‘lchash):
+Normal: 3,9–7,7 mmol/l
+Diabet: 11,1 mmol/l va yuqori
+
+
+4. Glikozalangan gemoglobin (HbA1c) — so‘nggi 2-3 oy ichidagi o‘rtacha qon shakar darajasi:
+Normal: 4–5,6%
+Diabet: 6,5% va yuqori
+`
 },
   {
   "question": "Glikirlangan gemoglobin nima va uning diagnostikadagi ahamiyati?",
-  "answer": `Glikirlangan gemoglobin (HbA1c) — bu glyukoza eritrositlardagi gemoglobin bilan bog‘lanishi natijasida hosil bo‘lgan birikmadir. U so‘nggi 2–3 oy ichidagi o‘rtacha glikemiya darajasini aks ettiradi. HbA1c darajasining oshishi qandli diabet (QD) borligini yoki davolashning yetarli emasligini ko‘rsatadi. Diabet diagnostikasi uchun HbA1c ≥ 6,5% deb olinadi.`
-},
+  "answer": `Glikirlangan gemoglobin (HbA1c) — bu qon qizil hujayralaridagi gemoglobinning glyukoza bilan bog‘langan shaklidir. U so‘nggi 2-3 oy ichida qon shakarining o‘rtacha darajasini ko‘rsatadi.
+
+Diagnostik ahamiyati:
+Qandli diabetni aniqlashda va nazorat qilishda ishlatiladi.
+HbA1c darajasi yuqori bo‘lsa (6,5% va undan yuqori), bu uzoq muddatda qonda shakar miqdori oshganini bildiradi.
+Davolash samaradorligini baholash va kasallikni boshqarishda muhim vositadir.
+` },
 {
   "question": "Prediabet tushunchasi, diagnostikasi, davolash.",
-  "answer": `Prediabet — bu glyukozaga tolerantlikning buzilishi yoki och qoringa glyukozaning ko‘tarilishi holati bo‘lib, hali QD diagnostika mezonlariga to‘g‘ri kelmaydi. Diagnostika: och qondagi glyukoza 5.6–6.9 mmol/l; GTTda 2-soatlik glyukoza 7.8–11.0 mmol/l. Davolash: hayot tarzini o‘zgartirish (ovqatlanish, jismoniy faollik), ba’zan metformin qo‘llanadi.`
-},
+  "answer": `Prediabet — bu glyukozaga tolerantlikning buzilishi yoki och qoringa glyukozaning ko‘tarilishi holati bo‘lib, hali QD diagnostika mezonlariga to‘g‘ri kelmaydi.
+
+Diagnostikasi:
+Ochlikda qon shakar: 5,6–6,9 mmol/l (normal 3,9–5,5 mmol/l)
+Glyukoza yuklama testida 2 soatdan keyin: 7,8–11,0 mmol/l
+HbA1c: 5,7–6,4% (normal 4–5,6%)
+
+Davolash:
+Sog‘lom ovqatlanish, shakar va yog‘larni kamaytirish
+Muntazam jismoniy faollik (har kuni kamida 30 daqiqa)
+Vaznni kamaytirish (agar ortiqcha bo‘lsa)
+Stressni kamaytirish va uyqu sifatini yaxshilash
+Zarur bo‘lsa, shifokor dori tavsiya qilishi mumkin
+`},
 {
   "question": "GTT (glyukoza tolerantlik testi) o‘tkazish uchun ko‘rsatmalar, o‘tkazish usuli.",
-  "answer": `Ko‘rsatmalar: prediabetdan gumon qilish, homiladorlik diabetini aniqlash, glyukoza metabolizmi buzilishlarini aniqlash. Usuli: bemor och holda (kamida 8 soat och qolgan) keladi, boshlang‘ich qondagi glyukoza olinadi, so‘ngra 75g glyukoza ichiriladi. 2 soatdan so‘ng yana glyukoza miqdori aniqlanadi.`
-},
+  "answer": `Ko‘rsatmalar: prediabetdan gumon qilish, homiladorlik diabetini aniqlash, glyukoza metabolizmi buzilishlarini aniqlash. Usuli: bemor och holda (kamida 8 soat och qolgan) keladi, boshlang‘ich qondagi glyukoza olinadi, so‘ngra 75g glyukoza ichiriladi. 2 soatdan so‘ng yana glyukoza miqdori aniqlanadi.`Albatta! Mana GTT haqida qisqa, aniq va tushunarli ta'rif:
+
+Glyukoza tolerantlik testi (GTT) — qandli diabet va prediabetni aniqlash uchun ishlatiladigan test.
+  
+Ko‘rsatmalar:
+Diabet xavfi bo‘lsa (ortiqcha vazn, oilaviy kasallik, bel atrofining katta bo‘lishi)
+Noaniq qon shakar natijalari mavjud bo‘lsa
+Homilador ayollarda gestatsion diabetni tekshirish uchun
+
+O‘tkazish tartibi:
+1. 8-14 soat och qolish (faqat suv ichish mumkin).
+2. Ochlikda qon shakarini o‘lchash.
+3. 75 g glyukoza eritmasini ichish.
+4. 2 soat keyin qon shakarini qayta o‘lchash.
+
+Natijalar:
+2 soatlik qon shakar ≤7,7 mmol/l — normal
+7,8–11,0 mmol/l — buzilgan glyukoza tolerantligi (prediabet)
+≥11,1 mmol/l — qandli diabet
+`},
 {
   "question": "GTT (glyukoza tolerantlik testi) - norma, prediabet, QD natijalarini talqin qilish.",
   "answer": `Norma: 2-soatlik glyukoza < 7.8 mmol/l. Prediabet: 2-soatlik glyukoza 7.8–11.0 mmol/l. Qandli diabet: 2-soatlik glyukoza ≥ 11.1 mmol/l.`
