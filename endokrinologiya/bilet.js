@@ -813,46 +813,178 @@ Dapagliflozin, Empagliflozin
 },
 {
   "question": "Biguanid guruh preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri.",
-  "answer": `Ko‘rsatmalar: QD 2-tur, ayniqsa semiz bemorlarda. 
-Qarshi ko‘rsatmalar: buyrak yetishmovchiligi, jigar kasalliklari, laktatsiyoz xavfi. 
-Ta'sir mexanizmi: jigarda glyukoneogenezni kamaytiradi, insulin sezuvchanligini oshiradi. 
-Nojo‘ya ta'siri: oshqozon-ichak bezovtaligi, laktatsidoz.`
+  "answer": `Biguanidlar (masalan, Metformin)
+
+Ko‘rsatmalar:
+2-toifa qandli diabetni davolash.
+
+Ta'sir mexanizmi:
+Jigar glyukozasi hosil bo‘lishini kamaytiradi, mushaklarda glyukozani ko‘proq qabul qilishga yordam beradi, qon shakarini pasaytiradi.
+
+Qarshi ko‘rsatmalar:
+Buyrak yoki jigar kasalligi, yurak yetishmovchiligi, laktat asidoz xavfi bor holatlar.
+
+Nojo‘ya ta'sirlar:
+Oshqozon-ichak bezovtaligi (diareya, ko‘ngil aynishi), kamdan-kam laktat asidoz.
+`
 },
 {
   "question": "Sulfanilmochevina preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri?",
-  "answer": `Ko‘rsatmalar: QD 2-turda insulin sekretsiyasi saqlangan holat. 
-Qarshi ko‘rsatmalar: QD 1-tur, homiladorlik, buyrak yoki jigar yetishmovchiligi. 
-Ta'sir mexanizmi: beta-hujayralardan insulin sekretsiyasini stimullaydi. 
-Nojo‘ya ta'siri: gipoglikemiya, tana vaznining oshishi.`
+  "answer": `Sulfanilmo‘chevina preparatlari (masalan, Glibenklamid, Gliklazid)
+
+Ko‘rsatmalar:
+2-toifa qandli diabetni davolash (og‘irlikni kamaytirish yoki metforminga qarshi ko‘rsatmalar bo‘lsa).
+
+Ta'sir mexanizmi:
+Insulin ishlab chiqarishni oshiradi (pancreas beta-hujayralarini stimulyatsiya qiladi), shuning uchun qon shakarini pasaytiradi.
+
+Qarshi ko‘rsatmalar:
+1-toifa diabet (insulin bog‘liq diabet), jigar yoki buyrak yetishmovchiligi, laktat asidoz xavfi, homiladorlik va laktatsiya.
+
+Nojo‘ya ta'sirlar:
+Gipoglikemiya (qon shakarining juda pastligi), vazn ortishi, allergik reaksiyalar, oshqozon-ichak bezovtaliklari.
+`
 },
 {
   "question": "DPP-4 ingibitorlari guruhi preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir mexanizmi, nojo‘ya ta'siri.",
-  "answer": `Ko‘rsatmalar: QD 2-turda glyukozani nazorat qilish. 
-Qarshi ko‘rsatmalar: DPP-4ga allergiya, ba’zi yurak-qon tomir kasalliklari. 
-Ta'sir mexanizmi: inkretin gormonlar (GLP-1 va GIP) faoliyatini uzaytiradi, insulin sekretsiyasini oshiradi, glukagonni kamaytiradi. 
-Nojo‘ya ta'siri: bosh og‘rig‘i, yo‘tal, dispepsiya.`
+  "answer": `DPP-4 ingibitorlari guruhi preparatlari
+
+Misollar: Sitagliptin, Vildagliptin, Saxagliptin, Linagliptin
+1. Ko‘rsatmalar
+
+2-toifa qandli diabet (T2DM)ni davolashda ishlatiladi, ayniqsa:
+Metformin yoki boshqa antidiabetiklar bilan birgalikda,
+Yoki alohida preparat sifatida qon shakarini nazorat qilishda.
+Insulin terapiyasi talab qilinmagan, o‘rta darajadagi qandli diabet holatlarida.
+
+2. Qarshi ko‘rsatmalar
+1-toifa qandli diabet (insulin bog‘liq diabet),
+Jigar va buyrakning og‘ir darajadagi yetishmovchiligi,
+DPP-4 ingibitorlariga allergiya yoki sezgirlik,
+Homiladorlik va emizish davri (faqat shifokor nazorati ostida).
+
+3. Ta'sir mexanizmi
+Tanadagi Dipeptidil peptidaza-4 (DPP-4) fermenti GLP-1 va GIP gormonlarini parchalaydi.
+GLP-1 va GIP — bu inkretin gormonlari bo‘lib, ular ovqatdan keyin insulin chiqarilishini rag‘batlantiradi va glyukagon (qon shakarini ko‘taruvchi gormon) chiqarilishini kamaytiradi.
+DPP-4 ingibitorlari bu fermentni to‘xtatib, GLP-1 va GIPning ta’sirini kuchaytiradi.
+Natijada insulin chiqarilishi oshadi, glyukagon kamayadi va qon shakar darajasi tushadi.
+
+4. Nojo‘ya ta'siri
+Eng ko‘p uchraydigan:
+Bosh og‘rig‘i,
+Oshqozon-ichak bezovtaligi (ko‘ngil aynishi, diareya),
+Allergik reaksiyalar (to‘qimalar shishishi, toshmalar).
+
+Kamdan-kam uchraydigan:
+Pankreatit (oshqozon shirasining yallig‘lanishi),
+Jigar fermentlari oshishi,
+Yurak muammolari (ba’zi tadqiqotlarda kuzatilgan).
+Gipoglikemiya xavfi past, lekin metformin yoki sulfanilmo‘chevina bilan birga qo‘llanganda ehtiyot bo‘lish kerak.`
 },
 {
   "question": "GPP-1 analoglari guruhi preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri.",
-  "answer": `Ko‘rsatmalar: QD 2-turda, ayniqsa semizlik bilan kechsa. 
-Qarshi ko‘rsatmalar: pankreatit, GPP-1ga sezuvchanlik. 
-Ta'sir mexanizmi: inkretin ta'sirini taqlid qiladi — insulin sekretsiyasini oshiradi, glukagonni kamaytiradi, ovqat hazm bo‘lishini sekinlashtiradi. 
-Nojo‘ya ta'siri: ko‘ngil aynish, qusish, ishtahaning pasayishi.`
+  "answer": `GLP-1 analoglari guruhi preparatlari
+Misollar: Exenatide, Liraglutide, Dulaglutide, Semaglutide
+
+1. Ko‘rsatmalar
+2-toifa qandli diabetni davolashda (ayniqsa metformin yetarli bo‘lmaganda yoki og‘ir vazn muammosi bo‘lsa).
+Vazn yo‘qotishni rag‘batlantirishda yordam beradi (ba’zi preparatlar vaznni kamaytirishga yordam beradi).
+Yurak-qon tomir kasalliklari xavfi yuqori bo‘lgan diabet kasallari uchun afzallik.
+
+2. Qarshi ko‘rsatmalar
+1-toifa diabet,
+Medullary qalqonsimon bez saratoni yoki endokrin neoplaziyalar (RET gen mutatsiyasi mavjudligi),
+Qalqonsimon bez kasalliklari,
+Buyrak yetishmovchiligi og‘ir darajada,
+Homiladorlik va emizish (shifokor nazorati ostida).
+
+3. Ta'sir qilish mexanizmi
+GLP-1 (glukagonga o‘xshash peptid-1) gormonining sun’iy analoglari.
+Organizmda tabiiy GLP-1 ning o‘rnini bosadi, lekin u uzoq vaqt ta’sir qiladi.
+Insulin ishlab chiqarishni oshiradi (faqat qondagi shakar ko‘tarilganda),
+Glyukagon ishlab chiqarilishini kamaytiradi,
+Oshqozon bo‘shashishini sekinlashtiradi (to‘qlik hissini oshiradi),
+Ovqatlanish miqdorini kamaytirib, vazn yo‘qotishga yordam beradi.
+
+4. Nojo‘ya ta'siri
+Oshqozon-ichak bezovtaligi (ko‘ngil aynishi, qusish, diareya),
+Pankreatit (kamdan-kam),
+Bosh og‘rig‘i,
+Terida allergik reaksiyalar,
+Yiringli yallig‘lanish, inyeksiya joyida og‘riq.`
 },
   {
   "question": "SGLT-2 ingibitori guruhi preparatlari - ko'rsatmalar, qarshi ko`rsatmalar, ta'sir qilish mexanizmi, nojo`ya ta'siri",
-  "answer": `Ko‘rsatmalar: QD 2-tur, yurak yetishmovchiligi, buyrak kasalliklari bilan kechuvchi holatlarda. Qarshi ko‘rsatmalar: og‘ir buyrak yetishmovchiligi, ketoatsidoz. Ta'sir mexanizmi: buyraklarda glyukozaning reabsorbsiyasini to‘sib, siydik orqali chiqishini ta’minlaydi. Nojo‘ya ta’siri: siydik yo‘llari infeksiyalari, susuzlanish, ketoatsidoz.`
-},
+  "answer": `
+SGLT-2 ingibitorlari guruhi preparatlari
+Misollar: Dapagliflozin, Empagliflozin, Canagliflozin
+
+1. Ko‘rsatmalar
+2-toifa qandli diabetni davolashda (ayniqsa qon shakarini nazorat qilish uchun metformin bilan birga yoki alohida).
+Yurak yetishmovchiligi va buyrak kasalliklari xavfi yuqori bo‘lgan diabet kasallari uchun qo‘shimcha terapiya sifatida.
+Vaznni kamaytirishga yordam beradi.
+
+2. Qarshi ko‘rsatmalar
+1-toifa diabet,
+Og‘ir buyrak yetishmovchiligi (eGFR pastligi bilan bog‘liq),
+Qandli ketoatsidoz (diabetik asidoz),
+Homiladorlik va emizish davri,
+Allergiya yoki sezgirlik.
+
+3. Ta'sir qilish mexanizmi
+SGLT-2 (Sodium-Glucose Co-Transporter-2) buyrakdagi glyukozani qayta so‘rilishida ishtirok etuvchi transportyor.
+SGLT-2 ingibitorlari glyukozaning buyrakdan qon tomiriga qaytishini to‘xtatadi.
+Natijada glyukoza siydik orqali chiqariladi, qon shakar darajasi tushadi.
+Shu bilan birga, tana vazni kamayadi va qon bosimi ham pasayishi mumkin.
+
+4. Nojo‘ya ta'siri
+Siqilma yo‘llarining infektsiyalari (ayniqsa ayollarda siydik yo‘li va genital infeksiyalar),
+Gipovolemik holatlar (qon bosimining tushishi, bosh aylanishi),
+Qandli ketoatsidoz (kamdan-kam, lekin jiddiy),
+Oshqozon bezovtaligi,
+Allergik reaksiyalar.
+`
+  },
 {
   "question": "Insulin terapiyasini tayinlash uchun ko'rsatmalar.",
-  "answer": `1-tur QD (har doim), 2-tur QDda og‘zaki vositalar yetarli bo‘lmasa, homiladorlik diabeti, QDning og‘ir kechishlari (ketoatsidoz, koma), jarrohlikdan oldin, infeksiyalar yoki stress holatlari.`
+  "answer": `Insulin terapiyasini tayinlash uchun asosiy ko‘rsatmalar quyidagilar:
+  
+Insulin terapiyasini tayinlash ko‘rsatmalari
+1. 1-toifa qandli diabet (T1DM):
+Beta-hujayralar to‘liq yoki yaqin to‘liq yo‘qolganligi sababli insulin talab qilinadi.
+
+2. 2-toifa qandli diabet (T2DM):
+Og‘ir glyukoz nazorati buzilganda (qon shakarini maqsadga muvofiq tushirishga erishilmasa),
+Oral antidiabetik preparatlar bilan davolash samarasiz bo‘lganda,
+Giperglikemik holatlar yoki diabetik ketoatsidozda,
+Homiladorlik vaqti, ayniqsa diabet bo‘lsa,
+Jiddiy kasalliklar, jarrohlik amaliyotidan oldin yoki keyin qon shakarini tez boshqarish zarur bo‘lsa.
+
+3. Boshqa holatlar:
+Organizmda insulin yetishmovchiligi belgilari bor bo‘lsa (tez charchash, vazn yo‘qotish, polidipsiya, polifagiya),
+Ba’zi maxsus holatlar, masalan, homiladorlik diabeti, yoki jigar/yurak kasalliklari bilan bog‘liq diabet.
+`
 },
 {
   "question": "Insulinlarning ta'sir qilish muddati bo'yicha tasnifi.",
-  "answer": `1. Juda qisqa ta’sirli (lispro, aspart, glulisin) — 10–30 min.  
-2. Qisqa ta’sirli (regulyar insulin) — 30–60 min.  
-3. O‘rta ta’sirli (NPH) — 1–2 soat.  
-4. Uzoq ta’sirli (glargin, detemir, degludek) — 1–2 soat, ammo 24–48 soat davom etadi.`
+  "answer": `Boshlanishi: 0–15 daqiqa
+Ta’siri: 3–4 soat
+
+Qisqa ta’sirli: Aktrapid R, Gensulin R
+Boshlanishi: 30 daqiqa
+Ta’siri: 6–8 soat
+
+O‘rtacha ta’sirli: Protofan, Xumulin N
+Boshlanishi: 1 soat
+Ta’siri: 12–14 soat
+
+Uzoq ta’sirli: Glargin (Lantus), Detemir (Levemir)
+Boshlanishi: 1–2 soat
+Ta’siri: 24 soat
+
+Ultra uzoq ta’sirli: Deglyudek (Tresiba)
+Boshlanishi: 1–2 soat
+Ta’siri: 40 soat`
 },
 {
   "question": "1-tur QD uchun insulin dozasini hisoblash va insulinterapiyaning asoslari.",
@@ -864,20 +996,142 @@ Nojo‘ya ta'siri: ko‘ngil aynish, qusish, ishtahaning pasayishi.`
 },
 {
   "question": "Insulin terapiyasining asosiy asoratlari (gipoglikemiya, lipodistrofiya va boshqalar).",
-  "answer": `Asoratlar: gipoglikemiya (eng ko‘p), lipodistrofiya (in'ektsiya joyida yog‘ to‘qimasining o‘zgarishi), insulin qarshiligi, allergik reaktsiyalar.`
-},
+  "answer": `
+Insulin terapiyasining asosiy asoratlari
+1. Gipoglikemiya
+Qon shakarining xavfli darajada pastligi (odatda < 3.9 mmol/l).
+Belgilari: bosh aylanishi, terlash, ko‘ngil aynishi, bosh og‘rig‘i, charchoq, yurak tezlashishi, hushdan ketish.
+Sabablari: insulin dozasi ortiqcha bo‘lishi, ovqatlanmaslik, jismoniy faoliyat, alkogol ichish.
+Davosi: tez shakar (shakarli choy, shirin ichimlik) qabul qilish.
+2. Lipodistrofiya
+Insulin in’ektsiyasi joyida yog‘ to‘qimasining o‘zgarishi.
+Lipohipertrofiya: yog‘ to‘qimasining qalinlashishi, in’ektsiya joyining qattiqlashishi.
+Lipoatrofiya: yog‘ to‘qimasining kamayishi, in’ektsiya joyida chuqurchalar paydo bo‘lishi.
+Oldini olish uchun in’ektsiya joylarini muntazam almashtirib turish kerak.
+3. Allergik reaksiyalar
+In’ektsiya joyida qizarish, toshma, qichishish.
+Kamdan-kam hollarda butun tanada allergiya bo‘lishi mumkin.
+4. Giperglikemiya
+Insulin yetishmasligi yoki noto‘g‘ri qo‘llanilishi natijasida qon shakarining oshishi.
+5. Og‘ir asoratlar
+Diabetik ketoatsidoz (insulin yetishmovchiligi sababli), giperglikemik holatlar.`},
 {
   "question": "Gipoglikemik koma-etiologiya, patogenez, klinika, diagnostika, birinchi yordam",
-  "answer": `Etiologiya: ortiqcha insulin dozasi, ovqatni o‘tkazib yuborish, jismoniy yuklama. Patogenez: glyukoza tanqisligi miya faoliyatini buzadi. Klinika: bosh aylanish, terlash, titrash, hushdan ketish. Diagnostika: qon glyukozasi <3.0 mmol/l. Yordam: 20–40 ml 40% glyukoza vena ichiga, hushida bo‘lsa — shirin ichimlik.`
+  "answer": `
+Gipoglikemik koma
+
+1. Etiologiya (sabablar)
+Insulin yoki boshqa gipoglikemik dorilarni ortiqcha qabul qilish,
+Ovqatlanishni kechiktirish yoki cheklash,
+Jismoniy faollikning keskin oshishi,
+Alkogol ichimliklarni iste’mol qilish,
+Buyrak yoki jigar yetishmovchiligi,
+Endokrin kasalliklar (masalan, gormonlar yetishmovchiligi),
+Bezak (sepsis), bosh miya shikastlanishi yoki ba’zi bosh miya kasalliklari.
+
+2. Patogenez
+Qon shakarining normaldan past (odatda < 3.9 mmol/l) darajaga tushishi natijasida miya hujayralari energiya yetishmovchiligi holatiga tushadi.
+Miya glyukoza asosiy energiya manbai bo‘lgani uchun uning yetishmasligi asab tizimining ishdan chiqishiga olib keladi.
+Natijada asabiy buzilishlar, hushdan ketish va koma holati yuzaga keladi.
+
+3. Klinik belgilari
+Boshlang‘ich (gipoglikemiyaning erta bosqichlari):
+Terlash, titroq, bosh aylanishi, charchoq, ko‘ngil aynishi, yurak tez urishi, bezovtalik, adashish.
+Og‘ir bosqich (gipoglikemik koma):
+Hushning yo‘qolishi, so‘zlashish qiyinligi, o‘pka va yurak faoliyatining buzilishi, kramplar, nafas qisilishi, harakatlar muvofiqligi buzilishi.
+
+4. Diagnostika
+Qon shakarini o‘lchash (tezkor test yordamida) — gipoglikemiya aniqlanadi (< 3.9 mmol/l).
+Klinik belgilar va anamnez (insulin qabul qilish, ovqatlanish tarixi).
+Qon va siydik tahlillari (agar zarur bo‘lsa).
+
+5. Birinchi yordam
+Agar bemor hushida bo‘lsa:
+Tez hazm bo‘ladigan shakar (shakarli choy, asal, shirin ichimlik) berish, og‘zidan berishda ehtiyot bo‘ling.
+Agar hushsiz bo‘lsa:
+Darhol tibbiy yordam chaqirish,
+Aksariyat hollarda tezkor vena ichiga glyukoza (40 ml 40% glyukoza) kiritish talab qilinadi,
+Agar glyukoza mavjud bo‘lmasa, 1 mg glukagon inyeksiyasi qilinishi mumkin.
+`
 },
 {
   "question": "Ketoatsidotik koma- etiologiya, patogenez, klinika, diagnostika, birinchi yordam",
-  "answer": `Etiologiya: insulin yetishmovchiligi, infeksiya, stress. Patogenez: glyukoza ishlanmaydi, keton jismlar ortadi, metabolik asidoz rivojlanadi. Klinika: qusish, quruq teri, “mevali nafas”, Kussmaul nafas, hushdan ketish. Diagnostika: glyukoza >13.9 mmol/l, ketonlar, asidoz. Yordam: insulin infuziyasi, suyuqlik berish, elektrolitlar, sababini davolash.`
-},
+  "answer": `
+Ketoatsidotik koma
+1. Etiologiya (sabablar)
+1-toifa qandli diabetda insulin yetishmovchiligi (eng ko‘p sabab),
+2-toifa diabetda jiddiy stress holatlari (infeksiya, jarrohlik, yurak xuruji),
+Insulin qabul qilishni to‘xtatish yoki noto‘g‘ri qabul qilish,
+Og‘ir kasalliklar, jarrohlik amaliyotlari, infeksiyalar, travmalar.
+
+2. Patogenez
+Insulin yetishmovchiligi tufayli glyukoza hujayralarga kirishi kamayadi, energiya yetishmovchiligi yuzaga keladi.
+Organizm yog‘larni parchalashga o‘tadi va keton jismlari (asetoatsetat, beta-gidroksibutirat) ishlab chiqariladi.
+Keton jismlari qon pH sini pasaytiradi (metabolik asidoz rivojlanadi).
+Giperglikemiya, ketonemiya, metabolik asidoz, suvsizlanish va elektrolit buzilishlar yuzaga keladi.
+Bu holat markaziy asab tizimining ishdan chiqishiga olib kelib, koma rivojlanadi.
+
+3. Klinik belgilari
+Boshlang‘ich: ko‘ngil aynishi, qusish, ko‘p ichish, tez-tez siyish, charchoq, bosh og‘rig‘i, og‘ir nafas olish (Kussmaul nafaslari),
+Keyinchalik: hushning pasayishi, charchash, uyg‘onishda qiyinchilik, kramplar, koma.
+Nafas hidida "mevali" yoki "acetone" hidi bo‘ladi.
+Qon bosimi pasayishi, tez yurak urishi, terlash.
+
+4. Diagnostika
+Qon shakarining yuqori bo‘lishi (>11 mmol/l).
+Keton jismlari qon va siydikda aniqlanadi.
+Arterial qon gazlari: metabolik asidoz (pH < 7.3, HCO3 kamayishi).
+Elektrolitlar buzilishi (natriy, kaliy kamayishi).
+Klinik belgilar va anamnez.
+
+5. Birinchi yordam va davolash
+Shoshilinch tibbiy yordam chaqirish.
+Vena ichiga suyuqlik (natriy xlorid eritmasi) berish — suvsizlanishni tuzatish uchun.
+Insulin infuziyasini boshlash — glyukozani kamaytirish uchun.
+Elektrolitlar (xususan, kaliy) darajasini tekshirish va tuzatish.
+Ketonlarni kamaytirish va metabolik asidozni davolash.
+Nafas yo‘llarini nazorat qilish, zarur bo‘lsa kislorod berish.
+Infektsiyalar bo‘lsa, ularga qarshi terapiya.
+`},
 {
   "question": "Giperosmolyar koma-etiologiya, patogenez, klinika, diagnostika, birinchi yordam",
-  "answer": `Etiologiya: QD 2-tur, susuzlanish, infeksiya, diuretiklar. Patogenez: suyuqlik yo‘qolishi, osmotik diurez, qonning hiperosmolyarligi. Klinika: zaiflik, suvsizlanish, nevrologik simptomlar, hushdan ketish. Diagnostika: glyukoza >33 mmol/l, osmolyarlik >320 mOsm/kg, ketonoz yo‘q. Yordam: vena ichiga suyuqlik, insulinterapiya, elektrolit muvozanatini tiklash.`
-},
+  "answer": `
+Giperosmolyar koma
+1. Etiologiya (sabablar)
+Asosan 2-toifa qandli diabetda yuzaga keladi,
+Jiddiy giperglikemiya (qon shakarining juda yuqori darajasi),
+Suvsizlanish (dehidratsiya),
+Og‘ir infektsiyalar, yurak yoki o‘pka kasalliklari, jarrohlik amaliyotlari, stress, alkogolizm, ba’zi dorilar (masalan, diuretiklar),
+Insulin yetishmovchiligi yoki noto‘g‘ri qabul qilinishi.
+
+2. Patogenez
+Qon shakarining juda yuqori darajasi (odatda >33 mmol/l) tufayli qonning osmolyarligi oshadi,
+Suv qon tomirlaridan hujayralarga o‘tib, hujayralar quruq va dehidratsiyaga uchraydi,
+Markaziy asab tizimi faoliyati buziladi,
+Giperosmolyar holat asta-sekin rivojlanadi,
+Keton jismlari odatda kam yoki yo‘q (asosiy farq ketoatsidotik komadan).
+
+3. Klinik belgilari
+Kuchli chanqoqlik, ko‘p siydik chiqarish, suvsizlanish, terining qurishi,
+Nafas olish odatda normal yoki biroz tezlashgan,
+Hushning buzilishi: chalg‘ish, somnolyensiya (uyquchanlik), koma,
+Mushaklar kuchsizligi, qon bosimi tushishi, yurak tez urishi, ba’zan epileptik kramplar,
+Ko‘z qovoqlari va terida qurish, charchoq, bosim pasayishi.
+
+4. Diagnostika
+Qon shakarining yuqori darajasi (>33 mmol/l),
+Qon osmolyarligi oshgan (normal 280-295 mOsm/kg dan yuqori),
+Keton jismlari qon va siydikda odatda mavjud emas yoki kam,
+Qon gazlari odatda normal yoki faqat yengil asidoz (pH ≥7.3),
+Suvsizlanish belgilarini aniqlash, elektrolitlar buzilishi.
+
+5. Birinchi yordam va davolash
+Shoshilinch tibbiy yordam chaqirish, kasalxonaga yotqizish,
+Vena ichiga suyuqlik (odatda natriy xlorid eritmasi) sekin-asta berish — suvsizlanishni bartaraf etish uchun,
+Insulin infuziyasini boshlash — giperglikemiyani kamaytirish uchun,
+Elektrolitlar (xususan, kaliy) darajasini tekshirish va tuzatish,
+Yurak va nafas faoliyatini kuzatish, zarur bo‘lsa kislorod berish,
+Infektsiyalar va boshqa sabablarni aniqlash va davolash.`},
 {
   "question": "Gipoglikemik koma uchun shoshilinch yordam",
   "answer": `1. Agar bemor hushida: shakar eritmasi ichiriladi.  
@@ -893,48 +1147,214 @@ Nojo‘ya ta'siri: ko‘ngil aynish, qusish, ishtahaning pasayishi.`
 {
   "question": "Gipoglikemik va giperglikemik komaning differentsial diagnostikasi",
   "answer": `Gipoglikemik koma: qon shakar miqdori 3.0 mmol/l dan past, tizimli terlash, bosh aylanishi, titrash.  
-Giperglikemik koma: qon shakar miqdori 13.9 mmol/l dan yuqori, mevali nafas, teri qurishi, Kussmaul nafas.`
+Giperglikemik koma: qon shakar miqdori 13.9 mmol/l dan yuqori, mevali nafas, teri qurishi, Kussmaul nafas.
+Mevali nafas nima?
+Mevali nafas — bu odamning nafasida mevali (odatda olxo‘ri, olcha yoki acetone) kabi hid paydo bo‘lishidir. Bu asosan ketoatsidotik koma yoki jiddiy giperglikemiya holatlarida bo‘ladi. Chunki organizmda keton jismlari (ayniqsa, acetone) ko‘payadi va u nafas orqali chiqib, o‘ziga xos mevali hid hosil qiladi.
+
+Kussmaul nafas nima?
+Kussmaul nafas — bu chuqur va tez nafas olish turi. Organizmdagi metabolik asidoz (masalan, ketoatsidozda) sabab yuzaga keladi. Tana ko‘p karbonat angidridni chiqarishga harakat qilib, chuqur nafas oladi. Bu nafas turi odatda nafas olishning zo‘rayishi va chuqurlashishi bilan tavsiflanadi.
+
+Qisqasi
+Mevali nafas — nafasda mevali hid (keton jismlari tufayli).
+Kussmaul nafas — chuqur, tez va qattiq nafas olish (organizmdagi asidozni kamaytirish uchun).`
 },
 {
   "question": "Giperosmolyar koma va ketoatsidotik koma o'rtasidagi farq nima?",
-  "answer": `Giperosmolyar koma: yuqori qon osmolyarligi (320 mOsm/kg), ketonlar mavjud emas, ko‘proq 2-tur QD bilan bog‘liq.  
-Ketoatsidotik koma: qon keton darajasi yuqori, asidoz va metebolik disbalans.`
+  "answer": `
+Giperosmolyar koma
+Asosan 2-toifa diabetda uchraydi.
+Qon shakarining juda yuqori darajasi (odatda 33 mmol/l dan yuqori) bilan kechadi.
+Keton jismlari odatda yo‘q yoki juda kam bo‘ladi, shuning uchun metabolik asidoz rivojlanmaydi yoki juda yengil bo‘ladi.
+Organizmda kuchli suv tanqisligi (dehidratsiya) yuzaga keladi, chunki qon osmolyarligi oshadi va hujayralar suvsizlanadi.
+Hushning asta-sekin pasayishi, charchoq, teri qurishi, kuchli chanqoqlik va mushaklarning zaiflashishi kuzatiladi.
+Nafas olish odatda normal yoki biroz tezlashgan bo‘ladi.
+Davolashda asosiy e’tibor suyuqlikni tiklash va insulin berishga qaratiladi.
+
+Ketoatsidotik koma
+Asosan 1-toifa diabetda va ba’zida 2-toifa diabetning og‘ir holatlarida uchraydi.
+Qon shakarining yuqori darajasi (odatda 13.9 mmol/l yoki undan yuqori) bilan kechadi.
+Qonda va siydikda ko‘p miqdorda keton jismlari bo‘ladi, bu esa metabolik asidoz (qonning kislotali muhitga o‘tishi) yuzaga keltiradi.
+Asidoz tufayli organizmda chuqur va tez nafas olish – Kussmaul nafaslari paydo bo‘ladi.
+Nafasda mevali (acetone) hid seziladi.
+Bemor ko‘ngil aynishi, qusish, kuchli bosh og‘rig‘i va hushning tez pasayishi bilan namoyon bo‘ladi.
+Davolashda insulin, suyuqlik va elektrolitlarni tezkor tuzatish talab etiladi.
+
+Asosiy farqlar
+Giperosmolyar komada ketonlar kam yoki yo‘q, ketoatsidotik komada esa ketonlar ko‘p.
+Giperosmolyar komada suv tanqisligi juda kuchli, ketoatsidotik komada esa metabolik asidoz asosiy muammo.
+Nafas olish uslubi va hushning buzilishi ham farqlanadi.
+`
 },
 {
   "question": "Laktatatsidotik koma nima va etiologiyasi?",
-  "answer": `Laktatatsidotik koma: laktat darajasining ortishi tufayli pH darajasining pasayishi. Etiologiya: og‘ir oksigen tanqisligi, yurak va buyrak yetishmovchiligi, metformin kabi dori-darmonlar.`
+  "answer": `
+Laktatatsidotik koma
+Nima u?
+Laktatatsidotik koma — bu organizmda laktat kislota (sut kislota) miqdori oshib, qonning kislotali muhitga o‘tishi (metabolik asidoz) natijasida yuzaga keladigan og‘ir holatdir. Bu koma shakli odatda qon aylanishi va kislorod yetishmovchiligi bilan bog‘liq bo‘ladi.
+
+Etiologiyasi (sabablari)
+Yog‘ va uglevodlar metabolizmining buzilishi, ayniqsa glyukoza oksidlanishi kamayganda, organizm ko‘proq laktat hosil qiladi.
+Gipoksiya (organizm yoki to‘qimalarda kislorod yetishmovchiligi) — yurak yetishmovchiligi, nafas yetishmovchiligi, og‘ir qon quyilishi.
+Sepsis (og‘ir infektsiyalar), qonda yiring ko‘payishi.
+Jig‘ar va buyrak kasalliklari — laktatning organizmdan chiqarilishi buziladi.
+Ba’zi dorilar (masalan, biguanid guruhidagi metformin) — laktat kislota hosil bo‘lishini oshirishi mumkin.
+Qon aylanishining keskin buzilishi, kislota-baza muvozanatining buzilishi.
+Og‘ir jarohatlar, jarrohlik amaliyotlari, shok holatlari.
+
+Agar laktatatsidotik koma vaqtida davolanmasa, bu holat tez sur’atlarda og‘irlashib, koma va o‘limga olib kelishi mumkin.
+`
 },
 {
   "question": "QD ning o'tkir asoratlari.",
-  "answer": `O'tkir asoratlar: gipoglikemiya, giperglikemik koma, ketoatsidotik koma, giperosmolyar koma, infeksiyalar, jarrohlik asoratlar.`
+  "answer": `Qandli diabet (QD)ning o'tkir asoratlari quyidagilardan iborat:
+1. Ketoatsidotik koma — insulin yetishmovchiligi natijasida yuzaga keladigan keton jismlari ortishi va metabolik asidoz bilan kechadigan jiddiy holat.
+2. Gipoglikemik koma — qondagi glyukoza darajasining keskin tushishi sababli rivojlanadigan hushsiz holat.
+3. Giperosmolyar koma — yuqori qon shakar darajasi va kuchli suvsizlanish bilan kechadigan koma.
+4. Laktatatsidotik koma — laktat kislotasi to‘planishi va metabolik asidoz natijasida yuzaga keladigan holat.
+5. Diabetik ketoatsidoz — ketoatsidotik koma oldi bosqichi bo‘lib, glyukoza va ketonlar oshishi bilan namoyon bo‘ladi.
+`
 },
 {
   "question": "QD ning surunkali asoratlari.",
-  "answer": `Surunkali asoratlar: diabetik retinopatiya, diabetik nefropatiya, diabetik neyropatiya, yurak-qon tomir kasalliklari, diabetik oyoq.`
+  "answer": `
+Qandli diabetning surunkali asoratlari
+1. Mikroangiopatiya
+Kapillyarlar va mayda qon tomirlarining shikastlanishi,
+Ko‘zda (diabetik retinopatiya), buyraklarda (diabetik nefropatiya), nervlarda (diabetik neyropatiya) asoratlar paydo bo‘ladi.
+
+2. Makroangiopatiya
+Katta qon tomirlarining zarar ko‘rishi,
+Yurak-qon tomir kasalliklari (infarkt, insult), oyoq arteriyalarining torayishi (neyropatik va ishemik oyoq yaralari).
+
+3. Diabetik neyropatiya
+Asab tolalarining shikastlanishi,
+Qimirlay olmaslik, qo‘l-oyoqlarda og‘riq, uyqusizlik, reflekslarning pasayishi.
+
+4. Diabetik nefropatiya
+Buyraklarning shikastlanishi,
+Bu siydikda oqsil (proteinuriya) paydo bo‘lishi va oxir-oqibat buyrak yetishmovchiligiga olib keladi.
+
+5. Diabetik retinopatiya
+Ko‘z tomirlarining shikastlanishi,
+Ko‘rish qobiliyatining pasayishi va hatto ko‘rishning yo‘qolishi.
+
+6. Diabetik oyoq
+Neyropatiya va qon aylanishining buzilishi natijasida oyoqlarda yaralar, infektsiyalar va oyoq amputatsiyasiga olib kelishi mumkin.
+
+Surunkali asoratlarning oldini olish uchun qon shakarini doimiy nazorat qilish, sog‘lom turmush tarzini saqlash va shifokor nazoratida bo‘lish juda muhimdir.
+
+`
 },
 {
   "question": "Diabetik retinopatiya-etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
-  "answer": `Etiologiya: qandli diabet, yuqori qon bosimi.  
-Patogenez: retina qon tomirlarining zararlanishi, mikrovaskulyar shikastlanish.  
-Tasniflash: bosqichlar (yengil, o‘rtacha, og‘ir).  
-Klinik ko‘rinish: ko‘rishning pasayishi, ko‘z oldida qora dog‘lar.  
-Davolash: lazer terapiyasi, vitrektomiya.`
+  "answer": `
+Diabetik retinopatiya
+1. Etiologiya
+Asosiy sabab — qandli diabet (odatda 5-10 yildan keyin rivojlanadi).
+Uzoq davom etgan giperglikemiya sababli retina qon tomirlari shikastlanadi.
+Qon bosimi yuqoriligi, giperlipidemiya, chekish va boshqa omillar ham xavfni oshiradi.
+
+2. Patogenez
+Giperglikemiya natijasida retina qon tomirlarining endotel hujayralari shikastlanadi.
+Tomirlarning devorlari qalinlashadi, propabilitetsizligi oshadi, tomirlar torayadi yoki yopiladi.
+Qon aylanishi buzilib, retina kislorod yetishmovchiligi (gipoksiya) paydo bo‘ladi.
+Bu gipoksiya yangi qon tomirlarning (neovaskulyarizatsiya) paydo bo‘lishiga olib keladi — ular oson yoriladi va qonashadi.
+Natijada ko‘rish qobiliyati pasayadi.
+
+3. Tasniflash
+Bosqichsiz (no proliferativ) retinopatiya:
+kichik qon tomirlari deformatsiyasi, mikroanevrizmalar, qon tomirlarining torayishi.
+Qon tomirlari shikastlanishi boshlang‘ich bosqichi.
+
+Proliferativ retinopatiya:
+Yangi qon tomirlar paydo bo‘lishi (neovaskulyarizatsiya), ular osongina yorilib qonashadi.
+Katta ko‘z muammolari va ko‘rish yo‘qolishi xavfi yuqori.
+
+Diabetik makulopatiya:
+Makula (ko‘zning markaziy qismi) shikastlanishi, ko‘rish qobiliyatining pasayishiga olib keladi.
+
+4. Klinik ko‘rinish
+Bosqichsiz retinopatiyada ko‘pincha hech qanday simptomlar bo‘lmaydi.
+Ko‘rishning biroz sustlashishi, ko‘z oldida dog‘lar yoki chiziqlar paydo bo‘lishi mumkin.
+Proliferativ bosqichda ko‘zda qonash, ko‘rishning keskin yomonlashishi.
+Makulopatiyada markaziy ko‘rish pasayadi, detalni ko‘rish qiyinlashadi.
+
+5. Davolash
+Asosiy yondashuv — qandli diabetni va qon bosimini nazorat qilish.
+Laser fotokoagulyatsiya — yangi qon tomirlarning o‘sishini to‘xtatish uchun.
+Vitrektomiya — ko‘z ichidagi qon va shilimshiqni olib tashlash jarrohligi.
+Anti-VEGF dorilar — bu ko‘zga qilinadigan ukollar bo‘lib, yangi qon tomirlar (neovaskulyarizatsiya) paydo bo‘lishini to‘xtatadi.
+`
 },
 {
   "question": "Diabetik nefropatiya- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
-  "answer": `Etiologiya: qandli diabet, yuqori qon bosimi.  
-Patogenez: glomerulalarning shikastlanishi, proteinuriya.  
-Tasniflash: 5 bosqich.  
-Klinik ko‘rinish: proteinuriya, shish, buyrak yetishmovchiligi.  
-Davolash: antihipertenziv dori-darmonlar, ACE ingibitorlari.`
+  "answer": `
+Diabetik nefropatiya
+1. Etiologiya
+Asosiy sabab — uzoq davom etgan qandli diabet (odatda 10 yildan keyin rivojlanadi).
+Giperglikemiya va yuqori qon bosimi buyrak kapillyarlarining shikastlanishiga olib keladi.
+Genetik omillar ham ta’sir qilishi mumkin.
+
+2. Patogenez
+Buyraklarning filtratsiya funksiyasini bajaruvchi nefronlardagi kapillyarlar devori qalinlashadi, shikastlanadi.
+Filtratsiya yuzasi kamayadi, buyraklar qon tozalash qobiliyatini yo‘qotadi.
+Nefronlarning yo‘qolishi va fibroz jarayonlar yuzaga keladi.
+Bu natijada protein (oqsil) siydikka chiqishi (proteinuriya) va oxir-oqibat buyrak yetishmovchiligiga olib keladi.
+
+3. Tasniflash
+Bosqich 1: Buyrak funksiyasi odatda normal, lekin siydikda mikroalbuminuriya paydo bo‘ladi (kichik miqdorda oqsil chiqishi).
+Bosqich 2: Mikroalbuminuriya aniq bo‘ladi, buyrak shikastlanishi boshlanadi.
+Bosqich 3: Proteinuriya oshadi, qon bosimi ko‘tariladi.
+Bosqich 4: Buyrak funksiyasi sezilarli darajada pasayadi.
+Bosqich 5: Buyrak yetishmovchiligi rivojlanadi (terminal buyrak kasalligi).
+
+4. Klinik ko‘rinish
+Dastlab hech qanday simptom bo‘lmasligi mumkin.
+Siydikda oqsil (protein) aniqlanadi.
+Ko‘ngil aynishi, bosh og‘rig‘i, oyoqlarda shish paydo bo‘lishi mumkin.
+So‘nggi bosqichlarda suvsizlanish, qon bosimining oshishi, charchoq va buyrak yetishmovchiligi alomatlari yuzaga keladi.
+
+5. Davolash
+Qandli diabet va qon bosimini nazorat qilish.
+ACE ingibitorlari yoki ARB dorilarini qo‘llash — buyrakni himoya qiladi va proteinuriyani kamaytiradi.
+Tuz va suyuqlik iste’molini cheklash.
+Bu kasallikning oldini olish uchun muntazam tibbiy nazorat va laborator tekshiruvlar muhim.
+Buyrak yetishmovchiligi rivojlansa, dializ yoki buyrak ko‘chirib o‘tkazish talab qilinishi mumkin.
+`
 },
 {
   "question": "Diabetik neyropatiya- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
-  "answer": `Etiologiya: qandli diabet, yuqori qon shakar.  
-Patogenez: nerv tolalarining mikrovaskulyar shikastlanishi.  
-Tasniflash: periferik, avtonom, markaziy.  
-Klinik ko‘rinish: sezgi yo‘qolishi, og‘riq, muskullarning kuchsizlik.  
-Davolash: qand miqdorini nazorat qilish, og‘riqni kamaytiruvchi dori-darmonlar.`
+  "answer": `
+Diabetik neyropatiya
+1. Etiologiya
+Asosiy sabab — uzoq davom etgan qandli diabet (odatda 5-10 yildan keyin).
+Giperglikemiya nerv to‘qimalariga zarar yetkazadi.
+Qon aylanishining buzilishi va oksidlovchi stress ham ta’sir qiladi.
+
+2. Patogenez
+Giperglikemiya natijasida nerv tolalarining myelin qatlami shikastlanadi.
+Nervlarning oziqlanishi va impuls o‘tkazishi buziladi.
+Oksidlovchi stress va mikroangiopatiya nervlarning ishlashini yanada yomonlashtiradi.
+
+3. Tasniflash
+Sensor neyropatiya: oyoq va qo‘llarda og‘riq, uyquchanlik, karishish, sovuqlik hissi.
+Motor neyropatiya: mushaklar zaiflashishi, mushaklarning qisqarishi va atrofiyasi.
+Avtonom neyropatiya: yurak, oshqozon-ichak, siydik chiqarish tizimi funksiyalarining buzilishi.
+Fokal neyropatiya: ma’lum nervlarning bir tomondan shikastlanishi (masalan, ko‘z harakatlantiruvchi nervlar).
+
+4. Klinik ko‘rinish
+Oyoq-qo‘llarda uyquchanlik, og‘riq yoki yonish hissi.
+Mushaklarning zaiflashishi, mushaklarda qisilishlar.
+Yurak urishining tartibsizligi, ovqat hazm qilish buzilishi, siyish muammolari.
+Ba’zan simptomlar yo‘q, ammo nerv funksiyasi buzilgan bo‘lishi mumkin.
+
+5. Davolash
+Qon shakarini doimiy nazorat qilish.
+Og‘riqni kamaytiruvchi dori vositalari (masalan, antikonvulsantlar, antidepressantlar).
+Fizik terapiya va oyoqni parvarish qilish.
+Avtonom buzilishlarda maxsus davolash (masalan, yurak urishini tartibga soluvchi dorilar).
+Asoratlarning oldini olish uchun diabetni yaxshi boshqarish juda muhim.
+`
 },
 {
   "question": "Diyabetik to`piq- etiologiya, patogenez, tasniflash, klinik ko'rinish, davolash.",
