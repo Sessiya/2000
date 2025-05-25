@@ -729,22 +729,87 @@ Natijalar:
 `},
 {
   "question": "GTT (glyukoza tolerantlik testi) - norma, prediabet, QD natijalarini talqin qilish.",
-  "answer": `Norma: 2-soatlik glyukoza < 7.8 mmol/l. Prediabet: 2-soatlik glyukoza 7.8–11.0 mmol/l. Qandli diabet: 2-soatlik glyukoza ≥ 11.1 mmol/l.`
+  "answer": `Norma: 2-soatlik glyukoza < 7.8 mmol/l. Prediabet: 2-soatlik glyukoza 7.8–11.0 mmol/l. Qandli diabet: 2-soatlik glyukoza ≥ 11.1 mmol/l.
+  Ko‘rsatmalar:
+Diabet xavfi bo‘lsa (ortiqcha vazn, oilaviy kasallik, bel atrofining katta bo‘lishi)
+Noaniq qon shakar natijalari mavjud bo‘lsa
+Homilador ayollarda gestatsion diabetni tekshirish uchun
+
+O‘tkazish tartibi:
+1. 8-14 soat och qolish (faqat suv ichish mumkin).
+2. Ochlikda qon shakarini o‘lchash.
+3. 75 g glyukoza eritmasini ichish.
+4. 2 soat keyin qon shakarini qayta o‘lchash.`
 },
 {
   "question": "QD uchun dietoterapiya.",
-  "answer": `QDda dietoterapiya asosiy davolash usullaridan biridir. Maqsad: qon glyukozasini nazoratda ushlash. Oddiy shakar va tez so‘riladigan uglevodlar cheklanadi, murakkab uglevodlar, tolali mahsulotlar tavsiya etiladi. Fraksion (ko‘p va oz-ozdan) ovqatlanish, kaloriya hisobiga asoslangan dieta tuziladi.`
+  "answer": `Qandli diabet uchun dietoterapiya (ozuqa bilan davolash):
+Asosiy tamoyillar:
+1. Shakar va tez so‘riladigan uglevodlardan saqlanish.
+2. Ovqatlanishni 5–6 mahalga bo‘lib, bir xil vaqtda ovqatlanish.
+3. Kam kaloriyali, tolali ovqatlar tanlash (sabzavot, grechka, dukkaklilar).
+4. Kam yog‘li oqsil manbalari: go‘sht, baliq, tuxum, tvorog.
+5. Yog‘ va shirinlik, fastfud, gazli ichimliklardan voz kechish.
+
+Xleb birligi (XB) haqida:
+1 XB = 12 gramm uglevod degani.
+Bu organizmga 2–2.5 birlik insulin kerak bo‘lishi mumkin.
+Misollar:
+1 dona o‘rtacha olma – 1 XB
+1 bo‘lak qora non (25 g) – 1 XB
+2 osh qoshiq grechka – 1 XB
+100 ml sut – 1 XB
+
+Kunlik ruxsat etilgan XB:
+1-tur QD: 18–25 XB
+2-tur QD (semiz bemor): 12–16 XB
+
+Ovqatlanishda har bir ovqat vaqtida necha XB borligi hisoblanadi, insulin dozasi shunga qarab belgilanadi (ayniqsa 1-turda).`
 },
 {
   "question": "Qondagi qand miqdorini pasaytiruvchi gipoglikemik dorilarning tasnifi.",
-  "answer": `1. Insulin preparatlari (faqat parenteral). 
-2. Og‘zaki gipoglikemik vositalar: 
-   - Biguanidlar (metformin), 
-   - Sulfanilmochevina hosilalari, 
-   - DPP-4 ingibitorlari, 
-   - GPP-1 agonistlari, 
-   - SGLT-2 ingibitorlari, 
-   - Tiazolidindionlar.`
+  "answer": `Qondagi qand miqdorini pasaytiruvchi (gipoglikemik) dorilar tasnifi:
+
+1. Insulin preparatlari – 1-tur diabetda asosiy davo, 2-turda og‘ir holatlarda:
+Ultra qisqa ta’sirli: Apidra, Novorapid, Xumalog
+Boshlanishi: 0–15 daqiqa
+Ta’siri: 3–4 soat
+
+Qisqa ta’sirli: Aktrapid R, Gensulin R
+Boshlanishi: 30 daqiqa
+Ta’siri: 6–8 soat
+
+O‘rtacha ta’sirli: Protofan, Xumulin N
+Boshlanishi: 1 soat
+Ta’siri: 12–14 soat
+
+Uzoq ta’sirli: Glargin (Lantus), Detemir (Levemir)
+Boshlanishi: 1–2 soat
+Ta’siri: 24 soat
+
+Ultra uzoq ta’sirli: Deglyudek (Tresiba)
+Boshlanishi: 1–2 soat
+Ta’siri: 40 soat
+
+2. Og‘zaki gipoglikemik vositalar – asosan 2-tur diabetda:
+a) Insulin sekresiyasini oshiruvchi:
+Sulfonilmochevina hosilalari: Gliklazid, Glibenklamid
+Meglitinidlar: Repaglinid, Nateglinid
+
+b) Insulin sezuvchanligini oshiruvchi:
+Biguanidlar: Metformin (eng ko‘p ishlatiladi)
+Tiazolidindionlar: Pioglitazon
+
+c) Alfa-glukozidaza ingibitorlari:
+Akarboza – ichakda glyukozaning so‘rilishini sekinlashtiradi
+
+d) Inkretinga asoslangan dori vositalari:
+DPP-4 ingibitorlari: Sitagliptin, Vildagliptin
+GLP-1 analoglari (in'ektsiya): Liraglutid, Semaglutid
+
+e) Glyukozani siydik bilan chiqaruvchi dorilar (SGLT2 ingibitorlari):
+Dapagliflozin, Empagliflozin
+`
 },
 {
   "question": "Biguanid guruh preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir qilish mexanizmi, nojo‘ya ta'siri.",
