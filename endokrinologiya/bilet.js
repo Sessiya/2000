@@ -709,9 +709,7 @@ Zarur bo‘lsa, shifokor dori tavsiya qilishi mumkin
 `},
 {
   "question": "GTT (glyukoza tolerantlik testi) o‘tkazish uchun ko‘rsatmalar, o‘tkazish usuli.",
-  "answer": `Ko‘rsatmalar: prediabetdan gumon qilish, homiladorlik diabetini aniqlash, glyukoza metabolizmi buzilishlarini aniqlash. Usuli: bemor och holda (kamida 8 soat och qolgan) keladi, boshlang‘ich qondagi glyukoza olinadi, so‘ngra 75g glyukoza ichiriladi. 2 soatdan so‘ng yana glyukoza miqdori aniqlanadi.`Albatta! Mana GTT haqida qisqa, aniq va tushunarli ta'rif:
-
-Glyukoza tolerantlik testi (GTT) — qandli diabet va prediabetni aniqlash uchun ishlatiladigan test.
+  "answer": `Glyukoza tolerantlik testi (GTT) — qandli diabet va prediabetni aniqlash uchun ishlatiladigan test.
   
 Ko‘rsatmalar:
 Diabet xavfi bo‘lsa (ortiqcha vazn, oilaviy kasallik, bel atrofining katta bo‘lishi)
