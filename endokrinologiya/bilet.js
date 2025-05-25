@@ -446,7 +446,55 @@ Klinikasi (asosiy belgilar):
 },
 {
   "question": "Semizlik etiologiyasi, patogenezi, klinikasi, diagnostikasi, davolash.",
-  "answer": `Etiologiyasi: noto‘g‘ri ovqatlanish, harakatsizlik, genetik, endokrin sabablar. Patogenez: kutilgan kaloriyalardan ortiq iste’mol yog‘ to‘planishiga olib keladi. Klinikasi: tana vaznining ortishi, yurak qon-tomir, endokrin muammolar. Diagnostika: BMI, qon lipidlari, glyukoza, gormonlar. Davolash: ovqatlanishni nazorat qilish, jismoniy faollik, kerak bo‘lsa dori va jarrohlik.`
+  "answer": `Semizlik (obezlik) – bu yog‘ to‘qimalarining ortiqcha to‘planishi bilan kechadigan kasallik bo‘lib, tana vaznining normadan sezilarli darajada ortishi bilan ifodalanadi.
+
+Etiologiyasi (sabablari):
+1. Noto‘g‘ri ovqatlanish – yuqori kaloriyali, yog‘li va shirin taomlarni ko‘p iste’mol qilish
+2. Jismoniy harakatsizlik
+3. Gormonal buzilishlar – qalqonsimon bez kasalliklari (gipotireoz), Itenko–Kushing kasalligi
+4. Irsi omillar – genetik moyillik
+5. Psixologik sabablar – stress, depressiya, emotsional ovqatlanish
+6. Dori vositalari – antidepressantlar, kortikosteroidlar
+
+Patogenezi (rivojlanish mexanizmi):
+• Energiya iste’moli (ovqat) energiya sarfidan oshsa, ortiqcha kaloriyalar triglitseridlar shaklida yog‘ hujayralarida to‘planadi
+• Insulin rezistentlik paydo bo‘ladi
+• Yog‘ to‘qimalari gormonal faollikni o‘zgartirib, metabolik sindrom rivojlanadi
+
+Klinikasi (belgilari):
+• Tana vaznining ortishi (BKInda >30 bo‘lishi)
+• Nafas qisishi, tez charchash
+• Arterial bosimning ko‘tarilishi
+• Qandli diabet belgilari
+•✓Ayollarda hayz buzilishi, erkaklarda jinsiy zaiflik
+• Suyak va bo‘g‘im og‘rigi, bel og‘rig‘i
+• Uyqu buzilishi (apnoe sindromi)
+
+Diagnostikasi:
+1. Tana vazni va bo‘y uzunligi asosida (TMI - tana massa indeksi) hisoblanadi:
+TMI = vazn (kg) / (bo‘y (m))²
+25–29.9 – ortiqcha vazn
+30–34.9 – I darajali semizlik
+35–39.9 – II darajali
+> 40 – III darajali (yuqori xavfli)
+2. Bel-ham son nisbati (erkaklarda >0.9, ayollarda >0.85 – xavf)
+3. Qon tahlillari: glyukoza, lipidlar, gormonlar (TSH, kortizol)
+4. Asoratlarni aniqlash: EKG, jigar, yurak, endokrin tizim holati
+
+Davolash:
+1. Hayot tarzini o‘zgartirish:
+• Kaloriyasi cheklangan parhez
+• Doimiy jismoniy mashqlar (haftasiga kamida 150 daqiqa)
+• Ovqatlanish odatlarini nazorat qilish (dietolog yordami)
+2. Dori vositalari (og‘ir hollarda):
+• Orlistat (yog‘ so‘rilishini kamaytiradi)
+• Liraglutid, semaglutid – ishtahani kamaytiruvchi gormon analoglari
+- Faqat shifokor nazorati ostida
+3. Psixologik yordam:
+Stressni kamaytirish, ovqatlanish psixologiyasini tuzatish
+4. Jarrohlik usullari (bardoshli semizlikda):
+Bariatrik operatsiyalar: me’dani kichraytirish, bypass usullari
+`
 },
 {
   "question": "Tana massasi indeksi (BMI) nima va uni qanday hisoblash mumkin?",
