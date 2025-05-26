@@ -568,7 +568,29 @@ Homiladorlik davrida yuzaga keladi
 Tug‘ilgandan keyin ko‘pincha yo‘qoladi, lekin kelajakda 2-toifa diabet xavfi oshadi
 
 4. Boshqa turdagi diabetlar
-Masalan, genetik kasalliklar, moddalar ta’siri yoki boshqa kasalliklar sababli yuzaga keladigan diabetlar`
+Masalan, genetik kasalliklar, moddalar ta’siri yoki boshqa kasalliklar sababli yuzaga keladigan diabetlar
+
+
+Medaosti bezi (pankreas) tarkibida orolcha (Langerhans orolchasi) hujayralari mavjud bo‘lib, ular endokrin funksiyani bajaradi. Bu hujayralar bir nechta turlarga bo‘linadi va har biri o‘ziga xos gormon ishlab chiqaradi:
+
+1. Beta (β) hujayralar – Insulin ishlab chiqaradi.
+Insulin qondagi glyukoza miqdorini kamaytiradi, uni hujayralarga kiritadi.
+Pankreas orolcha hujayralarining ~70% ini tashkil qiladi.
+
+2. Alfa (α) hujayralar – Glukagon ishlab chiqaradi.
+Glukagon qondagi glyukoza miqdorini oshiradi, glikogenni glyukozaga aylantiradi.
+Orolcha hujayralarining ~20% ini tashkil qiladi.
+
+3. Delta (δ) hujayralar – Somatostatin ishlab chiqaradi.
+Somatostatin insulin va glukagon sekretsiyasini inhibe qiladi.
+Orolchalarning ~5–10% ini tashkil qiladi.
+
+4. PP (F) hujayralar – Pankreatik polipeptid ishlab chiqaradi.
+Ovqat hazm qilish fermentlari sekretsiyasini va me’da-ichak harakatini boshqaradi.
+
+5. Epsilon (ε) hujayralar – Ghrelin ishlab chiqaradi.
+Ishtahani rag‘batlantiradi.
+`
 },
 {
   "question": "QD 1-tur etiologiya, patogenez, klinika, diagnostika, davolash.",
