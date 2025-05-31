@@ -880,7 +880,6 @@ Bu dorilar 2-tip diabet kasalligida ishlatiladi. Ular qondagi qandni tushiradi, 
 5. DPP-4 ingibitorlari esa bu fermentni to‘sadi, ya’ni GLP-1 ni uzoqroq saqlaydi.
 6. Natijada:
 Insulin ko‘proq chiqadi
-Glyukagon kamayadi
 Qonda qand miqdori pasayadi
 
 
