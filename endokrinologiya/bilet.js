@@ -869,12 +869,25 @@ Gipoglikemiya (qon shakarining juda pastligi), vazn ortishi, allergik reaksiyala
 },
 {
   "question": "DPP-4 ingibitorlari guruhi preparatlari - ko‘rsatmalar, qarshi ko‘rsatmalar, ta'sir mexanizmi, nojo‘ya ta'siri.",
-  "answer": `DPP-4 ingibitorlari guruhi preparatlari
+  "answer": `📌 DPP-4 (dipeptidil peptidaza-4) ingibitorlari nima?
+Bu dorilar 2-tip diabet kasalligida ishlatiladi. Ular qondagi qandni tushiradi, lekin gipoglikemiya chaqirmaydi.
 
-Misollar: Sitagliptin, Vildagliptin, Saxagliptin, Linagliptin
+🧬 Qanday ishlaydi?
+1. Ovqat yesak, ichakdan GLP-1 (glukogon like peptide-1) degan gormon chiqadi.
+2. Bu gormon oshqozon osti bezini insulin chiqarishga undaydi.
+3. Ammo GLP-1 juda tez parchalanadi, atigi bir necha daqiqada.
+4. Uni parchalab yuboradigan ferment — DPP-4.
+5. DPP-4 ingibitorlari esa bu fermentni to‘sadi, ya’ni GLP-1 ni uzoqroq saqlaydi.
+6. Natijada:
+Insulin ko‘proq chiqadi
+Glyukagon kamayadi
+Qonda qand miqdori pasayadi
+
+
+💊 Dorilar misollar: Sitagliptin, Vildagliptin, Saxagliptin, Linagliptin
 1. Ko‘rsatmalar
 
-2-toifa qandli diabet (T2DM)ni davolashda ishlatiladi, ayniqsa:
+2-toifa qandli diabetni davolashda ishlatiladi, ayniqsa:
 Metformin yoki boshqa antidiabetiklar bilan birgalikda,
 Yoki alohida preparat sifatida qon shakarini nazorat qilishda.
 Insulin terapiyasi talab qilinmagan, o‘rta darajadagi qandli diabet holatlarida.
